@@ -5,8 +5,8 @@
   background-position: center;
   overflow-x: hidden;
   background-color: #f8f9fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
 }
 .aboutSection::after {
   position: absolute;
@@ -24,6 +24,7 @@
   right: 35px;
 }
 .aboutElementOne img {
+    width: 80%;
   animation: rotate2 30s linear infinite;
 }
 @keyframes rotate2 {
@@ -32,7 +33,10 @@
 .aboutElementTwo {
   position: absolute;
   top: 30%;
-  right: 0;
+  right: -15%;
+}
+.aboutElementTwo img {
+  width: 80%;
 }
 .container {
   max-width: 1140px;
@@ -83,19 +87,49 @@
 .cmnBtn {
   display: inline-flex;
   align-items: center;
-  background: var(--main-color, #1766b1);
-  color: #fff;
+  justify-content: center;
+  background: transparent; /* The base is transparent, the fill comes from pseudo-elements */
+  color: #fff; /* Initial text color is white */
   padding: 12px 36px;
-  border-radius: 25px;
+  border-radius: 0; /* Make it square */
+  border: 1px solid var(--main-color, #1766b1); /* The border is always present */
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   margin-top: 30px;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(23,102,177,0.10);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease-in-out;
+}
+.cmnBtn::before,
+.cmnBtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 51%; /* Use 51% to prevent a pixel-thin gap in the middle */
+  height: 100%;
+  background: var(--main-color, #1766b1); /* This is the blue fill */
+  z-index: -1;
+  transition: transform 0.4s ease-in-out;
+}
+.cmnBtn::before {
+  left: 0;
+  transform: translateX(0);
+}
+
+.cmnBtn::after {
+  right: 0;
+  transform: translateX(0);
 }
 .cmnBtn:hover {
-  background: #134c81;
+  color: var(--main-color, #1766b1); /* On hover, text becomes blue */
+}
+.cmnBtn:hover::before {
+  transform: translateX(-100%);
+}
+.cmnBtn:hover::after {
+  transform: translateX(100%);
 }
 
 /* Responsive */
@@ -107,8 +141,5 @@
   .aboutElementOne, .aboutElementTwo {
     display: none;
   }
-  .aboutSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+ 
 }

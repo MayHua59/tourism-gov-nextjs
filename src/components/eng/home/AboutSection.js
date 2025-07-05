@@ -1,17 +1,35 @@
-import React from "react";
+
+"use client"
+import React, { useState, useEffect } from 'react';
+
 import styles from "./AboutSection.module.css";
 import { FaCheck } from "react-icons/fa";
 
 export default function AboutSection() {
+    const [offsetX, setOffsetX] = useState(0);
+     const handleScroll = () => {
+    // Adjust the multiplier (e.g., 0.25) to change the parallax speed
+    setOffsetX(window.scrollY * -0.25);
+  };
+    useEffect(() => {
+    // Set up the scroll listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the listener when the component is removed
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <section
-      className={styles.aboutSection}
-      style={{ backgroundImage: `url(/assets/images/map.png)` }}
-    >
-      <div className={styles.aboutElementOne}>
+     <section className={styles.aboutSection}>
+       <div className={styles.aboutElementOne}>
         <img src="/assets/images/shape.png" alt="element shape" />
       </div>
-      <div className={styles.aboutElementTwo}>
+       {/* The aeroplane - Parallax effect applied via inline style */}
+      <div
+        className={styles.aboutElementTwo}
+        style={{ transform: `translateX(${offsetX}px)` }}
+      >
         <img src="/assets/images/shape-2.png" alt="element shape 2" />
       </div>
       <div className={styles.container}>
