@@ -1,0 +1,7 @@
+.desktop-header { display: block; }
+.mobile-header { display: none; }
+
+@media (max-width: 991px) {
+  .desktop-header { display: none; }
+  .mobile-header { display: block; }
+}

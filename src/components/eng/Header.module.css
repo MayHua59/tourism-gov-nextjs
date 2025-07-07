@@ -2,11 +2,14 @@
 .header {
   position: relative;
   background: #fff;
+  
 }
 
 .headerTop {
   padding: 0.5rem 0;
   border-bottom: 0.5px solid #ddd;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .flexRow {

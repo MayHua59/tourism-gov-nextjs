@@ -10,11 +10,16 @@ import MyanmarInPicturesSection from '../components/eng/home/MyanmarInPicturesSe
 import CallActionSection from '../components/eng/home/CallActionSection';
 import TravelerInformationSection from '../components/eng/home/TravelerInformationSection';
 import TourismNewsSection from '../components/eng/home/TourismNewsSection';
+import LatestNewsSection from '../components/eng/home/LatestNewsSection';
+import Footer from '../components/eng/Footer';
+import HeaderMobile from '../components/eng/HeaderMobile';
 
 export default function HomePage() {
+  
   return (
     <>
-      <Header />
+      <div className="desktop-header"><Header /></div>
+  <div className="mobile-header"><HeaderMobile /></div>
       
       <HeroSection/>
 <AboutSection/>
@@ -27,6 +32,8 @@ export default function HomePage() {
 <CallActionSection/>
 <TravelerInformationSection/>
 <TourismNewsSection/>
+<LatestNewsSection/>
+<Footer/>
     </>
   );
 }
