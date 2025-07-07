@@ -7,6 +7,9 @@ import ExploreSection from "../components/eng/home/ExploreSection";
 import WhyVisitMyanmarSection from '../components/eng/home/WhyVisitMyanmarSection';
 import TourismDevelopmentSection from '../components/eng/home/TourismDevelopmentSection';
 import MyanmarInPicturesSection from '../components/eng/home/MyanmarInPicturesSection';
+import CallActionSection from '../components/eng/home/CallActionSection';
+import TravelerInformationSection from '../components/eng/home/TravelerInformationSection';
+import TourismNewsSection from '../components/eng/home/TourismNewsSection';
 
 export default function HomePage() {
   return (
@@ -21,6 +24,9 @@ export default function HomePage() {
 <WhyVisitMyanmarSection/>
 <TourismDevelopmentSection/>
 <MyanmarInPicturesSection/>
+<CallActionSection/>
+<TravelerInformationSection/>
+<TourismNewsSection/>
     </>
   );
 }
