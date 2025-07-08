@@ -1,39 +1,40 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link"; 
 import styles from "./Header.module.css";
 
-// Example menu. You can expand as needed.
+
 const mainMenu = [
   {
     label: "Vital Info",
     submenu: [
-      { label: "About Myanmar", href: "en/about-myanmar" },
+      { label: "About Myanmar", href: "/en/about-myanmar" },
       {
         label: "Visa Requirements",
         submenu: [
-          { label: "Electronic Visa", href: "/coming" },
-          { label: "Visa Exemption", href: "/visa-exemption" },
-          { label: "Visa on Arrival", href: "/visa-on-arrival" },
+          { label: "Electronic Visa", href: "/en/e-visa" },
+          { label: "Visa Exemption", href: "/en/visa-exemption" },
+          { label: "Visa on Arrival", href: "/en/visa-on-arrival" },
         ],
       },
-      { label: "Guidelines For Tour Companies", href: "/guidelines-for-tour-companies" },
+      { label: "Guidelines For Tour Companies", href: "/en/guidelines-for-tour-companies" },
       {
         label: "Helpdesk",
         submenu: [
-          { label: "Branch Offices", href: "/branch-offices" },
-          { label: "Information Counters", href: "/information-counters" },
-          { label: "Tourism Police Offices", href: "/tourism-police-offices" },
+          { label: "Branch Offices", href: "/en/branch-offices" },
+          { label: "Information Counters", href: "/en/information-counters" },
+          { label: "Tourism Police Offices", href: "/en/tourism-police-offices" },
         ],
       },
       {
         label: "Embassies & Missions",
         submenu: [
-          { label: "Myanmar Missions", href: "/myanmar-missions" },
-          { label: "Foreign Embassies in Myanmar", href: "/coming" },
+          { label: "Myanmar Missions", href: "/en/myanmar-missions" },
+          { label: "Foreign Embassies in Myanmar", href: "/en/coming" },
         ],
       },
-      { label: "Myanmar Ministries", href: "/myanmar-ministries" },
+      { label: "Myanmar Ministries", href: "/en/myanmar-ministries" },
     ],
   },
   {
@@ -42,31 +43,31 @@ const mainMenu = [
       {
         label: "North Myanmar",
         submenu: [
-          { label: "Kachin", href: "/coming" },
-          { label: "Sagaing", href: "/coming" },
-          { label: "Chin", href: "/coming" },
-          { label: "Shan", href: "/coming" },
+          { label: "Kachin", href: "/en/coming" },
+          { label: "Sagaing", href: "/en/coming" },
+          { label: "Chin", href: "/en/coming" },
+          { label: "Shan", href: "/en/coming" },
         ],
       },
       {
         label: "Central Myanmar",
         submenu: [
-          { label: "Magway", href: "/coming" },
-          { label: "Nay Pyi Taw", href: "/coming" },
-          { label: "Mandalay", href: "/coming" },
-          { label: "Rakhine", href: "/coming" },
+          { label: "Magway", href: "/en/coming" },
+          { label: "Nay Pyi Taw", href: "/en/coming" },
+          { label: "Mandalay", href: "/en/coming" },
+          { label: "Rakhine", href: "/en/coming" },
         ],
       },
       {
         label: "South Myanmar",
         submenu: [
-          { label: "Ayeyarwady", href: "/coming" },
-          { label: "Kayah", href: "/coming" },
-          { label: "Kayin", href: "/coming" },
-          { label: "Bago", href: "/coming" },
-          { label: "Yangon", href: "/coming" },
-          { label: "Mon", href: "/coming" },
-          { label: "Tanintharyi", href: "/coming" },
+          { label: "Ayeyarwady", href: "/en/coming" },
+          { label: "Kayah", href: "/en/coming" },
+          { label: "Kayin", href: "/en/coming" },
+          { label: "Bago", href: "/en/coming" },
+          { label: "Yangon", href: "/en/coming" },
+          { label: "Mon", href: "/en/coming" },
+          { label: "Tanintharyi", href: "/en/coming" },
         ],
       },
     ],
@@ -74,9 +75,9 @@ const mainMenu = [
   {
     label: "Highlight",
     submenu: [
-      { label: "Festivals", href: "/coming" },
-      { label: "Ecotourism", href: "/coming" },
-      { label: "Community Based Tourism", href: "/coming" },
+      { label: "Festivals", href: "/en/coming" },
+      { label: "Ecotourism", href: "/en/coming" },
+      { label: "Community Based Tourism", href: "/en/coming" },
     ],
   },
   {
@@ -85,7 +86,7 @@ const mainMenu = [
       {
         label: "Accommodation",
         submenu: [
-          { label: "Hotels & Resorts", href: "/coming" },
+          { label: "Hotels & Resorts", href: "/en/coming" },
         ],
       },
       {
@@ -94,22 +95,22 @@ const mainMenu = [
           {
             label: "Tour Companies",
             submenu: [
-              { label: "Inbound Tour Companies", href: "/coming" },
-              { label: "Outbound Tour Companies", href: "/coming" },
+              { label: "Inbound Tour Companies", href: "/en/coming" },
+              { label: "Outbound Tour Companies", href: "/en/coming" },
             ],
           },
           {
             label: "Tour Guides",
             submenu: [
-              { label: "National Tour Guides", href: "/coming" },
-              { label: "Regional Tour Guides", href: "/coming" },
+              { label: "National Tour Guides", href: "/en/coming" },
+              { label: "Regional Tour Guides", href: "/en/coming" },
             ],
           },
           {
             label: "Transportation",
             submenu: [
-              { label: "Cruises & Others", href: "/coming" },
-              { label: "Hot-Air Balloons", href: "/coming" },
+              { label: "Cruises & Others", href: "/en/coming" },
+              { label: "Hot-Air Balloons", href: "/en/coming" },
             ],
           },
         ],
@@ -119,61 +120,61 @@ const mainMenu = [
   {
     label: "Guides & Resources",
     submenu: [
-      { label: "Tourism Legislation", href: "/coming" },
-      { label: "Tourism Statistics", href: "/coming" },
-      { label: "Tourism Publications", href: "/tourism-publication" },
-      { label: "ASEAN Tourism Standards", href: "/coming" },
-      { label: "Myanmar Be Enchanted", href: "/coming" },
-      { label: "Brochures & Pamphlets", href: "/coming" },
+      { label: "Tourism Legislation", href: "/en/coming" },
+      { label: "Tourism Statistics", href: "/en/coming" },
+      { label: "Tourism Publications", href: "/en/tourism-publication" },
+      { label: "ASEAN Tourism Standards", href: "/en/coming" },
+      { label: "Myanmar Be Enchanted", href: "/en/coming" },
+      { label: "Brochures & Pamphlets", href: "/en/coming" },
     ],
   },
   {
     label: "News & Announcements",
     submenu: [
-      { label: "Weather Forecast", href: "/coming" },
-      { label: "Upcoming Events", href: "/coming" },
-      { label: "News", href: "/news" },
-      { label: "Announcements", href: "/announcements" },
-      { label: "Travel Advisory", href: "/coming" },
+      { label: "Weather Forecast", href: "/en/coming" },
+      { label: "Upcoming Events", href: "/en/coming" },
+      { label: "News", href: "/en/news" },
+      { label: "Announcements", href: "/en/announcements" },
+      { label: "Travel Advisory", href: "/en/coming" },
     ],
   },
   {
     label: "Our Role",
     submenu: [
-      { label: "Duties & Responsibilities", href: "/duties" },
-      { label: "Objectives", href: "/objectives" },
-      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/six-policies" },
-      { label: "International Cooperation", href: "/coming" },
+      { label: "Duties & Responsibilities", href: "/en/duties" },
+      { label: "Objectives", href: "/en/objectives" },
+      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
+      { label: "International Cooperation", href: "/en/coming" },
       {
         label: "Tourism Business",
         submenu: [
-          { label: "Doing Business in Myanmar", href: "/coming" },
-          { label: "Myanmar Investment Law", href: "/investment-law" },
-          { label: "Tourism Investment Opportunities", href: "/coming" },
-          { label: "Why Invest in Myanmar", href: "/coming" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/foreign-investment-in-hotels" },
+          { label: "Doing Business in Myanmar", href: "/en/coming" },
+          { label: "Myanmar Investment Law", href: "/en/investment-law" },
+          { label: "Tourism Investment Opportunities", href: "/en/coming" },
+          { label: "Why Invest in Myanmar", href: "/en/coming" },
+          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment-in-hotels" },
         ],
       },
       {
         label: "Arrivals",
         submenu: [
-          { label: "Tourism Statistics", href: "/coming" },
-          { label: "Arrivals 2024", href: "/coming" },
-          { label: "Arrivals 2023", href: "/coming" },
-          { label: "Arrivals 2022", href: "/coming" },
-          { label: "Arrivals 2021", href: "/coming" },
-          { label: "Arrivals 2020", href: "/coming" },
-          { label: "Arrivals 2019", href: "/coming" },
+          { label: "Tourism Statistics", href: "/en/coming" },
+          { label: "Arrivals 2024", href: "/en/coming" },
+          { label: "Arrivals 2023", href: "/en/coming" },
+          { label: "Arrivals 2022", href: "/en/coming" },
+          { label: "Arrivals 2021", href: "/en/coming" },
+          { label: "Arrivals 2020", href: "/en/coming" },
+          { label: "Arrivals 2019", href: "/en/coming" },
         ],
       },
       {
         label: "Training",
         submenu: [
-          { label: "Training Courses", href: "/coming" },
+          { label: "Training Courses", href: "/en/coming" },
         ],
       },
       
-      { label: "Contact Us", href: "/contact-us" },
+      { label: "Contact Us", href: "/en/contact-us" },
     ],
   },
 ];
@@ -205,7 +206,8 @@ function renderMenu(menu, styles, parentKey = "") {
                 {renderMenu(item.submenu, styles, key)}
               </>
             ) : (
-              <a href={item.href}>{item.label}</a>
+              // 3. Use the Link component for client-side navigation
+              <Link href={item.href || "#"}>{item.label}</Link>
             )}
           </li>
         );
@@ -215,52 +217,9 @@ function renderMenu(menu, styles, parentKey = "") {
 }
 
 export default function Header() {
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [showHeaderTop, setShowHeaderTop] = useState(true);
-  const [showHeaderBottom, setShowHeaderBottom] = useState(true);
-  const [animateBottom, setAnimateBottom] = useState(false);
-  const scrollTimeout = useRef(null);
-const [isNavVisible, setIsNavVisible] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const lastScrollY = useRef(0);
+  // ... rest of your component logic remains the same
+// ...existing code...
   const [isSticky, setIsSticky] = useState(false);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollY = window.scrollY;
-
-  //     // Determine if page is scrolled at all (for box-shadow)
-  //     if (currentScrollY > 10) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-
-  //     // Determine visibility based on scroll direction
-  //     if (currentScrollY > 100 && currentScrollY > lastScrollY.current) {
-  //       // Scrolling down
-  //       setIsNavVisible(false);
-  //     } else {
-  //       // Scrolling up or at the top
-  //       setIsNavVisible(true);
-  //     }
-
-  //     // Update last scroll position
-  //     lastScrollY.current = currentScrollY;
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll, { passive: true });
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // Remove animation class after animation ends for re-triggering
-  useEffect(() => {
-    if (animateBottom) {
-      const timer = setTimeout(() => setAnimateBottom(false), 450);
-      return () => clearTimeout(timer);
-    }
-  }, [animateBottom]);
 
    useEffect(() => {
     const handleScroll = () => {
@@ -278,7 +237,7 @@ const [isNavVisible, setIsNavVisible] = useState(true);
   return (
     <header className={styles.header}>
       <div className={`${styles.headerTop} ${styles.flexRow} ${isSticky ? styles.headerTopHidden : ""}`}>
-        <a className="site-logo site-title" href="/">
+        <a className="site-logo site-title" href="/en">
           <img
             src="/assets/images/logo-with-text-cut.png"
             alt="Ministry of Hotels and Tourism"
@@ -303,8 +262,8 @@ const [isNavVisible, setIsNavVisible] = useState(true);
       >
         <div className={styles.flexRow}>
           <div className={styles.headerMenuContainer}>
-  {renderMenu(mainMenu, styles)}
-</div>
+            {renderMenu(mainMenu, styles)}
+          </div>
         </div>
       </nav>
     </header>

@@ -9,11 +9,11 @@ const menuData = [
   {
     label: "Vital Info",
     submenu: [
-      { label: "About Myanmar", href: "/about-myanmar.html" },
+      { label: "About Myanmar", href: "/about-myanmar" },
       {
         label: "Visa Requirements",
         submenu: [
-          { label: "Electronic Visa", href: "/electronic-visa.html" },
+          { label: "Electronic Visa", href: "/e-visa" },
           { label: "Visa Exemption", href: "/visa-exemption.html" },
           { label: "Visa on Arrival", href: "/visa-on-arrival.html" },
         ],
