@@ -31,7 +31,7 @@ const mainMenu = [
         label: "Embassies & Missions",
         submenu: [
           { label: "Myanmar Missions", href: "/en/myanmar-missions" },
-          { label: "Foreign Embassies in Myanmar", href: "/en/coming" },
+          { label: "Foreign Embassies in Myanmar", href: "/en/foreign-embassies" },
         ],
       },
       { label: "Myanmar Ministries", href: "/en/myanmar-ministries" },
