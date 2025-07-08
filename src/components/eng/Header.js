@@ -43,31 +43,31 @@ const mainMenu = [
       {
         label: "North Myanmar",
         submenu: [
-          { label: "Kachin", href: "/en/coming" },
-          { label: "Sagaing", href: "/en/coming" },
-          { label: "Chin", href: "/en/coming" },
-          { label: "Shan", href: "/en/coming" },
+          { label: "Kachin", href: "/en/coming-soon" },
+          { label: "Sagaing", href: "/en/coming-soon" },
+          { label: "Chin", href: "/en/coming-soon" },
+          { label: "Shan", href: "/en/coming-soon" },
         ],
       },
       {
         label: "Central Myanmar",
         submenu: [
-          { label: "Magway", href: "/en/coming" },
-          { label: "Nay Pyi Taw", href: "/en/coming" },
-          { label: "Mandalay", href: "/en/coming" },
-          { label: "Rakhine", href: "/en/coming" },
+          { label: "Magway", href: "/en/coming-soon" },
+          { label: "Nay Pyi Taw", href: "/en/coming-soon" },
+          { label: "Mandalay", href: "/en/coming-soon" },
+          { label: "Rakhine", href: "/en/coming-soon" },
         ],
       },
       {
         label: "South Myanmar",
         submenu: [
-          { label: "Ayeyarwady", href: "/en/coming" },
-          { label: "Kayah", href: "/en/coming" },
-          { label: "Kayin", href: "/en/coming" },
-          { label: "Bago", href: "/en/coming" },
-          { label: "Yangon", href: "/en/coming" },
-          { label: "Mon", href: "/en/coming" },
-          { label: "Tanintharyi", href: "/en/coming" },
+          { label: "Ayeyarwady", href: "/en/coming-soon" },
+          { label: "Kayah", href: "/en/coming-soon" },
+          { label: "Kayin", href: "/en/coming-soon" },
+          { label: "Bago", href: "/en/coming-soon" },
+          { label: "Yangon", href: "/en/coming-soon" },
+          { label: "Mon", href: "/en/coming-soon" },
+          { label: "Tanintharyi", href: "/en/coming-soon" },
         ],
       },
     ],
@@ -75,9 +75,9 @@ const mainMenu = [
   {
     label: "Highlight",
     submenu: [
-      { label: "Festivals", href: "/en/coming" },
-      { label: "Ecotourism", href: "/en/coming" },
-      { label: "Community Based Tourism", href: "/en/coming" },
+      { label: "Festivals", href: "/en/coming-soon" },
+      { label: "Ecotourism", href: "/en/coming-soon" },
+      { label: "Community Based Tourism", href: "/en/coming-soon" },
     ],
   },
   {
@@ -86,7 +86,7 @@ const mainMenu = [
       {
         label: "Accommodation",
         submenu: [
-          { label: "Hotels & Resorts", href: "/en/coming" },
+          { label: "Hotels & Resorts", href: "/en/coming-soon" },
         ],
       },
       {
@@ -95,22 +95,22 @@ const mainMenu = [
           {
             label: "Tour Companies",
             submenu: [
-              { label: "Inbound Tour Companies", href: "/en/coming" },
-              { label: "Outbound Tour Companies", href: "/en/coming" },
+              { label: "Inbound Tour Companies", href: "/en/coming-soon" },
+              { label: "Outbound Tour Companies", href: "/en/coming-soon" },
             ],
           },
           {
             label: "Tour Guides",
             submenu: [
-              { label: "National Tour Guides", href: "/en/coming" },
-              { label: "Regional Tour Guides", href: "/en/coming" },
+              { label: "National Tour Guides", href: "/en/coming-soon" },
+              { label: "Regional Tour Guides", href: "/en/coming-soon" },
             ],
           },
           {
             label: "Transportation",
             submenu: [
-              { label: "Cruises & Others", href: "/en/coming" },
-              { label: "Hot-Air Balloons", href: "/en/coming" },
+              { label: "Cruises & Others", href: "/en/coming-soon" },
+              { label: "Hot-Air Balloons", href: "/en/coming-soon" },
             ],
           },
         ],
@@ -124,7 +124,7 @@ const mainMenu = [
       { label: "Tourism Statistics", href: "/en/tourism-statistics" },
       { label: "Tourism Publications", href: "/en/tourism-publication" },
       { label: "ASEAN Tourism Standards", href: "/en/asean-tourism-standards" },
-      { label: "Myanmar Be Enchanted", href: "/en/coming" },
+      { label: "Myanmar Be Enchanted", href: "/en/coming-soon" },
       { label: "Brochures & Pamphlets", href: "/en/brochures-and-pamphlets" },
       { label: "Maps", href: "/en/maps" }
     ],
@@ -132,11 +132,11 @@ const mainMenu = [
   {
     label: "News & Announcements",
     submenu: [
-      { label: "Weather Forecast", href: "/en/coming" },
-      { label: "Upcoming Events", href: "/en/coming" },
+      { label: "Weather Forecast", href: "/en/coming-soon" },
+      { label: "Upcoming Events", href: "/en/coming-soon" },
       { label: "News", href: "/en/news" },
       { label: "Announcements", href: "/en/announcements" },
-      { label: "Travel Advisory", href: "/en/coming" },
+      { label: "Travel Advisory", href: "/en/coming-soon" },
     ],
   },
   {
@@ -145,7 +145,7 @@ const mainMenu = [
       { label: "Duties & Responsibilities", href: "/en/duties" },
       { label: "Objectives", href: "/en/objectives" },
       { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
-      { label: "International Cooperation", href: "/en/coming" },
+      { label: "International Cooperation", href: "/en/coming-soon" },
       {
         label: "Tourism Business",
         submenu: [
@@ -159,19 +159,19 @@ const mainMenu = [
       {
         label: "Arrivals",
         submenu: [
-          { label: "Tourism Statistics", href: "/en/coming" },
-          { label: "Arrivals 2024", href: "/en/coming" },
-          { label: "Arrivals 2023", href: "/en/coming" },
-          { label: "Arrivals 2022", href: "/en/coming" },
-          { label: "Arrivals 2021", href: "/en/coming" },
-          { label: "Arrivals 2020", href: "/en/coming" },
-          { label: "Arrivals 2019", href: "/en/coming" },
+          { label: "Tourism Statistics", href: "/en/coming-soon" },
+          { label: "Arrivals 2024", href: "/en/coming-soon" },
+          { label: "Arrivals 2023", href: "/en/coming-soon" },
+          { label: "Arrivals 2022", href: "/en/coming-soon" },
+          { label: "Arrivals 2021", href: "/en/coming-soon" },
+          { label: "Arrivals 2020", href: "/en/coming-soon" },
+          { label: "Arrivals 2019", href: "/en/coming-soon" },
         ],
       },
       {
         label: "Training",
         submenu: [
-          { label: "Training Courses", href: "/en/coming" },
+          { label: "Training Courses", href: "/en/coming-soon" },
         ],
       },
       
