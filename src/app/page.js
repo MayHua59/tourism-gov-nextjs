@@ -18,8 +18,7 @@ export default function HomePage() {
   
   return (
     <>
-      <div className="desktop-header"><Header /></div>
-  <div className="mobile-header"><HeaderMobile /></div>
+    
       
       <HeroSection/>
 <AboutSection/>
@@ -33,7 +32,7 @@ export default function HomePage() {
 <TravelerInformationSection/>
 <TourismNewsSection/>
 <LatestNewsSection/>
-<Footer/>
+
     </>
   );
 }

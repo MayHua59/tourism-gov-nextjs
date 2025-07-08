@@ -8,7 +8,7 @@ const mainMenu = [
   {
     label: "Vital Info",
     submenu: [
-      { label: "About Myanmar", href: "/about-myanmar" },
+      { label: "About Myanmar", href: "en/about-myanmar" },
       {
         label: "Visa Requirements",
         submenu: [
