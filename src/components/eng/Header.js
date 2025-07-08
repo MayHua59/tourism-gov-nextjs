@@ -120,12 +120,13 @@ const mainMenu = [
   {
     label: "Guides & Resources",
     submenu: [
-      { label: "Tourism Legislation", href: "/en/coming" },
-      { label: "Tourism Statistics", href: "/en/coming" },
+      { label: "Tourism Legislation", href: "/en/tourism-legislation" },
+      { label: "Tourism Statistics", href: "/en/tourism-statistics" },
       { label: "Tourism Publications", href: "/en/tourism-publication" },
-      { label: "ASEAN Tourism Standards", href: "/en/coming" },
+      { label: "ASEAN Tourism Standards", href: "/en/asean-tourism-standards" },
       { label: "Myanmar Be Enchanted", href: "/en/coming" },
-      { label: "Brochures & Pamphlets", href: "/en/coming" },
+      { label: "Brochures & Pamphlets", href: "/en/brochures-and-pamphlets" },
+      { label: "Maps", href: "/en/maps" }
     ],
   },
   {
@@ -148,11 +149,11 @@ const mainMenu = [
       {
         label: "Tourism Business",
         submenu: [
-          { label: "Doing Business in Myanmar", href: "/en/coming" },
+          { label: "Doing Business in Myanmar", href: "/en/doing-business" },
           { label: "Myanmar Investment Law", href: "/en/investment-law" },
-          { label: "Tourism Investment Opportunities", href: "/en/coming" },
-          { label: "Why Invest in Myanmar", href: "/en/coming" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment-in-hotels" },
+          { label: "Tourism Investment Opportunities", href: "/en/investment-opportunity" },
+          { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar" },
+          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
         ],
       },
       {

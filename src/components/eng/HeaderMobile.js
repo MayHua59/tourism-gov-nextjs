@@ -128,13 +128,13 @@ const menuData = [
   {
     label: "Guides & Resources",
     submenu: [
-      { label: "Tourism Legislation", href: "/tourism-legislation.html" },
-      { label: "Tourism Statistics", href: "/tourism-statistics.html" },
-      { label: "Tourism Publications", href: "/tourism-publication.html" },
-      { label: "ASEAN Tourism Standards", href: "/ASEAN-tourism-standards.html" },
-      { label: "Myamar Be Enchanted", href: "/coming.html" },
-      { label: "Brochures & Pamphlets", href: "/brochures-and-pamphlets.html" },
-      { label: "Maps", href: "/maps.html" },
+      { label: "Tourism Legislation", href: "/en/tourism-legislation" },
+      { label: "Tourism Statistics", href: "/en/tourism-statistics" },
+      { label: "Tourism Publications", href: "/en/tourism-publication" },
+      { label: "ASEAN Tourism Standards", href: "/en/asean-tourism-standards" },
+      { label: "Myamar Be Enchanted", href: "/coming" },
+      { label: "Brochures & Pamphlets", href: "/en/brochures-and-pamphlets" },
+      { label: "Maps", href: "/en/maps" },
     ],
   },
   {
@@ -151,18 +151,18 @@ const menuData = [
   {
     label: "Our Role",
     submenu: [
-      { label: "Duties & Responsibilities", href: "/duties.html" },
-      { label: "Objectives", href: "/objectives.html" },
+      { label: "Duties & Responsibilities", href: "/en/duties.html" },
+      { label: "Objectives", href: "/en/objectives.html" },
       { label: "Six Policies of Ministry of Hotels and Tourism", href: "/six-policies.html" },
       // { label: "International Cooperation", href: "/coming.html" },
       {
         label: "Tourism Business",
         submenu: [
           { label: "Doing Business in Myanmar", href: "/doing-business.html" },
-          { label: "Myanmar Investment Law", href: "/investment-law.html" },
-          { label: "Tourism Investment Opportunities", href: "/tourism-investment-opportunity.html" },
-          { label: "Why Invest in Myanmar", href: "/why-invest.html" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/foreign-investment-in-hotels.html" },
+          { label: "Myanmar Investment Law", href: "/en/investment-law.html" },
+          { label: "Tourism Investment Opportunities", href: "/en/tourism-investment-opportunity.html" },
+          { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar.html" },
+          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
         ],
       },
       {
