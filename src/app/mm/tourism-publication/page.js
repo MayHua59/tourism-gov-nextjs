@@ -17,13 +17,13 @@ export default function TourismPublication() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Publications", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "စာအုပ် စာစောင်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Publications</h1>
-        <section id="tourism-publications-content" className={styles.mt5}>
+        <h1 className={styles.pageTitle}>စာအုပ် စာစောင်များ</h1>
+       <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
@@ -32,14 +32,14 @@ export default function TourismPublication() {
                   alt="Domestic Tourism Survey Image"
                   className={styles.publicationImage}
                 />
-                <h4 className={styles.pdfTitle}>DOMESTIC TOURISM SURVEY OF MYANMAR 2024</h4>
+                <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
-                  href="/assets/pdf/Domestic-Tourism-Survey-2024.pdf"
+                  href="/assets/pdf/မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -50,14 +50,14 @@ export default function TourismPublication() {
                   alt="Inbound Tourism Survey Image"
                   className={styles.publicationImage}
                 />
-                <h4 className={styles.pdfTitle}>INBOUND TOURISM SURVEY OF MYANMAR, 2024</h4>
+                <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
-                  href="/assets/pdf/Inbound-Tourism-Survey-2024.pdf"
+                  href="/assets/pdf/မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>

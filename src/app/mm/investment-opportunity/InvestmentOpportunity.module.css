@@ -50,7 +50,7 @@
   font-weight: 600;
 }
 
-.investSection h3 {
+.investSection h3, .investSection h4 {
   margin-top: 1.1em;
   margin-bottom: 0.55em;
   color: #1766b1;
@@ -116,8 +116,15 @@
   .pageTitle {
     font-size: 1.3rem;
   }
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
   .investSection {
     padding: 1em 0.8em 1em 0.9em;
+  }
+  .investSection p {
+    font-size: 1rem;
   }
   .investTable {
     font-size: 0.93rem;
@@ -132,10 +139,17 @@
   .pageTitle {
     font-size: 1.15rem;
   }
+  .sectionTitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+  }
   .investSection {
     border-radius: 4px;
     font-size: 0.97em;
     padding: 0.7em 0.3em 0.7em 0.5em;
+  }
+  .investSection p {
+    font-size: 0.9rem;
   }
   .investTable {
     font-size: 0.88rem;

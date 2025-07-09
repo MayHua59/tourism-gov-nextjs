@@ -17,8 +17,8 @@ export const metadata = {
 
 export default function MMLayout({ children }) {
   return (
-    <html lang="mm"> 
-        <body>
+    
+        <>
                <div className="desktop-header"><Header /></div>
                 <div className="mobile-header"><HeaderMobile /></div>
               <div>
@@ -27,7 +27,7 @@ export default function MMLayout({ children }) {
               </div>
               <Footer/>
               <ScrollToTop/>
-            </body>
-    </html>
+            
+    </>
   );
 }

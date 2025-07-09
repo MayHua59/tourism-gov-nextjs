@@ -17,12 +17,12 @@ export default function WhyInvestInMyanmar() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Why Invest in Myanmar", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Why Invest in Myanmar</h1>
+        <h1 className={styles.pageTitle}>ဘာကြောင့် မြန်မာနိုင်ငံတွင် ရင်းနှီးမြှုပ်နှံသင့်သလဲ</h1>
 
         <section id="why-invest-content" className={styles.mt5}>
           <div className={styles.investSection}>

@@ -14,37 +14,35 @@ export default function VisaOnArrival() {
       <BannerSection imageUrl="/assets/images/cover-images-title/7.jpg" altText="visa on arrival cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Visa on Arrival", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဆိုက်ရောက်ဗီဇာ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Visa on Arrival</h1>
-        <section id="visa-on-arrival-content" className={styles.mt5}>
+        <h1 className={styles.pageTitle}>ဆိုက်ရောက်ဗီဇာအကြောင်း</h1>
+      <section id="visa-on-arrival-content" className={styles.mt5}>
           <div className={styles.visaInfoSection}>
-            <h2 className={styles.sectionTitle}>Visa on Arrival for Japan, Republic of Korea, Macau (SAR of China) Nationals (Effective 21-10-2024)</h2>
-            <p className={styles.paragraph}>
-              Tourist Visa on Arrival are granted to Japan, Republic of Korea, Macau (Special Administrative Region of the People’s Republic of China) Nationals starting from 21-10-2024 for a test period of 1 year.
-            </p>
+            <h2 className={styles.sectionTitle}>ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား(၂၁–၁၀–၂၀၂၄) ရက်နေ့မှစ၍ ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h2>
             <ol className={styles.infoList}>
+              <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတ နိုင်ငံ နှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ နိုင်ငံကူးလက်မှတ် ကိုင်ဆောင်သူ ကမ္ဘာလှည့် ခရီးသည်များ အတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival ကို (၂၁-၁၀-၂၀၂၄) ရက်နေ့မှစတင်၍ စမ်းသပ်ကာလ (၁)နှစ် အားသတ်မှတ်ပြီး ခွင့်ပြု ဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါသည်။</li>
               <li>
-                When arriving at International Airports, the following conditions apply:
+                ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေး ဒေသမှ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်များ သို့ ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)အား အောက်ပါအတိုင်း ခွင့်ပြုဆောင်ရွက် သွားမည် ဖြစ်ပါသည်-
                 <ul className={styles.subList}>
-                  <li>(A) Acquire the Visa on Arrival form free of charge and fill it in with 2 color photos (1.2 x 1.5 inches).</li>
-                  <li>(B) Visa on Arrival fee: 50 USD, Stay duration: 30 days.</li>
-                  <li>(C) Only Tourist Visas will be granted.</li>
-                  <li>(D) Passport must have at least 6 months validity. If less, entry will be denied and the passenger will be deported.</li>
-                  <li>(E) Extension of stay is not permitted.</li>
-                  <li>(F) Overstay fine applies for overstaying.</li>
+                  <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား အခမဲ့ ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွှာ ပုံစံ ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                  <li>( ခ ) ဆိုက်ရောက်ဗီဇာအခငွေ တစ်ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀)ကောက်ခံ၍ နေခွင့်ရက် ပေါင်း (၃၀)ရက် ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                  <li>( ဂ ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa) တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆)လ ရှိရမည်ဖြစ်ပြီး(၆)လအောက် ဖြစ်ပါက ပြည်ဝင်ခွင့် မပြုဘဲ ခရီးသည် လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည် တင်ပို့ခြင်းခံရမည် ဖြစ်ပါသည်။</li>
+                  <li>( င ) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည် မဟုတ်ပါ။</li>
+                  <li>( စ ) နေထိုင်ခွင့်သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန် ဒဏ်ကြေး အခငွေ ပေးဆောင်ရမည်ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
               <li>
-                Citizens entering with Tourist Visa on Arrival must comply with the following rules:
+                ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်လာသော ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ များသည် အောက်ဖော်ပြပါ စည်းကမ်းချက် များကို လိုက်နာနေထိုင်ရပါမည် –
                 <ul className={styles.subList}>
-                  <li>(A) Respect and comply with Myanmar’s existing Laws and Procedures.</li>
-                  <li>(B) Freely travel to places which allow access to foreigners, except restricted areas.</li>
-                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department’s Blacklist, entry will be denied and the passenger will be deported.</li>
-                  <li>(D) May exit at any international airport.</li>
+                  <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည် ဖြစ်ပါ သည်။</li>
+                  <li>( ခ ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြား သားများသွားလာခွင့်ရှိသည့် နေရာများကို လွတ်လပ်စွာသွားလာနိုင်သည်။</li>
+                  <li>( ဂ ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ လုံခြုံရေးဌာန/အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Black List) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်း ဖြင့် ပြန်လည် တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်မှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့် အပြည်ပြည်ဆိုင်ရာ လေဆိပ်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
             </ol>
@@ -54,29 +52,27 @@ export default function VisaOnArrival() {
           </div>
 
           <div className={styles.visaInfoSection}>
-            <h2 className={styles.sectionTitle}>Visa on Arrival for Hong Kong (SAR of China) Nationals (Effective 11-3-2024)</h2>
-            <p className={styles.paragraph}>
-              Tourist Visa on Arrival are granted to Hong Kong (Special Administrative Region of the People’s Republic of China) Nationals starting from 11-3-2024 for a test period of 1 year in accordance with the Standards for COVID-19 Prevent, Control & Treatment published by the Ministry of Health.
-            </p>
+            <h2 className={styles.sectionTitle}>ဟောင်ကောင်အထူးအုပ်ချုပ်ရေးဒေသနိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား (၁၁-၃-၂၀၂၄) ရက်နေ့မှစ၍ ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h2>
             <ol className={styles.infoList}>
+              <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် ဟောင်ကောင်အထူး အုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival ကို (၁၁-၃-၂၀၂၄) ရက်နေ့မှစတင်၍ စမ်းသပ်ကာလ (၁)နှစ် သတ်မှတ်ပြီး ကျန်းမာရေးဝန်ကြီးဌာနမှ ထုတ်ပြန်ထားရှိသော ကိုဗစ်-၁၉ ရောဂါ ကာကွယ်၊ ထိန်းချုပ်၊ ကုသရေး စည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များနှင့်အညီ ခွင့်ပြု ဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါ သည်။</li>
               <li>
-                When arriving at International Airports, the following conditions apply:
+                ဟောင်ကောင်အထူးအုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့် ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)အား အောက်ပါ အတိုင်း ခွင့်ပြုဆောင်ရွက်သွားမည် ဖြစ်ပါသည်-
                 <ul className={styles.subList}>
-                  <li>(A) Acquire the Visa on Arrival form free of charge and fill it in with 2 color photos (1.2 x 1.5 inches).</li>
-                  <li>(B) Visa on Arrival fee: 50 USD, Stay duration: 30 days.</li>
-                  <li>(C) Only Tourist Visas will be granted.</li>
-                  <li>(D) Passport must have at least 6 months validity. If less, entry will be denied and the passenger will be deported.</li>
-                  <li>(E) Extension of stay is not permitted.</li>
-                  <li>(F) Overstay fine applies for overstaying.</li>
+                  <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား အခမဲ့ ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွှာ ပုံစံ ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                  <li>(ခ) ဆိုက်ရောက်ဗီဇာအခငွေ တစ်ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀)ကောက်ခံ၍ နေခွင့် ရက်ပေါင်း (၃၀)ရက် ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                  <li>(ဂ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa) တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆) လ ရှိရမည်ဖြစ်ပြီး (၆) လအောက် ဖြစ်ပါက ပြည်ဝင်ခွင့်မပြုဘဲ ခရီးသည် လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည် တင်ပို့ခြင်းခံရမည်ဖြစ်ပါသည်။</li>
+                  <li>(င) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည် မဟုတ်ပါ။</li>
+                  <li>(စ) နေထိုင်ခွင့် သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန် ဒဏ်ကြေး အခငွေ ပေးဆောင်ရမည်ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
               <li>
-                Citizens entering with Tourist Visa on Arrival must comply with the following rules:
+                ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်လာသော ဟောင်ကောင် အထူး အုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူများသည် အောက်ဖော်ပြပါ စည်းကမ်းများ ကို လိုက်နာနေထိုင်ရပါမည် –
                 <ul className={styles.subList}>
-                  <li>(A) Respect and comply with Myanmar’s existing Laws and Procedures.</li>
-                  <li>(B) Freely travel to places which allow access to foreigners, except restricted areas.</li>
-                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department’s Blacklist, entry will be denied and the passenger will be deported.</li>
-                  <li>(D) May exit at any international airport.</li>
+                  <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည် ဖြစ်ပါ သည်။</li>
+                  <li>(ခ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြားသားများ သွားလာခွင့်ရှိသည့် နေရာများကို လွတ်လပ်စွာ သွားလာနိုင်သည်။</li>
+                  <li>(ဂ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ လုံခြုံရေးဌာန/ အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Black List) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည် တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်မှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့် အပြည်ပြည်ဆိုင်ရာ လေဆိပ်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
             </ol>
@@ -86,29 +82,27 @@ export default function VisaOnArrival() {
           </div>
 
           <div className={styles.visaInfoSection}>
-            <h2 className={styles.sectionTitle}>Visa on Arrival for China &amp; India Nationals (Effective 30-08-2023)</h2>
-            <p className={styles.paragraph}>
-              Tourist Visa on Arrival for Chinese and Indian citizens have been granted starting from 30-08-2023 as a one-year pilot project in accordance with COVID-19 rules and regulations of the Ministry of Health.
-            </p>
+            <h2 className={styles.sectionTitle}>တရုတ်နိုင်ငံသားနှင့် အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h2>
             <ol className={styles.infoList}>
+              <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် တရုတ်နိုင်ငံနှင့် အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival ကို (၃၀.၀၈.၂၀၂၃) ရက်မှ စတင်၍ စမ်းသပ်ကာလ (၁) နှစ် သတ်မှတ်ပြီး ကျန်းမာရေးဝန်ကြီးဌာနမှ ထုတ်ပြန်ထားရှိသော ကိုဗစ်-၁၉ ရောဂါကာကွယ်၊ ထိန်းချုပ်၊ ကုသရေးစည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များနှင့်အညီ ခွင့်ပြုဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါသည်။</li>
               <li>
-                When arriving at International Airports, the following conditions apply:
+                တရုတ်နိုင်ငံနှင့် အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်သို့ ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) အား အောက်ပါအတိုင်း ခွင့်ပြုဆောင်ရွက်သွားမည် ဖြစ်ပါသည်-
                 <ul className={styles.subList}>
-                  <li>Acquire the Visa on Arrival form free of charge and fill it in with 2 color photos (1.2 x 1.5 inches).</li>
-                  <li>For applying Visa on Arrival, it shall be collected USD 50 for each person and can stay up to 30 days.</li>
-                  <li>This is only for entering for visiting and hence, only Tourist Visa shall be granted.</li>
-                  <li>The Passport must have at least 6 months of validity remaining and if it is less than 6 months, entry will not be permitted, and the passenger will be deported via the airline they arrived in.</li>
-                  <li>Extension of the stay will not be permitted.</li>
-                  <li>Overstay persons must pay overstay fine.</li>
+                  <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား အခမဲ့ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွာ ပုံစံ ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                  <li>(ခ) ဆိုက်ရောက်ဗီဇာအခငွေ (၁) ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀) ကောက်ခံ၍ နေခွင့် (၃၀ ရက်) ခွင့်ပြုသွားမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဂ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa) တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆) လ ရှိရမည်ဖြစ်ပြီး (၆) လ အောက် ဖြစ်ပါက ပြည်ဝင်ခွင့်မပြုဘဲ ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည် တင်ပို့ခြင်းခံရမည် ဖြစ်ပါသည်။</li>
+                  <li>(င) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည်မဟုတ်ပါ။</li>
+                  <li>(စ) နေထိုင်ခွင့်သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန်ဒဏ်ကြေး အခငွေ ပေးဆောင်ရမည် ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
               <li>
-                China citizen &amp; India citizen tourists granted Tourist Visa on Arrival must comply with the following rules during their stay:
+                ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်လာသော တရုတ်နိုင်ငံနှင့် အိန္ဒိယနိုင်ငံသားများသည် အောက်ဖော်ပြပါစည်းကမ်းများကို လိုက်နာနေထိုင်ရပါမည်-
                 <ul className={styles.subList}>
-                  <li>Must respect &amp; comply with Myanmar’s existing Laws and Procedures.</li>
-                  <li>Apart from the areas within Myanmar that are restricted due to security reasons, the tourists may freely travel to places which allows access to foreigners.</li>
-                  <li>If the passenger arriving with Tourist Visa on Arrival is not permitted entry by relevant Security forces/authorities or is included in the Immigration Department’s Blacklist, entry will be denied, and they will be deported via their arriving airline.</li>
-                  <li>Those entering the country with Tourist Visa on Arrival may enter/exit the International Airports via the International entry/exit gates.</li>
+                  <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည်ဖြစ် ပါသည်။</li>
+                  <li>(ခ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြားသားများ သွားလာခွင့်ရှိသည့်နေရာများကို လွတ်လပ်စွာ သွားလာနိုင်သည်။</li>
+                  <li>(ဂ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ လုံခြုံရေးဌာန/ အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Blacklist) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များမှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့် အပြည်ပြည်ဆိုင်ရာဝင်/ထွက်ပေါက်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
             </ol>

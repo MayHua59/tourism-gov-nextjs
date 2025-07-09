@@ -17,55 +17,143 @@ export default function ContactUs() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Contact Us", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဆက်သွယ်ရန်", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Contact Us</h1>
+        <h1 className={styles.pageTitle}>ဆက်သွယ်ရန်</h1>
 
         <section id="contact-info">
           <p>
-            Please find below the contact information for various departments and personnel within the Ministry of Hotels and Tourism.
+            ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာန email Address များ
           </p>
           <div className={styles.tableResponsive}>
             <table className={styles.contactTable}>
               <thead>
                 <tr>
-                  <th>No.</th>
-                  <th>User/Department</th>
-                  <th>Email Address</th>
+                  <th>စဉ်</th>
+     <th>သုံးစွဲသူအမည်/ဌာန</th>
+     <th>Email လိပ်စာ</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>1</td><td>Union Minister</td><td><a href="mailto:minister@tourism.gov.mm">minister@tourism.gov.mm</a></td></tr>
-                <tr><td>2</td><td>Deputy Minister</td><td><a href="mailto:dm.moht@tourism.gov.mm">dm.moht@tourism.gov.mm</a></td></tr>
-                <tr><td>3</td><td>Permanent Secretary</td><td><a href="mailto:dg.mo@tourism.gov.mm">dg.mo@tourism.gov.mm</a></td></tr>
-                <tr><td>4</td><td>Director General</td><td><a href="mailto:dgoffice1.dhtd@gmail.com">dgoffice1.dhtd@gmail.com</a></td></tr>
-                <tr><td>5</td><td>Deputy Permanent Secretary</td><td><a href="mailto:myowinnyunt@tourism.gov.mm">myowinnyunt@tourism.gov.mm</a></td></tr>
-                <tr><td>6</td><td>Deputy Director General</td><td><a href="mailto:ddg.moht@tourism.gov.mm">ddg.moht@tourism.gov.mm</a></td></tr>
-                <tr><td>7</td><td>Deputy Director General</td><td><a href="mailto:myinthtwe@tourism.gov.mm">myinthtwe@tourism.gov.mm</a></td></tr>
-                <tr><td>8</td><td>Deputy Director General</td><td><a href="mailto:ddg.tourism@gmail.com">ddg.tourism@gmail.com</a></td></tr>
-                <tr><td>9</td><td>Deputy Director General</td><td><a href="mailto:ddg3.dht.moht@tourism.gov.mm">ddg3.dht.moht@tourism.gov.mm</a></td></tr>
-                <tr><td>10</td><td>Administration and Human Resources Management</td><td><a href="mailto:moadmin@tourism.gov.mm">moadmin@tourism.gov.mm</a></td></tr>
-                <tr><td>11</td><td>Policy Department</td><td><a href="mailto:dpolicy@tourism.gov.mm">dpolicy@tourism.gov.mm</a></td></tr>
-                <tr><td>12</td><td>Planning and Statistics Department</td><td><a href="mailto:planandstat@tourism.gov.mm">planandstat@tourism.gov.mm</a></td></tr>
-                <tr><td>13</td><td>Internal Audit and Finance Department</td><td><a href="mailto:budget@tourism.gov.mm">budget@tourism.gov.mm</a></td></tr>
-                <tr><td>14</td><td>Public Relations &amp; Information Department</td><td><a href="mailto:prid@tourism.gov.mm">prid@tourism.gov.mm</a></td></tr>
-                <tr><td>15</td><td>e-Government Office</td><td><a href="mailto:egov.moht@gmail.com">egov.moht@gmail.com</a></td></tr>
-                <tr><td>16</td><td>Administration and Budget Department</td><td><a href="mailto:dhtadmin@tourism.gov.mm">dhtadmin@tourism.gov.mm</a></td></tr>
-                <tr><td>17</td><td>Hotels and Tourism Supervising Department</td><td><a href="mailto:htsd@tourism.gov.mm">htsd@tourism.gov.mm</a></td></tr>
-                <tr><td>18</td><td>Training and Education Department</td><td><a href="mailto:training@tourism.gov.mm">training@tourism.gov.mm</a></td></tr>
-                <tr><td>19</td><td>Planning Department</td><td><a href="mailto:project.dht@tourism.gov.mm">project.dht@tourism.gov.mm</a></td></tr>
-                <tr><td>20</td><td>International &amp; Regional Cooperation Department</td><td><a href="mailto:irc@tourism.gov.mm">irc@tourism.gov.mm</a></td></tr>
-                <tr><td>21</td><td>Tourism Promotion Department</td><td><a href="mailto:promotion@tourism.gov.mm">promotion@tourism.gov.mm</a></td></tr>
-                <tr><td>22</td><td>Tourism Promotion Department(Digital Marketing)</td><td><a href="mailto:info@tourism.gov.mm">info@tourism.gov.mm</a></td></tr>
-              </tbody>
+    <tr>
+     <td>1</td>
+     <td>ပြည်ထောင်စုဝန်ကြီး</td>
+     <td><a href="mailto:minister@tourism.gov.mm">minister@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td>ဒုတိယဝန်ကြီး</td>
+     <td><a href="mailto:dm.moht@tourism.gov.mm">dm.moht@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td>အမြဲတမ်းအတွင်းဝန်</td>
+     <td><a href="mailto:dg.mo@tourism.gov.mm">dg.mo@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>4</td>
+     <td>ညွှန်ကြားရေးမှူးချုပ်</td>
+     <td><a href="mailto:dgoffice1.dhtd@gmail.com">dgoffice1.dhtd@gmail.com</a></td>
+    </tr>
+    <tr>
+     <td>5</td>
+     <td>ဒုတိယအမြဲတမ်းအတွင်းဝန်</td>
+     <td><a href="mailto:myowinnyunt@tourism.gov.mm">myowinnyunt@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>6</td>
+     <td>ဒုတိယညွှန်ကြားရေးမှူးချုပ်</td>
+     <td><a href="mailto:ddg.moht@tourism.gov.mm">ddg.moht@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>7</td>
+     <td>ဒုတိယညွှန်ကြားရေးမှူးချုပ်</td>
+     <td><a href="mailto:myinthtwe@tourism.gov.mm">myinthtwe@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>8</td>
+     <td>ဒုတိယညွှန်ကြားရေးမှူးချုပ်</td>
+     <td><a href="mailto:ddg.tourism@gmail.com">ddg.tourism@gmail.com</a></td>
+    </tr>
+    <tr>
+     <td>9</td>
+     <td>ဒုတိယညွှန်ကြားရေးမှူးချုပ်</td>
+     <td><a href="mailto:ddg3.dht.moht@tourism.gov.mm">ddg3.dht.moht@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>10</td>
+     <td>အုပ်ချုပ်ရေးနှင့်လူ့စွမ်းအားအရင်းအမြစ်စီမံခန့်ခွဲမှုဌာနခွဲ</td>
+     <td><a href="mailto:moadmin@tourism.gov.mm">moadmin@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>11</td>
+     <td>မူဝါဒနှင့်ဥပဒေလုပ်ထုံးလုပ်နည်းစိစစ်ရေးနှင့်လုပ်ငန်းစစ်ဆေးရေးဌာနခွဲ</td>
+     <td><a href="mailto:dpolicy@tourism.gov.mm">dpolicy@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>12</td>
+     <td>စီမံကိန်းနှင့်စာရင်းအင်းဌာနခွဲ</td>
+     <td><a href="mailto:planandstat@tourism.gov.mm">planandstat@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>13</td>
+     <td>ဝန်ကြီးဌာနတွင်းစာရင်းစစ်နှင့် ဘဏ္ဍာရေးဌာနခွဲ</td>
+     <td><a href="mailto:budget@tourism.gov.mm">budget@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>14</td>
+     <td>ပြည်တွင်းပြည်ပဆက်ဆံရေးနှင့် သတင်းပြန်ကြားရေးဌာနခွဲ</td>
+     <td><a href="mailto:prid@tourism.gov.mm">prid@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>15</td>
+     <td>e-Government Office</td>
+     <td><a href="mailto:egov.moht@gmail.com">egov.moht@gmail.com</a></td>
+    </tr>
+    <tr>
+     <td>16</td>
+     <td>အုပ်ချုပ်ရေးနှင့်ဘဏ္ဍာရေးဌာနခွဲ</td>
+     <td><a href="mailto:dhtadmin@tourism.gov.mm">dhtadmin@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>17</td>
+     <td>ဟိုတယ်လုပ်ငန်းနှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ ကြီးကြပ်မှုဌာနခွဲ</td>
+     <td><a href="mailto:htsd@tourism.gov.mm">htsd@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>18</td>
+     <td>လေ့ကျင့်ရေးနှင့်ပညာပေးရေးဌာနခွဲ</td>
+     <td><a href="mailto:training@tourism.gov.mm">training@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>19</td>
+     <td>စီမံကိန်းဌာနခွဲ</td>
+     <td><a href="mailto:project.dht@tourism.gov.mm">project.dht@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>20</td>
+     <td>နိုင်ငံတကာနှင့်ဒေသတွင်းပူးပေါင်းဆောင်ရွက်ရေးဌာနခွဲ</td>
+     <td><a href="mailto:irc@tourism.gov.mm">irc@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>21</td>
+     <td>ခရီးသွားမြှင့်တင်ရေးဌာနခွဲ</td>
+     <td><a href="mailto:promotion@tourism.gov.mm">promotion@tourism.gov.mm</a></td>
+    </tr>
+    <tr>
+     <td>22</td>
+     <td>ခရီးသွားမြှင့်တင်ရေးဌာနခွဲ (Digital Marketing)</td>
+     <td><a href="mailto:info@tourism.gov.mm">info@tourism.gov.mm</a></td>
+    </tr>
+   </tbody>
             </table>
           </div>
         </section>
 
-        <section id="branch-offices">
+        {/* <section id="branch-offices">
           <h2>Branch Offices</h2>
           <div className={styles.tableResponsive}>
             <table className={styles.contactTable}>
@@ -118,7 +206,7 @@ export default function ContactUs() {
               </tbody>
             </table>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

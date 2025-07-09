@@ -14,8 +14,8 @@ export default function EVisa() {
       <BannerSection imageUrl="/assets/images/cover-images-title/7.jpg" altText="electronic visa cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Electronic Visa", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း", active: true }
         ]}
       />
       <div className={styles.container}>

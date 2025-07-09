@@ -184,6 +184,11 @@ const mainMenu = [
 
 
 function renderMenu(menu, styles, parentKey = "") {
+   const handleLinkClick = () => {
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
+  };
   return (
     <ul className={parentKey === "" ? styles.headerMenu : styles.dropdown}>
       {menu.map((item, idx) => {
@@ -210,7 +215,7 @@ function renderMenu(menu, styles, parentKey = "") {
               </>
             ) : (
               // 3. Use the Link component for client-side navigation
-              <Link href={item.href || "#"}>{item.label}</Link>
+              <Link href={item.href || "#"} onClick={handleLinkClick}>{item.label}</Link>
             )}
           </li>
         );

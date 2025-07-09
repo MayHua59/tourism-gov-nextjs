@@ -1,0 +1,94 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.comingSoonContainer {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 14px 0 rgba(23,102,177,0.07);
+  max-width: 600px;
+  margin: 42px auto 42px auto;
+  padding: 2.7em 2em 2.4em 2em;
+  text-align: center;
+}
+
+.comingSoonContainer h1 {
+  color: #1766b1;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.comingSoonContainer p {
+  color: #405273;
+  font-size: 1.06rem;
+  margin-bottom: 2em;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+.emailInput {
+  padding: 0.62em 1.2em;
+  border: 1.2px solid #b4d3f7;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-width: 0;
+  width: 64%;
+}
+
+.notifyBtn {
+  background: #1766b1;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.63em 1.5em;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+.notifyBtn:hover {
+  background: #0d3970;
+}
+
+.backToHome {
+  display: inline-block;
+  margin-top: 1.3em;
+  color: #1766b1;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 1.02rem;
+  transition: color 0.14s;
+}
+.backToHome:hover {
+  color: #0d3970;
+}
+
+@media (max-width: 600px) {
+  .comingSoonContainer {
+    max-width: 98vw;
+    padding: 1.3em 0.6em 1.7em 0.6em;
+  }
+}

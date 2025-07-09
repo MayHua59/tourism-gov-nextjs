@@ -17,125 +17,141 @@ export default function TourismInvestmentOpportunity() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Investment Opportunities", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဟိုတယ်နှင့် ခရီးသွားလုပ်ငန်းရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Investment Opportunities</h1>
+        <h1 className={styles.pageTitle}>ဟိုတယ်နှင့် ခရီးသွားလုပ်ငန်းရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</h1>
 
-        <section id="tourism-investment-content" className={styles.mt5}>
+       <section id="tourism-investment-content" className={styles.mt5}>
           <div className={styles.investSection}>
-            <h2>Seize Investment Opportunities in Myanmar in TOURISM AND HOSPITALITY</h2>
+            <h3 className={styles.textCenter}>မြန်မာနိုင်ငံ၏ ဟိုတယ်နှင့် ခရီးသွားလုပ်ငန်းရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</h3>
             <p>
-              The Government of the Republic of the Union of Myanmar warmly invites responsible investors to seek and seize business opportunities in Myanmar to accelerate sustainable economic growth. At the moment, foreign tourists (on their first short-term visit to Myanmar) mostly visit Yangon, Bagan, Inle Lake / Nyaung Shwe as well as Mandalay. However, Myanmar has unexplored treasures of natural beauty in the whole of the country from Kawthaung in the tropical South-east to Putao in the Himalayas.
+              မြန်မာနိုင်ငံ၏ ဟိုတယ်နှင့်ခရီးသွားကဏ္ဍသည် အစိုးရသစ်လက်ထက် နိုင်ငံရေးနှင့်စီးပွားရေး ပြုပြင်
+              ပြောင်းလဲမှုများကြောင့် လျင်မြန်စွာပြောင်းလဲခဲ့ပြီး ၂၀၁၁ ခုနှစ်မှစ၍ နိုင်ငံခြားသား ဧည့်သည်ဝင်ရောက်မှုများလည်း
+              ပိုမိုတိုးတက်လာခဲ့ပါသည်။ ယခုကာလ၌ နိုင်ငံခြားသားခရီးသွား ဧည့်သည်များ (မြန်မာနိုင်ငံသို့
+              ပထမဆုံးလာရောက်လည်ပတ် သူများ) အနေဖြင့် ရန်ကုန်၊ ပုဂံ၊ အင်းလေးကန်/ ညောင်ရွှေနှင့်
+              မန္တလေးမြို့များသို့ အများဆုံး လည်ပတ်ကြပါသည်။ ၎င်းအပြင် မြန်မာနိုင်ငံ၏
+              သဘာဝအလှအပများဖြင့်ပြည့်စုံသည့် တောင်ဘက်စွန်း ကော့သောင်းမှသည် မြန်မာနိုင်ငံမြောက်ဖျား
+              ဟိမဝန္တာတောင်တန်းများတည်ရှိရာ ပူတာအိုအထိ ခရီးသွားဧည့်သည်များ သွားရောက်လည်ပတ်နိုင်ရေးအတွက်
+              ဖိတ်ခေါ်လျက် ရှိပါသည်။
             </p>
             <p>
-              The table displays the current distribution of hotels, motels and inns/guesthouses in Myanmar and reflects the considerable under capacity of available accommodation in numerous locations outside the urban centers of Yangon and Mandalay. There is a need for both, affordable as well as high-class accommodation depending on the current demand.
+              အောက်ဖော်ပြပါဇယားသည် လက်ရှိမြန်မာနိုင်ငံ၏ ဟိုတယ်၊ မိုတယ်၊ အင်းနှင့်တည်းခိုခန်း
+              စာရင်းများဖြစ်ပြီး မြို့ပြဖြစ် သည့် ရန်ကုန်နှင့် မန္တလေးမြို့ပြင်ပရှိ နေရာဒေသအသီးသီးရှိ တည်းခို
+              နေထိုင်ရန်နေရာများ မလုံလောက်မှုကို ဖော်ပြလျက်ရှိပါသည်။ ၎င်းတွင် ဈေးကွက်ဝယ်လိုအား ပေါ်မူတည်၍
+              တန်ဖိုးနည်းနှင့် အဆင့်မြင့်တည်းခိုနေရာ များလိုအပ်လျက်ရှိကြောင်း တွေ့ရှိရ ပါသည်။
             </p>
 
-            <h3>Distribution of available capacity of hotels, motels, inns/guesthouses (in FY 2016-2017)</h3>
+            <h4 className={styles.textCenter}>ဟိုတယ်၊ မိုတယ်၊ အင်း/ တည်းခိုခန်းများအရေအတွက်စာရင်း (၂၀၁၆-၂၀၁၇ ဘဏ္ဍာနှစ်၊ အစိုးရ၊
+              ပုဂ္ဂလိနှင့် သမဝါယမပိုင်လုပ်ငန်းများအပါအဝင်)</h4>
             <div className={styles.tableResponsive}>
               <table className={styles.investTable}>
                 <thead>
                   <tr>
-                    <th>State / Region</th>
-                    <th>No. of hotels, motels and inns</th>
-                    <th>No. of rooms</th>
+                    <th>ပြည်နယ်/တိုင်း</th>
+                    <th>ဟိုတယ်၊ မိုတယ်နှင့် အင်း အရေအတွက်</th>
+                    <th>အခန်းအရေအတွက်</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Yangon Region</td>
-                    <td>363</td>
-                    <td>18200</td>
+                    <td>ရန်ကုန်တိုင်းဒေသကြီး</td>
+                    <td>၃၆၃</td>
+                    <td>၁၈၂၀၀</td>
                   </tr>
                   <tr>
-                    <td>Mandalay Region</td>
-                    <td>426</td>
-                    <td>17784</td>
+                    <td>မန္တလေးတိုင်းဒေသကြီး</td>
+                    <td>၄၂၆</td>
+                    <td>၁၇၇၈၄</td>
                   </tr>
                   <tr>
-                    <td>Bago Region</td>
-                    <td>58</td>
-                    <td>1420</td>
+                    <td>ပဲခူတိုင်းဒေသကြီး</td>
+                    <td>၅၈</td>
+                    <td>၁၄၂၀</td>
                   </tr>
                   <tr>
-                    <td>Sagaing Region</td>
-                    <td>27</td>
-                    <td>1098</td>
+                    <td>စစ်ကိုင်းတိုင်းဒေသကြီး</td>
+                    <td>၂၇</td>
+                    <td>၁၀၉၈</td>
                   </tr>
                   <tr>
-                    <td>Tanintharyi Region</td>
-                    <td>36</td>
-                    <td>1451</td>
+                    <td>တနင်္သာရီတိုင်းဒေသကြီး</td>
+                    <td>၃၆</td>
+                    <td>၁၄၅၁</td>
                   </tr>
                   <tr>
-                    <td>Ayeyarwaddy Region</td>
-                    <td>69</td>
-                    <td>2770</td>
+                    <td>ဧရာဝတီဒေသကြီး</td>
+                    <td>၆၉</td>
+                    <td>၂၇၇၀</td>
                   </tr>
                   <tr>
-                    <td>Magway Region</td>
-                    <td>30</td>
-                    <td>739</td>
+                    <td>မကွေးဒေသကြီး</td>
+                    <td>၃၀</td>
+                    <td>၇၃၉</td>
                   </tr>
                   <tr>
-                    <td>Kachin State</td>
-                    <td>27</td>
-                    <td>751</td>
+                    <td>ကချင်ပြည်နယ်</td>
+                    <td>၂၇</td>
+                    <td>၇၅၁</td>
                   </tr>
                   <tr>
-                    <td>Kayah State</td>
-                    <td>15</td>
-                    <td>313</td>
+                    <td>ကယားပြည်နယ်</td>
+                    <td>၁၅</td>
+                    <td>၃၁၃</td>
                   </tr>
                   <tr>
-                    <td>Kayin State</td>
-                    <td>20</td>
-                    <td>720</td>
+                    <td>ကရင်ပြည်နယ်</td>
+                    <td>၂၀</td>
+                    <td>၇၂၀</td>
                   </tr>
                   <tr>
-                    <td>Chin State</td>
-                    <td>5</td>
-                    <td>127</td>
+                    <td>ချင်းပြည်နယ်</td>
+                    <td>၅</td>
+                    <td>၁၂၇</td>
                   </tr>
                   <tr>
-                    <td>Mon State</td>
-                    <td>49</td>
-                    <td>1577</td>
+                    <td>မွန်ပြည်နယ်</td>
+                    <td>၄၉</td>
+                    <td>၁၅၇၇</td>
                   </tr>
                   <tr>
-                    <td>Rakhine State</td>
-                    <td>49</td>
-                    <td>1538</td>
+                    <td>ရခိုင်ပြည်နယ်</td>
+                    <td>၄၉</td>
+                    <td>၁၅၃၈</td>
                   </tr>
                   <tr>
-                    <td>Shan State</td>
-                    <td>305</td>
-                    <td>9761</td>
+                    <td>ရှမ်းပြည်နယ်</td>
+                    <td>၃၀၅</td>
+                    <td>၉၇၆၁</td>
                   </tr>
                   <tr>
-                    <td><strong>TOTAL</strong></td>
-                    <td><strong>1479</strong></td>
-                    <td><strong>58249</strong></td>
+                    <td><strong>စုစုပေါင်း</strong></td>
+                    <td><strong>၁၄၇၉</strong></td>
+                    <td><strong>၅၈၂၄၉</strong></td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <p>
-              Foreign investors may engage independently in hotel developments of 3-stars or higher standard, whereby local investors are encouraged also to consider opportunities in offering budget accommodation through guesthouses of international standards. For foreign entities, investments in tour companies, travel agencies, budget hotels, amusement parks and tourism-related public infrastructure projects are permitted on a joint-venture basis.
+              ပြည်တွင်းရင်းနှီးမြှုပ်နှံသူများအား နိုင်ငံတကာအဆင့်မီတည်းခိုခန်း တည်ဆောက်ရေး လုပ်ငန်းများ၌
+              ငွေကြေး သုံးစွဲလုပ်ကိုင် ရန်ဖိတ်ခေါ်လျက်ရှိသကဲ့သို့ ပြည်ပရင်းနှီးမြှုပ်နှံသူများကိုပါ ကြယ်သုံးပွင့်အဆင့်
+              သို့မဟုတ် ၎င်းထက် အဆင့်မြင့် သည့်ဟိုတယ်ဖွံ့ဖြိုးရေးလုပ်ငန်းများ၌ ပါဝင် လာစေရန်
+              ဖိတ်ခေါ်လျက်ရှိပါသည်။ နိုင်ငံခြားကုမ္ပဏီများ အနေဖြင့် ခရီးသွားကုမ္ပဏီ၊ တန်ဖိုးနည်း ဟိုတယ်၊
+              အပန်းဖြေဥယျာဉ်၊ ခရီးသွားလုပ်ငန်း နှင့်ဆက်စပ်သည့် အခြေခံ အဆောက်အဦ ပရောဂျက်များ အား ဖက်စပ်
+              ရင်းနှီးမြှုပ်နှံ လုပ်ကိုင်ဆောင်ရွက် နိုင်ပါသည်။
             </p>
 
-            <h3>Key opportunities:</h3>
+            <h4>ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းအဓိကအခွင့်အလမ်းများ</h4>
             <ul className={styles.opportunityList}>
-              <li className={styles.opportunityListItem}>Exploring new high-potential investment locations in hospitality and tourism.</li>
-              <li className={styles.opportunityListItem}>Developing eco-tourism (e.g. development of eco-tourism oriented hotels and lodges along with respective activities such as trekking routes or tours).</li>
-              <li className={styles.opportunityListItem}>Building cultural and community-based tourism (e.g. development of shops for the sale of locally produced cultural artifacts).</li>
+              <li className={styles.opportunityListItem}>အလားအလာရှိသည့် ဟိုတယ်နှင့်ခရီးသွား လုပ်ငန်းများလေ့လာဖော်ထုတ်ခြင်း</li>
+              <li className={styles.opportunityListItem}>သဘာဝပတ်ဝန်းကျင်ကို မထိခိုက်စေသည့် ခရီးသွားလုပ်ငန်း များဖွံ့ဖြိုးရေး (ခြေလျင်တောင်တက် ခရီးသွားလုပ်ငန်းများနှင့်ဆက်စပ်သည့်ဟိုတယ်လုပ်ငန်းများ)</li>
+              <li className={styles.opportunityListItem}>ယဉ်ကျေးမှုနှင့် အမျိုးဘာသာအခြေခံသည့်ခရီးသွားလုပ်ငန်းများ (ယဉ်ကျေးမှုဆိုင်ရာ ပစ္စည်းများ ထုတ်လုပ်ခြင်းနှင့် ရောင်းချခြင်းလုပ်ငန်းများဖွံ့ဖြိုးရေး)</li>
             </ul>
           </div>
-        </section>
+          </section>
       </div>
     </div>
   );

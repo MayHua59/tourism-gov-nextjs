@@ -17,115 +17,165 @@ export default function MyanmarInvestmentLaw() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Myanmar Investment Law", active: true }
+          { label: "Home", href: "/mm/", icon: faHome },
+          { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Myanmar Investment Law</h1>
-        <section id="investment-law-content" className={styles.mt5}>
+        <h1 className={styles.pageTitle}>မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</h1>
+       <section id="investment-law-content" className={styles.mt5}>
           <div className={styles.investSection}>
-            <h2>Submission of Proposal</h2>
-            <p>36. The investor shall submit a proposal to the Commission and invest after receiving the Permit for the following businesses stipulated in the rules:</p>
+            <h2>အဆိုပြုချက်တင်သွင်းခြင်း</h2>
+            <p>၃၆။ ရင်းနှီးမြှုပ်နှံသူသည် နည်းဥပေဒများတွင်ဖော်ပြထားသော အောက်ပါလုပ်ငန်းများအား ကော်မရှင်သို့ အဆိုပြုချက်တင်ပြစေပြီး ခွင့်ပြုမိန့်ရရှိမှသာ ရင်းနှီး မြှုပ်နှံရမည်- </p>
             <ol className={styles.investList}>
-              <li>a. investment activities that are essential to the national strategy;</li>
-              <li>b. large capital intensive investment projects;</li>
-              <li>c. projects which are likely to cause a large impact on the environment and the local community;</li>
-              <li>d. investment activities which use state-owned land and building;</li>
-              <li>e. investment activities which are designated by the government to require the submission of a proposal to the Commission.</li>
+                <li>
+                    (က) နိုင်ငံတော်အတွက် မဟာဗျူဟာ အရ အရေးပါသည့် ရင်းနှီး မြှုပ် နှံမှုလုပ်ငန်းအမျိုးအစားများ၊</li>
+                <li>
+                    (ခ) မတည်ငွေရင်း ကြီး မားသည့် ရင်းနှီး မြှုပ် နှံမှု လုပ်ငန်းအမျိုးအစားများ၊</li>
+                <li>
+                    (ဂ) သဘာဝပတ်ဝန်းကျင်နှင့် ဒေသခံလူထုအပေါ် ကြီးမားသော သက်ရောက်မှုဖြစ်စေနိုင် သည့်ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများ၊</li>
+                <li>
+                    (ဃ) နိုင်ငံတော်ပိုင်မြေနှင့် အဆောက်အဦများအသုံးပြုသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (င) ကော်မရှင်သို့အဆိုပြုချက်တင်ပြစေရန် အစိုးရအဖွဲ့ကသတ်မှတ်ထားသည့် ရင်းနှီးမြှုပ် နှံမှု လုပ်ငန်းများ။</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <h2>Submission of Endorsement</h2>
-            <p>37. No investor is required to submit a proposal to the Commission for other investment businesses except investment businesses stipulated under section</p>
-            <p>38. However, in order to enjoy the rights to use land under Chapter XII, and all or more than or any exemptions and reliefs under sections 75, 77 and 78, an endorsement application must be submitted in the stipulated form to the Commission office.</p>
-            <p>39. When submitting the endorsement application, all approvals or licenses or permits or similar documents issued by the relevant organizations according to the type of business have to be attached.</p>
-          </div>
+        <div className={styles.investSection}>
+            <h2>အတည်ပြုလျှောက်ထားလွှာတင်သွင်းခြင်း</h2>
+            <p>၃၇။ ရင်းနှီးမြုပ်နှံသူသည် ပုဒ်မ ၃၆ ပါ လုပ်ငန်းများမှတစ်ပါး အခြားရင်းနှီးမြုပ်နှံမှု လုပ်ငန်းများ နှင့်ပတ်သက်၍ ကော်မရှင်သို့အဆိုပြုချက်တင်ပြရန်မလို။ သို့ရာတွင် ဤဉကဒေ၏ အခန်း(၁၂)မြေအသုံးပြုခွင့်နှင့် ပုဒ်မ ၇၅၊ ၇၇နှင့် ၇၈ ပါ ကင်းလွတ်ခွင့်၊ သက်သာခွင့် တစ်ရပ်ကိုဖြစ်စေ၊ တစ်ရပ်ရပ် ထက်ပို၍ဖြစ်စေ၊ အားလုံးကိုဖြစ်စေ ခံစားနိုင်ရန် အလိုငှာ သတ်မှတ်ပုံစံဖြင့် အတည်ပြုလျှောက်ထားလွှာကို ကော်မရှင်ရုံးသို့ တင်ပြရမည်။</p>
+            <p>၃၈။ အတည်ပြုလျှောက်ထားလွှာ တင်သွင်းရာတွင် ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းအမျိုးအစားအလိုက် သက်ဆိုင်ရာအဖွဲ့အစည်း၏ ခွင့်ပြုချက် သို့မဟုတ် ပါမစ် သို့မဟုတ် အလားတူ စာရွက်စာတမ်းများ ပူးတွဲတင်ပြရမည်။</p>
+            <p>၃၉။ ပုဒ်မ ၃၇ အရ တင်ပြလာသော အတည်ပြုလျှောက်ထားလွှာကို ကော်မရှင်ရုံးသည် လိုအပ်သည့် စိစစ်မှုများပြုလုပ်ပြီး ပြည်စုံပါက လက်ခံခြင်း၊ ပြည့်စုံမှုမရှိပါက ပြင်ဆင် ဖြည့်စွက်၍ ပြန်လည်တင်ပြစေခြင်းပြုနိုင်သည်။</p>
+        </div>
 
-          <div className={styles.investSection}>
-            <h2>Stipulation of the Types of Investment</h2>
-            <p>40. In investment, the following are also included:</p>
+        <div className={styles.investSection}>
+            <h2>ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်း အမျိုးအစားများ သတ်မှတ်ခြင်း</h2>
+            <p>၄၀။ ရင်းနှီးမြှုပ်နှံမှုတွင် အောက်ပါတို့လည်း အပါအဝင်ဖြစ်သည်- </p>
             <ol className={styles.investList}>
-              <li>a. enterprise;</li>
-              <li>b. moveable property, immovable property and rights related to property, cash, pledges, mortgages and liens, machinery, equipment, spareparts, and related tools;</li>
-              <li>c. shares, stocks, and debentures (a) promissory note of a company;</li>
-              <li>d. intellectual property rights under any laws, including technical knowhow, patent, industrial designs, and trademarks;</li>
-              <li>e. claims to money and to any performance under contracts having a financial value;</li>
-              <li>f. revenue-sharing contract, or production, management, construction, rights under contracts, including turnkey;</li>
-              <li>g. assignable rights granted by relevant laws or contract, including the rights of exploration, prospecting and extraction of natural resources;</li>
+                <li>
+                    (က) စီးပွားရေးအဖွဲ့အစည်း၊ </li>
+                <li>
+                    (ခ) ရွှေ့ပြောင်းနိုင်သောပစ္စည်း၊ မရွှေ့ပြောင်းနိုင်သောပစ္စည်းနှင့် အခြားပစ္စည်းဆိုင်ရာ အခွင့်အရေးများ၊ ငွေသား၊ အပေါင်ပစ္စည်းများ၊ အပေါင်ခံခွင့်နှင့် ပေါင်နှံခွင့်များ၊ စက်ပစ္စည်း၊ စက်ကိရိယာများ၊ စက်အပိုပစ္စည်းများနှင့် ဆက်စပ် အသုံးအဆောင်များ၊</li>
+                <li>
+                    (ဂ) ကုမ္ပဏီတစ်ခု၏ အစုရှယ်ယာများ၊ စတော့(ခ်)များနှင့် ဒီဘင်ချာ ခေါ် ငွေချေး သက်သေခံလက်မှတ်များ၊ </li>
+                <li>
+                    (ဃ) နည်းပညာကျွမ်းကျင်မှု၊ တီထွင်မှုမူပိုင်ခွင့်၊ စက်မှုဒီဇိုင်း၊ ကုန်အမှတ်တံဆိပ် မူပိုင်ခွင့်အပါအဝင် ဥပဒေများနှင့်အညီ အသိဉာဏ်ပစ္စည်းဆိုင်ရာ အခွင့်အရေး များ၊ </li>
+                <li>
+                    (င) ငွေရေးကြေးရေးဆိုင်ရာ တန်ဖိုးအဖြစ်ထားရှိသည့် ပဋိညာဉ်စာချုပ်အရ ငွေကြေးအခွင့် အရေးများ သို့မဟုတ် ဆောင်ရွက်မှုများ၊ </li>
+                <li>
+                    (စ) အကျိုးအမြတ်ခွဲဝေသည့် သဘောတူစာချုပ် သို့မဟုတ် ထုတ်လုပ်ခြင်း၊ စီမံခန့်ခွဲခြင်း၊ ဆောက်လုပ်ခြင်း၊ အလုံးစုံတာဝန်ယူ ဆောင်ရွက်သည့် စနစ် အပါအဝင် သဘောတူစာချုပ်ပါ အခွင့်အရေးများ၊ </li>
+                <li>
+                    (ဆ) သဘာဝသယံဇာတပစ္စည်းများ ရှာဖွေခြင်းနှင့် စမ်းသပ်တိုင်းတာခြင်း၊ ထုတ်လုပ်ခြင်း ဆိုင်ရာ အခွင့်အရေးများ အပါအဝင် သက်ဆိုင်ရာဉပဒေ သို့မဟုတ် ပဋိညာဉ်စာချုပ် အရပေးအပ်ထားသည့် လုပ်ငန်းဆိုင်ရာ အခွင့်အရေးများ။</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <p>41. The following investments businesses shall be stipulated as the prohibited investment:</p>
+        <div className={styles.investSection}>
+            <p>၄၁။ အောက်ပါ ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများကိုတားမြစ်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများအဖြစ် သတ်မှတ်သည်- </p>
             <ol className={styles.investList}>
-              <li>a. investment activities which may bring or cause the hazardous or poisonous wastes into the Union;</li>
-              <li>b. investment activities which may bring technologies, medicines, flora and fauna and instruments which are still being tested abroad or which have not been obtained approvals to use, plant and cultivate, except the investments which made for the purpose of research and development;</li>
-              <li>c. investment activities which may affect the traditional culture and customs of the ethnic groups within the Union;</li>
-              <li>d. investment activities which may affect the public;</li>
-              <li>e. investment activities which may cause an enormous impact to the natural environment and ecosystem;</li>
-              <li>f. investment activities which manufacture goods or provide services that are prohibited under the applicable law.</li>
+                <li>
+                    (က) နိုင်ငံတော်အတွင်းသို့ သဘာဝဘေးအန္တရာယ် သို့မဟုတ် အဆိပ်အတောက်ရှိသော စွန့်ပစ်ပစ္စည်းများ သယ်ဆောင်လာနိုင်သည့် သို့မဟုတ် ပေါ်ပေါက်လာနိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (ခ) သုတေသနနှင့် ဖွံ့ဖြိုးတိုးတက်မှု ရည်ရွယ်ချက်ဖြင့် ပြုလုပ်သော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများမှအပပြည်ပမှ စမ်းသပ်ဆဲဖြစ်သော သို့မဟုတ်အသုံးပြုရန်၊ စိုက်ပျိုး မွေးမြူရန်၊ အတည်ပြုချက် မရရှိသေးသော နည်းပညာများ၊ဆေးဝါးများ၊ အပင်နှင့် တိရိစ္ဆာန် မျိုးစိတ်များ၊ အသုံးအဆောင်များ သယ်ဆောင်လာနိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (ဂ) နိုင်ငံတော်အတွင်း တိုင်းရင်းသားလူမျိုးများ၏ရိုးရာယဉ်ကျေးမှုနှင့် ဓလေ့ထုံးစံများကို ထိခိုက်စေသော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ဃ) ပြည်သူတို့ အပေါ်သဘာဝအန္တရာယ်ဖြစ်စေနိုင်သော ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများ </li>
+                <li>
+                    (င) သဘာဝပတ်ဝန်းကျင်နှင့် ဂေဟစနစ်တို့ကို ကြီးမားစွာ ထိခိုက်ပျက်စီး စေနိုင် သော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (စ) တည်ဆဲဥပေဒတစ်ရပ်ရပ်အရ တားမြစ်ပိတ်ပင်ထားသော ဝန်ဆောင်မှုနှင့် ကုန်ပစ္စည်း များ ထုတ်လုပ်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <p>42. The following types of investment activities shall be stipulated as restricted investment:</p>
+        <div className={styles.investSection}>
+            <p>၄၂။ အောက်ပါ ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းအမျိုးအစားများကို ကန့်သတ်သည့်ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်း များအဖြစ် သတ်မှတ်သည်- </p>
             <ol className={styles.investList}>
-              <li>a. investment activities allowed to carry out only by the Union;</li>
-              <li>b. investment activities that are not allowed to carry out by foreign investors;</li>
-              <li>c. investment activities allowed only in the form of joint venture with any citizen owned entity or any Myanmar citizen; and</li>
-              <li>d. investment activities to be carry out with the approval of the relevant Ministries.</li>
+                <li>
+                    (က) နိုင်ငံတော်ကသာဆောင်ရွက်ခွင့်ရှိသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ခ) နိုင်ငံခြားသား ရင်းနှီးမြှုပ်နှံသူက ဆောင်ရွက်နိုင်ခွင့်မရှိသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်း များ </li>
+                <li>
+                    (ဂ) နိုင်ငံခြားရင်းနှီးမြှုပ်နှံမှုများကို ပြည်တွင်းရှိ နိုင်ငံသားလူပုဂ္ဂိုလ်တစ်ဦးဦးသို့မဟုတ် နိုင်ငံသားပိုင်လုပ်ငန်းတစ်ခုခုနှင့် ပူးပေါင်း၍ ဖက်စပ်ရင်းနှီးမြှုပ်နှံမှုဖြင့်သာ ဆောင်ရွက် နိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ဃ) သက်ဆိုင်ရာဝန်ကြီးဌာနများ၏အတည်ပြုချက်ဖြင့်ဆောင်ရွက်နိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ။</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <h2>Rights to Use Land</h2>
-            <p>50.</p>
+        <div className={styles.investSection}>
+            <h2>မြေအသုံးပြုခွင့်</h2>
+            <p>၅၀။</p>
             <ol className={styles.investList}>
-              <li>a. An Investor who obtains permit or endorsement under this Law has the right to obtain a long-term lease of land or building from the owner if it is private land or building, or from the relevant government departments or government organization if it is land managed by the government, or land or building owned by the Union in accordance with the stipulations in order to do investment. Citizen investors may invest in their own land or building in accordance with relevant laws.</li>
-              <li>b. Foreign investor may lease land or building either from the government or government organizations or from owners of private land or building from commencing on the date of receipt of the permit or endorsement of the Commission up to an initial period of (50) years in accordance with the stipulation.</li>
-              <li>c. After the expiry of the term of the right to use land or building or the period of right to lease of land or building permitted under subsection b, a consecutive period of (10) years and a further consecutive period of (10) years extension to such period of lease of land or building may be obtained with the approval of the Commission.</li>
-              <li>d. The investor shall register the land lease contract at the Office of Registry of Deeds in accordance with the Registration Act.</li>
-              <li>e. The Government may grant more favorable terms and conditions for the lease of land and the use of land by Myanmar citizen investors.</li>
-              <li>f. The Commission shall for the purpose of the development of the entire Union with the approval of the Pyidaungsu Hluttaw submitted through the Government, grant a longer period for the rights to lease land or building and the rights to use land or building and the right to use under in this Law, to investors who invest in less developed and remote region.</li>
+                <li>
+                    (က) ဤဥပေဒအရ ခွင့်ပြုမိန့်ရရှိထားသော သို့မဟုတ် အတည်ပြုမိန့်ရရှိထားသော ရင်းနှီးမြှုပ်နှံသူသည် ပုဂ္ဂလိက‌မြေ သို့မဟုတ် အဆောက် အအုံ ဖြစ်ပါကပိုင်ရှင်ထံမှ လည်းကောင်း၊ အစိုးရက စီမံခန့်ခွဲပိုင်ခွင့်ရှိသောမြေ၊ နိုင်ငံတော်ပိုင်မြေ သို့မဟုတ် အဆောက်အအုံ ဖြစ်ပါက သက်ဆိုင် ရာအစိုးရဌာန၊ အစိုးရအဖွဲ့အစည်းများ ထံမှလည်းကောင်းရင်းနှီးမြှုပ်နှံမှု ပြုလုပ်ရန်အလို့ ငှာသတ်မှတ်ချက်များ နှင့်အညီ နှစ်ရှည်မြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းခွင့်ရှိသည်။ နိုင်ငံသားရင်းနှီးမြှုပ် နှံသူသည် မိမိပိုင်မြေ သို့မဟုတ် အဆောက်အအုံ တွင်တည်ဆဲ ဥပေဒများနှင့်အညီ ရင်းနှီးမြှုပ်နှံနိုင်သည်။
+                </li>
+                <li>
+                    (ခ) နိုင်ငံခြားသားရင်းနှီးမြှုပ်နှံသူသည် အစိုးရ သို့မဟုတ် အစိုးရအဖွဲ့ အစည်းများထံ မှဖြစ်စေ၊ ပုဂ္ဂလိက‌ မြေ သို့မဟုတ် အ‌ဆောက်အအုံပိုင်ရှင် ထံမှ ဖြစ်စေကော်မရှင် ခွင့်ပြုမိန့် သို့မဟုတ် အတည်ပြုမိန့် ရရှိသည့်နေ့မှစ၍ကနဦးနှစ်(၅၀)အထိ သတ်မှတ် ချက်နှင့် အညီမြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းနိုင်သည်။
+                </li>
+                <li>
+                    (ဂ) အထက်ဖော်ပြပါ ပုဒ်မခွဲ(ခ)အရ ခွင့်ပြုထားသောမြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းကာလ သို့မဟုတ် မြေသို့မဟုတ် အဆောက်အအုံ အသုံးပြုခွင့်ကာလ သက်တမ်းကုန်ဆုံးပြီးနောက် ကော်မရှင်၏ ခွင့်ပြုချက်ဖြင့် တစ်ဆက်တည်း သက်တမ်းတိုးခွင့် ၁၀နှစ်နှင့် ယင်းသက်တမ်း ကုန်ဆုံးပြီး ထပ်မံ၍ ၁၀နှစ်သက်တမ်း တိုးမြှင့်နိုင်သည်။</li>
+                <li>
+                    (ဃ) ရင်းနှီးမြှုပ်နှံသူသည် မြေငှားရမ်းခြင်း စာချုပ်အား စာချုပ်စာတမ်း မှတ်ပုံတင်ခြင်း အက်ဥပေဒ နှင့်အညီ စာချုပ်စာတမ်း မှတ်ပုံတင်ရုံး တွင်မှတ်ပုံတင်ရမည်။</li>
+                <li>
+                    (င) အစိုးရအဖွဲ့သည်မြေအသုံးချမှု သို့မဟုတ်မြေ ငှားရမ်းမှုများအတွက် မြန်မာနိုင်ငံသား ရင်းနှီးမြှုပ်နှံသူများအား ပိုမိုကောင်းမွန်သော သတ်မှတ်ချက်များနှင့် အခွင့်အရေး များကို ခွင့်ပြုပေးနိုင်သည်။</li>
+                <li>
+                    (စ) ကော်မရှင်သည် နိုင်ငံတော်တစ်ဝန်းလုံးတွင်ဖွံ့ဖြိုးတိုးတက်စေရန် အလို့ငှာစီးပွား ရေးဖွံ့ဖြိုး တိုးတက်မှု နည်းပါးပြီး ဆက်သွယ် သွားလာရေး ခက်ခဲသော ဒေသများတွင် ရင်းနှီးမြှုပ်‌နှံသူများ အတွက် ဤဥပေဒပါမြေသို့မဟုတ်အဆောက် အအုံ ငှားရမ်းခွင့်ကာလ သို့မဟုတ် မြေ သို့မဟုတ် အဆောက် အအုံအသုံးပြုခွင့် ကာလထက် ပိုခံစားခွင့်ပြုရာတွင် အစိုးရအဖွဲ့မှ တစ်ဆင့် ပြည်ထောင်စု လွှတ်တော်သို့ တင်ပြ အတည်ပြုချက်ရယူရမည်။</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <h2>Responsibilities of Investors</h2>
-            <p>65. The Investor:</p>
+        <div className={styles.investSection}>
+            <h2>ရင်းနှီးမြှုပ်နှံသူများ၏ တာဝန်ဝတ္တရားများ</h2>
+            <p>၆၅။ ရင်းနှီးမြှုပ်နှံသူသည် –</p>
             <ol className={styles.investList}>
-              <li>a. shall respect and comply with the customs, traditions and traditional culture of the ethnic groups in the Union;</li>
-              <li>b. shall establish and register a company or sole proprietorship or legal entities or branches of such entities under the Laws in order to invest;</li>
-              <li>c. shall abide by the terms and conditions, stipulations of special licenses, permits, and business operation certificates issued to them, including the rules, notifications, orders, and directives and procedures issued by this Law and the applicable laws, terms and conditions of contract and tax obligations;</li>
-              <li>d. shall carry out in accordance with the stipulations of the relevant department if it is, by the nature of business or by other need, required to obtain any license or permit from the relevant Union Ministries, government departments and government organizations, or to carry out registration;</li>
-              <li>e. shall immediately inform to the Commission if it is found that natural mineral resources or antique objects and treasure trove are not related to the investment permitted above and under the land on which the investor is entitled to lease or use and not included in the original contracts. If the Commission allows, the investor shall continue to carry out the investment in such land, and if not allowed, the investor shall transfer and carry out, by obtaining the permission, at the substituted place which is selected and submitted by him;</li>
-              <li>f. shall not make any significant alteration of topography or elevation of the land on which he is entitled to lease or to use, without the approval of the Commission;</li>
-              <li>g. shall abide by applicable laws, rules, procedures and best standards practiced internationally for this investment so as not to cause damage, pollution, and loss to the natural and social environment and not to cause damage to cultural heritage;</li>
-              <li>h. shall list and keep proper records of books of account and annual financial statement, and necessary financial matters relating to the investments performed by permit or endorsement in accordance with internationally and locally recognized accounting standards;</li>
-              <li>i. shall close and discontinue the investment only after payment of compensation to employees in accordance with applicable laws for any breach of employment contracts, closure of investment, sale and transfer of investment, discontinuation of investment, or reduction of workforce;</li>
-              <li>j. shall pay wages and salaries to employees in accordance with applicable laws, rules, procedures, directives and so forth during the period of suspension of investment for a credible reason;</li>
-              <li>k. shall pay compensation and indemnification in accordance with applicable laws to the relevant employee or his successor for injury, disability, disease and death due to the work;</li>
-              <li>l. shall supervise foreign experts, supervisors and their families, who employ in their investment, to abide by the applicable laws, rules, orders and directives, and the culture and traditions of Myanmar;</li>
-              <li>m. shall respect and comply with the labor laws;</li>
-              <li>n. shall have the right to sue and to be sued in accordance with the laws;</li>
-              <li>o. shall pay effective compensation for loss incurred to the victim, if there are damage to the natural environment and socioeconomic losses caused by logging or extraction of natural resources which are not related to the scope of the permissible investment, except from carrying out the activities required to conduct investment in a permit or an endorsement.</li>
-              <li>p. shall allow the Commission to inspect in any places, when the Commission informs the prior notice to inspect the investment;</li>
-              <li>q. shall take in advance permit or endorsement of the Commission for the investments which need to obtain prior approval under the Environmental Conservation Law and the procedures of environmental impact assessment, before undertaking the assessment, and shall submit the situation of environmental and social impact assessment to the Commission along the period of activities of the investments which obtained permit or endorsement of the Commission.</li>
+                <li>
+                    (က) နိုင်ငံတော်အတွင်းရှိ တိုင်းရင်းသားလူမျိုးတို့၏ ဓလေ့ထုံးတမ်း၊ အစဉ်အလာ၊ ရိုးရာ ယဉ်ကျေးမှု တို့ကိုလေးစားလိုက်နာရမည်၊</li>
+                <li>
+                    (ခ) ရင်းနှီးမြှုပ်နှံမှုလုပ်ဆောင်ရန်အတွက် ကုမ္ပဏီ သို့မဟုတ် တစ်ဦးတည်းပိုင်သို့မဟုတ် တရားဝင် စီးပွားရေးအဖွဲ့အစည်းများ သို့မဟုတ် အဆိုပါ တရားဝင် စီးပွားရေး အဖွဲ့အစည်း၏ ရုံးခွဲများကို ဥပေဒ နှင့်အညီ ဖွဲ့စည်းတည်ထောင်၍မှတ်ပုံတင်ရမည်၊</li>
+                <li>
+                    (ဂ) တည်ဆဲဥပေဒများနှင့် ဤဥပေဒအရထုတ်ပြန်သော နည်းဥပေဒများ၊ လုပ်ထုံးလုပ်နည်းများ၊ အမိန့်ကြေငြာစာများ၊ အမိန့်နှင့် ညွှန်ကြားချက် များ၊ သဘောတူစာချုပ်ပါစည်းကမ်းချက်များနှင့် အခွန်ဆိုင်ရာ တာဝန်ရှိမှုအပါအဝင် ၎င်းတို့အားထုတ်ပေးထားသော အထူးပြုလိုင်စင်၊ ခွင့်ပြုမိန့်နှင့်လုပ်ငန်းဆောင်ရွက်ခွင့် လက်မှတ်များတွင် ပါဝင်သည့် စည်းကမ်းချက်များ၊ သတ်မှတ်ချက်များနှင့်အညီ လိုက် နာဆောင်ရွက်ရ မည်၊</li>
+                <li>
+                    (ဃ) လုပ်ငန်းသဘာဝအရဖြစ်စေ၊ အခြားလိုအပ်ချက်အရဖြစ်စေ သက်ဆိုင်သည့် ပြည်ထောင်စုဝန်ကြီးဌာနများ၊ အစိုးရဌာနနှင့် အဖွဲ့အစည်းများမှ လိုင်စင်သို့မဟုတ် ခွင့်ပြုမိန့်ရယူရန် လိုအပ်လျင်ဖြစ်စေ၊ မှတ်ပုံတင်ရန် လိုအပ်လျင်ဖြစ်စေ သက်ဆိုင်ရာဌာန၏ သတ်မှတ်ချက်များနှင့်အညီ ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (င) မိမိငှားရမ်းခွင့်ရရှိထားသော သို့မဟုတ် အသုံးပြုခွင့် ရရှိထားသောမြေ၏မြေပေါ် မြေအောက်တွင်ခွင့်ပြုထားသည့် ရင်းနှီးမြှုပ်နှံမှုနှင့်ဆက်စပ် မှုမရှိသော၊ မူလသဘောတူစာချုပ်တွင် မပါဝင်သောသဘာဝ တွင်းထွက်ပစ္စည်းများသို့မဟုတ် ရှေးဟောင်းပစ္စည်းများနှင့်ရတနာသိုက်အစရှိ သည်တို့ကို တွေ့ရှိပါကကော်မရှင်ထံသို့ ချက်ချင်းသတင်းပေးအကြောင်းကြားရမည်။ ကော်မရှင်ကခွင့်ပြုလျင်ယင်းမြေပေါ်၌ ဆက်လက် လုပ်ကိုင်နိုင်ပြီးခွင့်မပြုလျင်ရင်းနှီးမြှုပ်နှံသူက ရွေးချယ်တင်ပြသည့် နေရာတစ်ခုအားအစားထိုး ခွင့်ပြုချက်ရယူ၍ပြောင်းရွှေ့ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (စ) မိမိငှားရမ်းခွင့် သို့မဟုတ် အသုံးပြုခွင့်ရရှိသောမြေ၏သဘာဝ မြေမျက်နှာသွင်ပြင် သို့မဟုတ် မြေအနိမ့်အမြင့်အနေအထားအား သိသာ ထင်ရှားစွာ ပြောင်းလဲမှုကို ကော်မရှင်၏ ခွင့်ပြုချက်မရှိဘဲ မပြုလုပ်ရ၊</li>
+                <li>
+                    (ဆ) မိမိ၏ရင်းနှီးမြှုပ်နှံမှုနှင့်စပ်လျဉ်း၍ တည်ဆဲဥပေဒများ၊ နည်းဥပေဒများ၊ လုပ်ထုံးလုပ်နည်းများနှင့်နိုင်ငံတကာတွင်ကျင့်သုံးသည့် အကောင်းဆုံးစံချိန်စံညွှန်းများနှင့်အညီ သဘာဝပတ်ဝန်းကျင်နှင့်လူမှုပတ်ဝန်းကျင်ထိခိုက်ပျက်စီးမှု၊ ညစ်ညမ်းမှု၊ နစ်နာမှုမဖြစ် စေရန်နှင့် ယဉ်ကျေးမှုအမွေအနှစ်များကိုထိခိုက်ပျက်စီးမှုမဖြစ်ပေါ် စေရန်လိုက်နာ ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (ဇ) ခွင့်ပြုမိန့် သို့မဟုတ် အတည်ပြုမိန့်ဖြင့် ဆောင်ရွက်သော ရင်းနှီးမြှုပ်နှံမှုများနှင့် သက်ဆိုင်သည့်လုပ်ငန်းဆိုင်ရာစာရင်းဇယားများ၊ နှစ်ပတ်လည် ငွေစာရင်းများနှင့် လိုအပ်သည့် သဘာဝဘေးအန္တရာယ်ကိစ္စရပ်များကို နိုင်ငံတကာနှင့် ပြည်တွင်း အသိ အမှတ်ပြု စာရင်းကိုင်စံနှုန်းများနှင့်အညီ ကောင်းမွန်စွာပြုစုမှတ်တမ်းတင်ထားရှိရ မည်။</li>
+                <li>
+                    (ဈ) အလုပ်ခန့်ထားမှုဆိုင်ရာသဘောတူစာချုပ်ဖောက်ဖျက်ခြင်း၊ ရင်းနှီးမြှုပ်နှံမှုအပြီးပိတ် သိမ်းခြင်း၊ လွှဲပြောင်းရောင်းချခြင်း၊ ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းရပ်ဆိုင်းခြင်း၊ လုပ်သား အင်အားလျော့ချခြင်းတို့အတွက်အလုပ်သမားများအားတည်ဆဲဥပဒေများနှင့်အညီနစ်နာကြေးပေးပြီးမှသာ ရင်းနှီးမြှုပ်နှံမှု ကိုရပ်ဆိုင်း ပိတ်သိမ်းရမည်။</li>
+                <li>
+                    (ည) ခိုင်လုံသောအကြောင်းပြချက်ဖြင့်ရင်းနှီးမြှုပ်နှံမှုယာယီပိတ်သိမ်းရပါက ပိတ်သိမ်းထား ရသည့်ကာလအတွင်းအလုပ်သမားများအားတည်ဆဲဥပဒေ၊နည်းဥပဒေညွှန်ကြားချက်များ၊ လုပ်ထုံးလုပ်နည်း စသည်တို့နှင့်အညီ လုပ်ခလစာပေးရမည်။</li>
+                <li>
+                    (ဋ) အလုပ်ကြောင့်ထိခိုက်ဒဏ်ရာရရှိမှု ကိုယ်အင်္ဂါအစိတ်အပိုင်းချို့ယွင်းဆုံးရှုံးမှု ရောဂါရရှိ မှု၊သေဆုံးမှုတို့ဖြစ်ပွားသောအလုပ်သမားများအတွက်သက်ဆိုင်ရာအလုပ်သမား(သို့မဟုတ်)အမွေဆက်ခံခွင့်ရှိသူအားတည်ဆဲဥပဒေနှင့်အညီရထိုက်သည့်နစ်နာကြေးနှင့်လျော်ကြေးကိုပေးရမည်။</li>
+                <li>
+                    (ဌ) မိမိ၏ရင်းနှီးမြှုပ်နှံမှုတွင်လာရောက်အလုပ်လုပ်ကိုင်နေသည့်နိုင်ငံခြားသား ကျွမ်းကျင် ပညာရှင်များနှင့် ကြီးကြပ်သူများ မိသားစုဝင်များသည် တည်ဆဲဥပဒေများ၊ နည်းဥပေဒများ အမိန့်နှင့်ညွှန်ကြားချက်များနှင့်ယဉ်ကျေးမှုနှင့် ဓလေ့ထုံးစံများကို လေးစားလိုက်နာရန်ကြပ်မတ်ရမည်။</li>
+                <li>
+                    (ဍ) အလုပ်သမားရေးရာဥပဒေများကိုလေးစားလိုက်နာရမည်။</li>
+                <li>
+                    (ဎ) ဥပဒေနှင့်အညီ တရားစွဲဆိုခွင့်နှင့်တရားစွဲဆိုခံနိုင်ခွင့်ရှိရမည်။</li>
+                <li>
+                    (ဏ) ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ပါ ရင်းနှီးမြှုပ်နှံမှုလုပ်ကိုင်နိုင်ရန်အတွက် လိုအပ် ချက်အရ ဆောင်ရွက်ခြင်းမှတပါး ရင်းနှီးမြှုပ်နှံမှုနှင့်မသက်ဆိုင်သော သစ်တောများ ခုတ်ထွင်ခြင်း၊ သဘာဝသယံဇာတများတူးဖော်ခြင်း စသည့် သဘာဝပတ်ဝန်းကျင် ထိခိုက်ပျက်စီးစေခြင်းနှင့် လူမှုစီးပွားရေးဆုံးရှုံးမှုများ ဖြစ်ပေါ်စေပါက အဆိုပါဆုံးရှုံး နစ်နာမှုအတွက် ထိရောက်သည့်လျော်ကြေးကို နစ်နာသူထံသို့ ပေးလျော်ရမည်။</li>
+                <li>
+                    (တ) ကော်မရှင်ကရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများအားစစ်ဆေးကြည့်ရှု့ရန်ကြိုတင် အကြောင်း ကြားလာပါက မည့်သည့်နေရာကိုမဆို ဝင်ရောက်စစ်ဆေးရန်ခွင့်ပြုပေးရမည်။</li>
+                <li>
+                    (ထ) သဘာဝပတ်ဝန်းကျင်ထိန်းသိမ်းရေးဥပဒေနှင့် ပတ်ဝန်းကျင်ထိခိုက်မှုစစ်ဆေးခြင်း ဆိုင်ရာလုပ်ထုံးလုပ်နည်းများအရကြိုတင်ခွင့်ပြုချက်ရယူရန်လိုအပ်သောရင်းနှီးမြှုပ်နှံမှုများသည် ဆန်းစစ်ခြင်းများ မလုပ်ဆောင်မီ ကော်မရှင်၏ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ကို ဦးစွာရယူရမည်။ ဤသို့ ကော်မရှင်၏ ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ရယူထားသည့် ရင်းနှီးမြှုပ်နှံမှုများသည် ၎င်းတို့လုပ်ငန်းဆောင်ရွက် နေသည့်ကာလတစ်လျောက်လုံး လိုအပ်သညပတ်ဝန်းကျင်ထိခိုက်မှုနှင့် လူမှုရေးထိ ခိုက်မှုဆန်းစစ်ချက်များဆောင်ရွက်မှုအခြေအနေများကို ကော်မရှင်သို့တင်ပြရမည်။</li>
             </ol>
-          </div>
+        </div>
 
-          <div className={styles.investSection}>
-            <h2>Exemptions and Reliefs</h2>
-            <p>74. The Commission shall, for the purpose of supporting the development of the Union by allowing investment in sectors which need to be developed, and for the proportionate development of Regions and States, scrutinize and may grant one or more tax exemptions or reliefs if the investor applies for such exemptions or reliefs.</p>
-            <p>75.</p>
+        <div className={styles.investSection}>
+            <h2>ကင်းလွတ်ခွင့်နှင့် သက်သာခွင့်များ</h2>
+            <p>၇၄။ ကော်မရှင်သည်နိုင်ငံတော်အတွင်းဖွံ့ဖြိုးတိုးတက်ရန် လိုအပ်သည်ကိစ္စများတွင် ရင်းနှီးမြှုပ်နှံ မှုများ ဝင်ရောက်စေခြင်းအားဖြင့် နိုင်ငံတော်၏ ဖွံ့ဖြိုးတိုးတက်မှုကို အထောက်အကူပြုစေရေး အတွက်လည်း ကောင်း၊တိုင်းဒေသကြီးနှင့် ပြည်နယ်များ အချိုးကျမျှတစွာ ဖွံ့ဖြိုးတိုးတက် လာစေရေးအတွက် လည်းကောင်း၊အခွန်ကင်းလွတ်ခွင့် (သို့မဟုတ်) သက်သာခွင့်တစ်ရပ်ရပ် ကိုဖြစ်စေ၊တစ်ရပ်ရပ်ထက် ပို၍ ဖြစ်စေခံစားခွင့်ပြုရန် ရင်းနှီးမြှုပ်နှံသူက လျှောက်ထားလာ လျင် စိစစ်၍ ခွင့်ပြုပေးနိုင်သည်။</p>
+            <p>၇၅။</p>
             <ol className={styles.investList}>
-              <li>a. With respect to the income tax exemption, designated the less developed regions as Zone (1), the moderate developed regions as Zone(2),and the adequate developed regions as Zone (3), the Commission shall, with the approval of the Government, issue a notification and may grant income tax exemptions to investment businesses in Zone(1) for a period of 7 consecutive years including the year of commencement of commercial operation, investment businesses in Zone (2) for a period of 5 consecutive years including the year of commencement of commercial operation, and investment businesses in Zone(3) for a period of 3 consecutive years including the year of commencement of commercial operation.</li>
-              <li>b. With the approval of the Government, the Commission may change the designation of the zones from time to time depending on the development of the respective regions.</li>
-              <li>c. Income tax exemptions shall be granted only for the sectors specified by the Commission in the notification as the sectors to promote the investments.</li>
+                <li>
+                    (က) ဝင်ငွေကင်းလွတ်ခွင့်နှင့်ပတ်သက်၍ ဖွံ့ဖြိုးမှုနည်းပါးသောဒေသများအား ဇုန်(၁) အဖြစ်လည်းကောင်း ဖွံ့ဖြိုးမှုအသင့်အတင့်ရှိသောဒေသများအား ဇုန်(၂) အဖြစ် လည်းကောင်း၊ ဖွံ့ဖြိုးမှုရှိသော ဒေသများအား ဇုန်(၃)အဖြစ်လည်းကောင်း အစိုးရ အဖွဲ့၏ အတည်ပြုချက်ဖြင့် ကော်မရှင်က အမိန့် ကြေငြာစာထုတ်ပြန်သတ်မှတ်ကာ ဇုန်(၁) အတွင်းရင်းနှီးမြှုပ်နှံသူများအား စီးပွားဖြစ်စတင်သော နှစ် အပါအဝင် တဆက်တည်း (၇) နှစ်အထိလည်းကောင်း ဇုန်(၂) အတွင်း ရင်းနှီးမြှုပ်နှံသူများအား စီးပွားဖြစ်စတင်သော နှစ်အပါအဝင် တဆက်တည်း (၅)နှစ်အထိလည်းကောင်း၊ဇုန်(၃) အတွင်း ရင်းနှီး မြှုပ်နှံသူများအားစီးပွားဖြစ်စတင်သော နှစ်အပါအဝင် တဆက်တည်း (၃)နှစ်အထိလည်းကောင်းဝင်ငွေခွန် ကင်းလွတ်ခွင့်ပြုနိုင်သည်။</li>
+                <li>
+                    (ခ) အစိုးရအဖွဲ့၏အတည်ပြုချက်ဖြင့် ကော်မရှင်သည် ဇုန်သတ်မှတ်ခြင်းကို သက်ဆိုင်ရာ ဒေသများ၏ဖွံ့ဖြိုးတိုးတက်မှုအပေါ်မူတည်၍အခါအားလျော်စွာ လိုအပ်သလိုပြောင်း လဲ သတ်မှတ်နိုင်သည်။</li>
+                <li>
+                    (ဂ) ဝင်ငွေကင်းလွတ်ခွင့်ကို ရင်းနှီးမြှုပ်နှံမှုမြှင့်တင်ဆောင်ရွက်ရန် ကော်မရှင်က အမိန့် ကြေငြာစာထုတ်ပြန်ထားသည့် ကိစ္စများအတွက်သာ ခွင့်ပြုရမည်။</li>
             </ol>
-          </div>
+        </div>
         </section>
       </div>
     </div>

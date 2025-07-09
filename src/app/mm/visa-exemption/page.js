@@ -14,46 +14,42 @@ export default function VisaExemption() {
       <BannerSection imageUrl="/assets/images/cover-images-title/7.jpg" altText="visa exemption cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Visa Exemption", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဗီဇာကင်းလွတ်ခွင့်", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Visa Exemption</h1>
+        <h1 className={styles.pageTitle}>ဗီဇာကင်းလွတ်ခွင့်</h1>
         <section id="visa-exemption-content" className={styles.mt5}>
           <div className={styles.businessSection}>
-            <h2 className={styles.sectionTitle}>Visa Exemption for Russian Federation Tourists</h2>
             <p className={styles.paragraph}>
-              Visa exemption for tourists from the Russian Federation holding ordinary passports will be granted from 1-7-2022.
+              ရုရှားဖက်ဒရေးရှင်းနိုင်ငံ၊ သာမန်နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဗီဇာကင်းလွတ်ခွင့် (Exemption) အား ၁-၇-၂၀၂၂ ရက်နေ့မှ စ၍ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း
             </p>
-          </div>
-          <div className={styles.businessSection}>
-            <h2 className={styles.sectionTitle}>Notice</h2>
             <ol className={styles.noticeList}>
               <li>
-                Visa exemption for tourists from the Russian Federation holding ordinary passports entering Myanmar by air will be granted from 1-7-2022 for a trial period of (1) year and in accordance with the COVID-19 prevention, control and treatment regulations issued by the Ministry of Health.
+                မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် ရုရှားဖက်ဒရေးရှင်းနိုင်ငံ၊ သာမန်နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဗီဇာကင်းလွတ်ခွင့် (Exemption) အား ၁-၇-၂၀၂၂ ရက်နေ့မှစ၍ စမ်းသပ်ကာလ (၁) နှစ် သတ်မှတ်ပြီး ကျန်းမာရေးဝန်ကြီးဌာနမှ ထုတ်ပြန်ထားရှိသော ကိုဗစ် (၁၉) ရောဂါ ကာကွယ်၊ ထိန်းချူပ်၊ ကုသရေး စည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များနှင့်အညီ ခွင့်ပြုဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါသည်။
               </li>
               <li>
-                For tourists from the Russian Federation holding ordinary passports entering international airports, visa exemption will be granted as follows:
+                ရုရှားဖက်ဒရေးရှင်းနိုင်ငံ၊ သာမန်နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူကမ္ဘာလှည့်ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ဝင်ရောက်လာပါက ဗီဇာကင်းလွတ်ခွင့် (Exemption) အား အောက်ပါအတိုင်း ခွင့်ပြုဆောင်ရွက်သွားမည်ဖြစ်ပါသည်-
                 <ul className={styles.subList}>
                   <li>
-                    (a) The passport must be valid for at least (6) months. If it is less than (6) months, the passenger will be denied entry and will be deported by the airline they were travelling on.
+                    (က) နိုင်ငံကူးလက်မှတ်သတ်တမ်းအနည်းဆုံး (၆) လ ရှိရမည်ဖြစ်ပြီး (၆) လ အောက်ဖြစ်ပါက ပြည်ဝင်ခွင့်မပြုဘဲ ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။
                   </li>
                   <li>
-                    (b) A stay of thirty (30) days will be granted and no application for extension will be accepted.
+                    (ခ) နေခွင့်ရက်ပေါင်း (၃၀) ခွင့်ပြုမည်ဖြစ်ပြီး သက်တမ်းတိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည်မဟုတ်ပါ။
                   </li>
                   <li>
-                    (c) Overstaying beyond the specified period of stay will result in a fine.
+                    (ဂ) နေထိုင်ခွင့် သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ် ရက်လွန်ဒဏ်ကြေး အခငွေပေးဆောင်ရမည်ဖြစ်ပါသည်။
                   </li>
                 </ul>
               </li>
               <li>
-                Ordinary passport holders of the Russian Federation who enter Myanmar under visa exemption must abide by the following rules:
+                ဗီဇာကင်းလွတ်ခွင့် (Exemption) ဖြင့်ဝင်ရောက်လာသည့် ရုရှားဖက်ဒရေးရှင်းနိုင်ငံ၊ သာမန်နိုင်ငံ ကူးလက်မှတ် ကိုင်ဆောင်သူများသည် အောက်ဖော်ပြပါစည်းကမ်းများကို လိုက်နာနေထိုင်ရပါမည်-
                 <ul className={styles.subList}>
-                  <li>(a) They must respect the existing laws and regulations of Myanmar.</li>
-                  <li>(b) They can freely travel to areas where foreigners are allowed to travel, except for areas restricted for security reasons.</li>
-                  <li>(c) If a person who enters Myanmar under visa exemption is denied permission by the relevant security departments/organizations, or is on the blacklist of the Immigration Department, they will be denied entry and will be deported by the airline they were traveling with.</li>
-                  <li>(d) Those who enter the country through an international airport with a visa exemption will be able to exit from any international airport.</li>
+                  <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည်ဖြစ် ပါသည်။</li>
+                  <li>(ခ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြားသားများ သွားလာခွင့်ရှိသည့် နေရာများကို လွတ်လပ်စွာ သွားလာနိုင်သည်။</li>
+                  <li>(ဂ) ဗီဇာကင်းလွတ်ခွင့် (Exemption) ဖြင့်ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ လုံခြုံရေးဌာန/အဖွဲ့အစည်းများမှ ခွင့်မပြုလျင်သော်လည်ကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Blacklist) တွင်ပါဝင်ပါက ပြည်ဝင်ခွင့်အားငြင်းပယ် သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်တင်ပို့ခြင်းခံ ရမည်ဖြစ်ပါသည်။</li>
+                  <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်မှ ဗီဇာကင်းလွတ်ခွင့် (Exemption) ဖြင့် ဝင်ရောက်လာသူ သည်မည်သည့် အပြည်ပြည်ဆိုင်ရာလေဆိပ်များမှ မဆိုပြန်လည် ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
                 </ul>
               </li>
             </ol>

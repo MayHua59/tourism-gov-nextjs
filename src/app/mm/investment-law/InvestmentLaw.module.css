@@ -36,12 +36,12 @@
 }
 
 .investSection {
-  border: 1px solid #e0e9f2;
+  /* border: 1px solid #e0e9f2; */
   border-radius: 7px;
-  background: #fbfcff;
+  /* background: #fbfcff; */
   padding: 1.35em 1.5em 1.1em 1.5em;
   margin-bottom: 1.6em;
-  box-shadow: 0 1px 5px 0 rgba(23, 102, 177, 0.04);
+  /* box-shadow: 0 1px 5px 0 rgba(23, 102, 177, 0.04); */
   transition: box-shadow 0.15s;
 }
 

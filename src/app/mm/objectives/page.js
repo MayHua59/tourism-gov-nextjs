@@ -18,37 +18,37 @@ export default function Objectives() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Objectives", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ရည်မှန်းချက်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Objectives</h1>
+        <h1 className={styles.pageTitle}>ရည်မှန်းချက်များ</h1>
         <section id="objectives">
           <ol className={styles.objectivesList}>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To support Myanmar as an international tourist destination by creating domestic and international markets effectively.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> မြန်မာနိုင်ငံကိုကမ္ဘာ့ခရီးသွားလုပ်ငန်း၏ ခရီးစဉ်ဒေသတစ်ခုအဖြစ် ပေါ်ထွက်လာစေရေးအတွက် ထိရောက်သော ပြည်တွင်းပြည်ပဈေးကွက်မြှင့်တင်မှုများ ဆောင်ရွက်ခြင်းဖြင့် အထောက်အကူ ဖြစ်စေရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To protect the rights of tour operators and tourists, and to understand and comply with their obligations.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းဆောင်ရွက်သူနှင့် ခရီးသည်တို့၏ အခွင့်အရေးကို ကာကွယ်ပေးရန်နှင့် ယင်းတို့၏ တာဝန်ဝတ္တရားများကို သိရှိလိုက်နာစေရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To ensure the quality and safety of tourism services.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းဝန်ဆောင်မှုများ၏ အရည်အသွေးနှင့် လုံခြုံစိတ်ချရမှုကို အာမခံနိုင်ရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To enhance the coordination and cooperation for the development and management of the tourism sector.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးနှင့် စီမံခန့်ခွဲရေးဆိုင်ရာညှိနှိုင်းပူးပေါင်းဆောင်ရွက်မှုကို မြှင့်တင်သွားရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To create employment opportunities and develop human resources through the tourism education development.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းဆိုင်ရာ ပညာရပ်များတိုးတက်ထွန်းကားစေ၍ အလုပ်အကိုင် အခွင့်အလမ်းနှင့် လူသားအရင်းအမြစ်များ ပိုမိုဖွံ့ဖြိုးတိုးတက်စေရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To develop responsible tourism activities that will contribute to the country's sustainable development, eco-tourism and conservation of the natural environment.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> တာဝန်ယူမှုရှိသော ခရီးသွားလုပ်ငန်းများဖွံ့ဖြိုးတိုးတက်စေပြီး နိုင်ငံတော်၏ ရေရှည်စဉ်ဆက်မပြတ်ဖွံ့ဖြိုးရေး၊ သဘာဝအခြေခံ ခရီးသွားလုပ်ငန်းနှင့် ပတ်ဝန်းကျင်ထိန်းသိမ်းရေးကို အထောက်အကူဖြစ်စေရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To develop local businesses, small and medium enterprises based on tourism and economic opportunities for local communities, as well as Community-Based Tourism (CBT).
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းကိုအခြေပြု၍ဒေသအလိုက် ဆက်စပ်စီးပွားရေးလုပ်ငန်းများ၊ အသေးစားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းများ ပိုမိုဖွံ့ဖြိုးတိုးတက်လာစေရန်၊ ဒေသခံများ၏စီးပွားရေးအခွင့်အလမ်းများ တိုးတက် ဖွံ့ဖြိုးလာစေရန်နှင့် လူထုအခြေပြုခရီးသွား လုပ်ငန်းဖွံ့ဖြိုးတိုးတက်စေရန်၊
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To coordinate and cooperate with local and international institutions and tourism experts in conducting research for tourism development.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> ခရီးသွားလုပ်ငန်းဆိုင်ရာ သုတေသနပြုလုပ်လေ့လာခြင်း၊ စာတမ်းများပြုစုခြင်းတို့ကို ပြည်တွင်းပြည်ပမှ သက်ဆိုင်ရာတက္ကသိုလ်များ၊ ခရီးသွားလုပ်ငန်းတွင် လက်တွေ့ပါဝင်ဆောင်ရွက်သူများနှင့် ညှိနှိုင်းပူးပေါင်း ဆောင်ရွက်ရန်။
             </li>
           </ol>
         </section>
