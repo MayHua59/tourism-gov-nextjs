@@ -1,7 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link"; 
+
+import { useRouter, usePathname } from 'next/navigation';
 import styles from "./Header.module.css";
 
 
@@ -218,13 +220,16 @@ function renderMenu(menu, styles, parentKey = "") {
 }
 
 export default function Header() {
-  // ... rest of your component logic remains the same
-// ...existing code...
+ 
   const [isSticky, setIsSticky] = useState(false);
+   const router = useRouter();
+  const pathname = usePathname();
+
+  const currentLang = pathname.split('/')[1] || 'en';
 
    useEffect(() => {
     const handleScroll = () => {
-      // Set the nav to be sticky when scroll position is greater than 100px
+      
       setIsSticky(window.scrollY > 100);
     };
 
@@ -234,6 +239,16 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+   const handleLanguageChange = (e) => {
+    const newLang = e.target.value;
+    
+    
+    const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+
+   
+    router.push(newPath);
+  };
 
   return (
     <header className={styles.header}>
@@ -249,7 +264,8 @@ export default function Header() {
           <select
             className={styles.headerLang}
             id="language-selector"
-            defaultValue="en"
+            value={currentLang}
+            onChange={handleLanguageChange}
           >
             <option value="en">English</option>
             <option value="mm">Myanmar</option>

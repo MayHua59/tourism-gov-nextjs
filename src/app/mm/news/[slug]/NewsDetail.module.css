@@ -1,0 +1,117 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+}
+
+
+
+.govtCard {
+  background: #fff;
+  /* border: 1.5px solid #1766b1; */
+  border-radius: 10px;
+  /* box-shadow: 0 2px 16px 0 rgba(23, 102, 177, 0.06); */
+  padding: 2.7em 2em 2.5em 2em;
+  margin: 2em auto 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.govtTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #234b81;
+  margin-bottom: 0.6em;
+  /* text-align: center; */
+  font-family: 'Merriweather', 'Georgia', serif;
+  line-height: 1.23;
+  border-bottom: 1.5px solid #e3eaf6;
+  padding-bottom: 0.3em;
+  width: 100%;
+}
+
+.govtMeta {
+  display: flex;
+  align-items: center;
+  font-size: 1.05em;
+  color: #246bb1;
+  margin-bottom: 1.4em;
+  gap: 0.6em;
+  font-family: 'Merriweather Sans', Arial, sans-serif;
+  width: 100%;
+}
+
+.calendarIcon {
+  color: #1766b1;
+  font-size: 1.2em;
+  margin-right: 0.3em;
+}
+
+.govtImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6em;
+  margin-top: 0.5em;
+}
+
+.govtImage {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 0 rgba(23, 102, 177, 0.08);
+  background: #f6fafe;
+  border: 1px solid #e3eaf6;
+}
+
+.govtDesc {
+  color: #243355;
+  font-size: 1.13rem;
+  line-height: 1.75;
+  text-align: left;
+  margin-top: 0.6em;
+  font-family: 'Merriweather Sans', Arial, sans-serif;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 2vw;
+  }
+  .govtCard {
+    padding: 1.4em 0.7em 1.7em 0.7em;
+  }
+  .govtTitle {
+    font-size: 1.3rem;
+    padding-bottom: 0.2em;
+  }
+  .govtImage {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 8px 0.5vw;
+  }
+  .govtCard {
+    padding: 0.9em 0.2em 1.1em 0.2em;
+  }
+  .govtTitle {
+    font-size: 1.09rem;
+  }
+}

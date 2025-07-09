@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"; // 1. Import the Link component
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -21,22 +22,24 @@ export default function Footer() {
           <div className="col-lg-4 col-sm-6 mb-4">
             <div className={styles.footerWidget}>
               <h3 className={styles.widgetTitle}>Quick Links</h3>
+              {/* 2. Replace <a> with <Link> and use absolute paths */}
               <ul>
-                <li><a href="#">Explore Myanmar</a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="#">Air Balloons</a></li>
-                <li><a href="#">Statistics</a></li>
+                <li><Link href="/en/explore-myanmar">Explore Myanmar</Link></li>
+                <li><Link href="/en/maps">Map</Link></li>
+                <li><Link href="/en/coming-soon">Air Balloons</Link></li>
+                <li><Link href="/en/tourism-statistics">Statistics</Link></li>
               </ul>
             </div>
           </div>
           <div className="col-lg-4 col-sm-6 mb-4">
             <div className={styles.footerWidget}>
               <h3 className={styles.widgetTitle}>Explore Our Site</h3>
+              {/* 3. Replace <a> with <Link> and use absolute paths */}
               <ul>
-                <li><a href="news.html">News</a></li>
-                <li><a href="announcements.html">Announcements</a></li>
-                <li><a href="#">Accommodation</a></li>
-                <li><a href="#">Tour</a></li>
+                <li><Link href="/en/news">News</Link></li>
+                <li><Link href="/en/announcements">Announcements</Link></li>
+                <li><Link href="/en/coming-soon">Accommodation</Link></li>
+                <li><Link href="/en/coming-soon">Tour</Link></li>
               </ul>
             </div>
           </div>
@@ -57,6 +60,7 @@ export default function Footer() {
                   <p><FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />Ministry of Hotels and Tourism, Office No. 33, Nay Pyi Taw, Myanmar</p>
                 </li>
               </ul>
+              {/* External social links correctly remain as <a> tags */}
               <ul className={styles.footerSocial}>
                 <li><a href="https://facebook.com/tourismmyanmar.com.mm" target="_blank" rel="noopener"><FontAwesomeIcon icon={faFacebookF} className={styles.socialIcon} /></a></li>
                 <li><a href="https://twitter.com/VisitMyanmar_MM" className="active" target="_blank" rel="noopener"><FontAwesomeIcon icon={faTwitter} className={styles.socialIcon} /></a></li>

@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState , useEffect} from "react";
+import Link from "next/link"; 
 import styles from "./HeaderMobile.module.css";
+import { useRouter, usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -193,6 +195,13 @@ function MobileMenuItem({ item }) {
   const [open, setOpen] = useState(false);
   const hasSubMenu = Array.isArray(item.submenu) && item.submenu.length > 0;
 
+  //  const toggleSubMenu = (e) => {
+  //   if (hasSubMenu) {
+  //     e.preventDefault();
+  //     setOpen(!open);
+  //   }
+  // };
+
   return (
     <li className={`${hasSubMenu ? styles.hasChildren : ""} ${open ? styles.open : ""}`}>
       <div
@@ -231,6 +240,9 @@ function MobileMenuItem({ item }) {
 export default function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFloating, setIsFloating] = useState(false);
+    const router = useRouter();
+  const pathname = usePathname();
+  const currentLang = pathname.split('/')[1] || 'en';
   useEffect(() => {
   const handleScroll = () => {
     setIsFloating(window.scrollY > 100);
@@ -238,6 +250,12 @@ export default function HeaderMobile() {
   window.addEventListener("scroll", handleScroll, { passive: true });
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
+
+ const handleLanguageChange = (e) => {
+    const newLang = e.target.value;
+    const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+    router.push(newPath);
+  };
 
   function changeLanguage(e) {
     const lang = e.target.value;
@@ -248,30 +266,32 @@ export default function HeaderMobile() {
     <>
       <div className={`${styles.mobileHeaderBar} ${isFloating ? styles.floatingNav : ""}`}>
         <div className={styles.logoContainer}>
-          <img
-            src="/assets/images/logo-with-text-cut.png"
-            alt="Mobile Logo"
-            className={styles.logo}
-          />
+          {/* 7. Make the logo a dynamic link */}
+          <Link href={`/${currentLang}`}>
+            <img
+              src="/assets/images/logo-with-text-cut.png"
+              alt="Mobile Logo"
+              className={styles.logo}
+            />
+          </Link>
         </div>
         <div className={styles.rightGroup}>
+          {/* 8. Update the select element to be a controlled component */}
           <select
             className={styles.languageSelector}
             id="language-selector-mobile"
-            onChange={changeLanguage}
-            defaultValue="en"
+            value={currentLang}
+            onChange={handleLanguageChange}
           >
             <option value="en">English</option>
             <option value="mm">Myanmar</option>
           </select>
-          {/* Toggler Button */}
-           <button
+          <button
             className={`navbar-toggler ml-auto ${styles.toggler}`}
             type="button"
             aria-label="Toggle navigation"
             onClick={() => setMenuOpen(true)}
           >
-            {/* 2. Replace the <span> with the FontAwesomeIcon component */}
             <FontAwesomeIcon icon={faBars} />
           </button>
         </div>

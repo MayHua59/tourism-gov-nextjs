@@ -1,0 +1,178 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.17rem;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+  color: #1766b1;
+  text-align: center;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 32px 0 20px 0;
+}
+
+.branchTable,
+.evisaTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.97rem;
+  min-width: 740px;
+}
+
+.branchTable th,
+.branchTable td,
+.evisaTable th,
+.evisaTable td {
+  border: 1px solid #ddd;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  vertical-align: top;
+   word-break: normal;
+  /* white-space: nowrap; */
+}
+
+.branchTable th,
+.evisaTable th {
+  background: #f2f2f2;
+  color: #1766b1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.branchTable tr:nth-child(even),
+.evisaTable tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.branchTable tr:hover td,
+.evisaTable tr:hover td {
+  background: #eaf2fb;
+}
+
+.branchTable a,
+.evisaTable a {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.branchTable a:hover,
+.evisaTable a:hover {
+  text-decoration: underline;
+}
+
+.evisaList {
+  margin-left: 1em;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.evisaList > li {
+  margin-bottom: 1.25em;
+  color: #222;
+  font-size: 1.07rem;
+  line-height: 1.7;
+}
+
+.evisaSublist {
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+  padding-left: 1.2em;
+}
+
+.evisaSublist li {
+  margin-bottom: .5em;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #1766b1;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: 0.01em;
+}
+
+.paragraph {
+  color: #222;
+  font-size: 1.07rem;
+  line-height: 1.7;
+  margin-bottom: 1.4em;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .branchTable,
+  .evisaTable {
+    font-size: 0.93rem;
+    min-width: 600px;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .branchTable,
+  .evisaTable {
+    font-size: 0.88rem;
+    min-width: 400px;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
