@@ -1,45 +1,29 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./News.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 
 // Dummy data for news list
 const news_list = [
   {
-    name: "Myanmar Welcomes Record Number of Tourists in 2025",
-    slug: "myanmar-welcomes-record-number-of-tourists-2025",
-    description: "Myanmar's tourism industry sees an unprecedented surge in international visitors during the first half of 2025.",
-    cover_photo: "/assets/images/news/news1.jpg",
+    name: "Myanmar participates in Russia's 5th “Let's Travel!” International Travel Forum opening event",
+    slug: "myanmar-participates-international-travel-forum-opening-event",
+    description: "MYANMAR delegation led by Union Minister for Hotels andTourism U Kyaw Soe Win attended...",
+    cover_photo: "/assets/images/news-images/russia.jpg",
     news_category_id: 1,
     active: true,
-    timestamp: "2025-07-01T10:30:00Z"
+    timestamp: "2025-06-11T10:30:00Z"
   },
   {
-    name: "Eco-Tourism Projects Launched in Inle Lake",
-    slug: "eco-tourism-projects-inle-lake",
-    description: "New eco-friendly initiatives aim to preserve Inle Lake's natural beauty while boosting local economies.",
-    cover_photo: "/assets/images/news/news2.jpg",
+    name: "Homes for flood victims handed over",
+    slug: "homes-for-flood-victims-handed-over",
+    description: "UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover...",
+    cover_photo: "/assets/images/news-images/moht.jpg",
     news_category_id: 2,
     active: true,
-    timestamp: "2025-06-25T09:00:00Z"
-  },
-  {
-    name: "Yangon Hosts ASEAN Tourism Forum",
-    slug: "yangon-hosts-asean-tourism-forum",
-    description: "Leaders from ASEAN countries gather in Yangon to discuss regional tourism strategies.",
-    cover_photo: "/assets/images/news/news3.jpg",
-    news_category_id: 3,
-    active: true,
-    timestamp: "2025-06-10T15:15:00Z"
-  },
-  {
-    name: "New Hospitality Training Centers Announced",
-    slug: "new-hospitality-training-centers-announced",
-    description: "The Ministry of Hotels and Tourism announces new training centers to enhance skills in hospitality across the country.",
-    cover_photo: "/assets/images/news/news4.jpg",
-    news_category_id: 4,
-    active: true,
-    timestamp: "2025-06-05T08:45:00Z"
+    timestamp: "2025-05-04T09:00:00Z"
   }
 ];
 
@@ -69,15 +53,15 @@ export default function News() {
               <a href={`/en/news/${news.slug}`} className={styles.newsLink}>
                 <div className={styles.coverWrapper}>
                   <img
-                    src={"/assets/images/cover-images/bagan.jpg"}
+                    src={news.cover_photo}
                     alt={news.name}
                     className={styles.newsCover}
                   />
                 </div>
                 <div className={styles.newsContent}>
-                  <h2 className={styles.newsTitle}>{news.name}</h2>
                   <div className={styles.newsMeta}>
-                    <span className={styles.newsTimestamp}>
+                   <span className={styles.newsPublished}>
+                      <FontAwesomeIcon icon={faCalendar} className={styles.calendarIcon} />
                       {new Date(news.timestamp).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -85,6 +69,8 @@ export default function News() {
                       })}
                     </span>
                   </div>
+                  <h2 className={styles.newsTitle}>{news.name}</h2>
+                  
                   <p className={styles.newsDesc}>{news.description}</p>
                   <div className={styles.readMoreWrapper}>
                     <span className={styles.readMoreBtn}>Read More</span>

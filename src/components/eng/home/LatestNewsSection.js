@@ -6,19 +6,19 @@ import styles from "./LatestNewsSection.module.css";
 const newsList = [
   {
     id: 1,
-    img: "/assets/images/news1.jpg",
+    img: "/assets/images/news-images/russia.jpg",
     date: "June 11, 2025",
     title: "Myanmar participates in Russia's 5th “Let's Travel!” International Travel Forum opening event",
     summary: "MYANMAR delegation led by Union Minister for Hotels andTourism U Kyaw Soe Win attended...",
-    link: "news-detail.html?id=1"
+    link: "/en/news/myanmar-participates-international-travel-forum-opening-event"
   },
   {
     id: 2,
-    img: "/assets/images/news2.jpg",
+    img: "/assets/images/news-images/moht.jpg",
     date: "May 04, 2025",
     title: "Homes for flood victims handed over",
     summary: "UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover...",
-    link: "news-detail.html?id=2"
+    link: "/en/news/homes-for-flood-victims-handed-over"
   },
   {
     id: 3,
@@ -102,7 +102,7 @@ export default function LatestNewsSection() {
                   <h5 className={styles.newsTitle}>{news.title}</h5>
                   <p className={styles.newsDate}>{news.date}</p>
                   <p className={styles.newsSummary}>{news.summary}</p>
-                  <a href={news.link} className="btn btn-primary btn-sm">
+                  <a href={news.link} className="btn btn-primary btn-sm rounded-0">
                     Read More
                   </a>
                 </div>
@@ -118,7 +118,7 @@ export default function LatestNewsSection() {
           </button>
         </div>
         <div className="text-center mt-4">
-          <a href="news.html" className="btn btn-outline-primary">
+          <a href="news.html" className="btn btn-outline-primary rounded-0">
             View All News
           </a>
         </div>
