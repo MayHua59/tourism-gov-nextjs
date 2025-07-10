@@ -58,7 +58,7 @@ export default async function News() {
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>News</h1>
        {error ? (
-        <div className={styles.errorMessage}>{error}</div>
+        <div className="errorMessage">{error}</div>
        ):(
          <div className={styles.newsList}>
           {news_list.map((news) => (

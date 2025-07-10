@@ -71,7 +71,7 @@ export default async function NewsDetail({ params }) {
       />
       <div className={styles.container}>
       {error ? (
-        <div className={styles.errorMessage}>{error}</div>
+        <div className="errorMessage">{error}</div>
       ) : (
           <div className={styles.govtCard}>
           <h1 className={styles.govtTitle}>{news.name}</h1>
