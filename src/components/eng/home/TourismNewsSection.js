@@ -53,7 +53,7 @@ const newsData = [
     alt: "Sample News 6",
     title: "Heritage Sites Added to UNESCO List",
     summary:
-      "Three Myanmar sites have been recognized by UNESCO, boosting the country's cultural tourism appeal.",
+      "Three Myanmar sites have been recognized by UNESCO, boosting the country&apos;s cultural tourism appeal.",
     category: "Heritage",
     date: "10 Oct 2022",
   },
@@ -94,7 +94,7 @@ const TourismNewsSection = () => {
     <section className={styles.newsSection}>
       <div className={styles.sectionHeader}>
         <p className={styles.sectionLead}>
-          Stay informed about the latest developments, events, and initiatives in Myanmar's tourism sector.
+          Stay informed about the latest developments, events, and initiatives in Myanmar&apos;s tourism sector.
         </p>
       </div>
       <div className={styles.carouselWrapper}>

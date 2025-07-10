@@ -42,7 +42,7 @@ export default function Objectives() {
               <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To create employment opportunities and develop human resources through the tourism education development.
             </li>
             <li className={styles.objectivesListItem}>
-              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To develop responsible tourism activities that will contribute to the country's sustainable development, eco-tourism and conservation of the natural environment.
+              <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To develop responsible tourism activities that will contribute to the country&apos;s sustainable development, eco-tourism and conservation of the natural environment.
             </li>
             <li className={styles.objectivesListItem}>
               <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> To develop local businesses, small and medium enterprises based on tourism and economic opportunities for local communities, as well as Community-Based Tourism (CBT).

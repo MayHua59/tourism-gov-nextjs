@@ -5,7 +5,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
   title: "Coming Soon",
-  description: "We're working hard to bring you something amazing. Stay tuned!"
+  description: "We&apos;re working hard to bring you something amazing. Stay tuned!"
 };
 
 export default function ComingSoon() {
@@ -19,7 +19,7 @@ export default function ComingSoon() {
       />
       <div className={styles.comingSoonContainer}>
         <h1>Coming Soon!</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
+        <p>We&apos;re working hard to bring you something amazing. Stay tuned!</p>
         <form
           className={styles.subscribeForm}
           // onSubmit={e => {

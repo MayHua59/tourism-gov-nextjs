@@ -29,7 +29,7 @@ export default function WhyVisitMyanmarSection() {
                 <div className="col-lg-6 col-md-6 mb-30">
                   <div className={styles.chooseItem}>
                     <h3 className={styles.itemTitle}>Natural Beauty</h3>
-                    <p>From Himalayan peaks to tropical islands, Myanmar's landscapes are breathtaking.</p>
+                    <p>From Himalayan peaks to tropical islands, Myanmar&apos;s landscapes are breathtaking.</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 mb-30">
@@ -49,12 +49,12 @@ export default function WhyVisitMyanmarSection() {
               <h2 className={styles.title}>Our Tourism Achievements</h2>
               <p>
                 The Ministry of Hotels and Tourism has made significant progress in developing sustainable tourism
-                infrastructure while preserving Myanmar's cultural heritage and natural environment for future generations.
+                infrastructure while preserving Myanmar&apos;s cultural heritage and natural environment for future generations.
               </p>
               <ul className={styles.chooseItemStyle}>
                 <li>Over 4.3 million international arrivals in 2019</li>
                 <li>50% increase in hotel rooms since 2011</li>
-                <li>8 sites on UNESCO's Tentative List</li>
+                <li>8 sites on UNESCO&apos;s Tentative List</li>
               </ul>
             </div>
           </div>

@@ -145,7 +145,7 @@ export default function EVisa() {
                   </thead>
                   <tbody>
                     <tr><td>1.</td><td>Albania</td><td>51.</td><td>Kenya</td></tr>
-                    <tr><td>2.</td><td>Algeria</td><td>52.</td><td>Korea, Democratic People's Republic</td></tr>
+                    <tr><td>2.</td><td>Algeria</td><td>52.</td><td>Korea, Democratic People&apos;s Republic</td></tr>
                     <tr><td>3.</td><td>Argentina</td><td>53.</td><td>Korea, Republic</td></tr>
                     <tr><td>4.</td><td>Australia</td><td>54.</td><td>Kuwait</td></tr>
                     <tr><td>5.</td><td>Austria</td><td>55.</td><td>Kyrgyzstan</td></tr>

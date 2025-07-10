@@ -24,15 +24,15 @@ export default function DutiesAndResponsibilities() {
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Duties and Responsibilites</h1>
 
-        <h2 className={styles.sectionTitle}>Union Minister's Office</h2>
+        <h2 className={styles.sectionTitle}>Union Minister&apos;s Office</h2>
 
         <section id="administration">
           <h2 className={styles.sectionTitle}>Administration and Human Resources Management Department</h2>
           <ul className={styles.dutiesList}>
             <li className={styles.dutiesListItem}>Manage the administrative affairs of the offices of the Minister and Permanent Secretary.</li>
-            <li className={styles.dutiesListItem}>Manage staff and general administration of the Ministry's office.</li>
+            <li className={styles.dutiesListItem}>Manage staff and general administration of the Ministry&apos;s office.</li>
             <li className={styles.dutiesListItem}>Coordinate the selecting of participants to attend training in Myanmar</li>
-            <li className={styles.dutiesListItem}>Supervising the activities of the Ministry's delegates attending conferences, exhibitions and seminars held in Myanmar and abroad.</li>
+            <li className={styles.dutiesListItem}>Supervising the activities of the Ministry&apos;s delegates attending conferences, exhibitions and seminars held in Myanmar and abroad.</li>
             <li className={styles.dutiesListItem}>Coordinating the administration of business registration, licensing and tax as managed by the Ministry.</li>
           </ul>
         </section>
@@ -44,8 +44,8 @@ export default function DutiesAndResponsibilities() {
             <li className={styles.dutiesListItem}>Scrutinizing the matters submitted by respective departments under the ministry, to be in line with policy and procedures.</li>
             <li className={styles.dutiesListItem}>Supervising, cooperating and issuing on policies and procedures agreed with regional and international organizations.</li>
             <li className={styles.dutiesListItem}>Performing and clarifying on agreements and questions asked by Hluttaw and other government organizations.</li>
-            <li className={styles.dutiesListItem}>Submitting the memorandum to the Union Government's meeting and committees of the Union Government.</li>
-            <li className={styles.dutiesListItem}>Scrutinizing the Ministry's policy as well as the related activities being implemented by the Ministry.</li>
+            <li className={styles.dutiesListItem}>Submitting the memorandum to the Union Government&apos;s meeting and committees of the Union Government.</li>
+            <li className={styles.dutiesListItem}>Scrutinizing the Ministry&apos;s policy as well as the related activities being implemented by the Ministry.</li>
           </ul>
         </section>
 
@@ -69,7 +69,7 @@ export default function DutiesAndResponsibilities() {
           <ul className={styles.dutiesList}>
             <li className={styles.dutiesListItem}>Managing budgets in accordance with the procedures.</li>
             <li className={styles.dutiesListItem}>Collecting budget data from departments on a monthly basis.</li>
-            <li className={styles.dutiesListItem}>Monitoring the budget allocations and expanding the department in line with the Government's functions.</li>
+            <li className={styles.dutiesListItem}>Monitoring the budget allocations and expanding the department in line with the Government&apos;s functions.</li>
             <li className={styles.dutiesListItem}>Managing the budget process to be in line with procedures.</li>
             <li className={styles.dutiesListItem}>Performing internal audits within the Ministry.</li>
             <li className={styles.dutiesListItem}>Coordinating with the Union Auditor General Office in the auditing process and managing issues arising from the audit process.</li>
@@ -92,9 +92,9 @@ export default function DutiesAndResponsibilities() {
           <h2 className={styles.sectionTitle}>e-Government Department</h2>
           <ul className={styles.dutiesList}>
             <li className={styles.dutiesListItem}>Coordinate with government organizations, Union ministries, and Region/State governments to successfully implement e-Government Common Application tasks.</li>
-            <li className={styles.dutiesListItem}>Take responsibility and implement the ministry's ICT-related projects.</li>
-            <li className={styles.dutiesListItem}>In accordance with the ministry's policies and objectives, implement ICT-related projects to enhance and improve public service delivery.</li>
-            <li className={styles.dutiesListItem}>Continuously research and explore new and modern technologies to propose their integration into the ministry's processes.</li>
+            <li className={styles.dutiesListItem}>Take responsibility and implement the ministry&apos;s ICT-related projects.</li>
+            <li className={styles.dutiesListItem}>In accordance with the ministry&apos;s policies and objectives, implement ICT-related projects to enhance and improve public service delivery.</li>
+            <li className={styles.dutiesListItem}>Continuously research and explore new and modern technologies to propose their integration into the ministry&apos;s processes.</li>
             <li className={styles.dutiesListItem}>Organize and deliver training programs to increase the number and capacity of ICT-skilled staff within the ministry.</li>
             <li className={styles.dutiesListItem}>Prepare and submit short-term and long-term e-Government plans, and propose the required budgeting for implementation.</li>
           </ul>

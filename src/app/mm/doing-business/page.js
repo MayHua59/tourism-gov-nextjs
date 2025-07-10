@@ -41,7 +41,7 @@ export default function DoingBusinessInMyanmar() {
           <div className={styles.businessSection}>
             <h4>How to apply for an Endorsement</h4>
             <p>
-              In addition to Myanmar Investment Commission (MIC) Permits, the Union Government has introduced 'Endorsements' as a fast-track way to doing business in Myanmar. Investors can apply to the MIC or the State and Regional Investment Committee for an Endorsement of an investment proposal.
+              In addition to Myanmar Investment Commission (MIC) Permits, the Union Government has introduced &apos;Endorsements&apos; as a fast-track way to doing business in Myanmar. Investors can apply to the MIC or the State and Regional Investment Committee for an Endorsement of an investment proposal.
             </p>
             <p>
               <a href="https://www.dica.gov.mm/en/apply-endorsement" target="_blank" rel="noopener">Read More Here</a>
