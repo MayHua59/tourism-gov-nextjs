@@ -12,7 +12,7 @@ export default function BrochuresAndPamphlets() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/25.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/21.jpg"
         altText="brochures and pamphlets cover photo"
       />
       <Breadcrumb

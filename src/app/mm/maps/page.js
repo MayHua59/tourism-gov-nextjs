@@ -12,7 +12,7 @@ export default function Maps() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/22.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/19.jpg"
         altText="maps cover photo"
       />
       <Breadcrumb

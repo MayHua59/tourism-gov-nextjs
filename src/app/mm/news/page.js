@@ -52,7 +52,7 @@ export default function News() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/14.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/1.jpg"
         altText="news cover photo"
       />
       <Breadcrumb

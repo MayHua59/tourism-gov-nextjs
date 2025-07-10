@@ -12,7 +12,7 @@ export default function ContactUs() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/15.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/13.jpg"
         altText="contact us cover photo"
       />
       <Breadcrumb

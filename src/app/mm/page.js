@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../../components/HeroSection';
+import HeroSectionMM from '../../components/HeroSectionMM';
 import AboutSection from '../../components/mm/home/AboutSection';
 import WeatherWidget from '../../components/eng/home/WeatherWidget';
 import DigitalServiceSection from '../../components/mm/home/DigitalServiceSection';
@@ -16,7 +16,7 @@ import LatestNewsSection from '../../components/mm/home/LatestNewsSection';
 const Page = () => {
   return (
     <>
-     <HeroSection/>
+     <HeroSectionMM/>
 <AboutSection/>
 <WeatherWidget/>
 <DigitalServiceSection/>
