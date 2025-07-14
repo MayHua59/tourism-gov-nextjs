@@ -1,18 +1,21 @@
-import React from "react";
+
+"use client";
+import React, { useState } from "react";
+
 import styles from "./MyanmarInPicturesSection.module.css";
 
 const galleryItems = [
   {
     src: "/assets/images/cover-images/bagan-sunrise.jpg",
     title: "ပုဂံနေထွက်ချိန်",
-    category: ["nature", "beaches"],
+    category: ["nature", "cultural"],
     subtitle: "ရှေးဟောင်းဘုရားပုထိုး",
     alt: "Bagan Temples",
   },
   {
     src: "/assets/images/cover-images/inle-boat.jpg",
     title: "အင်းလေးကန် ငါးဖမ်းသမားများ",
-    category: ["festivals", "beaches"],
+    category: ["nature", "cultural"],
     subtitle: "တစ်မူထူးခြားသော ရိုးရာဓလေ့",
     alt: "Inle Lake",
   },
@@ -33,7 +36,7 @@ const galleryItems = [
   {
     src: "/assets/images/cover-images/upaing.jpg",
     title: "ဦးပိန် တံတား",
-    category: ["nature", "beaches"],
+    category: ["nature"],
     subtitle: "ဂန္ထဝင်အထိမ်းအမှတ်နေရာများ",
     alt: "Mandalay",
   },
@@ -47,6 +50,11 @@ const galleryItems = [
 ];
 
 export default function MyanmarInPicturesSection() {
+  const [filter, setFilter] = useState("all");
+    const filteredItems =
+    filter === "all"
+      ? galleryItems
+      : galleryItems.filter(item => item.category.map(c => c.toLowerCase()).includes(filter));
   return (
     <section className={styles.picturesSection}>
       <div className={styles.picturesContainer}>
@@ -64,31 +72,57 @@ export default function MyanmarInPicturesSection() {
         </div>
         <div className={styles.picturesFilterWrapper}>
           <div className={styles.picturesFilterGroup}>
-            <button className={`${styles.picturesFilterBtn} ${styles.active}`}>အားလုံး</button>
-            <button className={styles.picturesFilterBtn}>ယဉ်ကျေးမှုဆိုင်ရာ</button>
-            <button className={styles.picturesFilterBtn}>သဘာဝရှုခင်း</button>
-            <button className={styles.picturesFilterBtn}>ကမ်းခြေများ</button>
-            <button className={styles.picturesFilterBtn}>ပွဲတော်များ</button>
+            
+              <button
+    className={`${styles.picturesFilterBtn} ${filter === "all" ? styles.active : ""}`}
+    onClick={() => setFilter("all")}
+  >
+    အားလုံး
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "cultural" ? styles.active : ""}`}
+    onClick={() => setFilter("cultural")}
+  >
+    ယဉ်ကျေးမှုဆိုင်ရာ
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "nature" ? styles.active : ""}`}
+    onClick={() => setFilter("nature")}
+  >
+    သဘာဝရှုခင်း
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "beaches" ? styles.active : ""}`}
+    onClick={() => setFilter("beaches")}
+  >
+    ကမ်းခြေများ
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "festivals" ? styles.active : ""}`}
+    onClick={() => setFilter("festivals")}
+  >
+    ပွဲတော်များ
+  </button>
           </div>
-          <div className={styles.picturesGrid}>
-            {galleryItems.map((item, i) => (
-              <div className={styles.picturesGridItem} key={i}>
-                <div className={styles.picturesThumb}>
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className={styles.picturesImg}
-                  />
-                  <div className={styles.picturesOverlayText}>
-                    <h3 className={styles.picturesOverlayTitle}>
-                      <a href="/gallery.html">{item.title}</a>
-                    </h3>
-                    <span>{item.subtitle}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+           <div className={styles.picturesGrid}>
+  {filteredItems.map((item, i) => (
+    <div className={styles.picturesGridItem} key={i}>
+      <div className={styles.picturesThumb}>
+        <img
+          src={item.src}
+          alt={item.alt}
+          className={styles.picturesImg}
+        />
+        <div className={styles.picturesOverlayText}>
+          <h3 className={styles.picturesOverlayTitle}>
+            <a href="/gallery.html">{item.title}</a>
+          </h3>
+          <span>{item.subtitle}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </div>
     </section>
