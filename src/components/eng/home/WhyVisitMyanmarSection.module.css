@@ -49,24 +49,7 @@
 .responsivePadding {
   padding: 60px 48px;
 }
-@media (max-width: 991px) {
-  .responsivePadding {
-    padding: 36px 16px;
-  }
-  .chooseContentStyle {
-    margin-right: 0;
-    max-width: 100%;
-  }
-  .chooseContent {
-    max-width: 100%;
-  }
-  .chooseUsThumb, .chooseUsThumbStyle {
-    min-height: 180px;
-  }
-  .flexRow {
-    flex-direction: column;
-  }
-}
+
 
 .title {
   position: relative;
@@ -140,4 +123,29 @@
 
 .chooseContentStyle p {
   margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  
+  .chooseContentStyle {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .chooseContent {
+    max-width: 100%;
+  }
+  
+  
+  
+}
+
+@media (max-width: 600px) {
+  .chooseUsThumb, .chooseUsThumbStyle {
+    min-height: 180px;
+  }
+  .flexRow {
+    flex-direction: column;
+  }
+  .chooseContent{
+    padding: 30px;
+  }
 }

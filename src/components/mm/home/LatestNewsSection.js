@@ -120,7 +120,7 @@ export default function LatestNewsSection() {
         </div>
         <div className="text-center mt-4">
          <Link href="/mm/news" className="btn btn-outline-primary">
-            View All News
+            သတင်းအားလုံးကြည့်ရန်
           </Link>
         </div>
       </div>

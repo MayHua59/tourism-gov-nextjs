@@ -1,7 +1,9 @@
 "use client"
 
 import React, { useState } from "react";
+import Link from "next/link";
 import styles from "./LatestNewsSection.module.css";
+
 
 const newsList = [
   {
@@ -118,9 +120,9 @@ export default function LatestNewsSection() {
           </button>
         </div>
         <div className="text-center mt-4">
-          <a href="news.html" className="btn btn-outline-primary rounded-0">
-            View All News
-          </a>
+          <Link href="/en/news" className="btn btn-outline-primary rounded-0">
+    View All News
+  </Link>
         </div>
       </div>
     </section>

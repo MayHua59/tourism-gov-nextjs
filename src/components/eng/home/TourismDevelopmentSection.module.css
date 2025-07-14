@@ -111,6 +111,9 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .colLeft {
+    display: none;
+  }
   .tdImage {
     min-height: 180px;
   }
@@ -127,6 +130,9 @@
     padding: 14px 0;
   }
   .tdPlaneBg {
+    display: none;
+  }
+  .colLeft {
     display: none;
   }
 }
