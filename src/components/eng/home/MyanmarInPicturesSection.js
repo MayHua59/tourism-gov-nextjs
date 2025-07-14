@@ -1,18 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./MyanmarInPicturesSection.module.css";
 
 const galleryItems = [
   {
     src: "/assets/images/cover-images/bagan-sunrise.jpg",
     title: "Bagan at Sunrise",
-    category: ["nature", "beaches"],
+    category: ["nature", "cultural"],
     subtitle: "Ancient Temples",
     alt: "Bagan Temples",
   },
   {
     src: "/assets/images/cover-images/inle-boat.jpg",
     title: "Inle Lake Fishermen",
-    category: ["festivals", "beaches"],
+    category: ["festivals", "nature", "cultural"],
     subtitle: "Unique Culture",
     alt: "Inle Lake",
   },
@@ -33,7 +34,7 @@ const galleryItems = [
   {
     src: "/assets/images/cover-images/upaing.jpg",
     title: "U Bein Bridge",
-    category: ["nature", "beaches"],
+    category: ["nature"],
     subtitle: "Iconic Landmarks",
     alt: "Mandalay",
   },
@@ -47,6 +48,11 @@ const galleryItems = [
 ];
 
 export default function MyanmarInPicturesSection() {
+  const [filter, setFilter] = useState("all");
+  const filteredItems =
+  filter === "all"
+    ? galleryItems
+    : galleryItems.filter(item => item.category.map(c => c.toLowerCase()).includes(filter));
   return (
     <section className={styles.picturesSection}>
       <div className={styles.picturesContainer}>
@@ -64,31 +70,56 @@ export default function MyanmarInPicturesSection() {
         </div>
         <div className={styles.picturesFilterWrapper}>
           <div className={styles.picturesFilterGroup}>
-            <button className={`${styles.picturesFilterBtn} ${styles.active}`}>All</button>
-            <button className={styles.picturesFilterBtn}>Cultural</button>
-            <button className={styles.picturesFilterBtn}>Nature</button>
-            <button className={styles.picturesFilterBtn}>Beaches</button>
-            <button className={styles.picturesFilterBtn}>Festivals</button>
+             <button
+    className={`${styles.picturesFilterBtn} ${filter === "all" ? styles.active : ""}`}
+    onClick={() => setFilter("all")}
+  >
+    All
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "cultural" ? styles.active : ""}`}
+    onClick={() => setFilter("cultural")}
+  >
+    Cultural
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "nature" ? styles.active : ""}`}
+    onClick={() => setFilter("nature")}
+  >
+    Nature
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "beaches" ? styles.active : ""}`}
+    onClick={() => setFilter("beaches")}
+  >
+    Beaches
+  </button>
+  <button
+    className={`${styles.picturesFilterBtn} ${filter === "festivals" ? styles.active : ""}`}
+    onClick={() => setFilter("festivals")}
+  >
+    Festivals
+  </button>
           </div>
           <div className={styles.picturesGrid}>
-            {galleryItems.map((item, i) => (
-              <div className={styles.picturesGridItem} key={i}>
-                <div className={styles.picturesThumb}>
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className={styles.picturesImg}
-                  />
-                  <div className={styles.picturesOverlayText}>
-                    <h3 className={styles.picturesOverlayTitle}>
-                      <a href="/gallery.html">{item.title}</a>
-                    </h3>
-                    <span>{item.subtitle}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+  {filteredItems.map((item, i) => (
+    <div className={styles.picturesGridItem} key={i}>
+      <div className={styles.picturesThumb}>
+        <img
+          src={item.src}
+          alt={item.alt}
+          className={styles.picturesImg}
+        />
+        <div className={styles.picturesOverlayText}>
+          <h3 className={styles.picturesOverlayTitle}>
+            <a href="/gallery.html">{item.title}</a>
+          </h3>
+          <span>{item.subtitle}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </div>
     </section>

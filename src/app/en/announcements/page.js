@@ -53,7 +53,8 @@ export default async function Announcements() {
   let announcements_list = [];
   let error = null;
     try {
-      news_list = await fetchAnnouncementList();
+      announcements_list = await fetchAnnouncementList();
+      
     } catch (err) {
       error = "There is no Announcement";
     }
