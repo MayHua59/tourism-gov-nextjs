@@ -1,0 +1,32 @@
+.pageContainer {
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.regionCard {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.regionTitle {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.regionInfo {
+  font-size: 1em;
+  color: #666;
+}
+
+.regionInfo p {
+  margin-bottom: 0.5em;
+}

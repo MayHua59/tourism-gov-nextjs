@@ -9,7 +9,7 @@ export async function fetchAnnouncementList() {
   const json = await res.json();
   return {
     data: Array.isArray(json.data) ? json.data : [],
-    meta: json.meta || { current_page: page, per_page, total: 0 }
+    meta: json.meta || { current_page: 1, per_page: 20, total: 0 }
   }; 
 }
 

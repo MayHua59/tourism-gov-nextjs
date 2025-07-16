@@ -154,6 +154,47 @@
   color: #fff;
 }
 
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 0 0;
+}
+
+.pagination button {
+  background: #fff;
+  border: 1px solid #1766b1;
+  color: #1766b1;
+  padding: 6px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #1766b1;
+  color: #fff;
+  border-color: #1766b1;
+}
+
+.pagination button.activePage {
+  background: #1766b1 !important;
+  color: #fff;
+  border-color: #1766b1;
+  cursor: default;
+  font-weight: bold;
+}
+
+.prevNextBtn {
+  font-weight: bold;
+}
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6; 
+  pointer-events: none; 
+}
 @media (max-width: 900px) {
   .container {
     padding: 18px 2vw;
@@ -168,6 +209,14 @@
     width: 90px;
     min-width: 90px;
     max-width: 90px;
+  }
+  .pagination button {
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 4px 12px; /* Smaller padding */
+  }
+
+  .pagination {
+    gap: 4px; /* Reduce gap between buttons */
   }
 }
 
@@ -201,36 +250,8 @@
   .announcementContent {
     padding: 0.8em 0.8em 1em 0.8em;
   }
-}
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 32px 0 0 0;
-}
-
-.pagination button {
-  background: #fff;
-  border: 1px solid #1766b1;
-  color: #1766b1;
-  padding: 6px 16px;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.pagination button:hover:not(:disabled) {
-  background: #1766b1;
-  color: #fff;
-  border-color: #1766b1;
-}
-
-.pagination button:disabled,
-.activePage {
-  background: #1766b1;
-  color: #fff;
-  border-color: #1766b1;
-  cursor: default;
-  font-weight: bold;
+  .pagination button {
+    font-size: 0.8rem; 
+    padding: 3px 8px; 
+  }
 }

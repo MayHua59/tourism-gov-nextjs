@@ -93,18 +93,36 @@ export default function Announcements() {
             </div>
           ))}
         </div>
-        <div className={styles.pagination}>
-          {Array.from({ length: totalPages }, (_, i) => (
+                {totalPages > 1 && ( // Only show pagination if there's more than 1 page
+          <div className={styles.pagination}>
+           <button
+  onClick={() => handlePageChange(meta.current_page - 1)}
+  disabled={meta.current_page === 1} // This is the line that handles disabling
+  className={styles.prevNextBtn}
+>
+  Prev
+</button>
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i + 1}
+                className={meta.current_page === i + 1 ? styles.activePage : ""}
+                onClick={() => handlePageChange(i + 1)}
+                // Disabled attribute should only be used if current page, otherwise clickable.
+                // The activePage class already indicates it's the current page.
+                // disabled={meta.current_page === i + 1} // Remove this line
+              >
+                {i + 1}
+              </button>
+            ))}
             <button
-              key={i + 1}
-              className={meta.current_page === i + 1 ? styles.activePage : ""}
-              onClick={() => handlePageChange(i + 1)}
-              disabled={meta.current_page === i + 1}
+              onClick={() => handlePageChange(meta.current_page + 1)}
+              disabled={meta.current_page === totalPages}
+              className={styles.prevNextBtn}
             >
-              {i + 1}
+              Next
             </button>
-          ))}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

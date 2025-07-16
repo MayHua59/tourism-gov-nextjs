@@ -33,10 +33,19 @@ export default async function UpcomingEventDetail({ params }) {
 
   if (!event && !error) return notFound();
 
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/2.jpg"
+        imageUrl="/assets/images/cover-images-title/12.jpg"
         altText="upcoming events cover photo"
       />
       <Breadcrumb
@@ -52,20 +61,16 @@ export default async function UpcomingEventDetail({ params }) {
         ) : (
           <div className={styles.govtCard}>
             <h1 className={styles.govtTitle}>{event.name}</h1>
+            
             <div className={styles.govtMeta}>
-              <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
-              <span>
-                <strong>Date:</strong>{" "}
-                {new Date(event.timestamp).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </span>
-            </div>
+                    <span className={styles.eventTimestamp}>
+                      <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
+                      {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
+                    </span>
+                  </div>
             <div className={styles.govtImageWrapper}>
               <img
-                src={event.cover_photo}
+                src="https://www.thehiplife.asia/wp-content/uploads/2024/10/34e481a910e3d47cbe66535490158a80-1.jpg"
                 alt={event.name}
                 className={styles.govtImage}
               />
