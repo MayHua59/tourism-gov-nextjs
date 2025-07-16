@@ -64,7 +64,7 @@
 }
 
 .coverWrapper {
-  width: 140px;
+  width: 30%;
   min-width: 140px;
   height: 100%;
   background: #e8f1fb;
@@ -76,9 +76,10 @@
 
 .announcementCover {
   width: 100%;
-  height: auto;
-  max-height: 140px;
-  object-fit: contain;
+  height: 100%;
+  /* max-height: 140px; */
+  object-fit: cover;
+  background-position: center center;
   display: block;
   background: #f6fafe;
 }
@@ -200,4 +201,36 @@
   .announcementContent {
     padding: 0.8em 0.8em 1em 0.8em;
   }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 0 0;
+}
+
+.pagination button {
+  background: #fff;
+  border: 1px solid #1766b1;
+  color: #1766b1;
+  padding: 6px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #1766b1;
+  color: #fff;
+  border-color: #1766b1;
+}
+
+.pagination button:disabled,
+.activePage {
+  background: #1766b1;
+  color: #fff;
+  border-color: #1766b1;
+  cursor: default;
+  font-weight: bold;
 }

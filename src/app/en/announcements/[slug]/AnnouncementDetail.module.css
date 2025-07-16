@@ -75,7 +75,7 @@
 
 .govtImage {
   width: 100%;
-  max-width: 520px;
+  max-width: 1000px;
   height: auto;
   object-fit: contain;
   /* border-radius: 8px; */
@@ -93,6 +93,7 @@
   font-family: 'Merriweather Sans', Arial, sans-serif;
   width: 100%;
 }
+
 
 @media (max-width: 900px) {
   .container {
