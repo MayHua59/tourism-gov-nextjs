@@ -85,17 +85,26 @@ export default async function NewsDetail({ params }) {
                         day: "numeric",
                       })}
             </span>
+            {news.category?.name && (
+                <span className={styles.govtCategory}>
+                  {" | "}Category: {news.category.name}
+                </span>
+              )}
           </div>
           <div className={styles.govtImageWrapper}>
             <img
-              src="https://farm1.staticflickr.com/495/31381620470_cfdc56d226_k.jpg"
+              src={news.cover_photo}
               alt={news.name}
               className={styles.govtImage}
             />
           </div>
           <div className={styles.govtDesc}>
-            {news.description}
+            <p
+className={styles.newsDesc}
+dangerouslySetInnerHTML={{ __html: news.description }}
+></p>
           </div>
+
         </div>
       )}
       </div>

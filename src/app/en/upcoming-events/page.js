@@ -7,6 +7,7 @@ import styles from "./UpcomingEvents.module.css";
 import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { fetchUpcomingEventsList } from "../../../lib/api/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Loading from "../../../components/Loading";
 
 // export const metadata = {
 //   title: "Upcoming Events",
@@ -79,7 +80,7 @@ export default function UpcomingEvents() {
       />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Upcoming Events</h1>
-        {loading && <div className={styles.loadingMessage}>Loading upcoming events...</div>}
+        {loading && <Loading  size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
           <div className={styles.noEventsMessage}>No upcoming events found.</div>

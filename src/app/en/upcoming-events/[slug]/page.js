@@ -70,13 +70,16 @@ export default async function UpcomingEventDetail({ params }) {
                   </div>
             <div className={styles.govtImageWrapper}>
               <img
-                src="https://www.thehiplife.asia/wp-content/uploads/2024/10/34e481a910e3d47cbe66535490158a80-1.jpg"
+                src={event.cover_photo}
                 alt={event.name}
                 className={styles.govtImage}
               />
             </div>
             <div className={styles.govtDesc}>
-              {event.description}
+             <p
+className={styles.newsDesc}
+dangerouslySetInnerHTML={{ __html: event.description }}
+></p>
             </div>
           </div>
         )}

@@ -6,6 +6,7 @@ import BannerSection from "../../../components/BannerSection";
 import styles from "./Announcements.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { fetchAnnouncementList } from "../../../lib/api/announcement";
+import Loading from "../../../components/Loading";
 
 // export const metadata = {
 //   title: "Announcements",
@@ -63,7 +64,7 @@ export default function Announcements() {
       />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Announcements</h1>
-        {loading && <div>Loading...</div>}
+        {loading && <Loading  size="large" />}
         {error && <div className="errorMessage">{error}</div>}
         <div className={styles.announcementsList}>
           {announcements.map((a) => (

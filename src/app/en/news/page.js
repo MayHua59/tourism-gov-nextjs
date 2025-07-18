@@ -7,6 +7,7 @@ import styles from "./News.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { fetchNewsList } from "../../../lib/api/news";
+import Loading from "../../../components/Loading";
 
 export default function News() {
   const [newsList, setNewsList] = useState([]);
@@ -69,7 +70,7 @@ export default function News() {
       />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>News</h1>
-        {loading && <div className={styles.loadingMessage}>Loading news...</div>}
+        {loading && <Loading message="Fetching the latest news..." size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>} 
         {!loading && newsList.length === 0 && !error && (
             <div className={styles.noNewsMessage}>No news found.</div>
