@@ -59,6 +59,12 @@ export default function UpcomingEvents() {
       day: "numeric",
     });
   };
+   const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
+};
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -84,7 +90,7 @@ export default function UpcomingEvents() {
               <Link href={`/en/upcoming-events/${event.slug}`} className={styles.eventLink}>
                 <div className={styles.coverWrapper}>
                   <img
-                    src="https://cdn.digitalagencybangkok.com/file/client-cdn/gnlm/wp-content/uploads/2024/11/photo_2024-11-07_17-57-15.jpg"
+                    src={event.cover_photo}
                     alt={event.name}
                     className={styles.eventCover}
                   />
@@ -97,7 +103,11 @@ export default function UpcomingEvents() {
                       {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
                     </span>
                   </div>
-                  <p className={styles.eventDesc}>{event.description}</p>
+              
+                   <p
+  className={styles.eventDesc}
+  dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
+></p>
                   <div className={styles.readMoreWrapper}>
                     <span className={styles.readMoreBtn}>Read More</span>
                   </div>

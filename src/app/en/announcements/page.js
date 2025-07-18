@@ -42,6 +42,13 @@ export default function Announcements() {
 
   const totalPages = Math.ceil(meta.total / meta.per_page);
 
+  const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
+};
+
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -60,12 +67,12 @@ export default function Announcements() {
         {error && <div className="errorMessage">{error}</div>}
         <div className={styles.announcementsList}>
           {announcements.map((a) => (
-            <div className={styles.announcementCard} key={a.slug}>
+            <div className={styles.announcementCard} key={a.id}>
               <Link href={`/en/announcements/${a.slug}`} className={styles.announcementLink}>
                 <div className={styles.coverWrapper}>
                   <img
-                    src="https://www.anywhere.com/img-a/attraction/shwedagon-pagoda-buddhist-site-myanmar/Shwedagon-WebRes10-jpg"
-                    //{a.cover_photo}
+                    src={a.cover_photo}
+                     
                     alt={a.name}
                     className={styles.announcementCover}
                   />
@@ -81,10 +88,11 @@ export default function Announcements() {
                       })}
                     </span>
                   </div>
+                  
                   <p
-                    className={styles.announcementDesc}
-                    dangerouslySetInnerHTML={{ __html: a.description }}
-                  ></p>
+  className={styles.announcementDesc}
+  dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
+></p>
                   <div className={styles.readMoreWrapper}>
                     <span className={styles.readMoreBtn}>Read More</span>
                   </div>

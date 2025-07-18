@@ -1,32 +1,17 @@
-.pageContainer {
-  background: #f8f9fa;
-  min-height: 100vh;
+/* src/app/regions/RegionDetailPage.module.css */
+
+.mainContent {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* You can add more global-like styles for this page here */
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em 1em;
+.coverImage {
+  max-width: 600px;
+  /* Additional custom styles for the cover image if needed */
 }
 
-.regionCard {
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.regionTitle {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  color: #333;
-}
-
-.regionInfo {
-  font-size: 1em;
-  color: #666;
-}
-
-.regionInfo p {
-  margin-bottom: 0.5em;
-}
+/* Add any other specific styles here that don't fit Bootstrap classes */

@@ -68,7 +68,7 @@ export default async function AnnouncementDetail({ params }) {
             </div>
             <div className={styles.govtImageWrapper}>
               <img
-                src= "https://www.anywhere.com/img-a/attraction/shwedagon-pagoda-buddhist-site-myanmar/Shwedagon-WebRes10-jpg"
+                src={announcement.cover_photo}
                 
                 alt={announcement.name}
                 className={styles.govtImage}

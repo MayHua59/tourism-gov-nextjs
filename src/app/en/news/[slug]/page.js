@@ -79,16 +79,16 @@ export default async function NewsDetail({ params }) {
             <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
             <span>
               <strong>Published on:</strong>{" "}
-              {new Date(news.timestamp).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+               {new Date(news.created_at).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
             </span>
           </div>
           <div className={styles.govtImageWrapper}>
             <img
-              src={news.cover_photo}
+              src="https://farm1.staticflickr.com/495/31381620470_cfdc56d226_k.jpg"
               alt={news.name}
               className={styles.govtImage}
             />
