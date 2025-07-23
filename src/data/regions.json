@@ -398,10 +398,10 @@
     ]
   },
   {
-    "id": "region-kachin",
+    "id": "1",
     "slug": "kachin",
     "name": "Kachin State",
-    "cover_image": "https://example.com/images/kachin-cover.jpg",
+    "cover_image": "https://i.pinimg.com/1200x/0a/4b/c3/0a4bc334140bca75bde69e014bb08784.jpg",
     "description": "Kachin State, in the far north of Myanmar, is a land of towering mountains, pristine forests, and diverse ethnic groups, including the Kachin people.",
     "sections": [
       {
@@ -417,18 +417,36 @@
       {
         "title": "Kachin Landscapes",
         "images": [
-          "https://example.com/images/kachin-1.jpg",
-          "https://example.com/images/kachin-2.jpg",
-          "https://example.com/images/kachin-3.jpg"
+          "https://i.pinimg.com/736x/7a/ba/76/7aba768f3728a5cae501c5172aa5ce72.jpg",
+          "https://i.pinimg.com/1200x/62/36/8c/62368c8b6add9f59f9aed14c9673a9fa.jpg",
+          "https://i.pinimg.com/1200x/f8/39/96/f83996f78caee1334ee1be6c507c9557.jpg"
         ],
         "description": "Rugged mountains and lush landscapes of Kachin State."
       }
     ],
     "destinations": [
-      { "name": "Myitkyina", "region": "Kachin State" },
-      { "name": "Indawgyi Lake", "region": "Kachin State" },
-      { "name": "Putao", "region": "Kachin State" }
-    ],
+    {
+      "name": "Myitkyina",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg",
+      "description": "Myitkyina is the capital of Kachin State and is known as 'near the big river' in Burmese, referring to its location on the Irrawaddy River. It's a culturally diverse city and a gateway to the northern reaches of Myanmar. Key attractions include the Myit Sone (the confluence of the May Kha and Mali Kha Rivers, forming the Irrawaddy), various pagodas like Hsu Taung Pye Zedidaw Pagoda, and local markets where you can observe daily life and traditional practices."
+    },
+    {
+      "name": "Indawgyi Lake",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://indawgyilake.com/files/uploads/ecotourism-indawgyi-600x377.jpg",
+      "description": "Indawgyi Lake is one of the largest inland lakes in Southeast Asia, located in Mohnyin Township. It's surrounded by the Indawgyi Lake Wildlife Sanctuary, which boasts rich biodiversity, including various species of birds and mammals. The most famous landmark is the Shwe Myitzu Pagoda, a floating pagoda located in the middle of the lake, which attracts thousands of visitors during its annual festival."
+    },
+    {
+      "name": "Putao",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mulashidi_Bridge.jpg",
+      "description": "Putao is the northernmost town in Kachin State, nestled in the foothills of the Himalayas. It's a remote and serene destination known for its stunning natural beauty, including snow-capped mountains, verdant forests, and pristine rivers. Putao serves as a base for adventurous expeditions, including trekking to Mount Hkakabo Razi (the highest peak in Southeast Asia), white-water rafting on the Nam Lang River, and bird watching."
+    }
+  ],
     "events": [
       { "name": "Manaw Festival", "date": "January", "description": "Major traditional festival of the Kachin people." }
     ]
