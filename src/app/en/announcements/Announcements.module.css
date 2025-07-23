@@ -88,6 +88,13 @@
   display: block;
   background: #f6fafe;
 }
+.fullWidthContent {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .announcementContent {
   padding: 1.1em 1.2em 1.1em 1.2em;

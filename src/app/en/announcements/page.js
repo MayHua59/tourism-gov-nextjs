@@ -70,35 +70,41 @@ export default function Announcements() {
           {announcements.map((a) => (
             <div className={styles.announcementCard} key={a.id}>
               <Link href={`/en/announcements/${a.slug}`} className={styles.announcementLink}>
-                <div className={styles.coverWrapper}>
-                  <img
-                    src={a.cover_photo}
-                     
-                    alt={a.name}
-                    className={styles.announcementCover}
-                  />
-                </div>
-                <div className={styles.announcementContent}>
-                  <h2 className={styles.announcementTitle}>{a.name}</h2>
-                  <div className={styles.announcementMeta}>
-                    <span className={styles.announcementTimestamp}>
-                      {new Date(a.created_at).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
-                    </span>
-                  </div>
-                  
-                  <p
-  className={styles.announcementDesc}
-  dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
-></p>
-                  <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>Read More</span>
-                  </div>
-                </div>
-              </Link>
+  {a.cover_photo ? (
+    <div className={styles.coverWrapper}>
+      <img
+        src={a.cover_photo}
+        alt={a.name}
+        className={styles.announcementCover}
+      />
+    </div>
+  ) : null}
+  <div
+    className={
+      a.cover_photo
+        ? styles.announcementContent
+        : `${styles.announcementContent} ${styles.fullWidthContent}`
+    }
+  >
+    <h2 className={styles.announcementTitle}>{a.name}</h2>
+    <div className={styles.announcementMeta}>
+      <span className={styles.announcementTimestamp}>
+        {new Date(a.created_at).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}
+      </span>
+    </div>
+    <p
+      className={styles.announcementDesc}
+      dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
+    ></p>
+    <div className={styles.readMoreWrapper}>
+      <span className={styles.readMoreBtn}>Read More</span>
+    </div>
+  </div>
+</Link>
             </div>
           ))}
         </div>
