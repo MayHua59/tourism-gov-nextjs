@@ -448,7 +448,15 @@
     }
   ],
     "events": [
-      { "name": "Manaw Festival", "date": "January", "description": "Major traditional festival of the Kachin people." }
+      {
+      "id": "event_01",
+      "name": "Manaw Festival",
+      "start_date": "January 10",
+      "end_date": "January 14",
+      "region_id": "1",
+      "image_url": "https://placehold.co/400x200/FF5733/FFFFFF?text=Manaw+Festival",
+      "description": "Major traditional festival of the Kachin people, celebrating new year, reunion, and victories. It features traditional dances around a central Manaw pole."
+    }
     ]
   },
   {

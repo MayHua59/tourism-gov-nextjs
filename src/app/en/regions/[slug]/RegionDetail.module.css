@@ -67,3 +67,6 @@
     font-size: 0.96rem;
   }
 }
+.destinationCard:hover {
+  cursor: pointer;
+}
