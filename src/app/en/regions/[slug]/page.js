@@ -18,7 +18,7 @@ export default function RegionDetailPage({ params }) {
     return (
       <div style={{ padding: '20px', textAlign: 'center' }}>
         <h1>Region Not Found</h1>
-        <p>The region with slug "{slug}" could not be found.</p>
+        <p>The region could not be found.</p>
         
         
       </div>
