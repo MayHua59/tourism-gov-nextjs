@@ -1,9 +1,9 @@
 [
   {
-    "id": "region-mandalay",
+    "id": "3",
     "slug": "mandalay",
     "name": "Mandalay",
-    "cover_image": "https://hanoivoyage.com/uploads//Blogs/Myanmar/Visit-Myanmar/thumbnail/myanmar-thumbnail-01.jpg",
+    "cover_image": "https://i.pinimg.com/736x/5c/f9/d0/5cf9d0c9f2404534552f764dca5f951a.jpg",
     "description": "Mandalay, the last royal capital of Myanmar, is a vibrant city rich in culture and history. It's known for its ancient monasteries, traditional crafts, and the iconic U Bein Bridge.",
     "sections": [
       {
@@ -27,14 +27,82 @@
       }
     ],
     "destinations": [
-      { "name": "U Bein Bridge", "region": "Mandalay" },
-      { "name": "Mandalay Palace", "region": "Mandalay" },
-      { "name": "Kuthodaw Pagoda", "region": "Mandalay" },
-      { "name": "Mahamuni Buddha Temple", "region": "Mandalay" }
-    ],
+    {
+      "name": "U Bein Bridge",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/U_Bein_Bridge_at_sunset.jpg/1920px-U_Bein_Bridge_at_sunset.jpg",
+      "description": "The U Bein Bridge is a historic wooden bridge located near Amarapura, Myanmar, spanning the Taungthaman Lake. It is believed to be the oldest and longest teakwood bridge in the world, built around 1850. A popular spot for sunset views, it offers a glimpse into local life as monks and villagers cross daily."
+    },
+    {
+      "name": "Mandalay Palace",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mandalay_Palace%2C_Burma.jpg",
+      "description": "The Mandalay Palace is the last royal palace of the last Burmese monarchy. Constructed between 1857 and 1859 as part of King Mindon's founding of the new royal capital of Mandalay, it was largely destroyed during World War II. Today, a replica of the palace complex stands on the original site, offering insights into Myanmar's royal history."
+    },
+    {
+      "name": "Kuthodaw Pagoda",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kuthodaw_Pagoda%2C_Mandalay.jpg/1920px-Kuthodaw_Pagoda%2C_Mandalay.jpg",
+      "description": "The Kuthodaw Pagoda is a Buddhist stupa located in Mandalay, Myanmar, that contains the world's largest book. Surrounding the main stupa are 729 marble slabs, each inscribed on both sides with a page of the Tipitaka, the entire Pali Canon of Theravada Buddhism. This unique collection of stone inscriptions is recognized by UNESCO as a 'Memory of the World' heritage site."
+    },
+    {
+      "name": "Mahamuni Buddha Temple",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Mahamuni_Paya%2C_Mandalay%2C_Myanmar.jpg/1920px-Mahamuni_Paya%2C_Mandalay%2C_Myanmar.jpg",
+      "description": "The Mahamuni Buddha Temple is a major pilgrimage site and a highly revered Buddhist temple in Mandalay, Myanmar. It houses the Mahamuni Buddha image, which is widely believed to be a true likeness of Gautama Buddha. Over the centuries, male devotees have applied gold leaf to the statue, creating a thick, lumpy layer of gold on its surface."
+    }
+  ],
     "events": [
-      { "name": "Mandalay Thingyan Festival", "date": "April", "description": "Water festival celebrating the Myanmar New Year." }
-    ]
+    {
+      "id": "event_02",
+      "name": "Mahamuni Pagoda Festival",
+      "start_date": "January/February", 
+      "end_date": "February", 
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/3366FF/FFFFFF?text=Mahamuni+Festival",
+      "description": "This is a major annual festival held at the Mahamuni Buddha Temple in Mandalay. It usually lasts for several days around the full moon of the lunar month of Tabodwe (January/February). Thousands of devotees from all over Myanmar pilgrimage to the pagoda, offering glutinous rice and other alms. There are also cultural performances and markets."
+    },
+    {
+      "id": "event_03",
+      "name": "Thingyan Festival (Water Festival)",
+      "start_date": "April 13",
+      "end_date": "April 16",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/00CCFF/FFFFFF?text=Thingyan+Festival",
+      "description": "The most famous festival in Myanmar, marking the Burmese New Year. Mandalay, like other major cities, sees vibrant celebrations with water throwing, music, dancing, and various entertainment. It's a time for cleansing and fun before the new year."
+    },
+    {
+      "id": "event_04",
+      "name": "Thadingyut Festival (Festival of Lights)",
+      "start_date": "October",
+      "end_date": "October",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/FFD700/FFFFFF?text=Thadingyut+Festival",
+      "description": "Celebrated nationwide, and prominently in Mandalay, this festival marks the end of Buddhist Lent. Houses, streets, and pagodas are adorned with lights, lanterns, and candles to welcome the Buddha's descent from heaven. People pay respects to elders and make offerings."
+    },
+    {
+      "id": "event_05",
+      "name": "Kyaukse Elephant Dance Festival",
+      "start_date": "October/November",
+      "end_date": "October/November",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/8B4513/FFFFFF?text=Elephant+Dance",
+      "description": "Held in Kyaukse, a town near Mandalay, this unique festival features large, intricately decorated elephant figures made from bamboo and paper. Two men get inside and 'dance' the elephant to the rhythm of drums, competing with other teams. It's a lively and colorful spectacle."
+    },
+    {
+      "id": "event_06",
+      "name": "Taungbyone Nat Festival",
+      "start_date": "August",
+      "end_date": "September",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/9932CC/FFFFFF?text=Taungbyone+Nat",
+      "description": "One of the most significant Nat (spirit) festivals in Myanmar, held in Taungbyone village near Mandalay. Thousands of Nat devotees and mediums gather to honor the Nat spirits, with lively music, dance, and spirit possessions."
+    }
+  ]
   },
   {
     "id": "region-mon",
