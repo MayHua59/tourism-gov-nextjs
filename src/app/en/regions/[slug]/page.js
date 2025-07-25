@@ -1,5 +1,4 @@
 import React from 'react';
-import regionsData from '@/data/regions.json'; 
 import ImageCarousel from '../../../../components/ImageCarousel'; 
 import styles from "./RegionDetail.module.css"
 import BannerSection from '../../../../components/BannerSection';
@@ -7,25 +6,24 @@ import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-export default function RegionDetailPage({ params }) {
+import { fetchRegion } from '../../../../lib/api/region';
+export default async function RegionDetailPage({ params }) {
   const { slug } = params;
 
-  // Find the region that matches the slug
-  const region = regionsData.find(r => r.slug === slug);
+   let region = null;
+     let error = null;
+   
+     try {
+  region = await fetchRegion(slug);
+} catch (e) {
+  error = "Sorry, we couldn't load this region.";
+}
+   
+    if (!region && !error) return notFound();
+ 
+  
 
  
-  if (!region) {
-    return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
-        <h1>Region Not Found</h1>
-        <p>The region could not be found.</p>
-        
-        
-      </div>
-    );
-  }
-
-  // If a region is found, render its details
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -38,7 +36,10 @@ export default function RegionDetailPage({ params }) {
                       { label: region.slug, active: true }
                     ]}
                   />
-<div className={styles.mainContent}>
+<div className={styles.container}>
+{
+  error ? (<div className="errorMessage">{error}</div>):(
+    <div className={styles.mainContent}>
         
       <h1 className="text-center mb-4 text-dark">{region.name}</h1> 
       
@@ -148,14 +149,11 @@ export default function RegionDetailPage({ params }) {
 )}
 
     </div>
+  )
+}
+</div>
     </div>
   );
 }
 
 
-export async function generateStaticParams() {
-  
-  return regionsData.map(region => ({
-    slug: region.slug,
-  }));
-}
