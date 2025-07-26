@@ -26,13 +26,13 @@ const menuData = [
         submenu: [
           { label: "နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွားကော်မတီများ", href: "/mm/branch-offices" },
           { label: "သတင်းအချက်အလက်ကောင်တာများ", href: "/mm/information-counters" },
-          { label: "ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးမျာ", href: "/mm/tourism-police-offices" },
+          { label: "ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ", href: "/mm/tourism-police-offices" },
         ],
       },
       {
         label: "သံရုံးများ",
         submenu: [
-          { label: "မြန်မာသံရုံးများ", href: "/mm/myanmar-ministries" },
+          { label: "မြန်မာသံရုံးများ", href: "/mm/myanmar-missions" },
           { label: "နိုင်ငံခြားသံရုံးများ", href: "/mm/foreign-embassies" },
         ],
       },

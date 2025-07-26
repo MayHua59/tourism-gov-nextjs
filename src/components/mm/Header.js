@@ -32,7 +32,7 @@ const mainMenu = [
       {
         label: "သံရုံးများ",
         submenu: [
-          { label: "မြန်မာသံရုံးများ", href: "/mm/myanmar-ministries" },
+          { label: "မြန်မာသံရုံးများ", href: "/mm/myanmar-missions" },
           { label: "နိုင်ငံခြားသံရုံးများ", href: "/mm/foreign-embassies" },
         ],
       },

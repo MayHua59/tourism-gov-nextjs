@@ -4,7 +4,7 @@ import styles from "./MyanmarMissions.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Myanmar Missions",
+  title: "မြန်မာသံရုံးများ",
   description: "Contact information for Myanmar diplomatic missions worldwide."
 };
 
@@ -14,15 +14,15 @@ export default function MyanmarMissions() {
       <BannerSection imageUrl="/assets/images/cover-images-title/5.jpg" altText="myanmar missions cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Myanmar Missions", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+          { label: "မြန်မာသံရုံးများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Myanmar Missions</h1>
+        <h1 className={styles.pageTitle}>မြန်မာသံရုံးများ</h1>
 
         <section id="myanmar-missions" className={styles.mt5}>
-  <h3 className={styles.missionsRegion}>Asia &amp; Pacific</h3>
+  <h3 className={styles.missionsRegion}>Myanmar Missions (Asia &amp; Pacific)</h3>
   <div className={styles.missionCard}>
     <h4>Commonwealth of Australia, Canberra</h4>
     <p><strong>Address:</strong> 22 ARKANA STREET, YARRALUMLA, ACT 2600, CANBERRA, AUSTRALIA</p>
@@ -103,13 +103,7 @@ export default function MyanmarMissions() {
     <p><strong>Fax:</strong> (855-23) 223 763</p>
     <p><strong>Email:</strong> <a href="mailto:mephnompenh@yahoo.com">mephnompenh@yahoo.com</a></p>
   </div>
-  <div className={styles.missionCard}>
-    <h4>Republic of Indonesia, Jakarta</h4>
-    <p><strong>Address:</strong> 109, JL HAJI AGUS SALIM, MENTENG, JAKARTA PUSAT, INDONESIA</p>
-    <p><strong>Tel:</strong> (62 21) 315 8908, 315 9095</p>
-    <p><strong>Fax:</strong> (62 21) 316 0079</p>
-    <p><strong>Email:</strong> <a href="mailto:www.mejakarta109@gmail.com">www.mejakarta109@gmail.com</a></p>
-  </div>
+ 
   <div className={styles.missionCard}>
     <h4>Republic of Indonesia, Jakarta</h4>
     <p><strong>Address:</strong> 109, JL HAJI AGUS SALIM, MENTENG, JAKARTA PUSAT, INDONESIA</p>
@@ -148,14 +142,7 @@ export default function MyanmarMissions() {
     <p><strong>Email:</strong> <a href="mailto:ambassador@myanmarembassy.sg">ambassador@myanmarembassy.sg</a></p>
     <p><strong>Website:</strong> <a href="http://www.myanmarembassy.sg" target="_blank" rel="noopener">www.myanmarembassy.sg</a></p>
   </div>
-  <div className={styles.missionCard}>
-    <h4>Kingdom of Thailand, Bangkok</h4>
-    <p><strong>Address:</strong> 132, SATHORN NUA ROAD, BANGKOK 10500</p>
-    <p><strong>Tel:</strong> (662) 233-2237, 234-4698, 233-7250, 234 4789, 237 7744</p>
-    <p><strong>Fax:</strong> (233) 236-6898, 233-7250</p>
-    <p><strong>Email:</strong> <a href="mailto:myanmarembassybkk@gmail.com">myanmarembassybkk@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="http://www.myanmarembassybkk.com" target="_blank" rel="noopener">www.myanmarembassybkk.com</a></p>
-  </div>
+  
   <div className={styles.missionCard}>
     <h4>Kingdom of Thailand, Bangkok</h4>
     <p><strong>Address:</strong> 132, SATHORN NUA ROAD, BANGKOK 10500</p>
@@ -233,13 +220,7 @@ export default function MyanmarMissions() {
     <p><strong>Email:</strong> <a href="mailto:myanmaremb@wlink.com.np">myanmaremb@wlink.com.np</a></p>
   </div>
 
-  <div className={styles.missionCard}>
-    <h4>Democratic Socialist Republic of Sri Lanka, Colombo</h4>
-    <p><strong>Address:</strong> 4(A), ROSMEAD AVENUE, ROSMEAD PLACE, COLOMBO 7</p>
-    <p><strong>Tel:</strong> (0094-11) 2681 007</p>
-    <p><strong>Fax:</strong> (0094-11) 2682 052</p>
-    <p><strong>Email:</strong> <a href="mailto:myanlanka@gmail.com">myanlanka@gmail.com</a></p>
-  </div>
+  
   <div className={styles.missionCard}>
     <h4>Democratic Socialist Republic of Sri Lanka, Colombo</h4>
     <p><strong>Address:</strong> 4(A), ROSMEAD AVENUE, ROSMEAD PLACE, COLOMBO 7</p>
@@ -255,7 +236,10 @@ export default function MyanmarMissions() {
     <p><strong>Email:</strong> <a href="mailto:embassy_myanmarisb@yahoo.com">embassy_myanmarisb@yahoo.com</a></p>
     <p><strong>Website:</strong> <a href="http://www.me-islamabad.org" target="_blank" rel="noopener">www.me-islamabad.org</a></p>
   </div>
-  <div className={styles.missionCard}>
+  </section>
+  <section id="myanmar-missions-middle-east-africa" className={styles.mt5}>
+  <h3 className={styles.missionsRegion}>Myanmar Missions (Middle East &amp; Africa)</h3>
+    <div className={styles.missionCard}>
     <h4>The Arab Republic of Egypt, Cairo</h4>
     <p><strong>Address:</strong> No. 24, MOHAMED MAZHAR St. ZAMALEK, CAIRO.</p>
     <p><strong>Tel:</strong> (00) (202) 2736 2644, 2736 3123</p>
@@ -295,6 +279,9 @@ export default function MyanmarMissions() {
     <p><strong>Email:</strong> <a href="mailto:embmya@gmail.com">embmya@gmail.com</a></p>
     <p><strong>Website:</strong> <a href="http://www.myanmarembassysa.com/" target="_blank" rel="noopener">www.myanmarembassysa.com/</a></p>
   </div>
+  </section>
+  <section id="myanmar-missions-europe-americas" className={styles.mt5}>
+  <h3 className={styles.missionsRegion}>Myanmar Missions (Europe)</h3>
   <div className={styles.missionCard}>
     <h4>Republic of France, Paris</h4>
     <p><strong>Address:</strong> No. 60, RUE DE COURCELLES, 75008, PARIS</p>
@@ -338,6 +325,89 @@ export default function MyanmarMissions() {
     <p><strong>Website:</strong> <a href="http://www.myanmarembassy.info" target="_blank" rel="noopener">www.myanmarembassy.info</a>,{" "}
       <a href="http://www.facebook.com/memoscow" target="_blank" rel="noopener">www.facebook.com/memoscow</a></p>
   </div>
+
+
+  <div className={styles.missionCard}>
+    <h4>Republic of Serbia, Belgrade</h4>
+    <p><strong>Address:</strong> KNEZA MILOSA 72, 11000 BELGRADE, REPUBLIC OF SERBIA</p>
+    <p><strong>Tel:</strong> (381) (11) 361 7 165, 361 9114</p>
+    <p><strong>Fax:</strong> (381) (11) 361 4968</p>
+    <p><strong>Email:</strong> <a href="mailto:myanbel@sezampro.rs">myanbel@sezampro.rs</a></p>
+    <p><strong>Website:</strong> <a href="http://www.mebelgrade.org/" target="_blank" rel="noopener">www.mebelgrade.org/</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>Kingdom of Belgium, Brussels</h4>
+    <p><strong>Address:</strong> No. 9, BOULEVARD GENERAL WAHIS, SCHAERBEEK, 1030 BRUSSELS</p>
+    <p><strong>Tel:</strong> (00-32) (2) 701-9380; (2) 701-9381</p>
+    <p><strong>Fax:</strong> (00-32) (2) 705-5048</p>
+    <p><strong>Email:</strong> <a href="mailto:mebrussels@skynet.be">mebrussels@skynet.be</a></p>
+    <p><strong>Website:</strong> <a href="http://www.embassyofmyanmar.be/" target="_blank" rel="noopener">www.embassyofmyanmar.be/</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>United Kingdom of Great Britain and Northern Ireland, London</h4>
+    <p><strong>Address:</strong> 19A, CHARLES STREET, LONDON W1J 5DX</p>
+    <p><strong>Tel:</strong> +44 207 148 0740, 207 499 4340</p>
+    <p><strong>Fax:</strong> +44 207 409 7043</p>
+    <p><strong>Email:</strong> <a href="mailto:general@myanmarembassylondon.com">general@myanmarembassylondon.com</a></p>
+    <p><strong>Website:</strong> <a href="http://www.myanmarembassylondon.com/#Homepage" target="_blank" rel="noopener">www.myanmarembassylondon.com/#Homepage</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>Kingdom of Norway, Oslo</h4>
+    <p><strong>Address:</strong> 4TH FLOOR, CORT ADELERS GATE 16, OSLO 0254, NORWAY</p>
+    <p><strong>Tel:</strong> (+47) 215 15 767</p>
+    <p><strong>Fax:</strong> (+47) 215 15 769</p>
+    <p><strong>Email:</strong> <a href="mailto:myanmarembassyoslo@gmail.com">myanmarembassyoslo@gmail.com</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>Republic of Austria, Vienna</h4>
+    <p><strong>Address:</strong> ANDROMEDA TOWER 9TH FLOOR, DONAU-CITY-STRASSE 6,1220 VIENNA, AUSTRIA</p>
+    <p><strong>Tel:</strong> (43) 1 2669105</p>
+    <p><strong>Fax:</strong> (43) 1 266910520</p>
+    <p><strong>Email:</strong> <a href="mailto:myanmarembassy.vienna@gmail.com">myanmarembassy.vienna@gmail.com</a></p>
+  </div>
+  
+   <section id="myanmar-missions-americas" className={styles.mt5}>
+  <h3 className={styles.missionsRegion}>Myanmar Missions (Americas)</h3>
+    <div className={styles.missionCard}>
+    <h4>Federative Republic of Brazil, Brasília</h4>
+    <p><strong>Address:</strong> SHIS-QI 25, CEP 71660-250, BRASILIA-DF</p>
+    <p><strong>Tel:</strong> 00-55-61 3248 3747, 32482374</p>
+    <p><strong>Fax:</strong> 00-55-61 3364 2747</p>
+    <p><strong>Email:</strong> <a href="mailto:mebrasilia@gmail.com">mebrasilia@gmail.com</a></p>
+    <p><strong>Website:</strong> <a href="http://www.myanmarbsb.org/" target="_blank" rel="noopener">www.myanmarbsb.org/</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>Canada, Ottawa</h4>
+    <p><strong>Address:</strong> No.336. ISLAND PARK DRIVE, OTTAWA, ONTARIO K1Y 0A7, CANADA</p>
+    <p><strong>Tel:</strong> (1) (613) 232 9990</p>
+    <p><strong>Fax:</strong> (1) (613) 232 6999</p>
+    <p><strong>Email:</strong> <a href="mailto:meottawa@rogers.com">meottawa@rogers.com</a>, <a href="mailto:visasection@rogers.com">visasection@rogers.com</a></p>
+    <p><strong>Website:</strong> <a href="http://www.meottawa.org/" target="_blank" rel="noopener">www.meottawa.org</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>United States of America, New York</h4>
+    <p><strong>Address:</strong> 10 EAST 77th STREET, NEW YORK, N.Y.10075</p>
+    <p><strong>Tel:</strong> (1) (212) 744-1271, 744-1275, 744-1279</p>
+    <p><strong>Fax:</strong> (1) (212) 744-1290</p>
+    <p><strong>Email:</strong> <a href="mailto:myanmarmission@verizon.net">myanmarmission@verizon.net</a></p>
+    <p><strong>Website:</strong> <a href="http://www.mmnewyork.org/" target="_blank" rel="noopener">www.mmnewyork.org</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>United States of America, Washington D.C.</h4>
+    <p><strong>Address:</strong> 2300 S STREET, N.W, WASHINGTON, D.C-20008</p>
+    <p><strong>Tel:</strong> (1) (202) 332-3344, 332-4350, 332-4352, 238-9332</p>
+    <p><strong>Fax:</strong> (1) (202) 332-4351</p>
+    <p><strong>Email:</strong> <a href="mailto:pyi.thayar@verizon.net">pyi.thayar@verizon.net</a></p>
+    <p><strong>Website:</strong> <a href="http://www.mewashingtondc.com/" target="_blank" rel="noopener">www.mewashingtondc.com/</a></p>
+  </div>
+  <div className={styles.missionCard}>
+    <h4>United States of America, Los Angeles</h4>
+    <p><strong>Address:</strong> 3435 WILSHIRE BLVD, SUITE 1590, LOS ANGELES, CALIFORNIA, 90010</p>
+    <p><strong>Tel:</strong> (1)(213)387 0040, 387 0041, 387 0043</p>
+    <p><strong>Fax:</strong> (1) (213) 387 0042</p>
+    <p><strong>Email:</strong> <a href="mailto:myancgla@gmail.com">myancgla@gmail.com</a></p>
+  </div>
+  </section>
 </section>
       </div>
     </div>
