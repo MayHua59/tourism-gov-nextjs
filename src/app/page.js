@@ -26,3 +26,12 @@ export default function HomePage() {
   );
 }
 
+export async function getServerSideProps(context) {
+  return {
+    redirect: {
+      destination: '/en',
+      permanent: true,
+    },
+  };
+}
+
