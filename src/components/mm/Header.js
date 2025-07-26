@@ -109,7 +109,7 @@ const mainMenu = [
             ],
           },
           {
-            label: "ပို့ဆောင်ရေးကုမ္ပဏီများ",
+            label: "ပို့ဆောင်ရေး ကုမ္ပဏီများ",
             submenu: [
               { label: "အပျော်စီးသင်္ဘောနှင့် အခြား", href: "/mm/coming-soon" },
               { label: "ရွက်လှေ၊ မိုးပျံပူဖောင်း", href: "/mm/coming-soon" },
@@ -145,13 +145,13 @@ const mainMenu = [
     label: "လုပ်ငန်းတာဝန်",
     submenu: [
       { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
-      { label: "ရည်မှန်းချက်များ", href: "/mm/objectives" },
+      { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
       { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
       { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
       {
         label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု",
         submenu: [
-          { label: "မြန်မာနိုင်ငံတွင် စီးပွားရေးလုပ်ကိုင်ခြင်း", href: "/mm/doing-business" },
+         
           { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", href: "/mm/investment-law" },
           { label: "ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", href: "/mm/investment-opportunity" },
           { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", href: "/mm/why-invest-in-myanmar" },
@@ -161,7 +161,7 @@ const mainMenu = [
       {
         label: "ခရီးသွားဝင်ရောက်မှု",
         submenu: [
-          { label: "ခရီးသွားစာရင်းအင်း", href: "/mm/coming-soon" },
+          { label: "ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း", href: "/mm/coming-soon" },
           
         ],
       },
