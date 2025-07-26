@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ["en", "mm"], // Both English and Myanmar
-    defaultLocale: "en", // Default is English
-  },
+  // i18n: {
+  //   locales: ["en", "mm"], // Both English and Myanmar
+  //   defaultLocale: "en", // Default is English
+  // },
   images: {
     domains: ["www.go-myanmar.com"],
   },
