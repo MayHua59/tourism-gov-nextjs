@@ -69,17 +69,17 @@ export default function UpcomingEvents() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/12.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/22.jpg"
         altText="upcoming events cover photo"
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/en/", icon: faHome },
-          { label: "Upcoming Events", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ကျင်းပမည့်ပွဲနှင့်အခမ်းအနားများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Upcoming Events</h1>
+        <h1 className={styles.pageTitle}>ကျင်းပမည့်ပွဲနှင့်အခမ်းအနားများ</h1>
         {loading && <Loading  size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
@@ -88,31 +88,38 @@ export default function UpcomingEvents() {
         <div className={styles.eventsList}>
           {eventsList.map((event) => (
             <div className={styles.eventCard} key={event.slug}>
-              <Link href={`/en/upcoming-events/${event.slug}`} className={styles.eventLink}>
-                <div className={styles.coverWrapper}>
-                  <img
-                    src={event.cover_photo}
-                    alt={event.name}
-                    className={styles.eventCover}
-                  />
-                </div>
-                <div className={styles.eventContent}>
-                  <h2 className={styles.eventTitle}>{event.name}</h2>
-                  <div className={styles.eventMeta}>
-                    <span className={styles.eventTimestamp}>
-                      <FontAwesomeIcon icon={faCalendar} className={styles.calendarIcon} />
-                      {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
-                    </span>
-                  </div>
-              
-                   <p
-  className={styles.eventDesc}
-  dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
-></p>
-                  <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>Read More</span>
-                  </div>
-                </div>
+              <Link href={`/mm/upcoming-events/${event.slug}`} className={styles.eventLink}>
+                {event.cover_photo ? (
+  <div className={styles.coverWrapper}>
+    <img
+      src={event.cover_photo}
+      alt={event.name}
+      className={styles.eventCover}
+    />
+  </div>
+) : null}
+                <div
+  className={
+    event.cover_photo
+      ? styles.eventContent
+      : `${styles.eventContent} ${styles.fullWidthContent}`
+  }
+>
+  <h2 className={styles.eventTitle}>{event.name}</h2>
+  <div className={styles.eventMeta}>
+    <span className={styles.eventTimestamp}>
+      <FontAwesomeIcon icon={faCalendar} className={styles.calendarIcon} />
+      {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
+    </span>
+  </div>
+  <p
+    className={styles.eventDesc}
+    dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
+  ></p>
+  <div className={styles.readMoreWrapper}>
+    <span className={styles.readMoreBtn}>Read More</span>
+  </div>
+</div>
               </Link>
             </div>
           ))}

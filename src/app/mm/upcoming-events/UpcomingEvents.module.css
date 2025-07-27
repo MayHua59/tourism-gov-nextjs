@@ -47,7 +47,7 @@
 
 .eventCard {
   background: #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03);
   overflow: hidden;
   transition: box-shadow 0.2s;
@@ -151,4 +151,7 @@
     font-size: 0.9rem;
   }
   
+}
+.calendarIcon {
+  margin-right: 1em;
 }

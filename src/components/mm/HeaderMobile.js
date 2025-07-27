@@ -145,13 +145,11 @@ const menuData = [
     submenu: [
       { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
       { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
-<<<<<<< HEAD
-      { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
-      { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
-=======
+      
+
       { label: "မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
       { label: "နိုင်ငံတကာပူးပေါင်းဆောင်ရွက်ရေး", href: "/mm/coming-soon" },
->>>>>>> master
+
       {
         label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု",
         submenu: [
