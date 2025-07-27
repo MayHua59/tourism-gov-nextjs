@@ -28,8 +28,8 @@ export default function HomePage() {
       <MyanmarInPicturesSection />
       <CallActionSection />
       <TravelerInformationSection />
-      <TourismNewsSection />
-      <LatestNewsSection />
+      {/* <TourismNewsSection />
+      <LatestNewsSection /> */}
     </>
   );
 }
