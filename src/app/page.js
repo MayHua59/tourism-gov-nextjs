@@ -13,11 +13,14 @@ import TourismNewsSection from '../components/eng/home/TourismNewsSection';
 import LatestNewsSection from '../components/eng/home/LatestNewsSection';
 import Footer from '../components/eng/Footer';
 import HeaderMobile from '../components/eng/HeaderMobile';
+import ScrollToTop from '@/components/ScrollToTopButton';
 
 export default function HomePage() {
   
   return (
     <>
+    <div className="desktop-header"><Header /></div>
+                    <div className="mobile-header"><HeaderMobile /></div>
       <HeroSection />
       <AboutSection />
       <WeatherWidget />
@@ -30,6 +33,8 @@ export default function HomePage() {
       <TravelerInformationSection />
       {/* <TourismNewsSection />
       <LatestNewsSection /> */}
+      <Footer/>
+      <ScrollToTop/>
     </>
   );
 }
