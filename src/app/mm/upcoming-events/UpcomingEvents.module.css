@@ -20,10 +20,10 @@
 }
 
 .pageTitle {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.5em;
-  text-align: left;
+  text-align: center;
   color: #22325a;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .eventTitle {
-  font-size: 1.27rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1a2d4d;
   margin: 0 0 0.4em 0;
@@ -127,4 +127,28 @@
 
 .readMoreBtn:hover {
   color: #17437f;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .errorMessage {
+    font-size: 1rem;
+  }
+  
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .pageTitle {
+    font-size: 1.15rem;
+  }
+  .errorMessage {
+    font-size: 0.9rem;
+  }
+  
 }

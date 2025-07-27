@@ -4,7 +4,7 @@ import styles from "./Brochures.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Brochures and Pamphlets",
+  title: "လက်ကမ်းစာစောင်များ",
   description: "Downloadable brochures and pamphlets for Myanmar tourism."
 };
 
@@ -17,12 +17,12 @@ export default function BrochuresAndPamphlets() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Brochures and Pamphlets", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "လက်ကမ်းစာစောင်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Brochures and Pamphlets</h1>
+        <h1 className={styles.pageTitle}>လက်ကမ်းစာစောင်များ</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -32,14 +32,14 @@ export default function BrochuresAndPamphlets() {
                   alt="Ecotourism"
                   className={styles.publicationImage}
                 />
-                <h4 className={styles.pdfTitle}>Ecotourism</h4>
+                <h4 className={styles.pdfTitle}>နေပြည်တော်ရှိသွားရောက်လည်ပတ်နိုင်သောနေရာများ(Nay Pyi Taw Flyer (Myanmar))</h4>
                 <a
                   href="/assets/pdf/Ecotourism.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -50,54 +50,18 @@ export default function BrochuresAndPamphlets() {
                   alt="Nay Pyi Taw Flyer (Eng QR)"
                   className={styles.publicationImage}
                 />
-                <h4 className={styles.pdfTitle}>Nay Pyi Taw Flyer (Eng QR)</h4>
+                <h4 className={styles.pdfTitle}>မကွေးတိုင်းဒေသကြီးတွင်းရှိ ထင်ရှားသောခရီးစဉ်ဒေသများ(Magway Pamphlet (Myanmar Version))</h4>
                 <a
                   href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/Welcome to the Golden Land (English Version).JPG"
-                  alt="Welcome to the Golden Land (English Version)"
-                  className={styles.publicationImage}
-                />
-                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (English Version)</h4>
-                <a
-                  href="/assets/pdf/Welcome to the Golden Land (English Version).pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/Welcome to the Golden Land (China Version).JPG"
-                  alt="Welcome to the Golden Land (China Version)"
-                  className={styles.publicationImage}
-                />
-                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (China Version)</h4>
-                <a
-                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
-            {/* Add more publication cards here */}
+           
           </div>
         </section>
       </div>

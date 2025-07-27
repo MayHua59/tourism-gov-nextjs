@@ -60,7 +60,7 @@
   padding: 0.6em 0.8em;
   text-align: left;
   vertical-align: top;
-  word-break: break-word;
+  /* word-break: break-word; */
 }
 
 .guideTable th {

@@ -3,7 +3,6 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./NationalTourGuides.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
-// Dummy data example, replace with your actual tour guide data
 const tourGuides = [
   {
     no: "1",

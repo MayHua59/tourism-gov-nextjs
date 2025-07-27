@@ -105,7 +105,7 @@ const menuData = [
             label: "ဧည့်လမ်းညွှန်များ",
             submenu: [
               { label: "အမျိုးသားဧည့်လမ်းညွှန်များ", href: "/mm/tour-guides/national-tour-guides" },
-              { label: "ဒေသဆိုင်ရာဧည့်လမ်းညွှန်များ", href: "/mm/coming-soon" },
+              { label: "ဒေသဆိုင်ရာဧည့်လမ်းညွှန်များ", href: "/mm/tour-guides/regional-tour-guides" },
             ],
           },
           {
@@ -124,10 +124,9 @@ const menuData = [
     submenu: [
       { label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ", href: "/mm/tourism-legislation" },
       { label: "ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ", href: "/mm/tourism-statistics" },
-      { label: "ထုတ်ဝေမှုများ", href: "/mm/tourism-publication" },
-      // { label: "အာဆီယံခရီးသွားစံနှုန်းများ", href: "/mm/asean-tourism-standards" },
+      { label: "စာအုပ်၊စာစောင်များ", href: "/mm/tourism-publication" },
       { label: "စွဲမက်ဖွယ်ရာပြည်မြန်မာ", href: "/mm/coming-soon" },
-      { label: "စာအုပ်စာစောင်များ", href: "/mm/brochures-and-pamphlets" },
+      { label: "လက်ကမ်းစာစောင်များ", href: "/mm/brochures-and-pamphlets" },
       { label: "မြေပုံများ", href: "/mm/maps" }
     ],
   },
@@ -135,7 +134,7 @@ const menuData = [
     label: "သတင်းနှင့် ကြေညာချက်များ",
     submenu: [
       { label: "မိုးလေဝသခန့်မှန်းချက်", href: "/mm/coming-soon" },
-      { label: "ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ", href: "/mm/coming-soon" },
+      { label: "ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ", href: "/mm/upcoming-events" },
       { label: "သတင်းများ", href: "/mm/news" },
       { label: "ကြေညာချက်များ", href: "/mm/announcements" },
       { label: "ခရီးသွားအကြံပြုချက်", href: "/mm/coming-soon" },
