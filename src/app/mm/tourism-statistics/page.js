@@ -17,7 +17,7 @@ export default function TourismStatistics() {
       />
       <Breadcrumb
         items={[
-          { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
           { label: "ခရီးစဉ်လျှောက်ထားရာတွင် လိုအပ်ချက်များ", active: true }
         ]}
       />
@@ -39,7 +39,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>

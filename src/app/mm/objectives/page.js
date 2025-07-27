@@ -19,11 +19,11 @@ export default function Objectives() {
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
-          { label: "ရည်မှန်းချက်များ", active: true }
+          { label: "ရည်ရွယ်ချက်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>ရည်မှန်းချက်များ</h1>
+        <h1 className={styles.pageTitle}>ရည်ရွယ်ချက်များ</h1>
         <section id="objectives">
           <ol className={styles.objectivesList}>
             <li className={styles.objectivesListItem}>

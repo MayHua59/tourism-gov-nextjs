@@ -22,9 +22,9 @@
 }
 
 .govtCard {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03);
+  /* background: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03); */
   padding: 2em 2.3em 2.3em 2.3em;
   margin-top: 1em;
 }
@@ -34,6 +34,7 @@
   font-weight: 700;
   margin: 0 0 0.5em 0;
   color: #1a2d4d;
+  text-align: center;
 }
 
 .govtMeta {
@@ -53,7 +54,7 @@
   width: 100%;
   aspect-ratio: 16/9;
   overflow: hidden;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-bottom: 1.2em;
   background: #eef2f8;
 }
