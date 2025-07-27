@@ -104,7 +104,7 @@ const menuData = [
           {
             label: "ဧည့်လမ်းညွှန်များ",
             submenu: [
-              { label: "အမျိုးသားဧည့်လမ်းညွှန်များ", href: "/mm/coming-soon" },
+              { label: "အမျိုးသားဧည့်လမ်းညွှန်များ", href: "/mm/tour-guides/national-tour-guides" },
               { label: "ဒေသဆိုင်ရာဧည့်လမ်းညွှန်များ", href: "/mm/coming-soon" },
             ],
           },
