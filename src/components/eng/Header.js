@@ -247,11 +247,16 @@ export default function Header() {
 
    const handleLanguageChange = (e) => {
     const newLang = e.target.value;
+     let newPath;
     
     
-    const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+     if (pathname === '/') {
+        newPath = `/${newLang}`;
+    } else {
+       
+        newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+    }
 
-   
     router.push(newPath);
   };
 
