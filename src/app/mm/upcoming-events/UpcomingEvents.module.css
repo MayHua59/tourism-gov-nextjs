@@ -20,10 +20,10 @@
 }
 
 .pageTitle {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.5em;
-  text-align: left;
+  text-align: center;
   color: #22325a;
 }
 
@@ -47,7 +47,7 @@
 
 .eventCard {
   background: #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03);
   overflow: hidden;
   transition: box-shadow 0.2s;
@@ -87,7 +87,7 @@
 }
 
 .eventTitle {
-  font-size: 1.27rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1a2d4d;
   margin: 0 0 0.4em 0;
@@ -128,66 +128,37 @@
 .readMoreBtn:hover {
   color: #17437f;
 }
-.eventMeta {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #555;
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .errorMessage {
+    font-size: 1rem;
+  }
   
 }
-
-.eventTimestamp {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem; /* Adjust the spacing between the icon and the dates */
-  background-color: #A3DC9A;
-  padding: 0.5em 0.5em;
-  border-radius: 2px;
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .pageTitle {
+    font-size: 1.15rem;
+  }
+  .errorMessage {
+    font-size: 0.9rem;
+  }
+  
 }
-
 .calendarIcon {
-  margin-right: 0.3rem; /* Adjust the spacing between the icon and the dates */
-  font-size: 1rem;
-  color: #888;
+  margin-right: 1em;
 }
-.pagination {
+.fullWidthContent {
+  width: 100%;
+  padding: 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 8px;
-  margin: 32px 0 0 0;
-}
-
-.pagination button {
-  background: #fff;
-  border: 1px solid #1766b1;
-  color: #1766b1;
-  padding: 6px 16px;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.pagination button:hover:not(:disabled) {
-  background: #1766b1;
-  color: #fff;
-  border-color: #1766b1;
-}
-
-.pagination button.activePage {
-  background: #1766b1 !important;
-  color: #fff;
-  border-color: #1766b1;
-  cursor: default;
-  font-weight: bold;
-}
-
-.prevNextBtn {
-  font-weight: bold;
-}
-.pagination button:disabled {
-  cursor: not-allowed;
-  opacity: 0.6; 
-  pointer-events: none; 
 }

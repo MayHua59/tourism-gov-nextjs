@@ -4,7 +4,7 @@ import styles from "./Guidelines.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Guidelines for Tour Companies",
+  title: "ခရီးသွားကုမ္ပဏီများအတွက် လမ်းညွှန်ချက်များ",
   description: "Tour companies' compliance and permission guidelines for Myanmar."
 };
 
@@ -14,12 +14,12 @@ export default function GuidelinesForTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/bagan.jpg" altText="guidelines for tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Guidelines for Tour Companies", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+          { label: "ခရီးသွားကုမ္ပဏီများအတွက် လမ်းညွှန်ချက်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Guidelines for Tour Companies</h1>
+        <h1 className={styles.pageTitle}>ခရီးသွားကုမ္ပဏီများအတွက် လမ်းညွှန်ချက်များ</h1>
         <section id="guidelines-content" className={styles.mt5}>
           <div className={styles.businessSection}>
             <h2 className={styles.sectionTitle}>Tour companies are required to comply with the conditions below:</h2>

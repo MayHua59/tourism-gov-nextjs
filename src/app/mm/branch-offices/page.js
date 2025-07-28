@@ -4,7 +4,7 @@ import styles from "./BranchOffices.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Branch Offices",
+  title: "နယ်ရုံးခွဲများ",
   description: "Contact information for branch offices of the Ministry of Hotels and Tourism, Myanmar."
 };
 

@@ -4,7 +4,7 @@ import styles from "./TourismStatistics.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Tourism Statistics",
+  title: "ခရီးစဉ်လျှောက်ထားရာတွင်လိုအပ်ချက်များ",
   description: "Annual tourism statistics publications for Myanmar."
 };
 
@@ -17,12 +17,12 @@ export default function TourismStatistics() {
       />
       <Breadcrumb
         items={[
-          { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
-          { label: "ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ခရီးစဉ်လျှောက်ထားရာတွင် လိုအပ်ချက်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</h1>
+        <h1 className={styles.pageTitle}>ခရီးစဉ်လျှောက်ထားရာတွင် လိုအပ်ချက်များ</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -39,7 +39,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
