@@ -36,20 +36,20 @@
   gap: 2.5em 2.5em;
   margin-top: 0.5em;
   margin-bottom: 2em;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .gridCol {
-  flex: 0 1 250px;
-  min-width: 215px;
-  max-width: 270px;
+  flex: 0 0 calc(33.333% - 2em); 
+  max-width: calc(33.333% - 2em);
+  min-width: 0;
   display: flex;
 }
 .publicationCard {
-  background: #fafbff;
+  /* background: #fafbff; */
   border: 1.5px solid #e3eaf6;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px 0 rgba(23, 102, 177, 0.06);
-  padding: 1.7em 1.2em 1.2em 1.2em;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 1px 6px 0 rgba(23, 102, 177, 0.06); */
+  padding: 0 0 1.2em 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -60,11 +60,11 @@
   box-shadow: 0 2px 12px 0 rgba(23,102,177,0.12);
 }
 .publicationImage {
-  width: 180px;
+  width: 100%;
   height: auto;
   object-fit: contain;
   margin-bottom: 1em;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   background: #f6fafe;
 }
 .downloadLink {
@@ -76,7 +76,7 @@
   font-weight: 700;
   padding: 0.45em 1.25em;
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   text-decoration: none;
   box-shadow: 0 1px 4px 0 rgba(23, 102, 177, 0.07);
   transition: background 0.13s;
