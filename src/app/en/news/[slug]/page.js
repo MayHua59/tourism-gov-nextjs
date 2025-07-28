@@ -79,12 +79,17 @@ export default async function NewsDetail({ params }) {
             <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
             <span>
               <strong>Published on:</strong>{" "}
-              {new Date(news.timestamp).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+               {new Date(news.created_at).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
             </span>
+            {news.category?.name && (
+                <span className={styles.govtCategory}>
+                  {" | "}Category: {news.category.name}
+                </span>
+              )}
           </div>
           <div className={styles.govtImageWrapper}>
             <img
@@ -94,8 +99,12 @@ export default async function NewsDetail({ params }) {
             />
           </div>
           <div className={styles.govtDesc}>
-            {news.description}
+            <p
+className={styles.newsDesc}
+dangerouslySetInnerHTML={{ __html: news.description }}
+></p>
           </div>
+
         </div>
       )}
       </div>

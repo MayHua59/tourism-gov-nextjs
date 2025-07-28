@@ -45,31 +45,31 @@ const mainMenu = [
       {
         label: "North Myanmar",
         submenu: [
-          { label: "Kachin", href: "/en/coming-soon" },
-          { label: "Sagaing", href: "/en/coming-soon" },
-          { label: "Chin", href: "/en/coming-soon" },
-          { label: "Shan", href: "/en/coming-soon" },
+          { label: "Kachin", href: "/en/regions/kachin" },
+          { label: "Sagaing", href: "/en/regions/sagaing" },
+          { label: "Chin", href: "/en/regions/chin" },
+          { label: "Shan", href: "/en/regions/shan" },
         ],
       },
       {
         label: "Central Myanmar",
         submenu: [
-          { label: "Magway", href: "/en/coming-soon" },
-          { label: "Nay Pyi Taw", href: "/en/coming-soon" },
-          { label: "Mandalay", href: "/en/coming-soon" },
-          { label: "Rakhine", href: "/en/coming-soon" },
+          { label: "Magway", href: "/en/regions/magway" },
+          { label: "Nay Pyi Taw", href: "/en/regions/nay-pyi-taw" },
+          { label: "Mandalay", href: "/en/regions/mandalay" },
+          { label: "Rakhine", href: "/en/regions/rakine" },
         ],
       },
       {
         label: "South Myanmar",
         submenu: [
-          { label: "Ayeyarwady", href: "/en/coming-soon" },
-          { label: "Kayah", href: "/en/coming-soon" },
-          { label: "Kayin", href: "/en/coming-soon" },
-          { label: "Bago", href: "/en/coming-soon" },
-          { label: "Yangon", href: "/en/coming-soon" },
-          { label: "Mon", href: "/en/coming-soon" },
-          { label: "Tanintharyi", href: "/en/coming-soon" },
+          { label: "Ayeyarwady", href: "/en/regions/ayeyarwady" },
+          { label: "Kayah", href: "/en/regions/kayah" },
+          { label: "Kayin", href: "/en/regions/kayin" },
+          { label: "Bago", href: "/en/regions/bago" },
+          { label: "Yangon", href: "/en/regions/yangon" },
+          { label: "Mon", href: "/en/regions/mon" },
+          { label: "Tanintharyi", href: "/en/regions/tanintharyi" },
         ],
       },
     ],
@@ -104,8 +104,8 @@ const mainMenu = [
           {
             label: "Tour Guides",
             submenu: [
-              { label: "National Tour Guides", href: "/en/coming-soon" },
-              { label: "Regional Tour Guides", href: "/en/coming-soon" },
+              { label: "National Tour Guides", href: "/en/tour-guides/national-tour-guides" },
+              { label: "Regional Tour Guides", href: "/en/tour-guides/regional-tour-guides" },
             ],
           },
           {
@@ -135,7 +135,7 @@ const mainMenu = [
     label: "News & Announcements",
     submenu: [
       { label: "Weather Forecast", href: "/en/coming-soon" },
-      { label: "Upcoming Events", href: "/en/coming-soon" },
+      { label: "Upcoming Events", href: "/en/upcoming-events" },
       { label: "News", href: "/en/news" },
       { label: "Announcements", href: "/en/announcements" },
       { label: "Travel Advisory", href: "/en/coming-soon" },

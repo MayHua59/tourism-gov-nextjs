@@ -6,7 +6,7 @@ const newsData = [
   {
     image: "/assets/images/cover-images/water-fall.jpg",
     alt: "New Air Routes",
-    title: "New International Air Routes To Myanmar",
+    title: "Hiiiiii",
     summary:
       "Several airlines have announced new direct flights to Yangon and Mandalay, improving connectivity with key Asian and Middle Eastern markets.",
     category: "Transport News",

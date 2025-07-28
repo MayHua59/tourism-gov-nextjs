@@ -1,48 +1,61 @@
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./News.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { fetchNewsList } from "../../../lib/api/news";
+import Loading from "../../../components/Loading";
 
+export default function News() {
+  const [newsList, setNewsList] = useState([]);
+  const [meta, setMeta] = useState({ current_page: 1, per_page: 20, total: 0 });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
+  const fetchPage = async (page) => {
+    setLoading(true);
+    setError("");
+    try {
+      const result = await fetchNewsList(page, meta.per_page);
+      setNewsList(result.data);
+     
+      setMeta(prevMeta => ({
+        ...prevMeta,
+        ...result.meta, 
+        current_page: page 
+      }));
 
-// Dummy data for news list
-// const news_list = [
-//   {
-//     name: "Myanmar participates in Russia&apos;s 5th “Let&apos;s Travel!” International Travel Forum opening event",
-//     slug: "myanmar-participates-international-travel-forum-opening-event",
-//     description: "MYANMAR delegation led by Union Minister for Hotels andTourism U Kyaw Soe Win attended...",
-//     cover_photo: "/assets/images/news-images/russia.jpg",
-//     news_category_id: 1,
-//     active: true,
-//     timestamp: "2025-06-11T10:30:00Z"
-//   },
-//   {
-//     name: "Homes for flood victims handed over",
-//     slug: "homes-for-flood-victims-handed-over",
-//     description: "UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover...",
-//     cover_photo: "/assets/images/news-images/moht.jpg",
-//     news_category_id: 2,
-//     active: true,
-//     timestamp: "2025-05-04T09:00:00Z"
-//   }
-// ];
+    } catch (err) {
+      console.error("Error fetching news:", err); 
+      setError("Failed to load news. Please try again later.");
+    }
+    setLoading(false);
+  };
 
-export const metadata = {
-  title: "News",
-  description: "Latest news and updates on Myanmar tourism, investment, and travel."
+  useEffect(() => {
+   
+    fetchPage(1); 
+  }, []); 
+
+  const handlePageChange = (page) => {
+    
+    if (page !== meta.current_page) {
+      fetchPage(page);
+    }
+  };
+
+  const totalPages = Math.ceil(meta.total / meta.per_page);
+
+  const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
 };
 
-export default async function News() {
-  let news_list = [];
-  let error = null;
-    try {
-    news_list = await fetchNewsList();
-  } catch (err) {
-    error = "";
-  }
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -57,13 +70,15 @@ export default async function News() {
       />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>News</h1>
-       {error ? (
-        <div className="errorMessage">{error}</div>
-       ):(
-         <div className={styles.newsList}>
-          {news_list.map((news) => (
+        {loading && <Loading message="Fetching the latest news..." size="large" />}
+        {error && <div className={styles.errorMessage}>{error}</div>} 
+        {!loading && newsList.length === 0 && !error && (
+            <div className={styles.noNewsMessage}>No news found.</div>
+        )}
+        <div className={styles.newsList}>
+          {newsList.map((news) => (
             <div className={styles.newsCard} key={news.slug}>
-              <a href={`/en/news/${news.slug}`} className={styles.newsLink}>
+              <Link href={`/en/news/${news.slug}`} className={styles.newsLink}>
                 <div className={styles.coverWrapper}>
                   <img
                     src={news.cover_photo}
@@ -72,10 +87,9 @@ export default async function News() {
                   />
                 </div>
                 <div className={styles.newsContent}>
-                  <div className={styles.newsMeta}>
-                   <span className={styles.newsPublished}>
-                      <FontAwesomeIcon icon={faCalendar} className={styles.calendarIcon} />
-                      {new Date(news.timestamp).toLocaleDateString("en-US", {
+                 <div className={styles.newsMeta}>
+                    <span className={styles.newsPublished}>
+                      {new Date(news.created_at).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
                         day: "numeric",
@@ -84,16 +98,46 @@ export default async function News() {
                   </div>
                   <h2 className={styles.newsTitle}>{news.name}</h2>
                   
-                  <p className={styles.newsDesc}>{news.description}</p>
+                   <p
+  className={styles.newsDesc}
+  dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }} 
+></p>
                   <div className={styles.readMoreWrapper}>
                     <span className={styles.readMoreBtn}>Read More</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
-       )}
+        {totalPages > 1 && ( 
+          <div className={styles.pagination}>
+           <button
+  onClick={() => handlePageChange(meta.current_page - 1)}
+  disabled={meta.current_page === 1} 
+  className={styles.prevNextBtn}
+>
+  Prev
+</button>
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i + 1}
+                className={meta.current_page === i + 1 ? styles.activePage : ""}
+                onClick={() => handlePageChange(i + 1)}
+                
+              >
+                {i + 1}
+              </button>
+            ))}
+            <button
+              onClick={() => handlePageChange(meta.current_page + 1)}
+              disabled={meta.current_page === totalPages}
+              className={styles.prevNextBtn}
+            >
+              Next
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

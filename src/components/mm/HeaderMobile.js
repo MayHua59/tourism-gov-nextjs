@@ -145,7 +145,7 @@ const menuData = [
     label: "ကျွန်ုပ်တို့၏ အခန်းကဏ္ဍ",
     submenu: [
       { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
-      { label: "ရည်မှန်းချက်များ", href: "/mm/objectives" },
+      { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
       { label: "မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
       { label: "နိုင်ငံတကာပူးပေါင်းဆောင်ရွက်ရေး", href: "/mm/coming-soon" },
       {
