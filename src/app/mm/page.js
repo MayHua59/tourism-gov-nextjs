@@ -25,8 +25,8 @@ const Page = () => {
       <MyanmarInPicturesSection />
       <CallActionSection />
       <TravelerInformationSection />
-      <TourismNewsSection />
-      <LatestNewsSection />
+      {/* <TourismNewsSection />
+      <LatestNewsSection /> */}
     </>
   );
 };
