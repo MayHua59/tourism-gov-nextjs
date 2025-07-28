@@ -4,7 +4,7 @@ import styles from "./MyanmarMissions.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "မြန်မာသံရုံးများ",
+  title: "Myanmar Missions",
   description: "Contact information for Myanmar diplomatic missions worldwide."
 };
 
