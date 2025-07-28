@@ -63,6 +63,114 @@ export default function TourismLegislation() {
                 </a>
               </div>
             </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>Directives For Guest House Licence Holders</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>Directives For Hotel Licence Holders</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>Directives For Tour Company Licence Holders</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>Directives For Tour Guide Licence Holders</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>Prior Permission For Hotel Construction</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.legislationSection}>
+                <img
+                  src="/assets/images/pdf-images/rules.png"
+                  alt="Myanmar Tourism Rules (2020)"
+                  className={styles.legislationImage}
+                />
+                <h2 className={styles.legislationTitle}>License Service Fees</h2>
+                <a
+                  href="#"
+                  className={styles.downloadButton}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
