@@ -97,7 +97,169 @@ export default function AseanTourismStandards() {
                 </a>
               </div>
             </div>
-            {/* Add more publication cards here */}
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-Ecotourism-Standard.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-Ecotourism-Standard</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-Green-Hotel-Standard.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-Green-Hotel-Standard</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-Homestay-Standard.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-Homestay-Standard</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-MICE-Venue-Standards-Exhibition-Venue.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Exhibition-Venue</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-MICE-Venue-Standards-Meeting-Room.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Meeting-Room</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-Public-Toilet-Standard.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-Public-Toilet-Standard</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/ASEAN-Spa-Services-Standard-1.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>ASEAN-Spa-Services-Standard-1</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/GREEN-HOTEL-BOOKLET-FOR-ATF-2016.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>GREEN-HOTEL-BOOKLET-FOR-ATF-2016</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <img
+                  src="/assets/images/pdf-images/Homestay-Awardees-2016.JPG"
+                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  className={styles.publicationImage}
+                />
+                <h4 className={styles.pdfTitle}>Homestay-Awardees-2016</h4>
+                <a
+                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            
           </div>
         </section>
       </div>
