@@ -28,13 +28,13 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <img
-                  src="/assets/images/pdf-images/2021.jpg"
+                  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
                   alt="Tourism Statistics 2021"
                   className={styles.publicationImage}
                 />
                 <h4>Tourism Statistics 2021</h4>
                 <a
-                  href="/assets/pdf/Tourism Statistics 2021.pdf"
+                  href="https://drive.google.com/file/d/1mWJRwiGlZQ7SPi3S6eS-8Pv6XvS_E68e/view"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -46,13 +46,13 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <img
-                  src="/assets/images/pdf-images/2022.jpg"
+                  src="https://i.ibb.co/FkZtwkxR/viber-image-2025-08-06-16-03-04-085.jpg"
                   alt="Tourism Statistics 2022"
                   className={styles.publicationImage}
                 />
                 <h4>Tourism Statistics 2022</h4>
                 <a
-                  href="/assets/pdf/Tourism Statistcs 2022.pdf"
+                  href="https://drive.google.com/file/d/11zFwo47STn7QhyDIWSJ24W6rt-gxiNis/view"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -64,13 +64,13 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <img
-                  src="/assets/images/pdf-images/2023.jpg"
+                  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
                   alt="Tourism Statistics 2023"
                   className={styles.publicationImage}
                 />
                 <h4>Tourism Statistics 2023</h4>
                 <a
-                  href="/assets/pdf/Tourism Statistics 2023.pdf"
+                  href="https://drive.google.com/file/d/1_hfJkKqAnN0iNUVfs45ElPlcEzKr4z2T/view"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -82,13 +82,13 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <img
-                  src="/assets/images/pdf-images/2024.jpg"
+                  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
                   alt="Tourism Statistics 2024"
                   className={styles.publicationImage}
                 />
                 <h4>Tourism Statistics 2024</h4>
                 <a
-                  href="/assets/pdf/Tourism Statistics 2024.pdf"
+                  href="https://drive.google.com/file/d/1zgVUkUb3d7MChMYxPbh4P40BhTL8wX6P/view"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
