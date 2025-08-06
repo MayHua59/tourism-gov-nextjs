@@ -1,0 +1,74 @@
+.pageContainer {
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5em 1em 4em 1em;
+}
+
+.errorMessage {
+  color: #d32f2f;
+  background: #fff4f4;
+  border: 1px solid #ffcdd2;
+  padding: 1em 1.5em;
+  border-radius: 6px;
+  margin: 1.2em 0 1.3em 0;
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+.govtCard {
+  /* background: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03); */
+  padding: 2em 2.3em 2.3em 2.3em;
+  margin-top: 1em;
+}
+
+.govtTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+  color: #1a2d4d;
+  text-align: center;
+}
+
+.govtMeta {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #567;
+  margin-bottom: 1em;
+}
+
+.calendarIcon {
+  margin-right: 0.5em;
+  color: #17437f;
+}
+
+.govtImageWrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  /* border-radius: 8px; */
+  margin-bottom: 1.2em;
+  background: #eef2f8;
+}
+
+.govtImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.govtDesc {
+  color: #25334d;
+  font-size: 1.08rem;
+  margin-top: 0.4em;
+  line-height: 1.7;
+}

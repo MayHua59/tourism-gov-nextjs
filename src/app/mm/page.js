@@ -15,6 +15,9 @@ import LatestNewsSection from "../../components/mm/home/LatestNewsSection";
 const Page = () => {
   return (
     <>
+
+
+
       <HeroSectionMM />
       <AboutSection />
       <WeatherWidget />
@@ -27,6 +30,7 @@ const Page = () => {
       <TravelerInformationSection />
       {/* <TourismNewsSection />
       <LatestNewsSection /> */}
+
     </>
   );
 };

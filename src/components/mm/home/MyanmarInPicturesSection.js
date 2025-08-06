@@ -115,7 +115,7 @@ export default function MyanmarInPicturesSection() {
         />
         <div className={styles.picturesOverlayText}>
           <h3 className={styles.picturesOverlayTitle}>
-            <a href="/gallery.html">{item.title}</a>
+            <a>{item.title}</a>
           </h3>
           <span>{item.subtitle}</span>
         </div>

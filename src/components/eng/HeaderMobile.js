@@ -112,8 +112,8 @@ const menuData = [
           {
             label: "Tour Guides",
             submenu: [
-              { label: "National Tour Guides", href: "/en/coming-soon" },
-              { label: "Regional Tour Guides", href: "/en/coming-soon" },
+              { label: "National Tour Guides", href: "/en/tour-guides/national-tour-guides" },
+              { label: "Regional Tour Guides", href: "/en/tour-guides/regional-tour-guides" },
             ],
           },
           {

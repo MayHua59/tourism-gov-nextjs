@@ -4,7 +4,7 @@ import styles from "./TourismPublication.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Tourism Publications",
+  title: "စာအုပ်၊စာစောင်များ",
   description: "Official tourism research publications and surveys for Myanmar."
 };
 
@@ -18,11 +18,11 @@ export default function TourismPublication() {
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
-          { label: "စာအုပ် စာစောင်များ", active: true }
+          { label: "စာအုပ်၊စာစောင်များ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>စာအုပ် စာစောင်များ</h1>
+        <h1 className={styles.pageTitle}>စာအုပ်၊စာစောင်များ</h1>
        <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>

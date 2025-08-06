@@ -4,59 +4,57 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./NewsDetail.module.css";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fetchNewsDetail } from "../../../../lib/api/news";
 
-const news_list = [
-  {
-    name: "Myanmar Welcomes Record Number of Tourists in 2025",
-    slug: "myanmar-welcomes-record-number-of-tourists-2025",
-    description: "Myanmar's tourism industry sees an unprecedented surge in international visitors during the first half of 2025.",
-    cover_photo: "/assets/images/news/news1.jpg",
-    news_category_id: 1,
-    active: true,
-    timestamp: "2025-07-01T10:30:00Z"
-  },
-  {
-    name: "Eco-Tourism Projects Launched in Inle Lake",
-    slug: "eco-tourism-projects-inle-lake",
-    description: "New eco-friendly initiatives aim to preserve Inle Lake's natural beauty while boosting local economies.",
-    cover_photo: "/assets/images/news/news2.jpg",
-    news_category_id: 2,
-    active: true,
-    timestamp: "2025-06-25T09:00:00Z"
-  },
-  {
-    name: "Yangon Hosts ASEAN Tourism Forum",
-    slug: "yangon-hosts-asean-tourism-forum",
-    description: "Leaders from ASEAN countries gather in Yangon to discuss regional tourism strategies.",
-    cover_photo: "/assets/images/news/news3.jpg",
-    news_category_id: 3,
-    active: true,
-    timestamp: "2025-06-10T15:15:00Z"
-  },
-  {
-    name: "New Hospitality Training Centers Announced",
-    slug: "new-hospitality-training-centers-announced",
-    description: "The Ministry of Hotels and Tourism announces new training centers to enhance skills in hospitality across the country.",
-    cover_photo: "/assets/images/news/news4.jpg",
-    news_category_id: 4,
-    active: true,
-    timestamp: "2025-06-05T08:45:00Z"
-  }
-];
+// const news_list = [
+//   {
+//     name: "Myanmar participates in Russia's 5th “Let's Travel!” International Travel Forum opening event",
+//     slug: "myanmar-participates-international-travel-forum-opening-event",
+//     description: "MYANMAR delegation led by Union Minister for Hotels and Tourism U Kyaw Soe Win attended the Fifth International Travel Forum “Let's travel!” at VDNH in Moscow from 10 to 15 June 2025.The opening event started with a discussion on the topic:“Discovering Russia: How Travel Is Changing the Country”. Dmitry Chernyshenko, Deputy Prime Minister of the Russian Federation, read out the message sent by Russian President Vladimir Putin, and a video message from Russian Prime Minister Mikhail Mishustin was played.The event continued with the discussion of different perspectives regarding the economy of the country by the governmental officials, entrepreneurs, hoteliers and other experts in tourism and restaurants.On 10 June, the Myanmar delegates met with Russian Economic Development Minister Maxim Reshetnikov.During the meeting, the two parties discussed comprehensive cooperation between governments, privates and people of two countries, Familiarization Trip-FAM Trip, visa-free travel to each other's citizens, bilateral travel expo, high arrival of Russian travellers to Myanmar, further cooperation for Russian government employees to visit Myanmar during long holidays and promising investments in hotels and tourism in Myanmar.The Union minister observed the forum and received the Russian investors of Cosmos Hotel Group and BN Group to discuss Myanmar's beautiful beaches and tourist attractions, potential investment opportunities, and programmes that would provide support for those interested in implementing the pilot projects.The Union minister and party attended the “The Russian Manor: A Celebration of Customs” dinner event at Dom Vishnevsky Centre in Moscow on the same evening. — MNA/ KTZH",
+//     cover_photo: "/assets/images/news-images/russia.jpg",
+//     news_category_id: 1,
+//     active: true,
+//     timestamp: "2025-06-11T10:30:00Z"
+//   },
+//   {
+//     name: "Homes for flood victims handed over",
+//     slug: "homes-for-flood-victims-handed-over",
+//     description: "Union Minister for Hotels and Tourism U Kyaw Soe Win delivers speech at the handover ceremony of housing for flood victims in Nyaungpintha Village, Tatkon Township, Nay Pyi Taw on 3 May.UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover ceremony of housing for flood victims in Nyaungpintha village of Magyibin village-tract of Nay Pyi Taw yesterday.The housing was constructed with the help of hotels and tourism-related organizations under the leadership of the Myanmar Tourism Federation and supervision of the Ministry of Hotels and Tourism. Speaking at the event, the Union minister highlighted the buildings for flood victims in Nyaungpintha village-after the 2024 flood, and the construction that included 22 houses, including a Community Centre. He also talked about the training courses for the villagers to create job opportunities. Afterwards, the Nay Pyi Taw Council chairman and relevant officials talked about the education, small-scale manufacturing sectors and rehabilitation processes.",
+//     cover_photo: "/assets/images/news-images/moht.jpg",
+//     news_category_id: 2,
+//     active: true,
+//     timestamp: "2025-05-04T09:00:00Z"
+//   },
+ 
+// ];
 
 export async function generateMetadata({ params }) {
-  const news = news_list.find(n => n.slug === params.slug);
-  if (!news) return {};
-  return {
-    title: news.name,
-    description: news.description
-  };
+  params = await params;
+  try {
+    const news = await fetchNewsDetail(params.slug);
+    if (!news) return {};
+    return {
+      title: news.name,
+      description: news.description
+    };
+  } catch {
+    return {};
+  }
 }
 
-export default function NewsDetail({ params }) {
-  const news = news_list.find(n => n.slug === params.slug);
+export default async function NewsDetail({ params }) {
+  // const news = news_list.find(n => n.slug === params.slug);
+  params = await params;
+  let news = null;
+  let error = null;
 
-  if (!news) return notFound();
+    try {
+    news = await fetchNewsDetail(params.slug);
+  } catch (e) {
+    error = "Sorry, we couldn't load this news item. Please try again later.";
+  }
+
+ if (!news && !error) return notFound();
 
   return (
     <div className={styles.pageContainer}>
@@ -66,24 +64,32 @@ export default function NewsDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "News", href: "/en/news" },
-          { label: news.name, active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "သတင်းများ", href: "/mm/news" },
+          { label: news && news.name, active: true }
         ]}
       />
       <div className={styles.container}>
-        <div className={styles.govtCard}>
+      {error ? (
+        <div className="errorMessage">{error}</div>
+      ) : (
+          <div className={styles.govtCard}>
           <h1 className={styles.govtTitle}>{news.name}</h1>
           <div className={styles.govtMeta}>
             <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
             <span>
               <strong>Published on:</strong>{" "}
-              {new Date(news.timestamp).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+               {new Date(news.created_at).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
             </span>
+            {news.category?.name && (
+                <span className={styles.govtCategory}>
+                  {" | "}Category: {news.category.name}
+                </span>
+              )}
           </div>
           <div className={styles.govtImageWrapper}>
             <img
@@ -93,9 +99,14 @@ export default function NewsDetail({ params }) {
             />
           </div>
           <div className={styles.govtDesc}>
-            {news.description}
+            <p
+className={styles.newsDesc}
+dangerouslySetInnerHTML={{ __html: news.description }}
+></p>
           </div>
+
         </div>
+      )}
       </div>
     </div>
   );

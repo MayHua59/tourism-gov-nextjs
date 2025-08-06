@@ -17,8 +17,8 @@ export default function ForeignInvestmentHotels() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Foreign Investment in Hotels and Commercial Complexes", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ နိုင်ငံခြားရင်းနှီးမြှုပ်နှံမှု", active: true }
         ]}
       />
       <div className={styles.container}>

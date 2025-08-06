@@ -4,7 +4,7 @@ import styles from "./Maps.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Maps",
+  title: "ခရီးသွားလမ်းညွှန်မြေပုံများ",
   description: "Download regional and thematic maps of Myanmar for tourism."
 };
 
@@ -17,12 +17,12 @@ export default function Maps() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Maps", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "ခရီးသွားလမ်းညွှန်မြေပုံများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Maps</h1>
+        <h1 className={styles.pageTitle}>ခရီးသွားလမ်းညွှန်မြေပုံများ</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -39,7 +39,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ဒေါင်းလုဒ်ရယူရန်
                 </a>
               </div>
             </div>

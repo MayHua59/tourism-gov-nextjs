@@ -4,61 +4,18 @@ import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./News.module.css";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { fetchNewsList } from "../../../lib/api/news";
-
-// Dummy data for news list
-const news_list = [
-  {
-    name: "Myanmar Welcomes Record Number of Tourists in 2025",
-    slug: "myanmar-welcomes-record-number-of-tourists-2025",
-    description: "Myanmar's tourism industry sees an unprecedented surge in international visitors during the first half of 2025.",
-    cover_photo: "/assets/images/news/news1.jpg",
-    news_category_id: 1,
-    active: true,
-    timestamp: "2025-07-01T10:30:00Z"
-  },
-  {
-    name: "Eco-Tourism Projects Launched in Inle Lake",
-    slug: "eco-tourism-projects-inle-lake",
-    description: "New eco-friendly initiatives aim to preserve Inle Lake's natural beauty while boosting local economies.",
-    cover_photo: "/assets/images/news/news2.jpg",
-    news_category_id: 2,
-    active: true,
-    timestamp: "2025-06-25T09:00:00Z"
-  },
-  {
-    name: "Yangon Hosts ASEAN Tourism Forum",
-    slug: "yangon-hosts-asean-tourism-forum",
-    description: "Leaders from ASEAN countries gather in Yangon to discuss regional tourism strategies.",
-    cover_photo: "/assets/images/news/news3.jpg",
-    news_category_id: 3,
-    active: true,
-    timestamp: "2025-06-10T15:15:00Z"
-  },
-  {
-    name: "New Hospitality Training Centers Announced",
-    slug: "new-hospitality-training-centers-announced",
-    description: "The Ministry of Hotels and Tourism announces new training centers to enhance skills in hospitality across the country.",
-    cover_photo: "/assets/images/news/news4.jpg",
-    news_category_id: 4,
-    active: true,
-    timestamp: "2025-06-05T08:45:00Z"
-  }
-];
-
-// export const metadata = {
-//   title: "News",
-//   description: "Latest news and updates on Myanmar tourism, investment, and travel."
-// };
+import Loading from "../../../components/Loading";
 
 export default function News() {
   const [newsList, setNewsList] = useState([]);
   const [meta, setMeta] = useState({ current_page: 1, per_page: 20, total: 0 });
   const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
+  const [error, setError] = useState("");
 
-     const fetchPage = async (page) => {
+  const fetchPage = async (page) => {
     setLoading(true);
     setError("");
     try {
@@ -78,23 +35,27 @@ export default function News() {
     setLoading(false);
   };
 
-    useEffect(() => {
+  useEffect(() => {
    
     fetchPage(1); 
   }, []); 
-    const handlePageChange = (page) => {
+
+  const handlePageChange = (page) => {
     
     if (page !== meta.current_page) {
       fetchPage(page);
     }
   };
+
   const totalPages = Math.ceil(meta.total / meta.per_page);
-    const truncateDescription = (description, maxLength) => {
+
+  const truncateDescription = (description, maxLength) => {
   if (description.length > maxLength) {
     return description.substring(0, maxLength) + '...'; 
   }
   return description;
 };
+
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -109,37 +70,81 @@ export default function News() {
       />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>သတင်းများ</h1>
+        {loading && <Loading message="Fetching the latest news..." size="large" />}
+        {error && <div className={styles.errorMessage}>{error}</div>} 
+        {!loading && newsList.length === 0 && !error && (
+            <div className={styles.noNewsMessage}>No news found.</div>
+        )}
         <div className={styles.newsList}>
-          {news_list.map((news) => (
+          {newsList.map((news) => (
             <div className={styles.newsCard} key={news.slug}>
-              <a href={`/en/news/${news.slug}`} className={styles.newsLink}>
-                <div className={styles.coverWrapper}>
-                  <img
-                    src={"/assets/images/cover-images/bagan.jpg"}
-                    alt={news.name}
-                    className={styles.newsCover}
-                  />
-                </div>
-                <div className={styles.newsContent}>
-                  <h2 className={styles.newsTitle}>{news.name}</h2>
-                  <div className={styles.newsMeta}>
-                    <span className={styles.newsTimestamp}>
-                      {new Date(news.timestamp).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
-                    </span>
-                  </div>
-                  <p className={styles.newsDesc}>{news.description}</p>
-                  <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>Read More</span>
-                  </div>
-                </div>
-              </a>
+              <Link href={`/mm/news/${news.slug}`} className={styles.newsLink}>
+                {news.cover_photo ? (
+  <div className={styles.coverWrapper}>
+    <img
+      src={news.cover_photo}
+      alt={news.name}
+      className={styles.newsCover}
+    />
+  </div>
+) : null}
+                <div
+  className={
+    news.cover_photo
+      ? styles.newsContent
+      : `${styles.newsContent} ${styles.fullWidthContent}`
+  }
+>
+  <div className={styles.newsMeta}>
+    <span className={styles.newsPublished}>
+      {new Date(news.created_at).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      })}
+    </span>
+  </div>
+  <h2 className={styles.newsTitle}>{news.name}</h2>
+  <p
+    className={styles.newsDesc}
+    dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
+  ></p>
+  <div className={styles.readMoreWrapper}>
+    <span className={styles.readMoreBtn}>Read More</span>
+  </div>
+</div>
+              </Link>
             </div>
           ))}
         </div>
+        {totalPages > 1 && ( 
+          <div className={styles.pagination}>
+           <button
+  onClick={() => handlePageChange(meta.current_page - 1)}
+  disabled={meta.current_page === 1} 
+  className={styles.prevNextBtn}
+>
+  Prev
+</button>
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i + 1}
+                className={meta.current_page === i + 1 ? styles.activePage : ""}
+                onClick={() => handlePageChange(i + 1)}
+                
+              >
+                {i + 1}
+              </button>
+            ))}
+            <button
+              onClick={() => handlePageChange(meta.current_page + 1)}
+              disabled={meta.current_page === totalPages}
+              className={styles.prevNextBtn}
+            >
+              Next
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

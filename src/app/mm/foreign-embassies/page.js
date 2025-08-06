@@ -4,7 +4,7 @@ import styles from "./ForeignEmbassies.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Foreign Embassies in Myanmar",
+  title: "မြန်မာနိုင်ငံရှိနိုင်ငံခြားသံရုံးများ",
   description: "Contact details of foreign embassies in Myanmar."
 };
 
@@ -15,11 +15,11 @@ export default function ForeignEmbassiesInMyanmar() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/mm/", icon: faHome },
-          { label: "မြန်မာနိုင်ငံရှိနိုင်ငံခြားသံရုံးများ", active: true }
+          { label: "မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>မြန်မာနိုင်ငံရှိနိုင်ငံခြားသံရုံးများ</h1>
+        <h1 className={styles.pageTitle}>မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</h1>
 
         <section id="foreign-embassies-asia-pacific" className={styles.mt5}>
           <h3 className={styles.missionsRegion}>Asia &amp; Pacific</h3>
