@@ -1,7 +1,11 @@
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./News.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { fetchNewsList } from "../../../lib/api/news";
 
 // Dummy data for news list
 const news_list = [
@@ -43,12 +47,54 @@ const news_list = [
   }
 ];
 
-export const metadata = {
-  title: "News",
-  description: "Latest news and updates on Myanmar tourism, investment, and travel."
-};
+// export const metadata = {
+//   title: "News",
+//   description: "Latest news and updates on Myanmar tourism, investment, and travel."
+// };
 
 export default function News() {
+  const [newsList, setNewsList] = useState([]);
+  const [meta, setMeta] = useState({ current_page: 1, per_page: 20, total: 0 });
+  const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+
+     const fetchPage = async (page) => {
+    setLoading(true);
+    setError("");
+    try {
+      const result = await fetchNewsList(page, meta.per_page);
+      setNewsList(result.data);
+     
+      setMeta(prevMeta => ({
+        ...prevMeta,
+        ...result.meta, 
+        current_page: page 
+      }));
+
+    } catch (err) {
+      console.error("Error fetching news:", err); 
+      setError("Failed to load news. Please try again later.");
+    }
+    setLoading(false);
+  };
+
+    useEffect(() => {
+   
+    fetchPage(1); 
+  }, []); 
+    const handlePageChange = (page) => {
+    
+    if (page !== meta.current_page) {
+      fetchPage(page);
+    }
+  };
+  const totalPages = Math.ceil(meta.total / meta.per_page);
+    const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
+};
   return (
     <div className={styles.pageContainer}>
       <BannerSection
@@ -57,12 +103,12 @@ export default function News() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "News", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
+          { label: "သတင်းများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>News</h1>
+        <h1 className={styles.pageTitle}>သတင်းများ</h1>
         <div className={styles.newsList}>
           {news_list.map((news) => (
             <div className={styles.newsCard} key={news.slug}>

@@ -120,8 +120,14 @@
   .tdPlaneBg {
     display: none;
   }
-  .tdContent {
+  
+   .tdContent {
     padding: 18px 6px;
+    text-align: center;
+  }
+  .tdList {
+    display: flex;
+    gap: 12em;
   }
 }
 

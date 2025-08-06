@@ -145,7 +145,7 @@ const mainMenu = [
     label: "လုပ်ငန်းတာဝန်",
     submenu: [
       { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
-      { label: "ရည်မှန်းချက်များ", href: "/mm/objectives" },
+      { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
       { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
       { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
       {

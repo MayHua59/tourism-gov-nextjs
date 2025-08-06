@@ -1,0 +1,638 @@
+[
+  {
+    "id": "3",
+    "slug": "mandalay",
+    "name": "Mandalay",
+    "cover_image": "https://i.pinimg.com/736x/5c/f9/d0/5cf9d0c9f2404534552f764dca5f951a.jpg",
+    "description": "Mandalay, the last royal capital of Myanmar, is a vibrant city rich in culture and history. It's known for its ancient monasteries, traditional crafts, and the iconic U Bein Bridge.",
+    "sections": [
+      {
+        "subtitle": "Royal Heritage",
+        "description": "Explore the reconstructed Mandalay Palace, a symbol of Myanmar's monarchical past, and wander through the Kuthodaw Pagoda, home to the world's largest book."
+      },
+      {
+        "subtitle": "Artisan City",
+        "description": "Discover traditional crafts like gold leaf making, wood carving, and tapestry weaving in workshops across the city."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Mandalay Hill Views",
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXfD8-4FvC1TYNMU1o8e-AgIH2Mlb3TMgFw&s",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f3/c2/90/scenery-from-mandalay.jpg?w=1200&h=-1&s=1",
+          "https://evivatour.com/wp-content/uploads/2021/09/Yankin-Hill-in-Mandalay.jpg"
+        ],
+        "description": "Panoramic views of the city and Irrawaddy River from the summit of Mandalay Hill."
+      }
+    ],
+    "destinations": [
+    {
+      "name": "U Bein Bridge",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/U_Bein_Bridge_at_sunset.jpg/1920px-U_Bein_Bridge_at_sunset.jpg",
+      "description": "The U Bein Bridge is a historic wooden bridge located near Amarapura, Myanmar, spanning the Taungthaman Lake. It is believed to be the oldest and longest teakwood bridge in the world, built around 1850. A popular spot for sunset views, it offers a glimpse into local life as monks and villagers cross daily."
+    },
+    {
+      "name": "Mandalay Palace",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mandalay_Palace%2C_Burma.jpg",
+      "description": "The Mandalay Palace is the last royal palace of the last Burmese monarchy. Constructed between 1857 and 1859 as part of King Mindon's founding of the new royal capital of Mandalay, it was largely destroyed during World War II. Today, a replica of the palace complex stands on the original site, offering insights into Myanmar's royal history."
+    },
+    {
+      "name": "Kuthodaw Pagoda",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kuthodaw_Pagoda%2C_Mandalay.jpg/1920px-Kuthodaw_Pagoda%2C_Mandalay.jpg",
+      "description": "The Kuthodaw Pagoda is a Buddhist stupa located in Mandalay, Myanmar, that contains the world's largest book. Surrounding the main stupa are 729 marble slabs, each inscribed on both sides with a page of the Tipitaka, the entire Pali Canon of Theravada Buddhism. This unique collection of stone inscriptions is recognized by UNESCO as a 'Memory of the World' heritage site."
+    },
+    {
+      "name": "Mahamuni Buddha Temple",
+      "region": "Mandalay",
+      "region_id": "2",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Mahamuni_Paya%2C_Mandalay%2C_Myanmar.jpg/1920px-Mahamuni_Paya%2C_Mandalay%2C_Myanmar.jpg",
+      "description": "The Mahamuni Buddha Temple is a major pilgrimage site and a highly revered Buddhist temple in Mandalay, Myanmar. It houses the Mahamuni Buddha image, which is widely believed to be a true likeness of Gautama Buddha. Over the centuries, male devotees have applied gold leaf to the statue, creating a thick, lumpy layer of gold on its surface."
+    }
+  ],
+    "events": [
+    {
+      "id": "event_02",
+      "name": "Mahamuni Pagoda Festival",
+      "start_date": "January/February", 
+      "end_date": "February", 
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/3366FF/FFFFFF?text=Mahamuni+Festival",
+      "description": "This is a major annual festival held at the Mahamuni Buddha Temple in Mandalay. It usually lasts for several days around the full moon of the lunar month of Tabodwe (January/February). Thousands of devotees from all over Myanmar pilgrimage to the pagoda, offering glutinous rice and other alms. There are also cultural performances and markets."
+    },
+    {
+      "id": "event_03",
+      "name": "Thingyan Festival (Water Festival)",
+      "start_date": "April 13",
+      "end_date": "April 16",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/00CCFF/FFFFFF?text=Thingyan+Festival",
+      "description": "The most famous festival in Myanmar, marking the Burmese New Year. Mandalay, like other major cities, sees vibrant celebrations with water throwing, music, dancing, and various entertainment. It's a time for cleansing and fun before the new year."
+    },
+    {
+      "id": "event_04",
+      "name": "Thadingyut Festival (Festival of Lights)",
+      "start_date": "October",
+      "end_date": "October",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/FFD700/FFFFFF?text=Thadingyut+Festival",
+      "description": "Celebrated nationwide, and prominently in Mandalay, this festival marks the end of Buddhist Lent. Houses, streets, and pagodas are adorned with lights, lanterns, and candles to welcome the Buddha's descent from heaven. People pay respects to elders and make offerings."
+    },
+    {
+      "id": "event_05",
+      "name": "Kyaukse Elephant Dance Festival",
+      "start_date": "October/November",
+      "end_date": "October/November",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/8B4513/FFFFFF?text=Elephant+Dance",
+      "description": "Held in Kyaukse, a town near Mandalay, this unique festival features large, intricately decorated elephant figures made from bamboo and paper. Two men get inside and 'dance' the elephant to the rhythm of drums, competing with other teams. It's a lively and colorful spectacle."
+    },
+    {
+      "id": "event_06",
+      "name": "Taungbyone Nat Festival",
+      "start_date": "August",
+      "end_date": "September",
+      "region_id": "2",
+      "image_url": "https://placehold.co/400x200/9932CC/FFFFFF?text=Taungbyone+Nat",
+      "description": "One of the most significant Nat (spirit) festivals in Myanmar, held in Taungbyone village near Mandalay. Thousands of Nat devotees and mediums gather to honor the Nat spirits, with lively music, dance, and spirit possessions."
+    }
+  ]
+  },
+  {
+    "id": "region-mon",
+    "slug": "mon",
+    "name": "Mon State",
+    "cover_image": "https://example.com/images/mon-cover.jpg",
+    "description": "Mon State is a coastal region in southern Myanmar, known for its beautiful beaches, ancient pagodas, and vibrant Mon culture.",
+    "sections": [
+      {
+        "subtitle": "Golden Rock Pagoda",
+        "description": "Visit the iconic Kyaiktiyo Pagoda, also known as the Golden Rock, a sacred pilgrimage site perched precariously on a cliff."
+      },
+      {
+        "subtitle": "Coastal Beauty",
+        "description": "Relax on the pristine beaches of Setse and discover the local fishing villages."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Kyaiktiyo Pagoda Views",
+        "images": [
+          "https://example.com/images/kyaiktiyo-1.jpg",
+          "https://example.com/images/kyaiktiyo-2.jpg",
+          "https://example.com/images/kyaiktiyo-3.jpg"
+        ],
+        "description": "Stunning views of the Golden Rock Pagoda and surrounding landscapes."
+      }
+    ],
+    "destinations": [
+      { "name": "Kyaiktiyo Pagoda (Golden Rock)", "region": "Mon State" },
+      { "name": "Mawlamyine", "region": "Mon State" },
+      { "name": "Win Sein Taw Ya (Reclining Buddha)", "region": "Mon State" }
+    ],
+    "events": [
+      { "name": "Mon National Day", "date": "February", "description": "Celebration of Mon culture and history." }
+    ]
+  },
+  {
+    "id": "region-rakhine",
+    "slug": "rakhine",
+    "name": "Rakhine State",
+    "cover_image": "https://example.com/images/rakhine-cover.jpg",
+    "description": "Rakhine State, on the western coast, offers a unique blend of ancient history, stunning beaches, and a distinct cultural identity. Mrauk-U is a major archaeological site.",
+    "sections": [
+      {
+        "subtitle": "Ancient Mrauk-U",
+        "description": "Explore the ancient city of Mrauk-U, home to hundreds of ancient temples and pagodas, often shrouded in mist."
+      },
+      {
+        "subtitle": "Ngapali Beach",
+        "description": "Enjoy the pristine white sands and clear waters of Ngapali Beach, a popular resort destination."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Mrauk-U Temples",
+        "images": [
+          "https://example.com/images/mrauk-u-1.jpg",
+          "https://example.com/images/mrauk-u-2.jpg",
+          "https://example.com/images/mrauk-u-3.jpg"
+        ],
+        "description": "Atmospheric views of the ancient temples of Mrauk-U."
+      }
+    ],
+    "destinations": [
+      { "name": "Mrauk-U", "region": "Rakhine State" },
+      { "name": "Ngapali Beach", "region": "Rakhine State" },
+      { "name": "Sittwe", "region": "Rakhine State" }
+    ],
+    "events": [
+      { "name": "Ananda Pagoda Festival (Sittwe)", "date": "January", "description": "Religious festival with traditional performances." }
+    ]
+  },
+  {
+    "id": "region-shan",
+    "slug": "shan",
+    "name": "Shan State",
+    "cover_image": "https://example.com/images/shan-cover.jpg",
+    "description": "Shan State, the largest state in Myanmar, is a land of rolling hills, picturesque lakes, and diverse ethnic groups. Inle Lake is a highlight.",
+    "sections": [
+      {
+        "subtitle": "Inle Lake Life",
+        "description": "Discover the unique leg-rowing fishermen and floating gardens of Inle Lake, and visit local workshops."
+      },
+      {
+        "subtitle": "Hill Tribe Culture",
+        "description": "Trek through the scenic hills and encounter various ethnic hill tribes, learning about their traditions."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Inle Lake Sunsets",
+        "images": [
+          "https://example.com/images/inle-sunset-1.jpg",
+          "https://example.com/images/inle-sunset-2.jpg",
+          "https://example.com/images/inle-sunset-3.jpg"
+        ],
+        "description": "Beautiful sunset views over Inle Lake."
+      }
+    ],
+    "destinations": [
+      { "name": "Inle Lake", "region": "Shan State" },
+      { "name": "Taunggyi", "region": "Shan State" },
+      { "name": "Hsipaw", "region": "Shan State" },
+      { "name": "Kalaw", "region": "Shan State" }
+    ],
+    "events": [
+      { "name": "Phaung Daw Oo Pagoda Festival", "date": "September/October", "description": "Annual festival featuring a procession of sacred Buddha images." }
+    ]
+  },
+  {
+    "id": "region-kayin",
+    "slug": "kayin",
+    "name": "Kayin State",
+    "cover_image": "https://example.com/images/kayin-cover.jpg",
+    "description": "Kayin State, nestled in eastern Myanmar, is characterized by dramatic limestone karsts, sacred caves, and a rich Karen cultural heritage.",
+    "sections": [
+      {
+        "subtitle": "Sacred Caves",
+        "description": "Explore the impressive Sadan Cave, home to thousands of Buddha images, and Kawgun Cave with its ancient wall carvings."
+      },
+      {
+        "subtitle": "Mount Zwegabin",
+        "description": "Hike or climb to the summit of Mount Zwegabin for panoramic views and visit the monastery at the top."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Hpa-an Landscapes",
+        "images": [
+          "https://example.com/images/hpaan-1.jpg",
+          "https://example.com/images/hpaan-2.jpg",
+          "https://example.com/images/hpaan-3.jpg"
+        ],
+        "description": "Scenic views of the karsts and rice paddies around Hpa-an."
+      }
+    ],
+    "destinations": [
+      { "name": "Hpa-an", "region": "Kayin State" },
+      { "name": "Sadan Cave", "region": "Kayin State" },
+      { "name": "Mount Zwegabin", "region": "Kayin State" }
+    ],
+    "events": [
+      { "name": "Karen New Year", "date": "December/January", "description": "Celebration of Karen culture and traditions." }
+    ]
+  },
+  {
+    "id": "region-naypyitaw",
+    "slug": "naypyitaw",
+    "name": "Naypyidaw Union Territory",
+    "cover_image": "https://example.com/images/naypyitaw-cover.jpg",
+    "description": "Naypyidaw, the modern capital of Myanmar, is a sprawling city with grand avenues, government buildings, and impressive pagodas.",
+    "sections": [
+      {
+        "subtitle": "Uppatasanti Pagoda",
+        "description": "Visit the majestic Uppatasanti Pagoda, a replica of the Shwedagon Pagoda in Yangon."
+      },
+      {
+        "subtitle": "National Landmarks",
+        "description": "Explore the National Land Marks Garden, featuring miniature replicas of famous Myanmar landmarks."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Naypyidaw Sights",
+        "images": [
+          "https://example.com/images/naypyitaw-1.jpg",
+          "https://example.com/images/naypyitaw-2.jpg",
+          "https://example.com/images/naypyitaw-3.jpg"
+        ],
+        "description": "Impressive architecture and spacious landscapes of the capital."
+      }
+    ],
+    "destinations": [
+      { "name": "Uppatasanti Pagoda", "region": "Naypyidaw Union Territory" },
+      { "name": "National Land Marks Garden", "region": "Naypyidaw Union Territory" },
+      { "name": "Gem Museum", "region": "Naypyidaw Union Territory" }
+    ],
+    "events": [
+      { "name": "Armed Forces Day Parade", "date": "March", "description": "Annual military parade showcasing the country's armed forces." }
+    ]
+  },
+  {
+    "id": "region-yangon",
+    "slug": "yangon",
+    "name": "Yangon Region",
+    "cover_image": "https://example.com/images/yangon-cover.jpg",
+    "description": "Yangon, the former capital and largest city, is a bustling metropolis that blends colonial architecture with ancient pagodas and vibrant street life.",
+    "sections": [
+      {
+        "subtitle": "Shwedagon Pagoda",
+        "description": "Marvel at the glittering Shwedagon Pagoda, Myanmar's most sacred Buddhist site."
+      },
+      {
+        "subtitle": "Colonial Charm",
+        "description": "Stroll through the downtown area to admire well-preserved colonial-era buildings."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Yangon Street Scenes",
+        "images": [
+          "https://example.com/images/yangon-street-1.jpg",
+          "https://example.com/images/yangon-street-2.jpg",
+          "https://example.com/images/yangon-street-3.jpg"
+        ],
+        "description": "Vibrant and lively street scenes from Yangon."
+      }
+    ],
+    "destinations": [
+      { "name": "Shwedagon Pagoda", "region": "Yangon Region" },
+      { "name": "Sule Pagoda", "region": "Yangon Region" },
+      { "name": "Bogyoke Aung San Market (Scott Market)", "region": "Yangon Region" }
+    ],
+    "events": [
+      { "name": "Thadingyut Festival of Lights", "date": "October", "description": "Celebration with lights to mark the end of Buddhist Lent." }
+    ]
+  },
+  {
+    "id": "region-bago",
+    "slug": "bago",
+    "name": "Bago Region",
+    "cover_image": "https://example.com/images/bago-cover.jpg",
+    "description": "Bago, located north of Yangon, is historically significant, boasting ancient pagodas, colossal Buddha images, and a serene atmosphere.",
+    "sections": [
+      {
+        "subtitle": "Shwemawdaw Pagoda",
+        "description": "Visit the towering Shwemawdaw Pagoda, taller than the Shwedagon Pagoda."
+      },
+      {
+        "subtitle": "Reclining Buddha",
+        "description": "See the impressive Shwethalyaung Buddha, a giant reclining Buddha statue."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Bago Ancient Sites",
+        "images": [
+          "https://example.com/images/bago-ancient-1.jpg",
+          "https://example.com/images/bago-ancient-2.jpg",
+          "https://example.com/images/bago-ancient-3.jpg"
+        ],
+        "description": "Highlights of Bago's historical and religious sites."
+      }
+    ],
+    "destinations": [
+      { "name": "Shwemawdaw Pagoda", "region": "Bago Region" },
+      { "name": "Shwethalyaung Buddha", "region": "Bago Region" },
+      { "name": "Kyaik Pun Pagoda", "region": "Bago Region" }
+    ],
+    "events": [
+      { "name": "Shwemawdaw Pagoda Festival", "date": "March/April", "description": "Annual pagoda festival with various activities." }
+    ]
+  },
+  {
+    "id": "region-magway",
+    "slug": "magway",
+    "name": "Magway Region",
+    "cover_image": "https://example.com/images/magway-cover.jpg",
+    "description": "Magway Region, in central Myanmar, is an agricultural heartland known for its dry zone climate, ancient stupas, and the mighty Irrawaddy River.",
+    "sections": [
+      {
+        "subtitle": "Mount Popa",
+        "description": "Ascend Mount Popa, an extinct volcano topped with a monastery, considered the abode of nats (spirits)."
+      },
+      {
+        "subtitle": "Pakokku",
+        "description": "Explore Pakokku, a vibrant trading town along the Irrawaddy River, known for its tobacco and local produce."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Mount Popa Views",
+        "images": [
+          "https://example.com/images/popa-1.jpg",
+          "https://example.com/images/popa-2.jpg",
+          "https://example.com/images/popa-3.jpg"
+        ],
+        "description": "Dramatic views of Mount Popa and its surrounding landscape."
+      }
+    ],
+    "destinations": [
+      { "name": "Mount Popa", "region": "Magway Region" },
+      { "name": "Pakokku", "region": "Magway Region" },
+      { "name": "Minbu", "region": "Magway Region" }
+    ],
+    "events": [
+      { "name": "Popa Nat Festival", "date": "December", "description": "Pilgrimage and festival dedicated to the nats at Mount Popa." }
+    ]
+  },
+  {
+    "id": "region-sagaing",
+    "slug": "sagaing",
+    "name": "Sagaing Region",
+    "cover_image": "https://example.com/images/sagaing-cover.jpg",
+    "description": "Sagaing Region is a spiritual hub, home to numerous monasteries, meditation centers, and stunning pagodas nestled on hills overlooking the Irrawaddy River.",
+    "sections": [
+      {
+        "subtitle": "Sagaing Hills",
+        "description": "Explore the Sagaing Hills, dotted with hundreds of white and gold pagodas and monasteries."
+      },
+      {
+        "subtitle": "Mingun Bell",
+        "description": "Visit Mingun, home to the immense Mingun Bell and the unfinished Mingun Pahtodawgyi pagoda."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Sagaing Panorama",
+        "images": [
+          "https://example.com/images/sagaing-1.jpg",
+          "https://example.com/images/sagaing-2.jpg",
+          "https://example.com/images/sagaing-3.jpg"
+        ],
+        "description": "Panoramic views of the Sagaing Hills and the Irrawaddy River."
+      }
+    ],
+    "destinations": [
+      { "name": "Sagaing Hills", "region": "Sagaing Region" },
+      { "name": "Mingun", "region": "Sagaing Region" },
+      { "name": "Inwa (Ava)", "region": "Sagaing Region" }
+    ],
+    "events": [
+      { "name": "Kaungmudaw Pagoda Festival", "date": "November", "description": "Annual festival at the iconic Kaungmudaw Pagoda." }
+    ]
+  },
+  {
+    "id": "region-ayeyarwady",
+    "slug": "ayeyarwady",
+    "name": "Ayeyarwady Region",
+    "cover_image": "https://example.com/images/ayeyarwady-cover.jpg",
+    "description": "Ayeyarwady Region, encompassing the vast Irrawaddy Delta, is Myanmar's rice bowl, characterized by its fertile plains, waterways, and diverse birdlife.",
+    "sections": [
+      {
+        "subtitle": "Pathein",
+        "description": "Discover Pathein, known for its colorful Pathein parasols and the vibrant local market."
+      },
+      {
+        "subtitle": "Delta Life",
+        "description": "Experience daily life along the delta's rivers and canals, observing traditional fishing and farming."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Ayeyarwady Delta Scenes",
+        "images": [
+          "https://example.com/images/delta-1.jpg",
+          "https://example.com/images/delta-2.jpg",
+          "https://example.com/images/delta-3.jpg"
+        ],
+        "description": "Picturesque scenes of life in the Irrawaddy Delta."
+      }
+    ],
+    "destinations": [
+      { "name": "Pathein", "region": "Ayeyarwady Region" },
+      { "name": "Chaungtha Beach", "region": "Ayeyarwady Region" },
+      { "name": "Ngwe Saung Beach", "region": "Ayeyarwady Region" }
+    ],
+    "events": [
+      { "name": "Pathein Hti Festival", "date": "April", "description": "Celebration of the traditional Pathein parasol craft." }
+    ]
+  },
+  {
+    "id": "1",
+    "slug": "kachin",
+    "name": "Kachin State",
+    "cover_image": "https://i.pinimg.com/1200x/0a/4b/c3/0a4bc334140bca75bde69e014bb08784.jpg",
+    "description": "Kachin State, in the far north of Myanmar, is a land of towering mountains, pristine forests, and diverse ethnic groups, including the Kachin people.",
+    "sections": [
+      {
+        "subtitle": "Indawgyi Lake",
+        "description": "Explore Indawgyi Lake, Southeast Asia's largest freshwater lake, a UNESCO Biosphere Reserve."
+      },
+      {
+        "subtitle": "Putao & Himalayas",
+        "description": "For adventurous travelers, Putao offers trekking opportunities to the foothills of the Himalayas."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Kachin Landscapes",
+        "images": [
+          "https://i.pinimg.com/736x/7a/ba/76/7aba768f3728a5cae501c5172aa5ce72.jpg",
+          "https://i.pinimg.com/1200x/62/36/8c/62368c8b6add9f59f9aed14c9673a9fa.jpg",
+          "https://i.pinimg.com/1200x/f8/39/96/f83996f78caee1334ee1be6c507c9557.jpg"
+        ],
+        "description": "Rugged mountains and lush landscapes of Kachin State."
+      }
+    ],
+    "destinations": [
+    {
+      "name": "Myitkyina",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg",
+      "description": "Myitkyina is the capital of Kachin State and is known as 'near the big river' in Burmese, referring to its location on the Irrawaddy River. It's a culturally diverse city and a gateway to the northern reaches of Myanmar. Key attractions include the Myit Sone (the confluence of the May Kha and Mali Kha Rivers, forming the Irrawaddy), various pagodas like Hsu Taung Pye Zedidaw Pagoda, and local markets where you can observe daily life and traditional practices."
+    },
+    {
+      "name": "Indawgyi Lake",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://indawgyilake.com/files/uploads/ecotourism-indawgyi-600x377.jpg",
+      "description": "Indawgyi Lake is one of the largest inland lakes in Southeast Asia, located in Mohnyin Township. It's surrounded by the Indawgyi Lake Wildlife Sanctuary, which boasts rich biodiversity, including various species of birds and mammals. The most famous landmark is the Shwe Myitzu Pagoda, a floating pagoda located in the middle of the lake, which attracts thousands of visitors during its annual festival."
+    },
+    {
+      "name": "Putao",
+      "region": "Kachin State",
+      "region_id": "1",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mulashidi_Bridge.jpg",
+      "description": "Putao is the northernmost town in Kachin State, nestled in the foothills of the Himalayas. It's a remote and serene destination known for its stunning natural beauty, including snow-capped mountains, verdant forests, and pristine rivers. Putao serves as a base for adventurous expeditions, including trekking to Mount Hkakabo Razi (the highest peak in Southeast Asia), white-water rafting on the Nam Lang River, and bird watching."
+    }
+  ],
+    "events": [
+      {
+      "id": "event_01",
+      "name": "Manaw Festival",
+      "start_date": "January 10",
+      "end_date": "January 14",
+      "region_id": "1",
+      "image_url": "https://placehold.co/400x200/FF5733/FFFFFF?text=Manaw+Festival",
+      "description": "Major traditional festival of the Kachin people, celebrating new year, reunion, and victories. It features traditional dances around a central Manaw pole."
+    }
+    ]
+  },
+  {
+    "id": "region-kayah",
+    "slug": "kayah",
+    "name": "Kayah State",
+    "cover_image": "https://example.com/images/kayah-cover.jpg",
+    "description": "Kayah State, a smaller state in eastern Myanmar, is known for its rolling hills, traditional villages, and the unique culture of the Kayan (long-neck) women.",
+    "sections": [
+      {
+        "subtitle": "Loikaw Attractions",
+        "description": "Visit the Thiri Mingala Pagoda atop Taungwe Mountain for panoramic views of Loikaw."
+      },
+      {
+        "subtitle": "Kayan Villages",
+        "description": "Experience the traditional lifestyle of the Kayan people in their villages."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Loikaw & Surroundings",
+        "images": [
+          "https://example.com/images/loikaw-1.jpg",
+          "https://example.com/images/loikaw-2.jpg",
+          "https://example.com/images/loikaw-3.jpg"
+        ],
+        "description": "Scenic views of Loikaw and its cultural highlights."
+      }
+    ],
+    "destinations": [
+      { "name": "Loikaw", "region": "Kayah State" },
+      { "name": "Taungwe Mountain", "region": "Kayah State" },
+      { "name": "Kayan Villages", "region": "Kayah State" }
+    ],
+    "events": [
+      { "name": "Kayah New Year Festival", "date": "January", "description": "Traditional celebrations marking the Kayah New Year." }
+    ]
+  },
+  {
+    "id": "region-chin",
+    "slug": "chin",
+    "name": "Chin State",
+    "cover_image": "https://example.com/images/chin-cover.jpg",
+    "description": "Chin State, in western Myanmar, is a rugged and remote region characterized by high mountains, deep valleys, and the distinct culture of the Chin people.",
+    "sections": [
+      {
+        "subtitle": "Mount Victoria",
+        "description": "Trek to the summit of Mount Victoria (Nat Ma Taung), the highest peak in Chin State, offering stunning views and unique flora."
+      },
+      {
+        "subtitle": "Rakhine Hills",
+        "description": "Discover traditional Chin villages and their unique tattooed-face women."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Chin Mountain Scenery",
+        "images": [
+          "https://example.com/images/chin-mountain-1.jpg",
+          "https://example.com/images/chin-mountain-2.jpg",
+          "https://example.com/images/chin-mountain-3.jpg"
+        ],
+        "description": "Breathtaking views of the mountainous landscapes of Chin State."
+      }
+    ],
+    "destinations": [
+      { "name": "Mindat", "region": "Chin State" },
+      { "name": "Kanpetlet", "region": "Chin State" },
+      { "name": "Mount Victoria (Nat Ma Taung)", "region": "Chin State" }
+    ],
+    "events": [
+      { "name": "Chin National Day", "date": "February", "description": "Celebration of Chin culture and unity." }
+    ]
+  },
+  {
+    "id": "region-tanintharyi",
+    "slug": "tanintharyi",
+    "name": "Tanintharyi Region",
+    "cover_image": "https://example.com/images/tanintharyi-cover.jpg",
+    "description": "Tanintharyi Region, along Myanmar's southern coast, is home to the Mergui Archipelago, offering untouched islands, vibrant marine life, and pristine beaches.",
+    "sections": [
+      {
+        "subtitle": "Mergui Archipelago",
+        "description": "Explore the remote and pristine islands of the Mergui Archipelago, perfect for diving, snorkeling, and island hopping."
+      },
+      {
+        "subtitle": "Dawei & Beaches",
+        "description": "Discover the charm of Dawei and its surrounding untouched beaches like Maungmagan."
+      }
+    ],
+    "carousel_section": [
+      {
+        "title": "Mergui Island Paradise",
+        "images": [
+          "https://example.com/images/mergui-1.jpg",
+          "https://example.com/images/mergui-2.jpg",
+          "https://example.com/images/mergui-3.jpg"
+        ],
+        "description": "Stunning images of the pristine islands and waters of the Mergui Archipelago."
+      }
+    ],
+    "destinations": [
+      { "name": "Myeik", "region": "Tanintharyi Region" },
+      { "name": "Dawei", "region": "Tanintharyi Region" },
+      { "name": "Mergui Archipelago", "region": "Tanintharyi Region" }
+    ],
+    "events": [
+      { "name": "Myeik Traditional Boat Race", "date": "October", "description": "Annual boat race showcasing local traditions." }
+    ]
+  }
+]
