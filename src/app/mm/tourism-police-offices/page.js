@@ -14,12 +14,12 @@ export default function TourismPoliceOffices() {
       <BannerSection imageUrl="/assets/images/cover-images-mm-title/8.jpg" altText="tourism police offices cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Police Offices", active: true }
+          { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+          { label: "ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Police Offices</h1>
+        <h1 className={styles.pageTitle}>ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</h1>
         <p>Contact information for Tourism Police Units across Myanmar.</p>
 
         <section id="police-units">

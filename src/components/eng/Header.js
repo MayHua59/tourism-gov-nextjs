@@ -104,8 +104,8 @@ const mainMenu = [
           {
             label: "Tour Guides",
             submenu: [
-              { label: "National Tour Guides", href: "/en/coming-soon" },
-              { label: "Regional Tour Guides", href: "/en/coming-soon" },
+              { label: "National Tour Guides", href: "/en/tour-guides/national-tour-guides" },
+              { label: "Regional Tour Guides", href: "/en/tour-guides/regional-tour-guides" },
             ],
           },
           {
@@ -247,11 +247,16 @@ export default function Header() {
 
    const handleLanguageChange = (e) => {
     const newLang = e.target.value;
+     let newPath;
     
     
-    const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+     if (pathname === '/') {
+        newPath = `/${newLang}`;
+    } else {
+       
+        newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
+    }
 
-   
     router.push(newPath);
   };
 

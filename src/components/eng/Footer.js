@@ -26,8 +26,8 @@ export default function Footer() {
               <ul>
                 <li><Link href="/en/explore-myanmar">Explore Myanmar</Link></li>
                 <li><Link href="/en/maps">Map</Link></li>
-                <li><Link href="/en/coming-soon">Air Balloons</Link></li>
-                <li><Link href="/en/tourism-statistics">Statistics</Link></li>
+                <li><Link href="/en/tourism-publication">Tourism Publications</Link></li>
+                <li><Link href="/en/brochures-and-pamphlets">Brochures and Pamphlets</Link></li>
               </ul>
             </div>
           </div>

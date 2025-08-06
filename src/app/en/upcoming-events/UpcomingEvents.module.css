@@ -1,6 +1,16 @@
 .pageContainer {
-  background: #f8f9fa;
-  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
 }
 
 .container {
@@ -22,7 +32,7 @@
   background: #fff4f4;
   border: 1px solid #ffcdd2;
   padding: 1em 1.5em;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   margin: 1.2em 0 1.3em 0;
   text-align: center;
   font-size: 1.08rem;

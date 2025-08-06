@@ -67,6 +67,9 @@
 
 .govtImageWrapper {
   width: 100%;
+   width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   margin-bottom: 1.6em;
@@ -75,9 +78,9 @@
 
 .govtImage {
   width: 100%;
-  max-width: 520px;
+  max-width: 1000px;
   height: auto;
-  object-fit: contain;
+  /* object-fit: cover; */
   /* border-radius: 8px; */
   box-shadow: 0 1px 8px 0 rgba(23, 102, 177, 0.08);
   background: #f6fafe;
@@ -93,6 +96,7 @@
   font-family: 'Merriweather Sans', Arial, sans-serif;
   width: 100%;
 }
+
 
 @media (max-width: 900px) {
   .container {

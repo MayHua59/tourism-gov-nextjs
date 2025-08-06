@@ -12,7 +12,7 @@ export default function TourismLegislation() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/28.jpg"
+        imageUrl="/assets/images/cover-images-mm-title/24.jpg"
         altText="tourism legislation cover photo"
       />
       <Breadcrumb

@@ -27,7 +27,7 @@ const Page = () => {
 <CallActionSection/>
 <TravelerInformationSection/>
 {/* <TourismNewsSection/>
-<LatestNewsSection/> */}
+<LatestNewsSection/>  */}
     </>
   );
 };
