@@ -41,7 +41,6 @@
   color: #234b81;
   margin-bottom: 0.6em;
   text-align: center;
-  font-family: 'Merriweather', 'Georgia', serif;
   line-height: 1.5;
   border-bottom: 1.5px solid #e3eaf6;
   padding-bottom: 0.3em;
@@ -55,7 +54,6 @@
   color: #246bb1;
   margin-bottom: 1.4em;
   gap: 0.6em;
-  font-family: 'Merriweather Sans', Arial, sans-serif;
   width: 100%;
 }
 
