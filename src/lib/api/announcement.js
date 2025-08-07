@@ -1,4 +1,4 @@
-const ANNOUNCEMENT_API_URL = "https://mohtgov.software100.com.mm/api/v1/announcements";
+const ANNOUNCEMENT_API_URL = `${API_HOST}/api/v1/announcements`;
 const ANNOUNCEMENT_DETAIL_API_URL = (slug) => `https://mohtgov.software100.com.mm/api/v1/announcements/${slug}`;
 
 

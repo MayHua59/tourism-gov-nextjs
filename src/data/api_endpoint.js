@@ -1,0 +1,1 @@
+const API_HOST = "https://admin.tourism.gov.mm";
