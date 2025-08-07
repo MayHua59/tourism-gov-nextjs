@@ -71,7 +71,7 @@ export default function News() {
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>News</h1>
         {loading && <Loading message="Fetching the latest news..." size="large" />}
-        {error && <div className={styles.errorMessage}>{error}</div>} 
+        {error && <div className="errorMessage">{error}</div>} 
         {!loading && newsList.length === 0 && !error && (
             <div className={styles.noNewsMessage}>No news found.</div>
         )}

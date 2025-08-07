@@ -66,18 +66,21 @@ export default async function AnnouncementDetail({ params }) {
                 </span>
               )}
             </div>
-            <div className={styles.govtImageWrapper}>
-              <img
-                src={announcement.cover_photo}
-                
-                alt={announcement.name}
-                className={styles.govtImage}
-              />
-            </div>
-            <div
-              className={styles.govtDesc}
-              dangerouslySetInnerHTML={{ __html: announcement.description }}
-            ></div>
+            {announcement.cover_photo && (
+  <div className={styles.govtImageWrapper}>
+    <img
+      src={announcement.cover_photo}
+      alt={announcement.name}
+      className={styles.govtImage}
+    />
+  </div>
+)}
+            {announcement.description && (
+  <div
+    className={styles.govtDesc}
+    dangerouslySetInnerHTML={{ __html: announcement.description }}
+  ></div>
+)}
           </div>
         )}
       </div>
