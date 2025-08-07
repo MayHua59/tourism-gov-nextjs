@@ -110,9 +110,11 @@
   font-weight: 700;
   color: #1766b1;
   margin-bottom: 0.25em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* overflow: hidden; */
+  line-height: 2;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  padding-bottom: 0.2em;
 }
 
 .announcementMeta {
@@ -217,18 +219,30 @@
   .announcementCard {
     min-height: 110px;
   }
-  .coverWrapper {
-    width: 90px;
-    min-width: 90px;
-    max-width: 90px;
+  
+    .coverWrapper {
+   width: 40%;           /* or your preferred width */
+  min-width: 140px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+  .announcementCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .pagination button {
-    font-size: 0.8rem; /* Smaller font size */
-    padding: 4px 12px; /* Smaller padding */
+    font-size: 0.8rem; 
+    padding: 4px 12px; 
   }
 
   .pagination {
-    gap: 4px; /* Reduce gap between buttons */
+    gap: 4px; 
   }
 }
 
@@ -244,23 +258,35 @@
   }
   .announcementCard {
     flex-direction: column;
+    height: auto; 
+    min-height: unset;
   }
   .announcementLink {
     flex-direction: column;
+    width: 100%;
+    height: auto;
   }
   .coverWrapper {
-    width: 100%;
+      width: 100%;
     min-width: 0;
     max-width: 100%;
-    height: 90px;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .announcementCover {
-    max-height: 90px;
-    width: auto;
-    margin: 0 auto;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    display: block;
   }
   .announcementContent {
     padding: 0.8em 0.8em 1em 0.8em;
+    width: 100%;
+    box-sizing: border-box;
   }
   .pagination button {
     font-size: 0.8rem; 
