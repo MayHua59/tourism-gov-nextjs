@@ -1,5 +1,6 @@
-// const REGIONS_API_URL = "https://mohtgov.software100.com.mm/api/v1/regions";
-const REGION_API_URL = (slug) => `https://mohtgov.software100.com.mm/api/v1/regions/${slug}`;
+import { API_ENDPOINT } from "@/data/api_endpoint";
+
+const REGION_API_URL = (slug) => `${API_ENDPOINT}/api/v1/regions/${slug}`;
 
 
 

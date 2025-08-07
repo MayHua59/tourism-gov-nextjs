@@ -1,5 +1,7 @@
-const ANNOUNCEMENT_API_URL = "https://mohtgov.software100.com.mm/api/v1/announcements";
-const ANNOUNCEMENT_DETAIL_API_URL = (slug) => `https://mohtgov.software100.com.mm/api/v1/announcements/${slug}`;
+import {API_ENDPOINT} from "@/data/api_endpoint"
+
+const ANNOUNCEMENT_API_URL = `${API_ENDPOINT}/api/v1/announcements`;
+const ANNOUNCEMENT_DETAIL_API_URL = (slug) => `${API_ENDPOINT}/api/v1/announcements/${slug}`;
 
 
 export async function fetchAnnouncementList() {
