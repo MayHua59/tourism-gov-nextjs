@@ -27,7 +27,7 @@ export default async function RegionDetailPage({ params }) {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-              imageUrl={region.cover_image}
+              imageUrl={region.cover_photo}
               altText="maps cover photo"
             />
             <Breadcrumb
@@ -43,9 +43,12 @@ export default async function RegionDetailPage({ params }) {
         
       <h1 className="text-center mb-4 text-dark">{region.name}</h1> 
       
-      <div className="text-center mb-5"> 
+      <div className="mb-5"> 
         
-        <p className="lead mt-3 text-secondary">{region.description}</p> 
+        <p
+  className="mt-3"
+  dangerouslySetInnerHTML={{ __html: region.description }}
+/>
       </div>
 
       {region.sections && region.sections.length > 0 && (
