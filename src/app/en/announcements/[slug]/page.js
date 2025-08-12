@@ -54,7 +54,7 @@ export default async function AnnouncementDetail({ params }) {
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
               <span>
                 <strong>Published on:</strong>{" "}
-                {new Date(announcement.created_at).toLocaleDateString("en-US", {
+                {new Date(announcement.published_at).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",

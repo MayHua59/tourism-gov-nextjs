@@ -90,7 +90,7 @@ export default function Announcements() {
     <h2 className={styles.announcementTitle}>{a.name}</h2>
     <div className={styles.announcementMeta}>
       <span className={styles.announcementTimestamp}>
-        {new Date(a.created_at).toLocaleDateString("en-US", {
+        {new Date(a.published_at).toLocaleDateString("en-US", {
           year: "numeric",
           month: "short",
           day: "numeric",

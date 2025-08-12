@@ -89,7 +89,7 @@ export default function News() {
                 <div className={styles.newsContent}>
                  <div className={styles.newsMeta}>
                     <span className={styles.newsPublished}>
-                      {new Date(news.created_at).toLocaleDateString("en-US", {
+                      {new Date(news.published_at).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
                         day: "numeric",
