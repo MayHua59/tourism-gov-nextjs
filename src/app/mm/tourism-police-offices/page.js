@@ -11,7 +11,7 @@ export const metadata = {
 export default function TourismPoliceOffices() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images-mm-title/8.jpg" altText="tourism police offices cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/58.jpg" altText="tourism police offices cover photo" />
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },

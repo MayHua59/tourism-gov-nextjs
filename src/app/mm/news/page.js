@@ -59,7 +59,7 @@ export default function News() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-mm-title/1.jpg"
+        imageUrl="/assets/images/cover-images/35.jpg"
         altText="news cover photo"
       />
       <Breadcrumb
@@ -110,7 +110,7 @@ export default function News() {
     dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
   ></p>
   <div className={styles.readMoreWrapper}>
-    <span className={styles.readMoreBtn}>Read More</span>
+    <span className={styles.readMoreBtn}>ဆက်လက်ဖတ်ရှုရန်</span>
   </div>
 </div>
               </Link>

@@ -12,7 +12,7 @@ export default function DoingBusinessInMyanmar() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/17.jpg"
+        imageUrl="/assets/images/cover-images/28.jpg"
         altText="doing business in Myanmar cover photo"
       />
       <Breadcrumb

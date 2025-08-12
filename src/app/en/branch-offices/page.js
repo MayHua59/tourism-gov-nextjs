@@ -11,7 +11,7 @@ export const metadata = {
 export default function BranchOffices() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images-title/8.jpg" altText="branch offices cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/16.jpg" altText="branch offices cover photo" />
       <Breadcrumb
         items={[
           { label: "Home", href: "/", icon: faHome },

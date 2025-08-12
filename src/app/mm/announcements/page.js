@@ -53,7 +53,7 @@ export default function Announcements() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/1.jpg"
+        imageUrl="/assets/images/cover-images/10.jpg"
         altText="announcements cover photo"
       />
       <Breadcrumb

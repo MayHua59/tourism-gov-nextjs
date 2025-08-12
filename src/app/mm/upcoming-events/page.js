@@ -69,7 +69,7 @@ export default function UpcomingEvents() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-mm-title/22.jpg"
+        imageUrl="/assets/images/cover-images/61.jpg"
         altText="upcoming events cover photo"
       />
       <Breadcrumb
@@ -117,7 +117,7 @@ export default function UpcomingEvents() {
     dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
   ></p>
   <div className={styles.readMoreWrapper}>
-    <span className={styles.readMoreBtn}>Read More</span>
+    <span className={styles.readMoreBtn}>ဆက်လက်ဖတ်ရှုရန်</span>
   </div>
 </div>
               </Link>

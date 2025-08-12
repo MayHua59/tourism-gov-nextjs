@@ -12,7 +12,7 @@ export default function MyanmarInvestmentLaw() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-mm-title/24.jpg"
+        imageUrl="/assets/images/cover-images/67.jpg"
         altText="myanmar investment law cover photo"
       />
       <Breadcrumb
