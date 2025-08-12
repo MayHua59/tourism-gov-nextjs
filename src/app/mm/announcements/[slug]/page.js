@@ -4,7 +4,7 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./AnnouncementDetail.module.css";
 import { faHome, faBullhorn, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchAnnouncementDetail } from "../../../../lib/api/announcement";
+import { fetchAnnouncementDetail } from "../../../../lib/api/mm-site/announcement";
 
 export async function generateMetadata({ params }) {
   try {

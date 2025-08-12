@@ -5,7 +5,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./Announcements.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { fetchAnnouncementList } from "../../../lib/api/announcement";
+import { fetchAnnouncementList } from "../../../lib/api/mm-site/announcement";
 import Loading from "../../../components/Loading";
 
 // export const metadata = {

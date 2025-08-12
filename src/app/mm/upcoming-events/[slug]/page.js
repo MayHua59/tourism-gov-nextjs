@@ -4,7 +4,7 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./UpcomingEventDetail.module.css";
 import { faHome, faCalendarAlt, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchUpcomingEventDetail } from "../../../../lib/api/upcoming-event";
+import { fetchUpcomingEventDetail } from "../../../../lib/api/mm-site/upcoming-event";
 
 export async function generateMetadata({ params }) {
   params = await params;

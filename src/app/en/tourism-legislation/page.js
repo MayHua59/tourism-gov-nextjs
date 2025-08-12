@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./TourismLegislation.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "Tourism Legislation",
@@ -28,10 +29,13 @@ export default function TourismLegislation() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/law.png"
                   alt="Myanmar Tourism Law"
                   className={styles.legislationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h2 className={styles.legislationTitle}>Myanmar Tourism Law</h2>
                 <a
@@ -47,10 +51,13 @@ export default function TourismLegislation() {
 
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
+                 <Image
                   src="/assets/images/pdf-images/rules.png"
                   alt="Myanmar Tourism Rules (2020)"
                   className={styles.legislationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h2 className={styles.legislationTitle}>Myanmar Tourism Rules (2020)</h2>
                 <a
@@ -65,11 +72,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+               <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>Directives For Guest House Licence Holders</h2>
                 <a
                   href="#"
@@ -83,11 +93,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>Directives For Hotel Licence Holders</h2>
                 <a
                   href="#"
@@ -101,11 +114,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>Directives For Tour Company Licence Holders</h2>
                 <a
                   href="#"
@@ -119,11 +135,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>Directives For Tour Guide Licence Holders</h2>
                 <a
                   href="#"
@@ -137,11 +156,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>Prior Permission For Hotel Construction</h2>
                 <a
                   href="#"
@@ -155,11 +177,14 @@ export default function TourismLegislation() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
-                <img
-                  src="/assets/images/pdf-images/rules.png"
-                  alt="Myanmar Tourism Rules (2020)"
-                  className={styles.legislationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/rules.png"
+  alt="Myanmar Tourism Rules (2020)"
+  className={styles.legislationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h2 className={styles.legislationTitle}>License Service Fees</h2>
                 <a
                   href="#"

@@ -27,11 +27,14 @@ export default function TourismPublication() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/domestic-tourism-survey.png"
-                  alt="Domestic Tourism Survey Image"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/domestic-tourism-survey.png"
+  alt="Domestic Tourism Survey Image"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
                   href="/assets/pdf/မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"
@@ -45,11 +48,14 @@ export default function TourismPublication() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/inbound-tourism-survey.png"
-                  alt="Inbound Tourism Survey Image"
-                  className={styles.publicationImage}
-                />
+              <Image
+  src="/assets/images/pdf-images/inbound-tourism-survey.png"
+  alt="Inbound Tourism Survey Image"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
                   href="/assets/pdf/မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"

@@ -1,7 +1,7 @@
-import { API_ENDPOINT } from "@/data/api_endpoint";
+import { API_ENDPOINT_MM } from "@/data/api_endpoint";
 
-const NEWS_API_URL = `${API_ENDPOINT}/api/v1/news`;
-const NEWS_DETAIL_API_URL = (slug) => `${API_ENDPOINT}/api/v1/news/${slug}`;
+const NEWS_API_URL = `${API_ENDPOINT_MM}/api/v1/news`;
+const NEWS_DETAIL_API_URL = (slug) => `${API_ENDPOINT_MM}/api/v1/news/${slug}`;
 
 export async function fetchNewsList(page = 1, per_page = 20) {
   const url = `${NEWS_API_URL}?page=${page}&per_page=${per_page}`;

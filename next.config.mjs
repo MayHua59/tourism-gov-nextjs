@@ -5,7 +5,7 @@ const nextConfig = {
   //   defaultLocale: "en", // Default is English
   // },
   images: {
-    domains: ["www.go-myanmar.com"],
+    domains: ["www.go-myanmar.com", "i.ibb.co"],
   },
   // async redirects() {
   //   return [

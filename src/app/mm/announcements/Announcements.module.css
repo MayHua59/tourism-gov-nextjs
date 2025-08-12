@@ -110,9 +110,10 @@
   font-weight: 700;
   color: #1766b1;
   margin-bottom: 0.25em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 2;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  padding-bottom: 0.2em;
 }
 
 .announcementMeta {

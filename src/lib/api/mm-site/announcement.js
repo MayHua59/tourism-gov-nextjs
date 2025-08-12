@@ -1,7 +1,7 @@
-import {API_ENDPOINT} from "@/data/api_endpoint"
+import {API_ENDPOINT_MM} from "@/data/api_endpoint"
 
-const ANNOUNCEMENT_API_URL = `${API_ENDPOINT}/api/v1/announcements`;
-const ANNOUNCEMENT_DETAIL_API_URL = (slug) => `${API_ENDPOINT}/api/v1/announcements/${slug}`;
+const ANNOUNCEMENT_API_URL = `${API_ENDPOINT_MM}/api/v1/announcements`;
+const ANNOUNCEMENT_DETAIL_API_URL = (slug) => `${API_ENDPOINT_MM}/api/v1/announcements/${slug}`;
 
 
 export async function fetchAnnouncementList() {

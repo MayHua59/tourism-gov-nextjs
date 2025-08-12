@@ -1,7 +1,7 @@
-import { API_ENDPOINT } from "@/data/api_endpoint";
+import { API_ENDPOINT_MM } from "@/data/api_endpoint";
 
-const UPCOMING_EVENTS_API_URL = `${API_ENDPOINT}/api/v1/upcoming-events`;
-const UPCOMING_EVENTS_DETAIL_API_URL = (slug) => `${API_ENDPOINT}/api/v1/upcoming-events/${slug}`;
+const UPCOMING_EVENTS_API_URL = `${API_ENDPOINT_MM}/api/v1/upcoming-events`;
+const UPCOMING_EVENTS_DETAIL_API_URL = (slug) => `${API_ENDPOINT_MM}/api/v1/upcoming-events/${slug}`;
 
 export async function fetchUpcomingEventsList(page = 1, per_page = 20) {
   const url = `${UPCOMING_EVENTS_API_URL}?page=${page}&per_page=${per_page}`;

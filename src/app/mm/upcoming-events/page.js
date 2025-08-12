@@ -5,7 +5,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./UpcomingEvents.module.css";
 import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { fetchUpcomingEventsList } from "../../../lib/api/upcoming-event";
+import { fetchUpcomingEventsList } from "../../../lib/api/mm-site/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loading from "../../../components/Loading";
 

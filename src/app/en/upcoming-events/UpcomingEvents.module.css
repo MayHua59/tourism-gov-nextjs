@@ -23,7 +23,7 @@
   font-size: 2.1rem;
   font-weight: 700;
   margin-bottom: 1.5em;
-  text-align: left;
+  text-align: center;
   color: #22325a;
 }
 
@@ -47,7 +47,7 @@
 
 .eventCard {
   background: #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 3px 18px rgba(30, 42, 100, 0.06), 0 1.5px 5px rgba(30, 42, 100, 0.03);
   overflow: hidden;
   transition: box-shadow 0.2s;
@@ -118,15 +118,24 @@
 }
 
 .readMoreBtn {
-  color: #275caa;
-  font-weight: 600;
   font-size: 1.03rem;
   cursor: pointer;
   transition: color 0.15s;
+  display: inline-block;
+  background: #1766b1;
+  color: #fff;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 0.36em 1.06em;
+  text-decoration: none;
+  box-shadow: 0 1px 4px 0 rgba(23, 102, 177, 0.07);
+  transition: background 0.13s;
+  cursor: pointer;
 }
 
 .readMoreBtn:hover {
-  color: #17437f;
+  background: #0d3970;
+  color: #fff;
 }
 .eventMeta {
   display: flex;
@@ -141,9 +150,9 @@
   display: flex;
   align-items: center;
   gap: 0.3rem; /* Adjust the spacing between the icon and the dates */
-  background-color: #A3DC9A;
+  background-color: #80ff6d;
   padding: 0.5em 0.5em;
-  border-radius: 2px;
+  /* border-radius: 2px; */
 }
 
 .calendarIcon {
@@ -164,7 +173,7 @@
   color: #1766b1;
   padding: 6px 16px;
   font-size: 1rem;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }

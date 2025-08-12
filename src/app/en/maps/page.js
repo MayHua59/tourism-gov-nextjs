@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./Maps.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "Maps",
@@ -27,10 +28,13 @@ export default function Maps() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                 <Image
                   src="/assets/images/pdf-images/Chin_Map.JPG"
                   alt="Chin Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>Chin Map</h4>
                 <a
@@ -45,10 +49,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/Kayah_Map.JPG"
                   alt="Kayah Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Kayah Map</h4>
                 <a
@@ -63,10 +70,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                 <Image
                   src="/assets/images/pdf-images/Kayin_Map.JPG"
                   alt="Kayin Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Kayin Map</h4>
                 <a
@@ -81,10 +91,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/Kyaing Tong_Map.JPG"
                   alt="Kyaing Tong Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Kyaing Tong Map</h4>
                 <a
@@ -99,10 +112,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/Mon_Map.JPG"
                   alt="Mon Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Mon Map</h4>
                 <a
@@ -117,10 +133,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+               <Image
                   src="/assets/images/pdf-images/Myanma Map Russia Ver_Map.JPG"
                   alt="Myanmar Map (Russia version)"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Myanmar Map (Russia version)</h4>
                 <a
@@ -135,10 +154,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                  <Image
                   src="/assets/images/pdf-images/Myanmar_Map.JPG"
                   alt="Myanmar Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Myanmar Map</h4>
                 <a
@@ -153,10 +175,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                  <Image
                   src="/assets/images/pdf-images/Nay Pyi Taw_Map.JPG"
                   alt="Nay Pyi Taw Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 < h4  className={styles.pdfTitle}>Nay Pyi Taw Map</h4>
                 <a
@@ -171,10 +196,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/Rakhine_Map.JPG"
                   alt="Rakhine Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Rakhine Map</h4>
                 <a
@@ -189,10 +217,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                 <Image
                   src="/assets/images/pdf-images/Shan_Map.JPG"
                   alt="Shan Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Shan Map</h4>
                 <a
@@ -207,10 +238,13 @@ export default function Maps() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/Bagan_Map.JPG"
                   alt="Bagan Map"
                   className={styles.publicationImage}
+                  width={180}
+                  height={250}
+                  style={{ height: "auto" }}
                 />
                 <h4  className={styles.pdfTitle}>Bagan Map</h4>
                 <a
