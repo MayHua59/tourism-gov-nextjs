@@ -4,7 +4,7 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./NewsDetail.module.css";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchNewsDetail } from "../../../../lib/api/news";
+import { fetchNewsDetail } from "../../../../lib/api/mm-site/news";
 
 // const news_list = [
 //   {

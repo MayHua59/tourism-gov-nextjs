@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./TourismStatistics.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "Tourism Statistics",
@@ -27,10 +28,14 @@ export default function TourismStatistics() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
                   alt="Tourism Statistics 2021"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
+                  unoptimized
                 />
                 <h4>Tourism Statistics 2021</h4>
                 <a
@@ -45,10 +50,14 @@ export default function TourismStatistics() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="https://i.ibb.co/FkZtwkxR/viber-image-2025-08-06-16-03-04-085.jpg"
                   alt="Tourism Statistics 2022"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
+                  unoptimized
                 />
                 <h4>Tourism Statistics 2022</h4>
                 <a
@@ -63,10 +72,14 @@ export default function TourismStatistics() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
                   alt="Tourism Statistics 2023"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
+                  unoptimized
                 />
                 <h4>Tourism Statistics 2023</h4>
                 <a
@@ -81,10 +94,14 @@ export default function TourismStatistics() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
                   alt="Tourism Statistics 2024"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
+                  unoptimized
                 />
                 <h4>Tourism Statistics 2024</h4>
                 <a
@@ -97,7 +114,7 @@ export default function TourismStatistics() {
                 </a>
               </div>
             </div>
-            {/* Add more publication cards here as needed */}
+            
           </div>
         </section>
       </div>

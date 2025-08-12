@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./Brochures.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "လက်ကမ်းစာစောင်များ",
@@ -27,11 +28,14 @@ export default function BrochuresAndPamphlets() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/Ecotourism.JPG"
-                  alt="Ecotourism"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/Ecotourism.JPG"
+  alt="Ecotourism"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>နေပြည်တော်ရှိသွားရောက်လည်ပတ်နိုင်သောနေရာများ(Nay Pyi Taw Flyer (Myanmar))</h4>
                 <a
                   href="/assets/pdf/Ecotourism.pdf"
@@ -45,11 +49,14 @@ export default function BrochuresAndPamphlets() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/Nay Pyi Taw Flyer (Eng QR).JPG"
-                  alt="Nay Pyi Taw Flyer (Eng QR)"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/Nay Pyi Taw Flyer (Eng QR).JPG"
+  alt="Nay Pyi Taw Flyer (Eng QR)"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>မကွေးတိုင်းဒေသကြီးတွင်းရှိ ထင်ရှားသောခရီးစဉ်ဒေသများ(Magway Pamphlet (Myanmar Version))</h4>
                 <a
                   href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"

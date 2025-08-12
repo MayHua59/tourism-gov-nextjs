@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./ASEANTourismStandards.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "ASEAN Tourism Standards",
@@ -27,10 +28,13 @@ export default function AseanTourismStandards() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/AMVS.jpg"
                   alt="AMVS-Category-Event-Venue"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>AMVS-Category-Event-Venue</h4>
                 <a
@@ -45,10 +49,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN Tourism Standards Book.JPG"
                   alt="ASEAN Tourism Standards Book"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN Tourism Standards Book</h4>
                 <a
@@ -63,10 +70,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-CBT-Tourism-Standard-Binded-Jan-2022.JPG"
                   alt="ASEAN-CBT-Tourism-Standard-Binded-Jan-2022"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-CBT-Tourism-Standard-Binded-Jan-2022</h4>
                 <a
@@ -81,10 +91,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-Clean-Tourist-City-Standard-rev.JPG"
                   alt="ASEAN-Clean-Tourist-City-Standard-rev"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Clean-Tourist-City-Standard-rev</h4>
                 <a
@@ -99,10 +112,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-Ecotourism-Standard.JPG"
                   alt="ASEAN-Clean-Tourist-City-Standard-rev"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Ecotourism-Standard</h4>
                 <a
@@ -117,10 +133,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-Green-Hotel-Standard.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  alt="ASEAN-Green-Hotel-Standard"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Green-Hotel-Standard</h4>
                 <a
@@ -135,10 +154,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-Homestay-Standard.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  alt="ASEAN-Homestay-Standard"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Homestay-Standard</h4>
                 <a
@@ -153,10 +175,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-MICE-Venue-Standards-Exhibition-Venue.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  alt="ASEAN-MICE-Venue-Standards-Exhibition-Venue"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Exhibition-Venue</h4>
                 <a
@@ -171,10 +196,13 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
+                <Image
                   src="/assets/images/pdf-images/ASEAN-MICE-Venue-Standards-Meeting-Room.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
+                  alt="ASEAN-MICE-Venue-Standards-Meeting-Room"
                   className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Meeting-Room</h4>
                 <a
@@ -189,11 +217,14 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/ASEAN-Public-Toilet-Standard.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/ASEAN-Public-Toilet-Standard.JPG"
+  alt="ASEAN-Public-Toilet-Standard"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>ASEAN-Public-Toilet-Standard</h4>
                 <a
                   href="/assets/pdf/Kyaing Tong Map.pdf"
@@ -207,11 +238,14 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/ASEAN-Spa-Services-Standard-1.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/ASEAN-Spa-Services-Standard-1.JPG"
+  alt="ASEAN-Spa-Services-Standard-1"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>ASEAN-Spa-Services-Standard-1</h4>
                 <a
                   href="/assets/pdf/Kyaing Tong Map.pdf"
@@ -225,11 +259,14 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/GREEN-HOTEL-BOOKLET-FOR-ATF-2016.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/GREEN-HOTEL-BOOKLET-FOR-ATF-2016.JPG"
+  alt="GREEN-HOTEL-BOOKLET-FOR-ATF-2016"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>GREEN-HOTEL-BOOKLET-FOR-ATF-2016</h4>
                 <a
                   href="/assets/pdf/Kyaing Tong Map.pdf"
@@ -243,11 +280,14 @@ export default function AseanTourismStandards() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/Homestay-Awardees-2016.JPG"
-                  alt="ASEAN-Clean-Tourist-City-Standard-rev"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/Homestay-Awardees-2016.JPG"
+  alt="Homestay-Awardees-2016"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>Homestay-Awardees-2016</h4>
                 <a
                   href="/assets/pdf/Kyaing Tong Map.pdf"
@@ -259,7 +299,7 @@ export default function AseanTourismStandards() {
                 </a>
               </div>
             </div>
-            
+
           </div>
         </section>
       </div>

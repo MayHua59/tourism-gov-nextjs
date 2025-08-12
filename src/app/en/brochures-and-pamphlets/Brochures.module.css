@@ -38,6 +38,7 @@
   margin-bottom: 2em;
   justify-content: center;
 }
+
 .gridCol {
   flex: 0 0 calc(33.333% - 2em); 
   max-width: calc(33.333% - 2em);
@@ -45,10 +46,8 @@
   display: flex;
 }
 .publicationCard {
-  /* background: #fafbff; */
   border: 1.5px solid #e3eaf6;
-  /* border-radius: 8px; */
-  /* box-shadow: 0 1px 6px 0 rgba(23, 102, 177, 0.06); */
+  
   padding: 0 0 1.2em 0;
   width: 100%;
   display: flex;
@@ -64,7 +63,6 @@
   height: auto;
   object-fit: contain;
   margin-bottom: 1em;
-  /* border-radius: 6px; */
   background: #f6fafe;
 }
 .downloadLink {
@@ -103,6 +101,7 @@
   .gridRow {
     gap: 1.2em;
   }
+  
   .publicationCard {
     padding: 1.1em 0.5em 1em 0.5em;
   }
@@ -121,6 +120,7 @@
     flex-direction: column;
     gap: 1.3em;
   }
+  
   .gridCol {
     min-width: 0;
     max-width: 100%;

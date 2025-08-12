@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./TourismPublication.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "Tourism Publications",
@@ -27,11 +28,14 @@ export default function TourismPublication() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/domestic-tourism-survey.png"
-                  alt="Domestic Tourism Survey Image"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/domestic-tourism-survey.png"
+  alt="Domestic Tourism Survey Image"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>DOMESTIC TOURISM SURVEY OF MYANMAR 2024</h4>
                 <a
                   href="/assets/pdf/Domestic-Tourism-Survey-2024.pdf"
@@ -45,11 +49,14 @@ export default function TourismPublication() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <img
-                  src="/assets/images/pdf-images/inbound-tourism-survey.png"
-                  alt="Inbound Tourism Survey Image"
-                  className={styles.publicationImage}
-                />
+                <Image
+  src="/assets/images/pdf-images/inbound-tourism-survey.png"
+  alt="Inbound Tourism Survey Image"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+/>
                 <h4 className={styles.pdfTitle}>INBOUND TOURISM SURVEY OF MYANMAR, 2024</h4>
                 <a
                   href="/assets/pdf/Inbound-Tourism-Survey-2024.pdf"
