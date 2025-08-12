@@ -2,6 +2,7 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./TourismPublication.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const metadata = {
   title: "စာအုပ်၊စာစောင်များ",
