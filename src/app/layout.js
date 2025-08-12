@@ -2,7 +2,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 // import ScrollToTop from '../components/ScrollToTopButton';
 // import Header from '../components/eng/Header';
 // import HeaderMobile from '../components/eng/HeaderMobile';
