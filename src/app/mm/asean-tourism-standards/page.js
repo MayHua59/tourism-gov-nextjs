@@ -13,7 +13,7 @@ export default function AseanTourismStandards() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/23.jpg"
+        imageUrl="/assets/images/cover-images/15.jpg"
         altText="asean tourism standards cover photo"
       />
       <Breadcrumb

@@ -34,7 +34,7 @@ export default async function AnnouncementDetail({ params }) {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/1.jpg"
+        imageUrl="/assets/images/cover-images/14.jpg"
         altText="announcements cover photo"
       />
       <Breadcrumb

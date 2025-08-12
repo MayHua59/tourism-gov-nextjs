@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutMyanmar() {
   return (
     <div className={styles.pageContainer}>
-    <BannerSection imageUrl="/assets/images/cover-images-title/6.jpg" altText="about myanmar cover photo"/>
+    <BannerSection imageUrl="/assets/images/cover-images/9.jpg" altText="about myanmar cover photo"/>
 <Breadcrumb
         items={[
           { label: "Home", href: "/", icon: faHome },

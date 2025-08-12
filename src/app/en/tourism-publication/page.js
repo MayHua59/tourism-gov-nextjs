@@ -13,7 +13,7 @@ export default function TourismPublication() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/27.jpg"
+        imageUrl="/assets/images/cover-images/59.jpg"
         altText="tourism publications cover photo"
       />
       <Breadcrumb

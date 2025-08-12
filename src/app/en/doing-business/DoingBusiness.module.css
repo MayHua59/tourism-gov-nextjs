@@ -37,8 +37,6 @@
 
 .businessSection {
   border: 1px solid #e0e9f2;
-  border-radius: 7px;
-  background: #fbfcff;
   padding: 1.35em 1.5em 1.1em 1.5em;
   margin-bottom: 1.6em;
   box-shadow: 0 1px 5px 0 rgba(23, 102, 177, 0.04);
@@ -102,7 +100,6 @@
     font-size: 1.15rem;
   }
   .businessSection {
-    border-radius: 4px;
     font-size: 0.97em;
     padding: 0.7em 0.3em 0.7em 0.5em;
   }

@@ -59,7 +59,7 @@ export default async function NewsDetail({ params }) {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/14.jpg"
+        imageUrl="/assets/images/cover-images/34.jpg"
         altText="news cover photo"
       />
       <Breadcrumb

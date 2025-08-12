@@ -12,7 +12,7 @@ export default function DutiesAndResponsibilities() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/3.jpg"
+        imageUrl="/assets/images/cover-images/44.jpg"
         altText="duties and responsibilities cover photo"
       />
       <Breadcrumb

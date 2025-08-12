@@ -12,7 +12,7 @@ export default function TourismInvestmentOpportunity() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/17.jpg"
+        imageUrl="/assets/images/cover-images/66.jpg"
         altText="tourism investment opportunity cover photo"
       />
       <Breadcrumb

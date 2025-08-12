@@ -11,7 +11,7 @@ export const metadata = {
 export default function MyanmarMinistries() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images-title/12.jpg" altText="myanmar ministries cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/51.jpg" altText="myanmar ministries cover photo" />
       <Breadcrumb
         items={[
           { label: "Home", href: "/", icon: faHome },

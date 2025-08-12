@@ -1815,7 +1815,7 @@ export const metadata = {
 export default function NationalTourGuide() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images-mm-title/15.jpg" altText="national tour guide cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="national tour guide cover photo" />
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },

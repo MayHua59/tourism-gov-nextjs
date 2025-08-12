@@ -69,7 +69,7 @@ export default function UpcomingEvents() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/12.jpg"
+        imageUrl="/assets/images/cover-images/61.jpg"
         altText="upcoming events cover photo"
       />
       <Breadcrumb

@@ -34,8 +34,8 @@
   font-weight: bold;
   color: #234b81;
   margin-bottom: 0.6em;
-  /* text-align: center; */
-  font-family: 'Merriweather', 'Georgia', serif;
+  text-align: center;
+  /* font-family: 'Merriweather', 'Georgia', serif; */
   line-height: 1.23;
   border-bottom: 1.5px solid #e3eaf6;
   padding-bottom: 0.3em;

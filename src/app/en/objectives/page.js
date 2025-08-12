@@ -13,7 +13,7 @@ export default function Objectives() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/2.jpg"
+        imageUrl="/assets/images/cover-images/53.jpg"
         altText="objectives cover photo"
       />
       <Breadcrumb
