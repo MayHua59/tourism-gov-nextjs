@@ -12,10 +12,10 @@ export const metadata = {
 export default function BrochuresAndPamphlets() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection
+      {/* <BannerSection
         imageUrl="/assets/images/cover-images-title/12.jpg"
         altText="brochures and pamphlets cover photo"
-      />
+      /> */}
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },

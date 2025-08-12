@@ -13,7 +13,7 @@ export default function SixPoliciesOfMoHT() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-mm-title/9.jpg"
+        imageUrl="/assets/images/cover-images/54.jpg"
         altText="six policies of Ministry of Hotels and Tourism cover photo"
       />
       <Breadcrumb

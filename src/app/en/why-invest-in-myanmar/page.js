@@ -12,7 +12,7 @@ export default function WhyInvestInMyanmar() {
   return (
     <div className={styles.pageContainer}>
       <BannerSection
-        imageUrl="/assets/images/cover-images-title/17.jpg"
+        imageUrl="/assets/images/cover-images/48.jpg"
         altText="why invest in Myanmar cover photo"
       />
       <Breadcrumb
