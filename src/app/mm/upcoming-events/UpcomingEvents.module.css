@@ -106,14 +106,12 @@
   margin-right: 0.5em;
   background-color: #80ff6d;
   padding: 0.5em 0.5em;
-  /* border-radius: 2px; */
 }
 .eventLocation {
   display: inline-block;
   margin-right: 0.5em;
   background-color: #6dbbff;
   padding: 0.5em 0.5em;
-  /* border-radius: 2px; */
 }
 
 .eventDesc {

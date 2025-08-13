@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { fetchRegion } from '../../../../lib/api/region';
+import { fetchRegion } from '../../../../lib/api/mm-site/region';
 import { notFound } from 'next/navigation';
 
 async function getRegionData(slug) {
@@ -27,15 +27,15 @@ export default async function RegionDetailPage({ params }) {
         return (
             <div className={styles.pageContainer}>
                 <BannerSection
-                imageUrl="/assets/images/cover-images/70.jpg"
-                alt={`Cover photo`}
-            />
-            <Breadcrumb
-                items={[
-                    { label: "Home", href: "/", icon: faHome },
-                    { label: slug, active: true }
-                ]}
-            />
+                    imageUrl="/assets/images/cover-images/70.jpg"
+                    alt={`Cover photo`}
+                />
+                <Breadcrumb
+                    items={[
+                        { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+                        { label: slug, active: true }
+                    ]}
+                />
                 <div className="errorMessage">
                     Sorry, we couldn&apos;t load this region. Please try again later.
                 </div>
@@ -47,7 +47,7 @@ export default async function RegionDetailPage({ params }) {
     //     console.error("Region data is missing or invalid:", region);
     //     return <div>Error: Invalid region data</div>;
     // }
-   
+
 
 
     return (
@@ -65,34 +65,34 @@ export default async function RegionDetailPage({ params }) {
             <div className={styles.container}>
                 <div className={styles.mainContent}>
                     <h1 className="text-center mb-4 text-dark">{region.name}</h1>
-                   <div className={styles.regionDescriptionWrapper}>
-    <p
-        className={styles.regionDescription}
-        dangerouslySetInnerHTML={{ __html: region.description || "" }}
-    />
-</div>
+                    <div className={styles.regionDescriptionWrapper}>
+                        <p
+                            className={styles.regionDescription}
+                            dangerouslySetInnerHTML={{ __html: region.description || "" }}
+                        />
+                    </div>
 
-  {region.carousel && region.carousel.length > 0 && (
-    <section className={styles.gallerySection}>
-        <h2 className={styles.galleryTitle}>Gallery</h2>
-        <div className={styles.galleryGrid}>
-            {region.carousel.map((carousel, index) => (
-                <div key={index} className={styles.galleryCard}>
-                    <div className={styles.cardHeader}>
-                        <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
-                    </div>
-                    <div className={styles.carouselWrapper}>
-                        <ImageCarousel images={carousel.images} />
-                    </div>
-                    <div
-                        className={styles.galleryDescription}
-                        dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
-                    />
-                </div>
-            ))}
-        </div>
-    </section>
-)}
+                    {region.carousel && region.carousel.length > 0 && (
+                        <section className={styles.gallerySection}>
+                            <h2 className={styles.galleryTitle}>Gallery</h2>
+                            <div className={styles.galleryGrid}>
+                                {region.carousel.map((carousel, index) => (
+                                    <div key={index} className={styles.galleryCard}>
+                                        <div className={styles.cardHeader}>
+                                            <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
+                                        </div>
+                                        <div className={styles.carouselWrapper}>
+                                            <ImageCarousel images={carousel.images} />
+                                        </div>
+                                        <div
+                                            className={styles.galleryDescription}
+                                            dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
 
 
 
