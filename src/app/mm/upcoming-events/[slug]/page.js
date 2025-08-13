@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
 import styles from "./UpcomingEventDetail.module.css";
-import { faHome, faCalendarAlt, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCalendarAlt, faCalendarCheck, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchUpcomingEventDetail } from "../../../../lib/api/mm-site/upcoming-event";
 
@@ -67,6 +67,10 @@ export default async function UpcomingEventDetail({ params }) {
                       <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
                       {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
                     </span>
+                     {event.event_location && <span className={styles.eventLocation}>
+    <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.locationIcon} />
+    {event.event_location}
+  </span>}
                   </div>
             <div className={styles.govtImageWrapper}>
               <img

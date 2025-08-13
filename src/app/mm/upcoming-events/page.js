@@ -4,7 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./UpcomingEvents.module.css";
-import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCalendar, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { fetchUpcomingEventsList } from "../../../lib/api/mm-site/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loading from "../../../components/Loading";
@@ -111,6 +111,10 @@ export default function UpcomingEvents() {
       <FontAwesomeIcon icon={faCalendar} className={styles.calendarIcon} />
       {formatDate(event.event_start_date)} - {formatDate(event.event_end_date)}
     </span>
+      {event.event_location && <span className={styles.eventLocation}>
+    <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.locationIcon} />
+    {event.event_location}
+  </span>}
   </div>
   <p
     className={styles.eventDesc}
