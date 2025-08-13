@@ -154,6 +154,13 @@
   padding: 0.5em 0.5em;
   /* border-radius: 2px; */
 }
+.eventLocation {
+   display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Adjust the spacing between the icon and the dates */
+  background-color: #6dbbff;
+  padding: 0.5em 0.5em;
+}
 
 .calendarIcon {
   margin-right: 0.3rem; /* Adjust the spacing between the icon and the dates */

@@ -14,8 +14,8 @@
   }
 }
 .mainContent {
-  /* max-width: 900px; */
-  margin: 40px auto 40px 20px;
+  max-width: 90%;
+  margin: 40px auto 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -69,4 +69,164 @@
 }
 .destinationCard:hover {
   cursor: pointer;
+}
+
+.gallerySection {
+  padding: 2rem;
+  /* background-color: #f9f9f9; */
+}
+
+.galleryTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+   color: #1e293b;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+.galleryTitle::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.galleryCard {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.galleryCard:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+   padding: 1rem 1.5rem;
+    background: linear-gradient(90deg, #4584e9, #9ddbe5);
+  text-align: center;
+}
+
+.galleryItemTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+}
+
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.galleryDescription {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Media Queries for Enhanced Responsiveness */
+@media (min-width: 576px) {
+  .gallerySection {
+    padding: 3rem;
+  }
+
+  .galleryTitle {
+    font-size: 2.25rem;
+  }
+
+  .galleryGrid {
+    gap: 2rem;
+  }
+
+  .galleryCard {
+    border-radius: 1rem;
+  }
+
+  .cardHeader {
+    padding: 1rem;
+  }
+
+  .galleryItemTitle {
+    font-size: 1.125rem;
+  }
+
+  .galleryDescription {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallerySection {
+    padding: 4rem;
+  }
+
+  .galleryTitle {
+    font-size: 2.5rem;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .galleryCard:hover {
+    transform: translateY(-0.5rem);
+  }
+}
+
+/* Region Descriptin Section */
+.regionDescriptionWrapper {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid transparent;
+  background-image: linear-gradient(#fff, #fff), 
+                    linear-gradient(90deg, #3b82f6, #06b6d4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.regionDescription {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  /* text-align: center; */
+}
+
+.regionDescription strong {
+  color: #3b82f6; 
+  font-size: 1.3rem;
+}
+
+.regionDescription a {
+  color: #06b6d4; 
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.regionDescription a:hover {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
 }

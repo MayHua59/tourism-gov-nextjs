@@ -33,22 +33,25 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 0.5em 0;
-  color: #1a2d4d;
+  /* color: #1a2d4d; */
   text-align: center;
 }
 
 .govtMeta {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   font-size: 1rem;
   color: #567;
   margin-bottom: 1em;
 }
 
-.calendarIcon {
+.calendarIcon, .locationIcon {
   margin-right: 0.5em;
   color: #17437f;
 }
+
 
 .govtImageWrapper {
   width: 100%;
