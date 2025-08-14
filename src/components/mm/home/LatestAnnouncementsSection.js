@@ -116,7 +116,7 @@ export default function LatestAnnouncementsSection() {
                     <p className={styles.announcementSummary}>
                       {item.description.replace(/<[^>]+>/g, '').slice(0, 80)}...
                     </p>
-                    <Link href={`/en/announcements/${item.slug}`} className={styles.readMoreBtn}>
+                    <Link href={`/mm/announcements/${item.slug}`} className={styles.readMoreBtn}>
                       ဆက်လက်ဖတ်ရှုရန်
                     </Link>
                   </div>
@@ -134,7 +134,7 @@ export default function LatestAnnouncementsSection() {
           </div>
         )}
         <div className={styles.viewAllWrapper}>
-          <Link href="/en/announcements" className={styles.viewAllBtn}>
+          <Link href="/mm/announcements" className={styles.viewAllBtn}>
             ကြေငြာချက်များ ဖတ်ရန်
           </Link>
         </div>
