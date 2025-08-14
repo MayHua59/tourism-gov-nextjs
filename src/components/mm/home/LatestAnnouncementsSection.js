@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./LatestAnnouncementsSection.module.css";
-import { fetchAnnouncementList } from "@/lib/api/announcement";
+import { fetchAnnouncementList } from "@/lib/api/mm-site/announcement";
 import Image from "next/image";
 
 function useSlidesPerView() {

@@ -102,13 +102,13 @@
   box-shadow: none;
   margin: 0;
   display: block;
-  background: #f0f4f8; /* fallback background for transparent images */
+  background: #fff; /* fallback background for transparent images */
 }
 
 .dateBadge {
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 0.8rem;
   background: #0d6efd;
   color: #fff;
   font-size: 1rem;
@@ -132,6 +132,7 @@
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .announcementSummary {
