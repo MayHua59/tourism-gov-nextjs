@@ -11,32 +11,32 @@ const mainMenu = [
   {
     label: "Vital Info",
     submenu: [
-      { label: "About Myanmar", href: "/en/about-myanmar" },
+      { label: "About Myanmar", href: "/en/information-pages/about-myanmar" },
       {
         label: "Visa Requirements",
         submenu: [
-          { label: "Electronic Visa", href: "/en/e-visa" },
-          { label: "Visa Exemption", href: "/en/visa-exemption" },
-          { label: "Visa on Arrival", href: "/en/visa-on-arrival" },
+          { label: "Electronic Visa", href: "/en/information-pages/electronic-visa" },
+          { label: "Visa Exemption", href: "/en/information-pages/visa-exemption" },
+          { label: "Visa on Arrival", href: "/en/information-pages/visa-on-arrival" },
         ],
       },
       { label: "Guidelines For Tour Companies", href: "/en/guidelines-for-tour-companies" },
       {
         label: "Helpdesk",
         submenu: [
-          { label: "Branch Offices", href: "/en/branch-offices" },
-          { label: "Information Counters", href: "/en/information-counters" },
-          { label: "Tourism Police Offices", href: "/en/tourism-police-offices" },
+          { label: "Branch Offices", href: "/en/information-pages/branch-offices" },
+          { label: "Information Counters", href: "/en/information-pages/information-counters" },
+          { label: "Tourism Police Offices", href: "/en/information-pages/tourism-police-offices" },
         ],
       },
       {
         label: "Embassies & Missions",
         submenu: [
-          { label: "Myanmar Missions", href: "/en/myanmar-missions" },
+          { label: "Myanmar Missions", href: "/en/information-pages/myanmar-missions" },
           { label: "Foreign Embassies in Myanmar", href: "/en/foreign-embassies" },
         ],
       },
-      { label: "Myanmar Ministries", href: "/en/myanmar-ministries" },
+      { label: "Myanmar Ministries", href: "/en/information-pages/myanmar-ministries" },
     ],
   },
   {
@@ -144,18 +144,18 @@ const mainMenu = [
   {
     label: "Our Role",
     submenu: [
-      { label: "Duties & Responsibilities", href: "/en/duties" },
-      { label: "Objectives", href: "/en/objectives" },
-      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
-      { label: "International Cooperation", href: "/en/coming-soon" },
+      { label: "Duties & Responsibilities", href: "/en/information-pages/duties-and-responsibilities" },
+      { label: "Objectives", href: "/en/information-pages/objectives" },
+      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/information-pages/six-policies-of-ministry-of-hotels-and-tourism" },
+      { label: "International Cooperation", href: "/en/information-pages/international-cooperation" },
       {
         label: "Tourism Business",
         submenu: [
-          { label: "Doing Business in Myanmar", href: "/en/doing-business" },
-          { label: "Myanmar Investment Law", href: "/en/investment-law" },
-          { label: "Tourism Investment Opportunities", href: "/en/investment-opportunity" },
-          { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
+          { label: "Doing Business in Myanmar", href: "/en/information-pages/doing-business-in-myanmar" },
+          { label: "Myanmar Investment Law", href: "/en/information-pages/myanmar-investment-law" },
+          { label: "Tourism Investment Opportunities", href: "/en/information-pages/tourism-investment-opportunities" },
+          { label: "Why Invest in Myanmar", href: "/en/information-pages/why-invest-in-myanmar" },
+          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/information-pages/foreign-investment-in-hotels-and-commercial-complexes" },
         ],
       },
       {
@@ -177,7 +177,7 @@ const mainMenu = [
         ],
       },
       
-      { label: "Contact Us", href: "/en/contact-us" },
+      { label: "Contact Us", href: "/en/information-pages/contact-us" },
     ],
   },
 ];

@@ -1,4 +1,4 @@
-import { fetchInformationPageDetail } from "@/lib/api/information-page";
+import { fetchInformationPageDetail } from "@/lib/api/mm-site/information-page";
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
@@ -11,13 +11,12 @@ export async function generateMetadata({ params }) {
         const data = await fetchInformationPageDetail(slug);
         return {
             title: data.name,
-           
+            description: data.description.replace(/<[^>]+>/g, '').slice(0, 160),
         };
-    } catch (error) {
-        console.error("Metadata fetch error:", error);
+    } catch {
         return {
             title: "Information Page",
-            
+            description: "Details about Myanmar tourism information.",
         };
     }
 }
@@ -40,7 +39,7 @@ export default async function InformationPage({ params }) {
             />}
             <Breadcrumb
                 items={[
-                    { label: "Home", href: "/", icon: faHome },
+                    { label: "မူလစာမျက်နှာ", href: "/mm", icon: faHome },
                     { label: data.name, active: true }
                 ]}
             />
