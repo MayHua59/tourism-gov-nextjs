@@ -1,0 +1,297 @@
+.announcementsSection {
+  background: #fff;
+  padding: 0;
+}
+
+.announcementsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #1e293b;
+  
+}
+
+.carouselWrapper {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  /* Add position and z-index to ensure buttons are above track */
+  position: relative;
+  z-index: 1;
+}
+
+.carouselBtn {
+   background: #fff;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  padding-bottom: 6px;
+
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  z-index: 2;
+}
+.carouselBtn:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+/* .carouselBtn:disabled {
+  background: #e0e7ef;
+  color: #b6c2d6;
+  cursor: not-allowed;
+} */
+
+.carouselTrack {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.announcementCard {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(30,41,59,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 380px;
+  padding: 0;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.announcementCard:hover {
+  box-shadow: 0 12px 36px rgba(30,41,59,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.cardHeader {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  min-height: unset;
+}
+
+.announcementImg {
+  width: 100% !important;
+  height: 260px !important;
+  max-width: 100%;
+  object-fit: contain; /* Show the whole image, no cropping */
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  display: block;
+  background: #f0f4f8; /* fallback background for transparent images */
+}
+
+.dateBadge {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: #0d6efd;
+  color: #fff;
+  font-size: 1rem;
+  /* font-weight: 700; */
+  padding: 0.4rem 1rem;
+  /* border-radius: 16px; */
+  box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+  letter-spacing: 0.5px;
+}
+
+.cardContent {
+  flex: 1;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.announcementTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.announcementSummary {
+  font-size: 1.05rem;
+  color: #475569;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.readMoreBtn {
+  align-self: flex-start;
+  background: #0d6efd;
+  color: #fff;
+  padding: 0.45rem 1.2rem;
+  font-size: 1rem;
+  /* font-weight: 500; */
+  text-decoration: none;
+  transition: background 0.2s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.readMoreBtn:hover {
+  background: #0b5ed7;
+}
+
+.viewAllWrapper {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.viewAllBtn {
+  background: transparent;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  /* font-weight: 600; */
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.viewAllBtn:hover {
+  background: #0b5ed7;
+  color: #fff;
+  
+}
+
+/* Loading styles */
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  width: 100%;
+}
+
+.loadingSpinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e0e7ef;
+  border-top: 5px solid #0d6efd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  font-size: 1.15rem;
+  color: #0d6efd;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.errorMessage {
+  color: #ef4444;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .carouselTrack {
+    gap: 1rem;
+  }
+  .announcementCard {
+    min-width: 260px;
+    max-width: 340px;
+    min-height: 220px;
+  }
+  .announcementImg {
+    height: 160px !important;
+  }
+}
+
+@media (max-width: 600px) {
+   .announcementsContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .carouselWrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .carouselBtn {
+    display: flex;
+    width: 50px;
+    height: 40px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+    line-height: 40px;
+  }
+  .carouselTrack {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+    width: 100%;
+    overflow-x: visible;
+    padding-bottom: 1rem;
+    scroll-snap-type: none;
+  }
+  .announcementCard {
+    min-width: 260px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    scroll-snap-align: none;
+  }
+  .announcementImg {
+    height: 120px !important;
+  }
+  .cardContent {
+    padding: 0.7rem;
+  }
+  .dateBadge {
+    right: 0.5rem;
+    top: 0.5rem;
+    bottom: auto;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+    max-width: 80vw;
+    white-space: nowrap;
+  }
+}

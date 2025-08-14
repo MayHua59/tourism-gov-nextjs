@@ -1,35 +1,10 @@
 "use client"
 
-import React, { useState } from "react";
-import styles from "./LatestNewsSection.module.css";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-
-const newsList = [
-  {
-    id: 1,
-    img: "/assets/images/news1.jpg",
-    date: "June 11, 2025",
-    title: "Myanmar participates in Russia's 5th “Let's Travel!” International Travel Forum opening event",
-    summary: "MYANMAR delegation led by Union Minister for Hotels andTourism U Kyaw Soe Win attended...",
-    link: "news-detail.html?id=1"
-  },
-  {
-    id: 2,
-    img: "/assets/images/news2.jpg",
-    date: "May 04, 2025",
-    title: "Homes for flood victims handed over",
-    summary: "UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover...",
-    link: "news-detail.html?id=2"
-  },
-  {
-    id: 3,
-    img: "/assets/images/news3.jpg",
-    date: "June 20, 2025",
-    title: "News Title 3",
-    summary: "A third news summary. You can add as many news cards as you need.",
-    link: "news-detail.html?id=3"
-  }
-];
+import styles from "./LatestNewsSection.module.css";
+import { fetchNewsList } from "@/lib/api/mm-site/news";
+import Image from "next/image";
 
 function useSlidesPerView() {
   const [slidesPerView, setSlidesPerView] = React.useState(2); 
@@ -37,7 +12,6 @@ function useSlidesPerView() {
     const handleResize = () => {
       setSlidesPerView(window.innerWidth <= 600 ? 1 : 2);
     };
-    // Set initially on mount
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -45,15 +19,30 @@ function useSlidesPerView() {
   return slidesPerView;
 }
 
-  
-
 export default function LatestNewsSection() {
   const slidesPerView = useSlidesPerView();
   const [current, setCurrent] = useState(0);
+  const [newsList, setNewsList] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function loadNews() {
+      setLoading(true);
+      try {
+        const res = await fetchNewsList(1, 10); // page 1, 10 items
+        setNewsList(res.data);
+        setError("");
+      } catch (err) {
+        setError("Failed to load news.");
+      }
+      setLoading(false);
+    }
+    loadNews();
+  }, []);
 
   const maxIndex = newsList.length - 1;
 
-  // Calculate the indices for the cards to display
   const getVisibleSlides = () => {
     if (newsList.length <= slidesPerView) {
       return newsList;
@@ -61,7 +50,6 @@ export default function LatestNewsSection() {
     if (current + slidesPerView <= newsList.length) {
       return newsList.slice(current, current + slidesPerView);
     } else {
-      // Wrap around if at the end
       return [
         ...newsList.slice(current, newsList.length),
         ...newsList.slice(0, (current + slidesPerView) % newsList.length)
@@ -86,41 +74,67 @@ export default function LatestNewsSection() {
   return (
     <section className={styles.latestNewsSection}>
       <div className="container py-5">
-        <h2 className="text-center mb-5">Latest News</h2>
-        <div className={styles.carouselWrapper}>
-          <button
-            className={styles.carouselBtn}
-            onClick={handlePrev}
-            aria-label="Previous"
-          >
-            &#8592;
-          </button>
-          <div className={styles.carouselTrack} style={{ gap: 24 }}>
-            {visibleSlides.map((news) => (
-              <div className={styles.newsCard} key={news.id}>
-                <img src={news.img} alt={news.title} className={styles.newsImg} />
-                <div className={styles.newsContent}>
-                  <h5 className={styles.newsTitle}>{news.title}</h5>
-                  <p className={styles.newsDate}>{news.date}</p>
-                  <p className={styles.newsSummary}>{news.summary}</p>
-                  <a href={news.link} className="btn btn-primary btn-sm">
-                    Read More
-                  </a>
+        <h2 className="text-center mb-5">နောက်ဆုံးရသတင်းများ</h2>
+        {loading && (
+  <div className={styles.loadingWrapper}>
+    <div className={styles.loadingSpinner}></div>
+    <div className={styles.loadingText}>Loading...</div>
+  </div>
+)}
+        {error && <div className="text-danger text-center py-5">{error}</div>}
+        {!loading && !error && (
+          <div className={styles.carouselWrapper}>
+            <button
+              className={styles.carouselBtn}
+              onClick={handlePrev}
+              aria-label="Previous"
+              disabled={newsList.length <= slidesPerView}
+            >
+              &#8592;
+            </button>
+            <div className={styles.carouselTrack} style={{ gap: 24 }}>
+              {visibleSlides.map((news) => (
+                <div className={styles.newsCard} key={news.id}>
+                {news.cover_photo && (
+  <Image
+    src={news.cover_photo}
+    alt={news.name}
+    width={400}
+    height={250}
+    className={styles.newsImg}
+  />
+)}
+                  <div className={styles.newsContent}>
+                    <h5 className={styles.newsTitle}>{news.name}</h5>
+                    <p className={styles.newsDate}>{new Date(news.published_at).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}</p>
+                    <p className={styles.newsSummary}>
+                      {/* Optionally strip HTML tags from description */}
+                      {news.description.replace(/<[^>]+>/g, '').slice(0, 120)}...
+                    </p>
+                    <Link href={`/mm/news/${news.slug}`} className="btn btn-primary btn-sm rounded-0">
+                      ဆက်လက်ဖတ်ရှုရန်
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <button
+              className={styles.carouselBtn}
+              onClick={handleNext}
+              aria-label="Next"
+              disabled={newsList.length <= slidesPerView}
+            >
+              &#8594;
+            </button>
           </div>
-          <button
-            className={styles.carouselBtn}
-            onClick={handleNext}
-            aria-label="Next"
-          >
-            &#8594;
-          </button>
-        </div>
+        )}
         <div className="text-center mt-4">
-         <Link href="/mm/news" className="btn btn-outline-primary">
-            သတင်းအားလုံးကြည့်ရန်
+          <Link href="/mm/news" className="btn btn-outline-primary rounded-0">
+            သတင်းများဖတ်ရန်
           </Link>
         </div>
       </div>

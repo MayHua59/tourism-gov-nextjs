@@ -12,6 +12,7 @@ import CallActionSection from "../../components/eng/home/CallActionSection";
 import TravelerInformationSection from "../../components/eng/home/TravelerInformationSection";
 import TourismNewsSection from "../../components/eng/home/TourismNewsSection";
 import LatestNewsSection from "../../components/eng/home/LatestNewsSection";
+import LatestAnnouncementsSection from "@/components/eng/home/LatestAnnouncementsSection";
 
 const Page = () => {
   return (
@@ -26,8 +27,9 @@ const Page = () => {
 <MyanmarInPicturesSection/>
 <CallActionSection/>
 <TravelerInformationSection/>
-{/* <TourismNewsSection/>
-<LatestNewsSection/>  */}
+{/* <TourismNewsSection/> */}
+<LatestNewsSection/>
+<LatestAnnouncementsSection/>
     </>
   );
 };
