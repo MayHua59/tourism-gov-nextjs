@@ -5,7 +5,7 @@ const nextConfig = {
   //   defaultLocale: "en", // Default is English
   // },
   images: {
-    domains: ["www.go-myanmar.com", "i.ibb.co"],
+    domains: ["www.go-myanmar.com", "i.ibb.co","admin.tourism.gov.mm","admin-mm.tourism.gov.mm"],
   },
   // async redirects() {
   //   return [

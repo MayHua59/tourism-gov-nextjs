@@ -11,6 +11,7 @@ import CallActionSection from "../../components/mm/home/CallActionSection";
 import TravelerInformationSection from "../../components/mm/home/TravelerInformationSection";
 import TourismNewsSection from "../../components/mm/home/TourismNewsSection";
 import LatestNewsSection from "../../components/mm/home/LatestNewsSection";
+import LatestAnnouncementsSection from "@/components/mm/home/LatestAnnouncementsSection";
 
 const Page = () => {
   return (
@@ -28,8 +29,10 @@ const Page = () => {
       <MyanmarInPicturesSection />
       <CallActionSection />
       <TravelerInformationSection />
-      {/* <TourismNewsSection />
-      <LatestNewsSection /> */}
+      {/* <TourismNewsSection /> */}
+      <LatestNewsSection /> 
+      <LatestAnnouncementsSection/>
+      
 
     </>
   );

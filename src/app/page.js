@@ -14,6 +14,7 @@ import LatestNewsSection from '../components/eng/home/LatestNewsSection';
 import Footer from '../components/eng/Footer';
 import HeaderMobile from '../components/eng/HeaderMobile';
 import ScrollToTop from '@/components/ScrollToTopButton';
+import LatestAnnouncementsSection from '@/components/eng/home/LatestAnnouncementsSection';
 
 export default function HomePage() {
   
@@ -31,8 +32,9 @@ export default function HomePage() {
       <MyanmarInPicturesSection />
       <CallActionSection />
       <TravelerInformationSection />
-      {/* <TourismNewsSection />
-      <LatestNewsSection /> */}
+      {/* <TourismNewsSection /> */}
+      <LatestNewsSection /> 
+      <LatestAnnouncementsSection/>
       <Footer/>
       <ScrollToTop/>
     </>
