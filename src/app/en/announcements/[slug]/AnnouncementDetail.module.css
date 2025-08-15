@@ -36,14 +36,14 @@
 }
 
 .govtTitle {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   font-weight: bold;
   color: #234b81;
   margin-bottom: 0.6em;
   text-align: center;
   line-height: 1.5;
   border-bottom: 1.5px solid #e3eaf6;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
   width: 100%;
 }
 
@@ -87,8 +87,8 @@
 
 .govtDesc {
   color: #243355;
-  font-size: 1.13rem;
-  line-height: 1.75;
+  /* font-size: 1.13rem; */
+  line-height: 1.6;
   text-align: left;
   margin-top: 0.6em;
   font-family: 'Merriweather Sans', Arial, sans-serif;

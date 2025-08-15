@@ -36,15 +36,15 @@
 }
 
 .govtTitle {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   font-weight: bold;
   color: #234b81;
   margin-bottom: 0.6em;
   text-align: center;
-  font-family: 'Merriweather', 'Georgia', serif;
+  /* font-family: 'Merriweather', 'Georgia', serif; */
   line-height: 1.23;
   border-bottom: 1.5px solid #e3eaf6;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
   width: 100%;
   line-height: 1.6;
 }
@@ -90,7 +90,7 @@
 
 .govtDesc {
   color: #243355;
-  font-size: 1.13rem;
+  /* font-size: 1.13rem; */
   line-height: 1.75;
   text-align: left;
   margin-top: 0.6em;
