@@ -30,7 +30,7 @@ export default function HomePage() {
       <WhyVisitMyanmarSection />
       <TourismDevelopmentSection />
       <MyanmarInPicturesSection />
-      <CallActionSection />
+      {/* <CallActionSection /> */}
       <TravelerInformationSection />
       {/* <TourismNewsSection /> */}
       <LatestNewsSection /> 

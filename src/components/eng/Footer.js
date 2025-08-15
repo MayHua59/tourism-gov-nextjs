@@ -24,7 +24,7 @@ export default function Footer() {
               <h3 className={styles.widgetTitle}>Quick Links</h3>
               {/* 2. Replace <a> with <Link> and use absolute paths */}
               <ul>
-                <li><Link href="/en/explore-myanmar">Explore Myanmar</Link></li>
+                <li><Link href="/en/about-myanmar">Explore Myanmar</Link></li>
                 <li><Link href="/en/maps">Map</Link></li>
                 <li><Link href="/en/tourism-publication">Tourism Publications</Link></li>
                 <li><Link href="/en/brochures-and-pamphlets">Brochures and Pamphlets</Link></li>

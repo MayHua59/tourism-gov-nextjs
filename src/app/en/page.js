@@ -25,7 +25,7 @@ const Page = () => {
 <WhyVisitMyanmarSection/>
 <TourismDevelopmentSection/>
 <MyanmarInPicturesSection/>
-<CallActionSection/>
+{/* <CallActionSection/> */}
 <TravelerInformationSection/>
 {/* <TourismNewsSection/> */}
 <LatestNewsSection/>

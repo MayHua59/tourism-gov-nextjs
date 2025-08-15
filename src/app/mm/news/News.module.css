@@ -91,11 +91,11 @@
 }
 
 .newsTitle {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 0.35em;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .newsMeta {
@@ -113,7 +113,7 @@
 
 .newsDesc {
   color: #222;
-  font-size: 1.01rem;
+  font-size: 1rem;
   margin-top: 0.3em;
   line-height: 1.6;
 }

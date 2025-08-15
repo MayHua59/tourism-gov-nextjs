@@ -71,6 +71,13 @@ export default function LatestNewsSection() {
     );
   };
 
+    const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
+};
+
   return (
     <section className={styles.latestNewsSection}>
       <div className="container py-5">
@@ -111,10 +118,10 @@ export default function LatestNewsSection() {
                         month: "short",
                         day: "numeric",
                       })}</p>
-                    <p className={styles.newsSummary}>
-                      {/* Optionally strip HTML tags from description */}
-                      {news.description.replace(/<[^>]+>/g, '').slice(0, 120)}...
-                    </p>
+                     <p
+    className={styles.newsSummary}
+    dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
+  ></p>
                     <Link href={`/mm/news/${news.slug}`} className="btn btn-primary btn-sm rounded-0">
                       ဆက်လက်ဖတ်ရှုရန်
                     </Link>

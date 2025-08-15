@@ -65,13 +65,15 @@
 .newsTitle {
   font-size: 1.15rem;
   font-weight: 700;
+  line-height: 1.5;
   margin-bottom: 8px;
   color: #1a365d;
 }
 .newsDate {
   font-size: 0.95rem;
-  color: #6c757d;
+  color: #3b82f6;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .newsSummary {
   font-size: 1rem;

@@ -69,6 +69,13 @@ export default function LatestAnnouncementsSection() {
     );
   };
 
+  const truncateDescription = (description, maxLength) => {
+  if (description.length > maxLength) {
+    return description.substring(0, maxLength) + '...'; 
+  }
+  return description;
+};
+
   return (
     <section className={styles.announcementsSection}>
       <div className={styles.announcementsContainer}>
@@ -113,9 +120,10 @@ export default function LatestAnnouncementsSection() {
                   </div>
                   <div className={styles.cardContent}>
                     <h5 className={styles.announcementTitle}>{item.name}</h5>
-                    <p className={styles.announcementSummary}>
-                      {item.description.replace(/<[^>]+>/g, '').slice(0, 80)}...
-                    </p>
+                        <p
+      className={styles.announcementSummary}
+      dangerouslySetInnerHTML={{ __html: truncateDescription(item.description, 150) }}
+    ></p>
                     <Link href={`/en/announcements/${item.slug}`} className={styles.readMoreBtn}>
                       View Details
                     </Link>
