@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import styles from "./AboutSection.module.css";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function AboutSection() {
     const [offsetX, setOffsetX] = useState(0);
@@ -71,9 +72,9 @@ export default function AboutSection() {
                   </ul>
                 </div>
               </div>
-              <a href="#" className={styles.cmnBtn}>
-                Learn More
-              </a>
+              <Link href="/en/about-myanmar" className={styles.cmnBtn}>
+  Learn More
+</Link>
             </div>
           </div>
         </div>

@@ -366,7 +366,9 @@
   .galleryCard {
     border-radius: 0.5rem;
   }
-
+.gallerySection{ 
+    padding: 0;
+  }
   .carouselWrapper img {
     border-radius: 0.5rem;
   }

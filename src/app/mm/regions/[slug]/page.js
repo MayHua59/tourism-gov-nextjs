@@ -58,8 +58,8 @@ export default async function RegionDetailPage({ params }) {
             />
             <Breadcrumb
                 items={[
-                    { label: "Home", href: "/", icon: faHome },
-                    { label: region.slug, active: true }
+                    { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+                    { label: region.name, active: true }
                 ]}
             />
             <div className={styles.container}>
