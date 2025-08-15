@@ -5,7 +5,32 @@ const nextConfig = {
   //   defaultLocale: "en", // Default is English
   // },
   images: {
-    domains: ["www.go-myanmar.com", "i.ibb.co","admin.tourism.gov.mm","admin-mm.tourism.gov.mm"],
+     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.go-myanmar.com',
+        port: '',
+        pathname: '/images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin.tourism.gov.mm',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin-mm.tourism.gov.mm',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   // async redirects() {
   //   return [
