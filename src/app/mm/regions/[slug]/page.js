@@ -76,21 +76,23 @@ export default async function RegionDetailPage({ params }) {
                         <section className={styles.gallerySection}>
                             <h2 className={styles.galleryTitle}>Gallery</h2>
                             <div className={styles.galleryGrid}>
-                                {region.carousel.map((carousel, index) => (
-                                    <div key={index} className={styles.galleryCard}>
-                                        <div className={styles.cardHeader}>
-                                            <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
-                                        </div>
-                                        <div className={styles.carouselWrapper}>
-                                            <ImageCarousel images={carousel.images} />
-                                        </div>
-                                        <div
-                                            className={styles.galleryDescription}
-                                            dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
+  {region.carousel.map((carousel, index) => (
+    <div key={index} className={styles.galleryCard}>
+      <div className={styles.cardHeader}>
+        <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
+      </div>
+      <div className={styles.cardBody}>
+        <div className={styles.carouselWrapper}>
+          <ImageCarousel images={carousel.images} />
+        </div>
+        <div
+          className={styles.galleryDescription}
+          dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
+        />
+      </div>
+    </div>
+  ))}
+</div>
                         </section>
                     )}
 
