@@ -32,6 +32,12 @@ Test Commit
 
 deployment 
 
+```bash
+pm2 start ecosystem.config.js --env production --env-file .env
+```
+
+
+
 
 ## Learn More
 
