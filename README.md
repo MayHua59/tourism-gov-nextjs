@@ -38,6 +38,48 @@ pm2 start ecosystem.config.js --env production --env-file .env
 
 
 
+### htaccess သာ ၇ေးမထားရင်
+
+path လမ်းကြောင်းအတိအကျ
+
+index.html အတိအကျ ထည့်မရေးရင် 
+
+Forbidden ပဲ ပြမယ်။
+
+
+```
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Disable default cPanel PHP index handling
+    DirectoryIndex disabled
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+
+    # Proxy requests for tourism.gov.mm to Next.js on port 3001
+    RewriteCond %{HTTP_HOST} ^dev\.tourism\.gov\.mm$ [NC]
+    RewriteRule ^(.*)$ http://127.0.0.1:3002/$1 [P,L]
+    
+</IfModule>
+
+# --- ACME DCV bypass (Let's Encrypt) ---
+RewriteEngine On
+RewriteRule ^\.well-known/acme-challenge/ - [L]
+# ---------------------------------------
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+````
+
+
+
 
 ## Learn More
 
