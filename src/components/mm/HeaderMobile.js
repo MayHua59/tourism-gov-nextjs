@@ -11,32 +11,32 @@ const menuData = [
   {
     label: "အချက်အလက်",
     submenu: [
-      { label: "မြန်မာနိုင်ငံ အကြောင်း", href: "/mm/about-myanmar" },
+      { label: "မြန်မာနိုင်ငံ အကြောင်း", href: "/mm/information-pages/about-myanmar" },
       {
         label: "ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ",
         submenu: [
-          { label: "အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း", href: "/mm/e-visa" },
-          { label: "ဗီဇာကင်းလွတ်ခွင့်", href: "/mm/visa-exemption" },
-          { label: "ဆိုက်ရောက်ဗီဇာ", href: "/mm/visa-on-arrival" },
+          { label: "အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း", href: "/mm/information-pages/electronic-visa" },
+          { label: "ဗီဇာကင်းလွတ်ခွင့်", href: "/mm/information-pages/visa-exemption" },
+          { label: "ဆိုက်ရောက်ဗီဇာ", href: "/mm/information-pages/visa-on-arrival" },
         ],
       },
-      { label: "ခရီးသွားကုမ္ပဏီများအတွက် လမ်းညွှန်ချက်များ", href: "/mm/guidelines-for-tour-companies" },
+      { label: "ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ", href: "/mm/guidelines-for-tour-companies" },
       {
         label: "သတင်းပြန်ကြားရေးကောင်တာများ",
         submenu: [
-          { label: "နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွားကော်မတီများ", href: "/mm/branch-offices" },
-          { label: "သတင်းအချက်အလက်ကောင်တာများ", href: "/mm/information-counters" },
-          { label: "ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ", href: "/mm/tourism-police-offices" },
+          { label: "နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွားကော်မတီများ", href: "/mm/information-pages/branch-offices" },
+          { label: "သတင်းအချက်အလက်ကောင်တာများ", href: "/mm/information-pages/information-counters" },
+          { label: "ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ", href: "/mm/information-pages/tourism-police-offices" },
         ],
       },
       {
         label: "သံရုံးများ",
         submenu: [
-          { label: "မြန်မာသံရုံးများ", href: "/mm/myanmar-missions" },
+          { label: "မြန်မာသံရုံးများ", href: "/mm/information-pages/myanmar-missions" },
           { label: "နိုင်ငံခြားသံရုံးများ", href: "/mm/foreign-embassies" },
         ],
       },
-      { label: "ဝန်ကြီးဌာနများ", href: "/mm/myanmar-ministries" },
+      { label: "ဝန်ကြီးဌာနများ", href: "/mm/information-pages/myanmar-ministries" },
     ],
   },
   {
@@ -125,6 +125,7 @@ const menuData = [
       { label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ", href: "/mm/tourism-legislation" },
       { label: "ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ", href: "/mm/tourism-statistics" },
       { label: "စာအုပ်၊စာစောင်များ", href: "/mm/tourism-publication" },
+     
       { label: "စွဲမက်ဖွယ်ရာပြည်မြန်မာ", href: "/mm/coming-soon" },
       { label: "လက်ကမ်းစာစောင်များ", href: "/mm/brochures-and-pamphlets" },
       { label: "မြေပုံများ", href: "/mm/maps" }
@@ -143,21 +144,18 @@ const menuData = [
   {
     label: "လုပ်ငန်းတာဝန်",
     submenu: [
-      { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
-      { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
-      
-
-      { label: "မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
-      { label: "နိုင်ငံတကာပူးပေါင်းဆောင်ရွက်ရေး", href: "/mm/coming-soon" },
-
+      { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/information-pages/duties-and-responsibilities" },
+      { label: "ရည်ရွယ်ချက်များ", href: "/mm/information-pages/objectives" },
+      { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/information-pages/six-policies-of-ministry-of-hotels-and-tourism" },
+      { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/information-pages/international-cooperation" },
       {
         label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု",
         submenu: [
-          
-          { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", href: "/mm/investment-law" },
-          { label: "ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", href: "/mm/investment-opportunity" },
-          { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", href: "/mm/why-invest-in-myanmar" },
-          { label: "ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာနိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု", href: "/mm/foreign-investment" },
+         
+          { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", href: "/mm/information-pages/myanmar-investment-law" },
+          { label: "ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", href: "/mm/information-pages/tourism-investment-opportunities" },
+          { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", href: "/mm/information-pages/why-invest-in-myanmar" },
+          { label: "ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာနိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု", href: "/mm/information-pages/foreign-investment-in-hotels-and-commercial-complexes" },
         ],
       },
       {
@@ -174,7 +172,7 @@ const menuData = [
         ],
       },
       
-      { label: "ဆက်သွယ်ရန်", href: "/mm/contact-us" },
+      { label: "ဆက်သွယ်ရန်", href: "/mm/information-pages/contact-us" },
     ],
   },
 ];
