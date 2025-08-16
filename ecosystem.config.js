@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'next-production',
+      name: process.env.APP_NAME || 'next-app',
       script: 'node_modules/next/dist/bin/next',
       args: 'start',
       instances: 'max',
@@ -11,7 +11,7 @@ module.exports = {
       max_memory_restart: '1G',
       env: {
         NODE_ENV: 'production',
-        PORT: process.env.APP_PORT
+        PORT: process.env.APP_PORT || 3000,
       }
     }
   ]
