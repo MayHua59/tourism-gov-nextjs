@@ -11,40 +11,32 @@ const menuData = [
   {
     label: "Vital Info",
     submenu: [
-      { label: "About Myanmar", href: "/en/information-pages/about-myanmar" },
+      { label: "About Myanmar", href: "/en/about-myanmar" },
       {
         label: "Visa Requirements",
         submenu: [
-          { label: "Electronic Visa", href: "/en/information-pages/electronic-visa" },
-          { label: "Visa Exemption", href: "/en/information-pages/visa-exemption" },
-          { label: "Visa on Arrival", href: "/en/information-pages/visa-on-arrival" },
+          { label: "Electronic Visa", href: "/en/e-visa" },
+          { label: "Visa Exemption", href: "/en/visa-exemption" },
+          { label: "Visa on Arrival", href: "/en/visa-on-arrival" },
         ],
       },
       { label: "Guidelines For Tour Companies", href: "/en/guidelines-for-tour-companies" },
-      // {
-      //   label: "Traveller Tips",
-      //   submenu: [
-      //     { label: "Traveller Tips", href: "/coming.html" },
-      //     { label: "Required Documents for Applying Tours", href: "/coming.html" },
-      //   ],
-      // },
       {
         label: "Helpdesk",
         submenu: [
-          { label: "Branch Offices", href: "/en/information-pages/branch-offices" },
-          { label: "Information Counters", href: "/en/information-pages/information-counters" },
-          { label: "Tourism Police Offices", href: "/en/information-pages/tourism-police-offices" },
+          { label: "Branch Offices", href: "/en/branch-offices" },
+          { label: "Information Counters", href: "/en/information-counters" },
+          { label: "Tourism Police Offices", href: "/en/tourism-police-offices" },
         ],
       },
-      // { label: "Attraction Entry Free", href: "/coming.html" },
       {
         label: "Embassies & Missions",
         submenu: [
-          { label: "Myanmar Missions", href: "/en/information-pages/myanmar-missions" },
+          { label: "Myanmar Missions", href: "/en/myanmar-missions" },
           { label: "Foreign Embassies in Myanmar", href: "/en/foreign-embassies" },
         ],
       },
-      { label: "Myanmar Ministries", href: "/en/information-pages/myanmar-ministries" },
+      { label: "Myanmar Ministries", href: "/en/myanmar-ministries" },
     ],
   },
   {
@@ -53,7 +45,7 @@ const menuData = [
       {
         label: "North Myanmar",
         submenu: [
-           { label: "Kachin", href: "/en/regions/kachin" },
+          { label: "Kachin", href: "/en/regions/kachin" },
           { label: "Sagaing", href: "/en/regions/sagaing" },
           { label: "Chin", href: "/en/regions/chin" },
           { label: "Shan", href: "/en/regions/shan" },
@@ -71,7 +63,7 @@ const menuData = [
       {
         label: "South Myanmar",
         submenu: [
-           { label: "Ayeyarwady", href: "/en/regions/ayeyarwady" },
+          { label: "Ayeyarwady", href: "/en/regions/ayeyarwady" },
           { label: "Kayah", href: "/en/regions/kayah" },
           { label: "Kayin", href: "/en/regions/kayin" },
           { label: "Bago", href: "/en/regions/bago" },
@@ -134,18 +126,17 @@ const menuData = [
       { label: "Tourism Statistics", href: "/en/tourism-statistics" },
       { label: "Tourism Publications", href: "/en/tourism-publication" },
       { label: "ASEAN Tourism Standards", href: "/en/asean-tourism-standards" },
-      { label: "Myamar Be Enchanted", href: "/en/coming-soon" },
+      { label: "Myanmar Be Enchanted", href: "/en/coming-soon" },
       { label: "Brochures & Pamphlets", href: "/en/brochures-and-pamphlets" },
-      { label: "Maps", href: "/en/maps" },
+      { label: "Maps", href: "/en/maps" }
     ],
   },
   {
     label: "News & Announcements",
     submenu: [
-      { label: "Health And Travel Latest News From Myanmar", href: "/en/coming-soon" },
       { label: "Weather Forecast", href: "/en/coming-soon" },
-      { label: "Upcoming Events", href: "/en/coming-soon" },
-      { label: "News", href: "/en/coming-soon" },
+      { label: "Upcoming Events", href: "/en/upcoming-events" },
+      { label: "News", href: "/en/news" },
       { label: "Announcements", href: "/en/announcements" },
       { label: "Travel Advisory", href: "/en/coming-soon" },
     ],
@@ -153,39 +144,40 @@ const menuData = [
   {
     label: "Our Role",
     submenu: [
-      { label: "Duties & Responsibilities", href: "/en/information-pages/duties-and-responsibilities" },
-      { label: "Objectives", href: "/en/information-pages/objectives" },
-      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/information-pages/six-policies-of-ministry-of-hotels-and-tourism" },
-      { label: "International Cooperation", href: "/en/information-pages/international-cooperation" },
+      { label: "Duties & Responsibilities", href: "/en/duties" },
+      { label: "Objectives", href: "/en/objectives" },
+      { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
+      { label: "International Cooperation", href: "/en/coming-soon" },
       {
         label: "Tourism Business",
         submenu: [
-          { label: "Doing Business in Myanmar", href: "/en/information-pages/doing-business-in-myanmar" },
-          { label: "Myanmar Investment Law", href: "/en/information-pages/myanmar-investment-law" },
-          { label: "Tourism Investment Opportunities", href: "/en/information-pages/tourism-investment-opportunities" },
-          { label: "Why Invest in Myanmar", href: "/en/information-pages/why-invest-in-myanmar" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/information-pages/foreign-investment-in-hotels-and-commercial-complexes" },
+          { label: "Doing Business in Myanmar", href: "/en/doing-business" },
+          { label: "Myanmar Investment Law", href: "/en/investment-law" },
+          { label: "Tourism Investment Opportunities", href: "/en/investment-opportunity" },
+          { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar" },
+          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
         ],
       },
-      {
-        label: "Statistics",
-        submenu: [
-          { label: "Tourism Statistics", href: "/en/coming-soon" },
-          { label: "Arrivals 2024", href: "/en/coming-soon" },
-          { label: "Arrivals 2023", href: "/en/coming-soon" },
-          { label: "Arrivals 2022", href: "/en/coming-soon" },
-          { label: "Arrivals 2021", href: "/en/coming-soon" },
-          { label: "Arrivals 2020", href: "/en/coming-soon" },
-          { label: "Arrivals 2019", href: "/en/coming-soon" },
-        ],
-      },
-      {
-        label: "Training",
-        submenu: [
-          { label: "Training Courses", href: "/en/coming-soon" },
-        ],
-      },
-      { label: "Contact Us", href: "/en/information-pages/contact-us" },
+      // {
+      //   label: "Arrivals",
+      //   submenu: [
+      //     { label: "Tourism Statistics", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2024", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2023", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2022", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2021", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2020", href: "/en/coming-soon" },
+      //     { label: "Arrivals 2019", href: "/en/coming-soon" },
+      //   ],
+      // },
+      // {
+      //   label: "Training",
+      //   submenu: [
+      //     { label: "Training Courses", href: "/en/coming-soon" },
+      //   ],
+      // },
+      
+      { label: "Contact Us", href: "/en/contact-us" },
     ],
   },
 ];
