@@ -41,7 +41,7 @@ export default async function AnnouncementDetail({ params }) {
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
           { label: "ကြေငြာချက်များ", href: "/mm/announcements", icon: faBullhorn },
-          { label: announcement && announcement.name, active: true }
+          { label: "...", active: true }
         ]}
       />
       <div className={styles.container}>

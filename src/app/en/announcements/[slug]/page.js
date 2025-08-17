@@ -41,7 +41,7 @@ export default async function AnnouncementDetail({ params }) {
         items={[
           { label: "Home", href: "/", icon: faHome },
           { label: "Announcements", href: "/en/announcements", icon: faBullhorn },
-          { label: announcement && announcement.name, active: true }
+          { label: "...", active: true }
         ]}
       />
       <div className={styles.container}>
