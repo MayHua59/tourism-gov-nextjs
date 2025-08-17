@@ -81,7 +81,7 @@ export default function LatestNewsSection() {
   return (
     <section className={styles.latestNewsSection}>
       <div className="container py-5">
-        <h2 className="text-center mb-5">Latest News</h2>
+        <h2 className="text-center mb-5" style={{ fontSize: "2rem" }}>Latest News</h2>
         {loading && (
   <div className={styles.loadingWrapper}>
     <div className={styles.loadingSpinner}></div>

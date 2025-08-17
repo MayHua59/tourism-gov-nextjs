@@ -28,7 +28,6 @@
   border-radius: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .destinationCard:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
@@ -40,13 +39,11 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-
 .cardImage {
   object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-
 .cardBody {
   background: #fff;
   border-bottom-left-radius: 1rem;
@@ -72,7 +69,6 @@
   text-align: center;
   letter-spacing: -0.5px;
 }
-
 .galleryTitle::after {
   content: "";
   display: block;
@@ -83,10 +79,11 @@
   background: linear-gradient(90deg, #3b82f6, #06b6d4);
 }
 
+/* Always one column for galleryGrid */
 .galleryGrid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
   justify-content: center;
   justify-items: center;
 }
@@ -98,7 +95,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-
 .galleryCard:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -109,7 +105,6 @@
   text-align: center;
   background: linear-gradient(90deg, #4584e9, #9ddbe5);
 }
-
 .galleryItemTitle {
   margin: 0;
   font-size: 1.125rem;
@@ -121,23 +116,26 @@
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
-  justify-content: center; /* Centers items horizontally */
-  align-items: flex-start; /* Centers items vertically */
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .carouselWrapper {
-  flex: 1; 
+  flex: 1;
 }
 .carouselWrapper img {
   border-radius: 1rem !important;
 }
 
 .galleryDescription {
-  flex: 1; 
-  font-size: 0.7rem !important; 
+  flex: 1;
+  font-size: 0.7rem !important;
   color: #666;
   line-height: 1.7;
   text-align: left;
+}
+.galleryDescription p {
+  text-align: justify;
 }
 
 /*
@@ -159,25 +157,21 @@
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-
 .regionDescription {
   font-size: 1.1rem;
   color: #444;
   line-height: 1.6;
 }
-
 .regionDescription strong {
   font-size: 1.3rem;
   color: #3b82f6;
 }
-
 .regionDescription a {
   color: #06b6d4;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
-
 .regionDescription a:hover {
   color: #3b82f6;
   border-bottom-color: #3b82f6;
@@ -192,13 +186,11 @@
 .coverImage {
   max-width: 600px;
 }
-
 .icon {
   display: flex;
   align-items: center;
   color: #4285f4;
 }
-
 .carouselWrapper {
   position: relative;
   overflow: hidden;
@@ -215,51 +207,36 @@
   .pageContainer {
     padding-top: 60px;
   }
-
-  /* Gallery-specific changes */
   .gallerySection {
     padding: 3rem;
   }
-
   .galleryTitle {
     font-size: 2rem;
   }
-
   .galleryGrid {
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  justify-content: center;
-  justify-items: center;
-}
-
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
   .galleryCard {
     border-radius: 1rem;
   }
-  
   .galleryCard:hover {
     transform: translateY(-0.25rem);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
-
   .cardHeader {
     padding: 1rem 1.5rem;
   }
-
   .galleryItemTitle {
     font-size: 1rem;
   }
-
   .galleryDescription {
     padding: 0.75rem;
     font-size: 0.8rem;
   }
-
-  /* Destination card changes */
   .cardImageWrapper {
     height: 8rem;
   }
-  
   .cardBody {
     padding: 0.75rem;
     font-size: 0.96rem;
@@ -273,34 +250,22 @@
   .gallerySection {
     padding: 2rem;
   }
-
   .galleryTitle {
     font-size: 1.8rem;
   }
-
   .galleryGrid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-   .galleryGrid {
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  justify-content: center;
-  justify-items: center;
-}
-
   .galleryCard {
     border-radius: 0.75rem;
   }
-
   .cardHeader {
     padding: 1rem 1.5rem;
   }
-  
   .galleryItemTitle {
     font-size: 1rem;
   }
-
   .galleryDescription {
     padding: 0.75rem;
     font-size: 0.8rem;
@@ -308,68 +273,72 @@
   .mainContent {
     max-width: 100%;
   }
+  
 }
 
-/* Up to 448px */
 @media screen and (max-width: 448px) {
   .pageContainer {
     padding-top: 100px;
   }
-    .galleryGrid {
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
-  justify-items: center;
-}
-  .gallerySection{
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .gallerySection {
     padding: 0;
   }
   .mainContent {
     max-width: 100%;
+    padding: 20px 5px;
+  }
+  .regionDescriptionWrapper {
+    padding: 20px 5px;
+  }
+  .galleryDescription {
+    padding: 0;
+
   }
 }
+
 @media (max-width: 992px) {
   .cardBody {
-    flex-direction: column; 
-    align-items: stretch; 
+    flex-direction: column;
+    align-items: stretch;
   }
-
   .carouselWrapper,
   .galleryDescription {
     flex: none;
     max-width: 100%;
   }
-
   .galleryDescription {
-    padding-top: 0; 
+    padding-top: 0;
   }
+  
 }
 
-/* For screen sizes up to 576px */
 @media (max-width: 576px) {
   .gallerySection {
     padding: 2rem 1rem;
   }
-  
   .galleryGrid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
   .galleryTitle {
     font-size: 1.5rem;
   }
+  
 }
 
-/* For screen sizes up to 448px */
 @media (max-width: 448px) {
   .galleryCard {
     border-radius: 0.5rem;
   }
-.gallerySection{ 
+  .gallerySection {
     padding: 0;
   }
   .carouselWrapper img {
     border-radius: 0.5rem;
   }
+  
 }

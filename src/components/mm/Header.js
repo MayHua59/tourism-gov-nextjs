@@ -88,7 +88,7 @@ const mainMenu = [
       {
         label: "တည်းခိုနေထိုင်ရေး",
         submenu: [
-          { label: "ဟိုတယ်နှင့် တည်းခိုရိပ်သာ", href: "/mm/coming-soon" },
+          { label: "ဟိုတယ်နှင့် တည်းခိုရိပ်သာ", href: "/mm/hotels-and-resorts" },
         ],
       },
       {
@@ -97,8 +97,8 @@ const mainMenu = [
           {
             label: "ခရီးသွားကုမ္ပဏီများ",
             submenu: [
-              { label: "ပြည်တွင်းခရီးသွားကုမ္ပဏီများ", href: "/mm/coming-soon" },
-              { label: "ပြည်ပခရီးသွားကုမ္ပဏီများ", href: "/mm/coming-soon" },
+              { label: "ပြည်တွင်းခရီးသွားကုမ္ပဏီများ", href: "/mm/inbound-tour-companies" },
+              { label: "ပြည်ပခရီးသွားကုမ္ပဏီများ", href: "/mm/outbound-tour-companies" },
             ],
           },
           {

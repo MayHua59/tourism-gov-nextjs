@@ -26,7 +26,8 @@ export default function HeroSection() {
   }, [current]);
 
   return (
-    <section className={styles.heroSection}>
+    <div className={styles.pageContainer}>
+<section className={styles.heroSection}>
       <div className={styles.carousel}>
         {images.map((src, idx) => (
           <div
@@ -46,5 +47,6 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
