@@ -48,7 +48,7 @@ const menuData = [
     ],
   },
   {
-    label: "Explorer Myanmar",
+    label: "Explore Myanmar",
     submenu: [
       {
         label: "North Myanmar",
@@ -96,7 +96,7 @@ const menuData = [
       {
         label: "Accommodation",
         submenu: [
-          { label: "Hotels & Resorts", href: "/en/coming-soon" },
+          { label: "Hotels & Resorts", href: "/en/hotels-and-resorts" },
         ],
       },
       {
@@ -105,8 +105,8 @@ const menuData = [
           {
             label: "Tour Companies",
             submenu: [
-              { label: "Inbound Tour Companies", href: "/en/coming-soon" },
-              { label: "Outbound Tour Companies", href: "/en/coming-soon" },
+              { label: "Inbound Tour Companies", href: "/en/inbound-tour-companies" },
+              { label: "Outbound Tour Companies", href: "/en/outbound-tour-companies" },
             ],
           },
           {

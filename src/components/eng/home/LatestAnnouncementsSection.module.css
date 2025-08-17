@@ -238,6 +238,10 @@
 }
 
 @media (max-width: 600px) {
+  .announcementsSection {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
    .announcementsContainer {
     width: 100%;
     max-width: 100%;

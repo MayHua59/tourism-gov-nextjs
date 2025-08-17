@@ -73,6 +73,13 @@
 }
 
 @media (max-width: 991px) {
+.travelerInfoSection { padding: 20px; }
+.travelerInfoSection h2{ 
+  text-align: center;
+  font-size: 2rem;
+}
+
+
   .flexContainer { flex-direction: column; }
   .videoWrapper { min-height: 200px; }
 }

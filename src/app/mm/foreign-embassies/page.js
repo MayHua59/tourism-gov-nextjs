@@ -14,7 +14,7 @@ export default function ForeignEmbassiesInMyanmar() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="foreign embassies in Myanmar cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/mm/", icon: faHome },
+          { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
           { label: "မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ", active: true }
         ]}
       />

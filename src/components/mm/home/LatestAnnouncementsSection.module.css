@@ -10,7 +10,7 @@
 }
 
 .sectionTitle {
-  /* font-size: 2rem; */
+  font-size: 1.9rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -239,6 +239,9 @@
 }
 
 @media (max-width: 600px) {
+  .announcementsSection{
+    margin-bottom: 1em;
+  }
    .announcementsContainer {
     width: 100%;
     max-width: 100%;
