@@ -66,7 +66,7 @@ export default async function NewsDetail({ params }) {
         items={[
           { label: "Home", href: "/", icon: faHome },
           { label: "News", href: "/en/news" },
-          { label: news && news.name, active: true }
+          { label: "...", active: true }
         ]}
       />
       <div className={styles.container}>

@@ -66,7 +66,7 @@ export default async function NewsDetail({ params }) {
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
           { label: "သတင်းများ", href: "/mm/news" },
-          { label: news && news.name, active: true }
+          { label: "...", active: true }
         ]}
       />
       <div className={styles.container}>
