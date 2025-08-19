@@ -1,0 +1,154 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.festivalTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #2d4373;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/*
+  This updated CSS design provides a more modern, premium, and
+  interactive look for the festival cards.
+*/
+
+/* --- Card Grid Layout --- */
+.festivalList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* --- Base Card Styles --- */
+.festivalCard {
+  background: #fff;
+  border-radius: 18px; /* Slightly larger radius for a modern feel */
+  box-shadow: 0 5px 20px rgba(50, 79, 133, 0.08), 0 1px 3px rgba(50, 79, 133, 0.04);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Card Hover Effect --- */
+.festivalCard:hover {
+  box-shadow: 0 12px 40px rgba(50, 79, 133, 0.15), 0 4px 12px rgba(50, 79, 133, 0.08);
+}
+
+/* --- Image and Container --- */
+.festivalImageWrapper {
+  width: 100%;
+  min-height: 220px; /* Slightly taller for more visual impact */
+  background: #f6f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.festivalImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eaeaea;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.festivalCard:hover .festivalImg {
+  transform: scale(1.05); /* Subtle zoom on image when hovering card */
+}
+
+/* --- Info Section --- */
+.festivalInfo {
+  padding: 24px; /* More generous padding */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.festivalSubtitle {
+  font-size: 1.25rem; /* Larger font size for the title */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a428a; /* A darker, richer blue */
+}
+
+.festivalMeta {
+  font-size: 0.95rem;
+  color: #55627e;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Use gap for spacing icons and text */
+}
+
+.calendarIcon {
+  color: #e67e22; /* A more muted icon color */
+  font-size: 1.1rem;
+}
+
+.festivalDesc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3f4a63;
+  margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
+/* --- Gallery Section --- */
+.festivalGallery {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.festivalGalleryImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #e4e8f4;
+  box-shadow: 0 4px 8px rgba(50, 79, 133, 0.05);
+}
+
+.errorMessage {
+  color: #e74c3c;
+  background: #fdf2f2;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #f9d5d5;
+  font-weight: 500;
+}
