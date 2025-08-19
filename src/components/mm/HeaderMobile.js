@@ -77,7 +77,7 @@ const menuData = [
   {
     label: "စိတ်ဝင်စားဖွယ်ရာများ",
     submenu: [
-      { label: "ဆယ့်နှစ်လရာသီ ပွဲတော်များ", href: "/mm/coming-soon" },
+      { label: "ဆယ့်နှစ်လရာသီ ပွဲတော်များ", href: "/mm/festivals" },
       { label: "သဘာဝအခြေခံခရီးသွားလုပ်ငန်း", href: "/mm/coming-soon" },
       { label: "ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း", href: "/mm/coming-soon" },
     ],
