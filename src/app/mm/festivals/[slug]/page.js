@@ -46,7 +46,7 @@ export default async function FestivalDetailPage({ params }) {
               <span>
                 {" | "}
                 <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: 4 }} />
-                {festival.region}
+                {festival.region.name}
               </span>
             )}
           </div>
