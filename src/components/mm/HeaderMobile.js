@@ -78,8 +78,8 @@ const menuData = [
     label: "စိတ်ဝင်စားဖွယ်ရာများ",
     submenu: [
       { label: "ဆယ့်နှစ်လရာသီ ပွဲတော်များ", href: "/mm/festivals" },
-      { label: "သဘာဝအခြေခံခရီးသွားလုပ်ငန်း", href: "/mm/coming-soon" },
-      { label: "ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း", href: "/mm/coming-soon" },
+      { label: "သဘာဝအခြေခံခရီးသွားလုပ်ငန်း", href: "/mm/ecotourism" },
+      { label: "ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း", href: "/mm/community-based-tourism" },
     ],
   },
   {
@@ -111,8 +111,8 @@ const menuData = [
           {
             label: "ပို့ဆောင်ရေး ကုမ္ပဏီများ",
             submenu: [
-              { label: "အပျော်စီးသင်္ဘောနှင့် အခြား", href: "/mm/coming-soon" },
-              { label: "ရွက်လှေ၊ မိုးပျံပူဖောင်း", href: "/mm/coming-soon" },
+              { label: "အပျော်စီးသင်္ဘောနှင့် အခြား", href: "/mm/cruises-and-others" },
+              { label: "ရွက်လှေ၊ မိုးပျံပူဖောင်း", href: "/mm/hot-air-balloons" },
             ],
           },
         ],

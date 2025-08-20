@@ -1,0 +1,86 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #1766b1;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.intro {
+  margin: 1rem 0 2rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.regionSection {
+  margin-top: 2.5rem;
+}
+
+.regionTitle {
+  font-size: 1.25rem;
+  color: #1766b1;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.siteCard {
+  border: 1px solid #e6eef8;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.siteTitle {
+  margin: 0 0 0.5rem 0;
+  color: #154e7a;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.siteSummary {
+  margin: 0 0 0.6rem 0;
+  color: #222;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 18px;
+  }
+  .pageTitle {
+    font-size: 1.4rem;
+  }
+  .regionTitle {
+    font-size: 1.02rem;
+  }
+}

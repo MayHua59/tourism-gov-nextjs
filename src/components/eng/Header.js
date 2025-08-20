@@ -78,8 +78,8 @@ const mainMenu = [
     label: "Highlight",
     submenu: [
       { label: "Festivals", href: "/en/festivals" },
-      { label: "Ecotourism", href: "/en/coming-soon" },
-      { label: "Community Based Tourism", href: "/en/coming-soon" },
+      { label: "Ecotourism", href: "/en/ecotourism" },
+      { label: "Community Based Tourism", href: "/en/community-based-tourism" },
     ],
   },
   {
@@ -111,8 +111,8 @@ const mainMenu = [
           {
             label: "Transportation",
             submenu: [
-              { label: "Cruises & Others", href: "/en/coming-soon" },
-              { label: "Hot-Air Balloons", href: "/en/coming-soon" },
+              { label: "Cruises & Others", href: "/en/cruises-and-others" },
+              { label: "Hot-Air Balloons", href: "/en/hot-air-balloons" },
             ],
           },
         ],
