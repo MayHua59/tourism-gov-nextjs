@@ -134,7 +134,7 @@ const menuData = [
   {
     label: "သတင်းနှင့် ကြေညာချက်များ",
     submenu: [
-      { label: "မိုးလေဝသခန့်မှန်းချက်", href: "/mm/coming-soon" },
+      // { label: "မိုးလေဝသခန့်မှန်းချက်", href: "/mm/coming-soon" },
       { label: "ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ", href: "/mm/upcoming-events" },
       { label: "သတင်းများ", href: "/mm/news" },
       { label: "ကြေညာချက်များ", href: "/mm/announcements" },

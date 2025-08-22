@@ -10,7 +10,7 @@
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -38,8 +38,8 @@
 
   font-size: 2rem;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   line-height: 48px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
@@ -102,17 +102,17 @@
   box-shadow: none;
   margin: 0;
   display: block;
-  background: #f0f4f8; /* fallback background for transparent images */
+  background: #fff; /* fallback background for transparent images */
 }
 
 .dateBadge {
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 0.5rem;
   background: #0d6efd;
   color: #fff;
   font-size: 1rem;
-  /* font-weight: 700; */
+  font-weight: 600;
   padding: 0.4rem 1rem;
   /* border-radius: 16px; */
   box-shadow: 0 2px 8px rgba(30,41,59,0.08);
@@ -128,11 +128,12 @@
 }
 
 .announcementTitle {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.5rem;
-}
+  line-height: 1.5;
+ }
 
 .announcementSummary {
   font-size: 1.05rem;
@@ -142,21 +143,13 @@
 }
 
 .readMoreBtn {
-  align-self: flex-start;
-  background: #0d6efd;
-  color: #fff;
-  padding: 0.45rem 1.2rem;
-  font-size: 1rem;
-  /* font-weight: 500; */
-  text-decoration: none;
-  transition: background 0.2s;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  
+  font-size: 0.8rem;
+  
 }
 
 .readMoreBtn:hover {
-  background: #0b5ed7;
+  color: #1a365d;
 }
 
 .viewAllWrapper {
@@ -238,9 +231,8 @@
 }
 
 @media (max-width: 600px) {
-  .announcementsSection {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+  .announcementsSection{
+    margin-bottom: 1em;
   }
    .announcementsContainer {
     width: 100%;
@@ -261,11 +253,17 @@
     display: flex;
     width: 50px;
     height: 40px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
     align-items: center;
     justify-content: center;
     margin: 0 6px;
     line-height: 40px;
+    border: none;
+    background: transparent;
+  }
+  .carouselBtn:hover {
+    transform: none;
   }
   .carouselTrack {
     display: flex;
@@ -279,7 +277,7 @@
   }
   .announcementCard {
     min-width: 260px;
-    max-width: 300px;
+    max-width: 350px;
     flex: 0 0 auto;
     scroll-snap-align: none;
   }

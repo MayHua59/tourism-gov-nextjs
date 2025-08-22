@@ -134,7 +134,7 @@ const menuData = [
   {
     label: "News & Announcements",
     submenu: [
-      { label: "Weather Forecast", href: "/en/coming-soon" },
+      // { label: "Weather Forecast", href: "/en/coming-soon" },
       { label: "Upcoming Events", href: "/en/upcoming-events" },
       { label: "News", href: "/en/news" },
       { label: "Announcements", href: "/en/announcements" },

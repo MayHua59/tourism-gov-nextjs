@@ -97,7 +97,7 @@ export default function LatestNewsSection() {
               aria-label="Previous"
               disabled={newsList.length <= slidesPerView}
             >
-              &#8592;
+              &lt;
             </button>
             <div className={styles.carouselTrack} style={{ gap: 24 }}>
               {visibleSlides.map((news) => (
@@ -122,7 +122,7 @@ export default function LatestNewsSection() {
     className={styles.newsSummary}
     dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
   ></p>
-                    <Link href={`/mm/news/${news.slug}`} className="btn btn-primary btn-sm rounded-0">
+                    <Link href={`/mm/news/${news.slug}`} className={styles.readMore}>
                       ဆက်လက်ဖတ်ရှုရန်
                     </Link>
                   </div>
@@ -135,7 +135,7 @@ export default function LatestNewsSection() {
               aria-label="Next"
               disabled={newsList.length <= slidesPerView}
             >
-              &#8594;
+              &gt;
             </button>
           </div>
         )}

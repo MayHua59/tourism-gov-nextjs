@@ -95,7 +95,7 @@ export default function LatestAnnouncementsSection() {
               aria-label="Previous"
               disabled={announcements.length <= slidesPerView}
             >
-              &#8592;
+              &lt;
             </button>
             <div className={styles.carouselTrack}>
               {visibleSlides.map((item) => (
@@ -137,7 +137,7 @@ export default function LatestAnnouncementsSection() {
               aria-label="Next"
               disabled={announcements.length <= slidesPerView}
             >
-              &#8594;
+              &gt;
             </button>
           </div>
         )}
