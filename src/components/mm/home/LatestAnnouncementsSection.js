@@ -69,9 +69,10 @@ export default function LatestAnnouncementsSection() {
     );
   };
 
-    const truncateDescription = (description, maxLength) => {
+const truncateDescription = (description, maxLength) => {
+  if (!description) return ""; // Handles null, undefined, or empty string
   if (description.length > maxLength) {
-    return description.substring(0, maxLength) + '...'; 
+    return description.substring(0, maxLength) + '...';
   }
   return description;
 };
