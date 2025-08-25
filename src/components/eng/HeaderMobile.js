@@ -126,7 +126,7 @@ const menuData = [
       { label: "Tourism Statistics", href: "/en/tourism-statistics" },
       { label: "Tourism Publications", href: "/en/tourism-publication" },
       { label: "ASEAN Tourism Standards", href: "/en/asean-tourism-standards" },
-      { label: "Myanmar Be Enchanted", href: "/en/coming-soon" },
+      // { label: "Myanmar Be Enchanted", href: "/en/coming-soon" },
       { label: "Brochures & Pamphlets", href: "/en/brochures-and-pamphlets" },
       { label: "Maps", href: "/en/maps" }
     ],

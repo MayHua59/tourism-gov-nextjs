@@ -126,7 +126,7 @@ const menuData = [
       { label: "ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ", href: "/mm/tourism-statistics" },
       { label: "စာအုပ်၊စာစောင်များ", href: "/mm/tourism-publication" },
      
-      { label: "စွဲမက်ဖွယ်ရာပြည်မြန်မာ", href: "/mm/coming-soon" },
+      // { label: "စွဲမက်ဖွယ်ရာပြည်မြန်မာ", href: "/mm/coming-soon" },
       { label: "လက်ကမ်းစာစောင်များ", href: "/mm/brochures-and-pamphlets" },
       { label: "မြေပုံများ", href: "/mm/maps" }
     ],
