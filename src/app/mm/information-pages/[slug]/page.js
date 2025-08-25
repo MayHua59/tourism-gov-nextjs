@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
 import styles from './InformationPages.module.css';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import AttachmentTable from "@/components/AttachmentTable";
+
 
 export async function generateMetadata({ params }) {
     const { slug } = params;
@@ -64,6 +66,9 @@ export default async function InformationPage({ params }) {
     ))}
   </div>
 )}
+{data.attachments && data.attachments.length > 0 && (
+          <AttachmentTable attachments={data.attachments} />
+        )}
             </div>
 
 

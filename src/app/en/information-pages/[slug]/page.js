@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
 import styles from './InformationPages.module.css';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import AttachmentTable from "@/components/AttachmentTable";
 
 export async function generateMetadata({ params }) {
     const { slug } = params;
@@ -11,13 +12,13 @@ export async function generateMetadata({ params }) {
         const data = await fetchInformationPageDetail(slug);
         return {
             title: data.name,
-           
+
         };
     } catch (error) {
         console.error("Metadata fetch error:", error);
         return {
             title: "Information Page",
-            
+
         };
     }
 }
@@ -51,20 +52,25 @@ export default async function InformationPage({ params }) {
                     dangerouslySetInnerHTML={{ __html: data.description }}
                 />
                 {data.gallery && data.gallery.length > 0 && (
-  <div className={styles.galleryGrid}>
-    {data.gallery.map((img, idx) => (
-      <div className={styles.galleryItem} key={idx}>
-        <Image
-          src={`https://admin.tourism.gov.mm/storage/${img}`}
-          alt={`Gallery ${idx + 1}`}
-          width={400}
-          height={250}
-          className={styles.galleryImg}
-        />
-      </div>
-    ))}
-  </div>
-)}
+                    <div className={styles.galleryGrid}>
+                        {data.gallery.map((img, idx) => (
+                            <div className={styles.galleryItem} key={idx}>
+                                <Image
+                                    src={`https://admin.tourism.gov.mm/storage/${img}`}
+                                    alt={`Gallery ${idx + 1}`}
+                                    width={400}
+                                    height={250}
+                                    className={styles.galleryImg}
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+
+                )}
+                  {data.attachments && data.attachments.length > 0 && (
+          <AttachmentTable attachments={data.attachments} />
+        )}
             </div>
 
 

@@ -1,0 +1,55 @@
+.wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  vertical-align: middle;
+}
+
+.table th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #333;
+}
+
+.fileName {
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.downloadLink {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #0070f3;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.downloadLink:hover {
+  background: #005fcc;
+}
