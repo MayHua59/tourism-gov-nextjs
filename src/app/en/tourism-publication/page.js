@@ -38,7 +38,7 @@ export default function TourismPublication() {
 />
                 <h4 className={styles.pdfTitle}>DOMESTIC TOURISM SURVEY OF MYANMAR 2024</h4>
                 <a
-                  href="/assets/pdf/Domestic-Tourism-Survey-2024.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JRNE007NZHNY9SHC48DNQG.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -59,7 +59,7 @@ export default function TourismPublication() {
 />
                 <h4 className={styles.pdfTitle}>INBOUND TOURISM SURVEY OF MYANMAR, 2024</h4>
                 <a
-                  href="/assets/pdf/Inbound-Tourism-Survey-2024.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JRMBFP2QMAQZKJSHESMKQ1.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -68,7 +68,6 @@ export default function TourismPublication() {
                 </a>
               </div>
             </div>
-            {/* Add more publication cards here */}
           </div>
         </section>
       </div>

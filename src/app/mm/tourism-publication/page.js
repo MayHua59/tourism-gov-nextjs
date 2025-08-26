@@ -38,7 +38,7 @@ export default function TourismPublication() {
 />
                 <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
-                  href="/assets/pdf/မြန်မာနိုင်ငံပြည်တွင်းခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JRDZDCDZK7QVA9MZ4GA81V.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -59,7 +59,7 @@ export default function TourismPublication() {
 />
                 <h4 className={styles.pdfTitle}>မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း ၂၀၂၄</h4>
                 <a
-                  href="/assets/pdf/မြန်မာနိုင်ငံပြည်ဝင်ခရီးသွားစစ်တမ်း-၂၀၂၄.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JRD3FQZABJ9W485WD9Q99X.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}

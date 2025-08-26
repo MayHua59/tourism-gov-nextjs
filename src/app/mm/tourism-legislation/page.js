@@ -5,7 +5,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Tourism Legislation",
+  title: "ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ",
   description: "Key legislation and rules for Myanmar tourism sector."
 };
 
@@ -36,7 +36,7 @@ export default function TourismLegislation() {
                 />
                 <h2 className={styles.legislationTitle}>မြန်မာနိုင်ငံခရီးသွားလုပ်ငန်းဥပဒေ</h2>
                 <a
-                  href="/assets/pdf/မြန်မာနိုင်ငံခရီးသွားလုပ်ငန်းဥပဒေ.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JME4YX58N8148FKM81CM07.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -58,7 +58,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>မြန်မာနိုင်ငံခရီးသွားလုပ်ငန်းနည်းဥပဒေများ(၂၀၂၀)</h2>
                 <a
-                  href="/assets/pdf/မြန်မာနိုင်ငံခရီးသွားလုပ်ငန်းနည်းဥပဒေများ(၂၀၂၀).pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JNQ3Z3534CS7W098ZPQ5VQ.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -80,7 +80,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>ဟိုတယ်လုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်</h2>
                 <a
-                  href="/assets/pdf/ဟိုတယ်လုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JNS1BYZ045DDQB8NEMP5ZE.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -102,7 +102,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>တည်းခိုရိပ်သာလုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်</h2>
                 <a
-                  href="/assets/pdf/တည်းခိုရိပ်သာလုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JNV7GXA8MR2G57TRD7746M.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -124,7 +124,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>ခရီးလှည့်လည်ရေးလုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်</h2>
                 <a
-                  href="/assets/pdf/ခရီးလှည့်လည်ရေးလုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JNWBVX7E2MNAHNV9CF8D5J.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -146,7 +146,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>ဧည့်လမ်းညွှန်လုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်</h2>
                 <a
-                  href="/assets/pdf/ဧည့်လမ်းညွှန်လုပ်ငန်းလိုင်စင်ဆိုင်ရာအမိန့်.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JNY5DX2SKRR3PSSBRAQ3VT.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -168,7 +168,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>လိုင်စင်ကြေး၊ လိုင်စင်အသစ်လဲလှယ်ကြေး၊ လိုင်စင်ဒဏ်ကြေးနှင့် ဝန်ဆောင်ကြေးများ</h2>
                 <a
-                  href="/assets/pdf/လိုင်စင်ကြေး၊ လိုင်စင်အသစ်လဲလှယ်ကြေး၊ လိုင်စင်ဒဏ်ကြေးနှင့် ဝန်ဆောင်ကြေးများ.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JKEHSE5540PS3RQMB76DXX.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"
@@ -190,7 +190,7 @@ export default function TourismLegislation() {
 />
                 <h2 className={styles.legislationTitle}>ကြိုတင်ခွင့်ပြုချက်လျှောက်ထားခြင်းဆိုင်ရာအမိန့်</h2>
                 <a
-                  href="/assets/pdf/ကြိုတင်ခွင့်ပြုချက်လျှောက်ထားခြင်းဆိုင်ရာအမိန့်.pdf"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JP20ER87JA26S874MR7EWY.pdf"
                   className={styles.downloadButton}
                   target="_blank"
                   rel="noopener"

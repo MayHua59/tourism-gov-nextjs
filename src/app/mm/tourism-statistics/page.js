@@ -28,18 +28,40 @@ export default function TourismStatistics() {
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-                <Image
-  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
-  alt="Tourism Statistics 2021"
+               <Image
+  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
+  alt="Tourism Statistics 2024"
   className={styles.publicationImage}
   width={180}
   height={240}
   style={{ height: "auto" }}
   unoptimized
 />
-                <h4>Tourism Statistics 2021</h4>
+                <h4>Tourism Statistics 2024</h4>
                 <a
-                  href="https://drive.google.com/file/d/1mWJRwiGlZQ7SPi3S6eS-8Pv6XvS_E68e/view"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JR21YTYAQNJAE0560AB72Q.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  ဒေါင်းလုဒ်ရယူရန်
+                </a>
+              </div>
+            </div>
+             <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+               <Image
+  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
+  alt="Tourism Statistics 2023"
+  className={styles.publicationImage}
+  width={180}
+  height={240}
+  style={{ height: "auto" }}
+  unoptimized
+/>
+                <h4>Tourism Statistics 2023</h4>
+                <a
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JR1FF6AXXQJS018D6A1KA9.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -72,18 +94,18 @@ export default function TourismStatistics() {
             </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
-               <Image
-  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
-  alt="Tourism Statistics 2023"
+                <Image
+  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
+  alt="Tourism Statistics 2021"
   className={styles.publicationImage}
   width={180}
   height={240}
   style={{ height: "auto" }}
   unoptimized
 />
-                <h4>Tourism Statistics 2023</h4>
+                <h4>Tourism Statistics 2021</h4>
                 <a
-                  href="https://drive.google.com/file/d/1_hfJkKqAnN0iNUVfs45ElPlcEzKr4z2T/view"
+                  href="https://admin-mm.tourism.gov.mm/storage/attachments/01K3JR0GCKPHP7DC2Y90Y30XVD.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -92,29 +114,10 @@ export default function TourismStatistics() {
                 </a>
               </div>
             </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-               <Image
-  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
-  alt="Tourism Statistics 2024"
-  className={styles.publicationImage}
-  width={180}
-  height={240}
-  style={{ height: "auto" }}
-  unoptimized
-/>
-                <h4>Tourism Statistics 2024</h4>
-                <a
-                  href="https://drive.google.com/file/d/1zgVUkUb3d7MChMYxPbh4P40BhTL8wX6P/view"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
-            {/* Add more publication cards here as needed */}
+            
+           
+            
+          
           </div>
         </section>
       </div>

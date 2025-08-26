@@ -29,17 +29,17 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
-                  alt="Tourism Statistics 2021"
+                  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
+                  alt="Tourism Statistics 2024"
                   className={styles.publicationImage}
                   width={180}
                   height={240}
                   style={{ height: "auto" }}
                   unoptimized
                 />
-                <h4>Tourism Statistics 2021</h4>
+                <h4>Tourism Statistics 2024</h4>
                 <a
-                  href="https://drive.google.com/file/d/1mWJRwiGlZQ7SPi3S6eS-8Pv6XvS_E68e/view"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JN1S9A1XZRKVM1Z22Q2TND.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -48,7 +48,29 @@ export default function TourismStatistics() {
                 </a>
               </div>
             </div>
-            <div className={styles.gridCol}>
+             <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+                  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
+                  alt="Tourism Statistics 2023"
+                  className={styles.publicationImage}
+                  width={180}
+                  height={240}
+                  style={{ height: "auto" }}
+                  unoptimized
+                />
+                <h4>Tourism Statistics 2023</h4>
+                <a
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JN11RKJF8HZHDBDKVGVM4Q.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
                   src="https://i.ibb.co/FkZtwkxR/viber-image-2025-08-06-16-03-04-085.jpg"
@@ -73,17 +95,17 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
-                  alt="Tourism Statistics 2023"
+                  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
+                  alt="Tourism Statistics 2021"
                   className={styles.publicationImage}
                   width={180}
                   height={240}
                   style={{ height: "auto" }}
                   unoptimized
                 />
-                <h4>Tourism Statistics 2023</h4>
+                <h4>Tourism Statistics 2021</h4>
                 <a
-                  href="https://drive.google.com/file/d/1_hfJkKqAnN0iNUVfs45ElPlcEzKr4z2T/view"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JMZBKE1BX0SS5HJ1GJ5J0T.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -92,28 +114,9 @@ export default function TourismStatistics() {
                 </a>
               </div>
             </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <Image
-                  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
-                  alt="Tourism Statistics 2024"
-                  className={styles.publicationImage}
-                  width={180}
-                  height={240}
-                  style={{ height: "auto" }}
-                  unoptimized
-                />
-                <h4>Tourism Statistics 2024</h4>
-                <a
-                  href="https://drive.google.com/file/d/1zgVUkUb3d7MChMYxPbh4P40BhTL8wX6P/view"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
+           
+           
+            
             
           </div>
         </section>

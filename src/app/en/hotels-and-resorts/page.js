@@ -13,7 +13,7 @@ export const metadata = {
 export default function HotelsAndResortsPage() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images/65.jpg" altText="Hotels and Resorts cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/18.jpg" altText="Hotels and Resorts cover photo" />
       <Breadcrumb
         items={[
           { label: "Home", href: "/", icon: faHome },

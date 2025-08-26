@@ -11,7 +11,7 @@ export const metadata = {
 export default function VisaOnArrival() {
   return (
     <div className={styles.pageContainer}>
-      <BannerSection imageUrl="/assets/images/cover-images/63.jpg" altText="visa on arrival cover photo" />
+      <BannerSection imageUrl="/assets/images/cover-images/70.jpg" altText="visa on arrival cover photo" />
       <Breadcrumb
         items={[
           { label: "မူလစာမျက်နှာ", href: "/mm/", icon: faHome },
