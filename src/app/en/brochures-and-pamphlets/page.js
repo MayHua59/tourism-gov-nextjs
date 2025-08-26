@@ -26,6 +26,90 @@ export default function BrochuresAndPamphlets() {
         <h1 className={styles.pageTitle}>Brochures</h1>
         <section id="tourism-brochures-content" className={styles.mt5}>
           <div className={styles.gridRow}>
+               <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/brochures-images/NayPyiTaw_Brochure.JPG"
+  alt="NayPyiTaw_Brochure"
+  className={styles.publicationImage}
+  width={400}
+  height={565}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>NayPyiTaw_Brochure</h4>
+                <a
+                  href="/assets/pdf/NayPyiTaw_Brochure.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/brochures-images/Yangon_Brochure.JPG"
+  alt="Yangon_Brochure"
+  className={styles.publicationImage}
+  width={400}
+  height={565}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Yangon_Brochure</h4>
+                <a
+                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+               <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/brochures-images/Mandalay_Brochure.JPG"
+  alt="Mandalay_Brochure"
+  className={styles.publicationImage}
+  width={400}
+  height={565}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Mandalay_Brochure</h4>
+                <a
+                  href="/assets/pdf/Mandalay_Brochure.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+              <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+               <Image
+  src="/assets/images/brochures-images/Bagan_Brochure.JPG"
+  alt="Bagan_Brochure"
+  className={styles.publicationImage}
+  width={400}
+  height={565}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Bagan_Brochure</h4>
+                <a
+                  href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                  <Image
@@ -47,27 +131,7 @@ export default function BrochuresAndPamphlets() {
                 </a>
               </div>
             </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-               <Image
-  src="/assets/images/brochures-images/Bagan_Brochure.JPG"
-  alt="Bagan_Brochure"
-  className={styles.publicationImage}
-  width={400}
-  height={565}
-  style={{ height: "auto" }}
-/>
-                <h4 className={styles.pdfTitle}>Bagan_Brochure</h4>
-                <a
-                  href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
+          
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
@@ -215,27 +279,7 @@ export default function BrochuresAndPamphlets() {
                 </a>
               </div>
             </div>
-             <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <Image
-  src="/assets/images/brochures-images/Mandalay_Brochure.JPG"
-  alt="Mandalay_Brochure"
-  className={styles.publicationImage}
-  width={400}
-  height={565}
-  style={{ height: "auto" }}
-/>
-                <h4 className={styles.pdfTitle}>Mandalay_Brochure</h4>
-                <a
-                  href="/assets/pdf/Mandalay_Brochure.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
+            
              <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
@@ -299,27 +343,7 @@ export default function BrochuresAndPamphlets() {
                 </a>
               </div>
             </div>
-             <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <Image
-  src="/assets/images/brochures-images/NayPyiTaw_Brochure.JPG"
-  alt="NayPyiTaw_Brochure"
-  className={styles.publicationImage}
-  width={400}
-  height={565}
-  style={{ height: "auto" }}
-/>
-                <h4 className={styles.pdfTitle}>NayPyiTaw_Brochure</h4>
-                <a
-                  href="/assets/pdf/NayPyiTaw_Brochure.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
+          
              <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
@@ -362,27 +386,7 @@ export default function BrochuresAndPamphlets() {
                 </a>
               </div>
             </div>
-             <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-                <Image
-  src="/assets/images/brochures-images/Putao_Brochure.JPG"
-  alt="Yangon_Brochure"
-  className={styles.publicationImage}
-  width={400}
-  height={565}
-  style={{ height: "auto" }}
-/>
-                <h4 className={styles.pdfTitle}>Yangon_Brochure</h4>
-                <a
-                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
+             
             
           </div>
         </section>

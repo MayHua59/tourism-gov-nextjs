@@ -29,7 +29,7 @@ export default function AseanTourismStandards() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="/assets/images/pdf-images/AMVS.jpg"
+                  src="/assets/images/pdf-images/AMVS.JPG"
                   alt="AMVS-Category-Event-Venue"
                   className={styles.publicationImage}
                   width={180}
@@ -38,7 +38,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>AMVS-Category-Event-Venue</h4>
                 <a
-                  href="/assets/pdf/abc.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSNHQDVV6Z0Q6TPT264QT4.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -59,7 +59,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN Tourism Standards Book</h4>
                 <a
-                  href="/assets/pdf/abc.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSPHMZ3AJBF03KQ32Y93ET.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -80,7 +80,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-CBT-Tourism-Standard-Binded-Jan-2022</h4>
                 <a
-                  href="/assets/pdf/abc.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSQ8XP1YTHRD6BXTKKRJKE.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -101,7 +101,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Clean-Tourist-City-Standard-rev</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSRP26J2STYXM0W99HY2PG.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -122,7 +122,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Ecotourism-Standard</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSSFN21XYDJJNF6VBKSYC6.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -143,7 +143,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Green-Hotel-Standard</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSTNKSP7HF1RH0T0GFW8DQ.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -164,7 +164,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-Homestay-Standard</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSVFJRG139YGZT616P818D.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -185,7 +185,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Exhibition-Venue</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSW2DXAAWQDMZD8RJZ2T5B.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -206,7 +206,7 @@ export default function AseanTourismStandards() {
                 />
                 <h4 className={styles.pdfTitle}>ASEAN-MICE-Venue-Standards-Meeting-Room</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSWSVNYN9FW5N2WP5NVTC3.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -227,7 +227,7 @@ export default function AseanTourismStandards() {
 />
                 <h4 className={styles.pdfTitle}>ASEAN-Public-Toilet-Standard</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSXEYN9DB4BY8VV9TWETP3.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -248,7 +248,7 @@ export default function AseanTourismStandards() {
 />
                 <h4 className={styles.pdfTitle}>ASEAN-Spa-Services-Standard-1</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSYPWQJQGX0ANTCGEGQ97N.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -269,7 +269,7 @@ export default function AseanTourismStandards() {
 />
                 <h4 className={styles.pdfTitle}>GREEN-HOTEL-BOOKLET-FOR-ATF-2016</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JSZEP66ZTK68ERQ9PCSJSE.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -290,7 +290,7 @@ export default function AseanTourismStandards() {
 />
                 <h4 className={styles.pdfTitle}>Homestay-Awardees-2016</h4>
                 <a
-                  href="/assets/pdf/Kyaing Tong Map.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3JT06FX6TH7CM6S2H807WJK.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
