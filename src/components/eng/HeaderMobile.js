@@ -138,7 +138,7 @@ const menuData = [
       { label: "Upcoming Events", href: "/en/upcoming-events" },
       { label: "News", href: "/en/news" },
       { label: "Announcements", href: "/en/announcements" },
-      { label: "Travel Advisory", href: "/en/coming-soon" },
+      // { label: "Travel Advisory", href: "/en/coming-soon" },
     ],
   },
   {
@@ -147,17 +147,17 @@ const menuData = [
       { label: "Duties & Responsibilities", href: "/en/duties" },
       { label: "Objectives", href: "/en/objectives" },
       { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
-      { label: "International Cooperation", href: "/en/coming-soon" },
-      {
-        label: "Tourism Business",
-        submenu: [
-          { label: "Doing Business in Myanmar", href: "/en/doing-business" },
-          { label: "Myanmar Investment Law", href: "/en/investment-law" },
-          { label: "Tourism Investment Opportunities", href: "/en/investment-opportunity" },
-          { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar" },
-          { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
-        ],
-      },
+      // { label: "International Cooperation", href: "/en/coming-soon" },
+      // {
+      //   label: "Tourism Business",
+      //   submenu: [
+      //     { label: "Doing Business in Myanmar", href: "/en/doing-business" },
+      //     { label: "Myanmar Investment Law", href: "/en/investment-law" },
+      //     { label: "Tourism Investment Opportunities", href: "/en/investment-opportunity" },
+      //     { label: "Why Invest in Myanmar", href: "/en/why-invest-in-myanmar" },
+      //     { label: "Foreign Investment in Hotels and commercial complexes", href: "/en/foreign-investment" },
+      //   ],
+      // },
       // {
       //   label: "Arrivals",
       //   submenu: [

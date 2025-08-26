@@ -138,7 +138,7 @@ const menuData = [
       { label: "ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ", href: "/mm/upcoming-events" },
       { label: "သတင်းများ", href: "/mm/news" },
       { label: "ကြေညာချက်များ", href: "/mm/announcements" },
-      { label: "ခရီးသွားအကြံပြုချက်", href: "/mm/coming-soon" },
+      // { label: "ခရီးသွားအကြံပြုချက်", href: "/mm/coming-soon" },
     ],
   },
   {
@@ -147,17 +147,17 @@ const menuData = [
       { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
       { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
       { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
-      { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
-      {
-        label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု",
-        submenu: [
+      // { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
+      // {
+      //   label: "ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု",
+      //   submenu: [
          
-          { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", href: "/mm/investment-law" },
-          { label: "ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", href: "/mm/investment-opportunity" },
-          { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", href: "/mm/why-invest-in-myanmar" },
-          { label: "ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာနိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု", href: "/mm/foreign-investment" },
-        ],
-      },
+      //     { label: "မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ", href: "/mm/investment-law" },
+      //     { label: "ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ", href: "/mm/investment-opportunity" },
+      //     { label: "ဘာကြောင့် ရင်းနှီးမြှုပ်နှံသင့်သလဲ", href: "/mm/why-invest-in-myanmar" },
+      //     { label: "ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာနိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု", href: "/mm/foreign-investment" },
+      //   ],
+      // },
       // {
       //   label: "ခရီးသွားဝင်ရောက်မှု",
       //   submenu: [
