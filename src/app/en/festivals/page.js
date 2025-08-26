@@ -1,3 +1,5 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "./Festivals.module.css";
@@ -5,14 +7,26 @@ import Link from "next/link";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchFestivalsList } from "@/lib/api/festival";
+import Loading from "@/components/Loading";
 
-export const metadata = {
-  title: "Festivals in Myanmar",
-  description: "Discover Myanmar&apos;s festivals and cultural celebrations.",
-};
+const MONTHS = [
+  "All Months","January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
-export default async function FestivalsPage() {
-  const { data: festivals } = await fetchFestivalsList();
+export default function FestivalsPage() {
+  const [selectedMonth, setSelectedMonth] = useState("");
+  const [festivals, setFestivals] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch festivals when page loads or selectedMonth changes
+  useEffect(() => {
+    setLoading(true);
+    fetchFestivalsList(1, 20, selectedMonth === "All Months" ? "" : selectedMonth)
+      .then(({ data }) => setFestivals(data || []))
+      .catch(() => setFestivals([]))
+      .finally(() => setLoading(false));
+  }, [selectedMonth]);
 
   return (
     <div className={styles.pageContainer}>
@@ -27,9 +41,27 @@ export default async function FestivalsPage() {
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.festivalTitle}>Festivals in Myanmar</h1>
-        {festivals.length === 0 ? (
-          <div className={styles.errorMessage}>
+        <div className={styles.headerRow}>
+          <h1 className={styles.festivalTitle}>Festivals in Myanmar</h1>
+          <div className={styles.monthSelectorWrapper}>
+            <select
+              value={selectedMonth}
+              onChange={e => setSelectedMonth(e.target.value)}
+              className={styles.monthSelector}
+            >
+              <option value="" disabled>
+    Choose Month&nbsp;&#128899;
+  </option>
+              {MONTHS.map(month => (
+                <option key={month} value={month}>{month}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+        {loading ? (
+          <Loading message="Loading Festivals..."/>
+        ) : festivals.length === 0 ? (
+          <div className="errorMessage">
             Sorry, we couldn&apos;t load festival data. Please try again later.
           </div>
         ) : (
@@ -58,23 +90,6 @@ export default async function FestivalsPage() {
                         : ""}
                     </span>
                   </div>
-                  {/* <div className={styles.festivalDesc}>
-                    <span
-                      dangerouslySetInnerHTML={{ __html: (festival.description || "").substring(0, 120) + "..." }}
-                    />
-                  </div> */}
-                  {/* {festival.gallery && festival.gallery.length > 0 && (
-                    <div className={styles.festivalGallery}>
-                      {festival.gallery.slice(0, 2).map((imgUrl, idx) => (
-                        <img
-                          key={imgUrl}
-                          src={imgUrl}
-                          alt={`Gallery image ${idx + 1}`}
-                          className={styles.festivalGalleryImg}
-                        />
-                      ))}
-                    </div>
-                  )} */}
                 </div>
               </Link>
             ))}
