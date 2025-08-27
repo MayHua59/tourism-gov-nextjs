@@ -159,7 +159,7 @@ export default function TourismLegislation() {
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
               <Image
-  src="/assets/images/pdf-images/လိုင်စင်ကြေး၊ လိုင်စင်အသစ်လဲလှယ်ကြေး၊ လိုင်စင်ဒဏ်ကြေးနှင့် ဝန်ဆောင်ကြေးများ.png"
+  src="/assets/images/pdf-images/လိုင်စင်ကြေး.png"
   alt="License Fees, Renewal Fees, Fines, and Service Fees"
   className={styles.legislationImage}
   width={180}
@@ -181,7 +181,7 @@ export default function TourismLegislation() {
             <div className={styles.gridCol}>
               <div className={styles.legislationSection}>
                <Image
-  src="/assets/images/pdf-images/ကြိုတင်ခွင့်ပြုချက်လျှောက်ထားခြင်းဆိုင်ရာအမိန့်.png"
+  src="/assets/images/pdf-images/ကြိုတင်.png"
   alt="Order regarding application for prior permission"
   className={styles.legislationImage}
   width={180}

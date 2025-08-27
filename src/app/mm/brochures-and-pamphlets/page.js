@@ -29,7 +29,7 @@ export default function BrochuresAndPamphlets() {
                <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-  src="/assets/images/brochures-images/NayPyiTaw_Brochure.JPG"
+  src="https://admin.tourism.gov.mm/storage/attachments/01K3MWTE8KFJK5VAMZNXBVT60W.JPG"
   alt="NayPyiTaw_Brochure"
   className={styles.publicationImage}
   width={400}
@@ -396,7 +396,7 @@ export default function BrochuresAndPamphlets() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-  src="/assets/images/pdf-images/နေပြည်တော်ရှိသွားရောက်လည်ပတ်နိုင်သောနေရာများ(Nay Pyi Taw Flyer (Myanmar)).JPG"
+  src="/assets/images/pdf-images/naypyitaw-flyer.JPG"
   alt="နေပြည်တော်ရှိသွားရောက်လည်ပတ်နိုင်သောနေရာများ(Nay Pyi Taw Flyer (Myanmar))"
   className={styles.publicationImage}
   width={220}
@@ -417,7 +417,7 @@ export default function BrochuresAndPamphlets() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                <Image
-  src="/assets/images/pdf-images/မကွေးတိုင်းဒေသကြီးတွင်းရှိ ထင်ရှားသောခရီးစဉ်ဒေသများ(Magway Pamphlet (Myanmar Version)).JPG"
+  src="/assets/images/pdf-images/magway-flyer.JPG"
   alt="မကွေးတိုင်းဒေသကြီးတွင်းရှိ ထင်ရှားသောခရီးစဉ်ဒေသများ(Magway Pamphlet (Myanmar Version))"
   className={styles.publicationImage}
   width={220}

@@ -29,7 +29,7 @@ export default function BrochuresAndPamphlets() {
                <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-  src="/assets/images/brochures-images/NayPyiTaw_Brochure.JPG"
+  src="https://admin.tourism.gov.mm/storage/attachments/01K3MWTE8KFJK5VAMZNXBVT60W.JPG"
   alt="NayPyiTaw_Brochure"
   className={styles.publicationImage}
   width={400}
