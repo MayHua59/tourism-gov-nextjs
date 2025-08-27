@@ -29,7 +29,7 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/d0jw5CBM/viber-image-2025-08-06-16-03-03-382.jpg"
+                  src="/assets/images/pdf-images/Tourism Statistics 2024.JPG"
                   alt="Tourism Statistics 2024"
                   className={styles.publicationImage}
                   width={180}
@@ -51,7 +51,7 @@ export default function TourismStatistics() {
              <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/rG92rmR5/viber-image-2025-08-06-16-03-02-563.jpg"
+                  src="/assets/images/pdf-images/Tourism Statistics 2023.JPG"
                   alt="Tourism Statistics 2023"
                   className={styles.publicationImage}
                   width={180}
@@ -73,7 +73,7 @@ export default function TourismStatistics() {
              <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/FkZtwkxR/viber-image-2025-08-06-16-03-04-085.jpg"
+                  src="/assets/images/pdf-images/Tourism Statistcs 2022.JPG"
                   alt="Tourism Statistics 2022"
                   className={styles.publicationImage}
                   width={180}
@@ -83,7 +83,7 @@ export default function TourismStatistics() {
                 />
                 <h4>Tourism Statistics 2022</h4>
                 <a
-                  href="https://drive.google.com/file/d/11zFwo47STn7QhyDIWSJ24W6rt-gxiNis/view"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MSEAG2EHE0AMQM5C54YFV5.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -95,7 +95,7 @@ export default function TourismStatistics() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-                  src="https://i.ibb.co/S74GL2cK/viber-image-2025-08-06-16-03-01-010.jpg"
+                  src="/assets/images/pdf-images/Tourism Statistics 2021.JPG"
                   alt="Tourism Statistics 2021"
                   className={styles.publicationImage}
                   width={180}

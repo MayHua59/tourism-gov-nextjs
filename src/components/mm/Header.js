@@ -128,7 +128,7 @@ const mainMenu = [
      
       // { label: "စွဲမက်ဖွယ်ရာပြည်မြန်မာ", href: "/mm/coming-soon" },
       { label: "လက်ကမ်းစာစောင်များ", href: "/mm/brochures-and-pamphlets" },
-      { label: "မြေပုံများ", href: "/mm/maps" }
+      { label: "ခရီးသွားလမ်းညွှန်မြေပုံများ", href: "/mm/maps" }
     ],
   },
   {

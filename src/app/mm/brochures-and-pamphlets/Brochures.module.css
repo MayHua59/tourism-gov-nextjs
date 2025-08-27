@@ -31,25 +31,20 @@
   margin-top: 2.2em;
 }
 .gridRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5em 2.5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5em;
   margin-top: 0.5em;
   margin-bottom: 2em;
-  justify-content: flex-start;
+  justify-items: stretch;
 }
 .gridCol {
-  flex: 0 1 250px;
-  min-width: 215px;
-  max-width: 270px;
   display: flex;
 }
 .publicationCard {
-  /* background: #fafbff; */
-  border: 1.5px solid #e3eaf6;
-  /* border-radius: 8px; */
-  /* box-shadow: 0 1px 6px 0 rgba(23, 102, 177, 0.06); */
-  padding: 1.7em 1.2em 1.2em 1.2em;
+  border: 1.5px solid #b4c3dc;
+  
+  padding: 0 0 1.2em 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -60,11 +55,10 @@
   box-shadow: 0 2px 12px 0 rgba(23,102,177,0.12);
 }
 .publicationImage {
-  width: 180px;
+  width: 100%;
   height: auto;
   object-fit: contain;
   margin-bottom: 1em;
-  /* border-radius: 6px; */
   background: #f6fafe;
 }
 .downloadLink {
@@ -93,6 +87,7 @@
  
 }
 
+/* Tablet: 2 columns */
 @media (max-width: 900px) {
   .container {
     padding: 18px 4vw;
@@ -101,6 +96,7 @@
     font-size: 1.3rem;
   }
   .gridRow {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.2em;
   }
   .publicationCard {
@@ -110,6 +106,7 @@
     font-size: 1rem;
   }
 }
+/* Mobile: 1 column */
 @media (max-width: 600px) {
   .container {
     padding: 12px 2vw;
@@ -118,7 +115,7 @@
     font-size: 1.15rem;
   }
   .gridRow {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1.3em;
   }
   .gridCol {

@@ -38,7 +38,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>NayPyiTaw_Brochure</h4>
                 <a
-                  href="/assets/pdf/NayPyiTaw_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJNDBVQ4MFK6BSB02JZ7FF.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -59,7 +59,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Yangon_Brochure</h4>
                 <a
-                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJR0NYSBY03FPBY8YHAE74.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -80,7 +80,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Mandalay_Brochure</h4>
                 <a
-                  href="/assets/pdf/Mandalay_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJH603GFYRS23HR9MJJYHB.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -101,7 +101,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Bagan_Brochure</h4>
                 <a
-                  href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJ9CKRGHNABP7E4F4E2MQA.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -122,7 +122,7 @@ export default function BrochuresAndPamphlets() {
                 />
                 <h4 className={styles.pdfTitle}>Ayeyarwady_Brochure</h4>
                 <a
-                  href="/assets/pdf/Ecotourism.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJ8QKCRZZER9W4ZBDPGVHB.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -144,7 +144,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>HpaAn_Brochure</h4>
                 <a
-                  href="/assets/pdf/Welcome to the Golden Land (English Version).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJA4EGYME4MR7GDM57DSYT.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -165,7 +165,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Hsipaw_Brochure</h4>
                 <a
-                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJB0HRYNH1Y7J1TRZKG9VM.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -186,7 +186,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Indawgyi_Brochure</h4>
                 <a
-                  href="/assets/pdf/Indawgyi_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJC77N6Y9F16ZQ00SKTE2G.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -205,9 +205,9 @@ export default function BrochuresAndPamphlets() {
   height={565}
   style={{ height: "auto" }}
 />
-                <h4 className={styles.pdfTitle}>Inlay_Brochure</h4>
+                <h4 className={styles.pdfTitle}>Inle_Brochure</h4>
                 <a
-                  href="/assets/pdf/Inlay_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJD211MEWCV84RZS6S8MWX.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -228,7 +228,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Kalaw_Brochure</h4>
                 <a
-                  href="/assets/pdf/Kalaw_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJDVFXSA50C1EJVBYM4473.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -249,7 +249,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>KyaingTong_Brochure</h4>
                 <a
-                  href="/assets/pdf/KyaingTong_BrochureKyaingTong_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJET0W6TRCXZWS15E9YXVX.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -270,7 +270,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Loikaw_Brochure</h4>
                 <a
-                  href="/assets/pdf/Loikaw_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJFK8Y6HMS82WCJFRY597X.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -292,7 +292,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Mogok_Brochure</h4>
                 <a
-                  href="/assets/pdf/Mogok_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJHV24QWXZYJ5PXC60764C.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -313,7 +313,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>MountVictoria_Brochure</h4>
                 <a
-                  href="/assets/pdf/MountVictoria_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJMNBEB819Z6ZAZZS84T62.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -334,7 +334,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Myeik_Brochure</h4>
                 <a
-                  href="/assets/pdf/Myeik_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MKPFF0J8QCPB0WJE50D4C0.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -356,7 +356,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Ngapali_Brochure</h4>
                 <a
-                  href="/assets/pdf/Ngapali_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJP3HHNE2WSC05PZ9N4NFM.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -377,7 +377,7 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Putao_Brochure</h4>
                 <a
-                  href="/assets/pdf/Putao_Brochure.pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MJPS9D71KBEGA6CZABRQ3F.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -396,37 +396,16 @@ export default function BrochuresAndPamphlets() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-  src="/assets/images/pdf-images/Ecotourism.JPG"
-  alt="Ecotourism"
+  src="/assets/images/pdf-images/Welcome to the Golden Land (China Version).JPG"
+  alt="Welcome to the Golden Land (China Version)"
   className={styles.publicationImage}
   width={220}
   height={320}
   style={{ height: "auto" }}
 />
-                <h4 className={styles.pdfTitle}>Ecotourism</h4>
+                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (China Version)</h4>
                 <a
-                  href="/assets/pdf/Ecotourism.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  className={styles.downloadLink}
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
-            <div className={styles.gridCol}>
-              <div className={styles.publicationCard}>
-               <Image
-  src="/assets/images/pdf-images/Nay Pyi Taw Flyer (Eng QR).JPG"
-  alt="Nay Pyi Taw Flyer (Eng QR)"
-  className={styles.publicationImage}
-  width={220}
-  height={320}
-  style={{ height: "auto" }}
-/>
-                <h4 className={styles.pdfTitle}>Nay Pyi Taw Flyer (Eng QR)</h4>
-                <a
-                  href="/assets/pdf/Nay Pyi Taw Flyer (Eng QR).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MM0D7TTX3GGQ9NRQK59ZFY.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -447,7 +426,71 @@ export default function BrochuresAndPamphlets() {
 />
                 <h4 className={styles.pdfTitle}>Welcome to the Golden Land (English Version)</h4>
                 <a
-                  href="/assets/pdf/Welcome to the Golden Land (English Version).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MM44H6TDPG215KN588BHMW.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            
+            <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/pdf-images/Welcome to the Golden Land (Russian Version).JPG"
+  alt="Welcome to the Golden Land (Russian Version)"
+  className={styles.publicationImage}
+  width={220}
+  height={320}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (Russian Version)</h4>
+                <a
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MM7H035BR7YKFP2A1J9KDK.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+              <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/pdf-images/Welcome to the Golden Land (Thai Version).JPG"
+  alt="Welcome to the Golden Land (Thai Version)"
+  className={styles.publicationImage}
+  width={220}
+  height={320}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (Thai Version)</h4>
+                <a
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MM8H4HN7DHV2986ZPEARX5.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+             <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+               <Image
+  src="/assets/images/pdf-images/Nay Pyi Taw Flyer (Eng QR).JPG"
+  alt="Nay Pyi Taw Flyer (Eng QR)"
+  className={styles.publicationImage}
+  width={220}
+  height={320}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Nay Pyi Taw Flyer (Eng QR)</h4>
+                <a
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MKZK7Z029XD1KB73JZ1E09.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -459,16 +502,16 @@ export default function BrochuresAndPamphlets() {
             <div className={styles.gridCol}>
               <div className={styles.publicationCard}>
                 <Image
-  src="/assets/images/pdf-images/Welcome to the Golden Land (China Version).JPG"
-  alt="Welcome to the Golden Land (China Version)"
+  src="/assets/images/pdf-images/Magway(english).JPG"
+  alt="Magway Pamphlet (English Version)"
   className={styles.publicationImage}
   width={220}
   height={320}
   style={{ height: "auto" }}
 />
-                <h4 className={styles.pdfTitle}>Welcome to the Golden Land (China Version)</h4>
+                <h4 className={styles.pdfTitle}>Magway Pamphlet (English Version)</h4>
                 <a
-                  href="/assets/pdf/Welcome to the Golden Land (China Version).pdf"
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MKZ0WJSDAWEEVM5GM76R48.pdf"
                   target="_blank"
                   rel="noopener"
                   className={styles.downloadLink}
@@ -477,7 +520,31 @@ export default function BrochuresAndPamphlets() {
                 </a>
               </div>
             </div>
-            {/* Add more publication cards here */}
+           
+            
+            
+              <div className={styles.gridCol}>
+              <div className={styles.publicationCard}>
+                <Image
+  src="/assets/images/pdf-images/Ecotourism.JPG"
+  alt="Ecotourism"
+  className={styles.publicationImage}
+  width={220}
+  height={320}
+  style={{ height: "auto" }}
+/>
+                <h4 className={styles.pdfTitle}>Ecotourism</h4>
+                <a
+                  href="https://admin.tourism.gov.mm/storage/attachments/01K3MKY908D7QZKMWZPS8XRV3T.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.downloadLink}
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            
           </div>
         </section>
       </div>

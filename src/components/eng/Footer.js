@@ -38,8 +38,8 @@ export default function Footer() {
               <ul>
                 <li><Link href="/en/news">News</Link></li>
                 <li><Link href="/en/announcements">Announcements</Link></li>
-                <li><Link href="/en/coming-soon">Accommodation</Link></li>
-                <li><Link href="/en/coming-soon">Tour</Link></li>
+                <li><Link href="/en/hotels-and-resorts">Accommodation</Link></li>
+                <li><Link href="/en/festivals">Festivals</Link></li>
               </ul>
             </div>
           </div>

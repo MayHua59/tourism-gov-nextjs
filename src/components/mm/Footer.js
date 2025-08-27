@@ -38,8 +38,8 @@ export default function Footer() {
               <ul>
                 <li><Link href="/mm/news">သတင်းများ</Link></li>
                 <li><Link href="/mm/announcements">ကြေညာချက်များ</Link></li>
-                <li><Link href="/mm/coming-soon">တည်းခိုနေထိုင်ရေး</Link></li>
-                <li><Link href="/mm/coming-soon">ခရီးစဉ်များ</Link></li>
+                <li><Link href="/mm/hotels-and-resorts">တည်းခိုနေထိုင်ရေး</Link></li>
+                <li><Link href="/mm/festivals">ဆယ့်နှစ်လရာသီပွဲတော်များ</Link></li>
               </ul>
             </div>
           </div>
