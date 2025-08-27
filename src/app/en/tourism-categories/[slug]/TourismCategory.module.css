@@ -1,0 +1,132 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+.pageTitle {
+  font-size: 2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  text-align: center;
+}
+.mt5 {
+  margin-top: 2.5em;
+}
+.tourismList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.tourismCard {
+  border: 1px solid #e0e9f2;
+  /* background: linear-gradient(135deg, #f9fbfd 70%, #eaf3fa 100%); */
+  box-shadow: 0 4px 24px rgba(23,102,177,0.09);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+/* .tourismCard:hover {
+  box-shadow: 0 8px 32px rgba(23,102,177,0.16);
+  transform: translateY(-4px) scale(1.01);
+  border-color: #1766b1;
+} */
+.tourismCardContent {
+  padding: 28px 24px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tourismTitle {
+  font-size: 1.3rem;
+  color: #1766b1;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+.tourismDesc {
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.noTourism {
+  text-align: center;
+  color: #888;
+  font-size: 1.1em;
+  padding: 32px 0;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .tourismList {
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+  }
+  .tourismCard {
+    width: 98vw;
+    max-width: 420px;
+  }
+  .tourismCardContent {
+    padding: 0.8em 0.7em 0.9em 0.7em;
+  }
+  .tourismTitle {
+    font-size: 1.1rem;
+  }
+  .tourismDesc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .pageTitle {
+    font-size: 1.15rem;
+  }
+  .tourismList {
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+  }
+  .tourismCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .tourismCardContent {
+    padding: 0.7em 0.5em 0.8em 0.5em;
+  }
+  .tourismTitle {
+    font-size: 1.1rem;
+  }
+  .tourismDesc {
+    font-size: 1rem;
+  }
+}
