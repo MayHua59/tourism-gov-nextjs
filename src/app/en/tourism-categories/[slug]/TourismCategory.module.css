@@ -56,11 +56,17 @@
   flex-direction: column;
   gap: 10px;
 }
+.divisionTitle {
+  margin-top: 2.5em;
+  font-size: 1.5rem;
+  color: #1766b1;
+  font-weight: bold;
+}
 .tourismTitle {
   font-size: 1.3rem;
   color: #1766b1;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 5px;
   letter-spacing: 0.01em;
 }
 .tourismDesc {
@@ -100,6 +106,9 @@
   .tourismDesc {
     font-size: 1rem;
   }
+  .divisionTitle {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -123,7 +132,7 @@
   .tourismCardContent {
     padding: 0.7em 0.5em 0.8em 0.5em;
   }
-  .tourismTitle {
+  .tourismTitle, .divisionTitle {
     font-size: 1.1rem;
   }
   .tourismDesc {
