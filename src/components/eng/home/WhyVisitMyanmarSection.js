@@ -52,9 +52,9 @@ export default function WhyVisitMyanmarSection() {
                 infrastructure while preserving Myanmar&apos;s cultural heritage and natural environment for future generations.
               </p>
               <ul className={styles.chooseItemStyle}>
-                <li>Over 4.3 million international arrivals in 2019</li>
+                {/* <li>Over 4.3 million international arrivals in 2019</li> */}
                 <li>50% increase in hotel rooms since 2011</li>
-                <li>8 sites on UNESCO&apos;s Tentative List</li>
+                <li>15 sites on UNESCO&apos;s Tentative List</li>
               </ul>
             </div>
           </div>

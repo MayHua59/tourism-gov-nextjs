@@ -17,7 +17,7 @@ const places = [
       "Experience the unique culture of Intha fishermen and floating villages on Myanmar's second largest lake, surrounded by mountains.",
   },
   {
-    img: "/assets/images/cover-images/sea.jpg",
+    img: "/assets/images/cover-images/ngapali-beach.jpg",
     alt: "Ngapali Beach",
     title: "Ngapali Beach",
     desc:

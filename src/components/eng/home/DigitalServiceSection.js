@@ -3,16 +3,16 @@ import { FaNotesMedical, FaChartLine, FaHotel } from "react-icons/fa";
 import styles from "./DigitalServiceSection.module.css";
 
 const digitalServices = [
-  {
-    href: "https://hsp.tourism.gov.mm/home",
-    icon: <FaNotesMedical />,
-    title: "Health and Safety Protocols",
-    description: "Enchanting Myanmar: Health and Safety Protocol For Safe Tourism Myanmar",
-  },
+  // {
+  //   href: "https://hsp.tourism.gov.mm/home",
+  //   icon: <FaNotesMedical />,
+  //   title: "Health and Safety Protocols",
+  //   description: "Enchanting Myanmar: Health and Safety Protocol For Safe Tourism Myanmar",
+  // },
   {
     href: "https://payment.tourism.gov.mm/",
     icon: <FaChartLine />,
-    title: "Tourism Payment Portal",
+    title: "Tourism Payment System",
     description: "Your direct link to conveniently and securely handle all payments for tourism services.",
   },
   {

@@ -3,16 +3,16 @@ import { FaNotesMedical, FaChartLine, FaHotel } from "react-icons/fa";
 import styles from "./DigitalServiceSection.module.css";
 
 const digitalServices = [
-  {
-    href: "https://hsp.tourism.gov.mm/home",
-    icon: <FaNotesMedical />,
-    title: "ကျန်းမာရေးနှင့် ဘေးအန္တရာယ်ကင်းရှင်းရေး လုပ်ထုံးလုပ်နည်းများ",
-    description: "ဆွဲဆောင်ဖွယ်ရာ မြန်မာပြည် ခရီးသွားဧည့်သည်များ ဘေးကင်းလုံခြုံစွာ လည်ပတ်နိုင်ရေးကျန်းမာရေးနှင့် လုံခြုံရေး လမ်းညွှန်ချက်များ",
-  },
+  // {
+  //   href: "https://hsp.tourism.gov.mm/home",
+  //   icon: <FaNotesMedical />,
+  //   title: "ကျန်းမာရေးနှင့် ဘေးအန္တရာယ်ကင်းရှင်းရေး လုပ်ထုံးလုပ်နည်းများ",
+  //   description: "ဆွဲဆောင်ဖွယ်ရာ မြန်မာပြည် ခရီးသွားဧည့်သည်များ ဘေးကင်းလုံခြုံစွာ လည်ပတ်နိုင်ရေးကျန်းမာရေးနှင့် လုံခြုံရေး လမ်းညွှန်ချက်များ",
+  // },
   {
     href: "https://payment.tourism.gov.mm/",
     icon: <FaChartLine />,
-    title: "ခရီးသွားလာရေး ငွေပေးချေမှု ပေါ်တယ်လ်",
+    title: "ခရီးသွားလာရေး ငွေပေးချေမှု စနစ်",
     description: "ခရီးသွားလာရေး ဝန်ဆောင်မှုများအတွက် ငွေပေးချေမှုအားလုံးကို အဆင်ပြေပြေနှင့် လုံခြုံစွာ ကိုင်တွယ်ဆောင်ရွက်ရန် သင့်တိုက်ရိုက်ချိတ်ဆက်မှု။",
   },
   {
