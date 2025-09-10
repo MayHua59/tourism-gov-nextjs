@@ -81,6 +81,95 @@
   font-size: 1.1em;
   padding: 32px 0;
 }
+/*
+* ========================================
+* Component: Gallery
+* ========================================
+*/
+
+.gallerySection {
+  padding: 2rem 0;
+}
+
+.galleryTitle {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+.galleryTitle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+}
+
+/* Always one column for galleryGrid */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.galleryCard {
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.galleryCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #4584e9, #9ddbe5);
+}
+.galleryItemTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.cardBody {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carouselWrapper {
+  flex: 1;
+}
+.carouselWrapper img {
+  border-radius: 1rem !important;
+}
+
+.galleryDescription {
+  flex: 1;
+  font-size: 0.7rem !important;
+  color: #666;
+  line-height: 1.7;
+  text-align: left;
+}
+.galleryDescription p {
+  text-align: justify;
+}
+
+
 @media (max-width: 900px) {
   .container {
     padding: 18px 4vw;

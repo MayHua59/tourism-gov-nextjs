@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
+import ImageCarousel from "@/components/ImageCarousel"; 
 import styles from "./TourismCategory.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { fetchTourismDetail } from "@/lib/api/tourism";
@@ -64,20 +65,42 @@ export default async function TourismCategoryPage({ params }) {
                           />
                         )}
                       </div>
-                      <div className={styles.tourismCardContent}>
-                        <h4 className={styles.tourismTitle}>{item.name}</h4>
-                        <div
-                          className={styles.tourismDesc}
-                          dangerouslySetInnerHTML={{ __html: item.description || "" }}
-                        />
-                      </div>
+                      {item.images && item.images.length > 0 ? (
+                        <section className={styles.gallerySection}>
+                        
+                          <div className={styles.galleryGrid}>
+                            <div className={styles.galleryCard}>
+                              <div className={styles.cardHeader}>
+                                <h3 className={styles.galleryItemTitle}>{item.name}</h3>
+                              </div>
+                              <div className={styles.cardBody}>
+                                <div className={styles.carouselWrapper}>
+                                  <ImageCarousel images={item.images} />
+                                </div>
+                                <div
+                                  className={styles.galleryDescription}
+                                  dangerouslySetInnerHTML={{ __html: item.description || "" }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      ) : (
+                        <div className={styles.tourismCardContent}>
+                          <h4 className={styles.tourismTitle}>{item.name}</h4>
+                          <div
+                            className={styles.tourismDesc}
+                            dangerouslySetInnerHTML={{ __html: item.description || "" }}
+                          />
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
               </div>
             ))
           ) : (
-            <div className={styles.noTourism}>No tourism sites found.</div>
+            <div className={styles.noTourism}></div>
           )}
         </section>
       </div>
