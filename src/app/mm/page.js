@@ -12,6 +12,8 @@ import TravelerInformationSection from "../../components/mm/home/TravelerInforma
 import TourismNewsSection from "../../components/mm/home/TourismNewsSection";
 import LatestNewsSection from "../../components/mm/home/LatestNewsSection";
 import LatestAnnouncementsSection from "@/components/mm/home/LatestAnnouncementsSection";
+import Marquee from '@/components/eng/Marquee';
+import Countdown from '@/components/eng/Countdown';
 
 const Page = () => {
   return (
@@ -20,6 +22,19 @@ const Page = () => {
 
 
       <HeroSectionMM />
+         <Marquee speed={10} direction="left">
+      World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)
+    </Marquee>
+     <Countdown
+      end="2025-09-27T09:30:00"
+      message="World Tourism Day 2025
+(Tourism And Sustainable Transformation)"
+      logo="/assets/images/logo-images/world-tourism-day.png"
+      finishedMessage="The event has started!"
+    />
       <AboutSection />
       <WeatherWidget />
       <DigitalServiceSection />

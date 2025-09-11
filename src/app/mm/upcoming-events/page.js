@@ -8,6 +8,8 @@ import { faHome, faCalendar, faMapMarkerAlt } from "@fortawesome/free-solid-svg-
 import { fetchUpcomingEventsList } from "../../../lib/api/mm-site/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loading from "../../../components/Loading";
+import Marquee from '@/components/eng/Marquee';
+import Countdown from '@/components/eng/Countdown';
 
 // export const metadata = {
 //   title: "Upcoming Events",
@@ -78,6 +80,19 @@ export default function UpcomingEvents() {
           { label: "ကျင်းပမည့်ပွဲနှင့်အခမ်းအနားများ", active: true }
         ]}
       />
+        <Marquee speed={10} direction="left">
+      World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)
+    </Marquee>
+     <Countdown
+      end="2025-09-27T09:30:00"
+      message="World Tourism Day 2025
+(Tourism And Sustainable Transformation)"
+      logo="/assets/images/logo-images/world-tourism-day.png"
+      finishedMessage="The event has started!"
+    />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>ကျင်းပမည့်ပွဲနှင့်အခမ်းအနားများ</h1>
         {loading && <Loading  size="large" />}
