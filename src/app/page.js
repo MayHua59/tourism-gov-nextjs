@@ -33,8 +33,9 @@ export default function HomePage() {
     </Marquee>
     <Countdown
       end="2025-09-27T09:30:00"
-      message="World Tourism Day 2025
-(Tourism And Sustainable Transformation)"
+      message="WORLD TOURISM DAY 2025"
+slogan="(TOURISM AND SUSTAINABLE TRANSFORMATION)"
+dateText="27-9-2025"
       logo="/assets/images/logo-images/world-tourism-day.png"
       finishedMessage="The event has started!"
     />

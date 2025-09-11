@@ -80,16 +80,20 @@ export default function UpcomingEvents() {
           { label: "ကျင်းပမည့်ပွဲနှင့်အခမ်းအနားများ", active: true }
         ]}
       />
-        <Marquee speed={10} direction="left">
-      World Tourism Day 2025
-(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
-(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
-(Tourism And Sustainable Transformation)
+           <Marquee speed={10} direction="left">
+      ၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့) &nbsp;&nbsp;&nbsp;&nbsp;၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့) &nbsp;&nbsp;&nbsp;&nbsp;၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)
     </Marquee>
      <Countdown
       end="2025-09-27T09:30:00"
-      message="World Tourism Day 2025
-(Tourism And Sustainable Transformation)"
+      message="၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့"
+slogan="(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)"
+dateText="၂၇-၉-၂၀၂၅"
       logo="/assets/images/logo-images/world-tourism-day.png"
       finishedMessage="The event has started!"
     />

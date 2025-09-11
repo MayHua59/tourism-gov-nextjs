@@ -53,7 +53,7 @@ const Countdown = ({
           handleFinish();
         }
       }
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, [start, end, finished]);
