@@ -22,9 +22,22 @@
 
 .message {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: #333;
   margin-bottom: 1rem;
-  color: #000;
+}
+
+.slogan {
+  font-size: 1.25rem;
+  font-weight: 300; 
+  color: #007bff; 
+  
+}
+
+.dateText {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .countdown {

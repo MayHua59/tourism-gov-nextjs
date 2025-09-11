@@ -18,6 +18,8 @@ const Countdown = ({
   start,
   end,
   message = "Countdown",
+  slogan,
+  dateText,
   logo,
   finishedMessage = "Countdown finished!",
   removeDelay = 5000, // ms: how long to show message after finish
@@ -62,6 +64,8 @@ const Countdown = ({
     <div className={styles.container}>
       {logo && <img src={logo} alt="Logo" className={styles.logo} />}
       <div className={styles.message}>{message}</div>
+     {slogan && <div className={styles.slogan}>{slogan}</div>}
+      {dateText && <div className={styles.dateText}>{dateText}</div>}
       {!started ? (
         <div className={styles.notStarted}>Countdown not started yet.</div>
       ) : finished ? (
