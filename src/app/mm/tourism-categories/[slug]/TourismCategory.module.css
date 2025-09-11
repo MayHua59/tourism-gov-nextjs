@@ -1,104 +1,341 @@
+/* Base Container Styles */
 .pageContainer {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 992px) {
-  .pageContainer {
-    padding-top: 60px;
-  }
-}
-@media screen and (max-width: 448px) {
-  .pageContainer {
-    padding-top: 100px;
-  }
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px 16px;
   background: #fff;
 }
+
 .pageTitle {
   font-size: 2rem;
   color: #1766b1;
   font-weight: bold;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
-  margin-top: 8px;
+  margin: 8px 0 20px 0;
   text-align: center;
 }
+
 .mt5 {
   margin-top: 2.5em;
 }
+
+/* Tourism List & Card */
 .tourismList {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
 .tourismCard {
   border: 1px solid #e0e9f2;
-  /* background: linear-gradient(135deg, #f9fbfd 70%, #eaf3fa 100%); */
-  box-shadow: 0 4px 24px rgba(23,102,177,0.09);
+  box-shadow: 0 4px 24px rgba(23, 102, 177, 0.09);
   display: flex;
   flex-direction: column;
   padding: 0;
   transition: box-shadow 0.2s, transform 0.2s;
   position: relative;
 }
-/* .tourismCard:hover {
-  box-shadow: 0 8px 32px rgba(23,102,177,0.16);
-  transform: translateY(-4px) scale(1.01);
-  border-color: #1766b1;
-} */
+
 .tourismCardContent {
   padding: 28px 24px 22px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
+.divisionTitle {
+  margin-top: 2.5em;
+  font-size: 1.5rem;
+  color: #1766b1;
+  font-weight: bold;
+}
+
 .tourismTitle {
   font-size: 1.3rem;
   color: #1766b1;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 5px;
   letter-spacing: 0.01em;
 }
+
 .tourismDesc {
   font-size: 1.08rem;
   color: #222;
   line-height: 1.7;
   margin-bottom: 0;
 }
+
 .noTourism {
   text-align: center;
   color: #888;
   font-size: 1.1em;
   padding: 32px 0;
 }
+
+.tourismImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 2px 8px rgba(23, 102, 177, 0.08);
+  background: #e0e9f2;
+  display: block;
+}
+
+/* Gallery Component */
+.gallerySection {
+  padding: 2rem 0;
+}
+
+.galleryTitle {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.galleryTitle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.galleryCard {
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cardHeader {
+  text-align: center;
+  padding: 0;
+}
+
+.galleryItemTitle {
+  font-size: 1.3rem;
+  color: #1766b1;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.cardBody {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carouselWrapper {
+  flex: 1;
+}
+
+.galleryDescription {
+  flex: 1;
+  font-size: 0.7rem !important;
+  color: #666;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.galleryDescription p {
+  text-align: justify;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+
+  .gallerySection {
+    padding: 3rem 0;
+  }
+
+  .galleryTitle {
+    font-size: 2rem;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cardHeader {
+    padding: 0 1.5rem;
+  }
+
+  .galleryItemTitle {
+    font-size: 1rem;
+  }
+
+  .galleryDescription {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .cardImageWrapper {
+    height: 8rem;
+  }
+
+  .cardBody {
+    padding: 0.75rem;
+    font-size: 0.96rem;
+  }
+
+  .mainContent {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gallerySection {
+    padding: 2rem 0;
+  }
+
+  .galleryTitle {
+    font-size: 1.8rem;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardHeader {
+    padding: 1rem 1.5rem;
+  }
+
+  .galleryItemTitle {
+    font-size: 1rem;
+  }
+
+  .galleryDescription {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .mainContent {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .gallerySection {
+    padding: 0;
+  }
+
+  .mainContent,
+  .regionDescriptionWrapper {
+    max-width: 100%;
+    padding: 20px 5px;
+  }
+
+  .galleryDescription {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardBody {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .carouselWrapper,
+  .galleryDescription {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .galleryDescription {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallerySection {
+    padding: 2rem 0;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .galleryTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .gallerySection {
+    padding: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .container {
     padding: 18px 4vw;
   }
+
   .pageTitle {
     font-size: 1.3rem;
   }
+
   .tourismList {
     gap: 1.2em;
     align-items: center;
     justify-content: center;
   }
+
   .tourismCard {
     width: 98vw;
-    max-width: 420px;
+    /* max-width: 420px; */
   }
+
   .tourismCardContent {
     padding: 0.8em 0.7em 0.9em 0.7em;
   }
-  .tourismTitle {
+
+  .tourismTitle,
+  .galleryItemTitle {
     font-size: 1.1rem;
   }
+
   .tourismDesc {
     font-size: 1rem;
+  }
+
+  .divisionTitle {
+    font-size: 1.1rem;
   }
 }
 
@@ -106,26 +343,34 @@
   .container {
     padding: 12px 2vw;
   }
+
   .pageTitle {
     font-size: 1.15rem;
   }
+
   .tourismList {
     flex-direction: column;
     gap: 1.2em;
     align-items: center;
     justify-content: center;
   }
+
   .tourismCard {
     width: 100%;
     min-width: 0;
     max-width: 100%;
   }
+
   .tourismCardContent {
     padding: 0.7em 0.5em 0.8em 0.5em;
   }
-  .tourismTitle {
+
+  .tourismTitle,
+  .divisionTitle,
+  .galleryItemTitle {
     font-size: 1.1rem;
   }
+
   .tourismDesc {
     font-size: 1rem;
   }
