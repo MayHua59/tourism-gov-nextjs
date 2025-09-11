@@ -22,7 +22,7 @@ const Countdown = ({
   dateText,
   logo,
   finishedMessage = "Countdown finished!",
-  removeDelay = 5000, // ms: how long to show message after finish
+  removeDelay = 3000, // ms: how long to show message after finish
 }) => {
   const startDate = start ? new Date(start) : new Date();
   const endDate = new Date(end);
@@ -53,7 +53,7 @@ const Countdown = ({
           handleFinish();
         }
       }
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, [start, end, finished]);
