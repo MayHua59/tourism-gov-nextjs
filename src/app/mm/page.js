@@ -12,6 +12,8 @@ import TravelerInformationSection from "../../components/mm/home/TravelerInforma
 import TourismNewsSection from "../../components/mm/home/TourismNewsSection";
 import LatestNewsSection from "../../components/mm/home/LatestNewsSection";
 import LatestAnnouncementsSection from "@/components/mm/home/LatestAnnouncementsSection";
+import Marquee from '@/components/eng/Marquee';
+import Countdown from '@/components/eng/Countdown';
 
 const Page = () => {
   return (
@@ -20,6 +22,23 @@ const Page = () => {
 
 
       <HeroSectionMM />
+         <Marquee speed={10} direction="left">
+      ၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့) &nbsp;&nbsp;&nbsp;&nbsp;၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့) &nbsp;&nbsp;&nbsp;&nbsp;၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့
+
+(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)
+    </Marquee>
+     <Countdown
+      end="2025-09-27T09:30:00"
+      message="၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့"
+slogan="(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)"
+dateText="၂၇-၉-၂၀၂၅"
+      logo="/assets/images/logo-images/world-tourism-day.png"
+      finishedMessage="The event has started!"
+    />
       <AboutSection />
       <WeatherWidget />
       <DigitalServiceSection />

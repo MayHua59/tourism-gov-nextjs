@@ -8,6 +8,8 @@ import { faHome, faCalendar,faMapMarkerAlt } from "@fortawesome/free-solid-svg-i
 import { fetchUpcomingEventsList } from "../../../lib/api/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loading from "../../../components/Loading";
+import Marquee from '@/components/eng/Marquee';
+import Countdown from '@/components/eng/Countdown';
 
 // export const metadata = {
 //   title: "Upcoming Events",
@@ -78,6 +80,20 @@ export default function UpcomingEvents() {
           { label: "Upcoming Events", active: true }
         ]}
       />
+       <Marquee speed={10} direction="left">
+      World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
+(Tourism And Sustainable Transformation)
+    </Marquee>
+    <Countdown
+      end="2025-09-27T09:30:00"
+      message="WORLD TOURISM DAY 2025"
+slogan="(TOURISM AND SUSTAINABLE TRANSFORMATION)"
+dateText="27-9-2025"
+      logo="/assets/images/logo-images/world-tourism-day.png"
+      finishedMessage="The event has started!"
+    />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Upcoming Events</h1>
         {loading && <Loading  size="large" />}

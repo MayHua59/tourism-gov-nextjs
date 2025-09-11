@@ -6,6 +6,7 @@
   --background-light: #fff;
   --background-grey: #f7f7f7;
   --border-color: #eee;
+  --font-pyidaungsu: var(--font-pyidaungsu);
 }
 *,
 *::before,
@@ -16,6 +17,7 @@
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-pyidaungsu), 'Myanmar Pyidaungsu', Arial, sans-serif;
   color: var(--text-dark);
   background-color: var(--background-light);
   line-height: 1.6;
