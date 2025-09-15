@@ -28,25 +28,31 @@ export default function ImageCarousel({ images }) {
   }
 
   return (
-    <div className={styles.carouselContainer}> 
+    <div className={styles.carouselContainer}>
       <div className={styles.carousel}>
         {images.map((src, idx) => (
-          <div
-            className={`${styles.slide} ${idx === current ? styles.active : ""}`}
+          <a
+            href={src}
+            target="_blank"
+            rel="noopener noreferrer"
             key={src}
-            style={{ backgroundImage: `url(${src})` }}
+            tabIndex={idx === current ? 0 : -1}
+            style={{ display: idx === current ? "block" : "none" }}
             aria-hidden={idx !== current}
-          />
+          >
+            <div
+              className={`${styles.slide} ${idx === current ? styles.active : ""}`}
+              style={{ backgroundImage: `url(${src})` }}
+            />
+          </a>
         ))}
-        {images.length > 1 && ( // Only show dots if there's more than one image
+        {images.length > 1 && (
           <div className={styles.dots}>
             {images.map((_, idx) => (
               <span
                 key={idx}
                 className={`${styles.dot} ${idx === current ? styles.activeDot : ""}`}
-                onClick={() => {
-                  setCurrent(idx); // Allow manual navigation by clicking dots
-                }}
+                onClick={() => setCurrent(idx)}
               ></span>
             ))}
           </div>

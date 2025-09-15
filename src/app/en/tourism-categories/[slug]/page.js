@@ -92,11 +92,13 @@ export default async function TourismCategoryPage({ params }) {
                             className={styles.tourismDesc}
                             dangerouslySetInnerHTML={{ __html: item.description || "" }}
                           />
+                          
                         </div>
                       )}
                     </div>
                   ))}
                 </div>
+                
               </div>
             ))
           ) : (
