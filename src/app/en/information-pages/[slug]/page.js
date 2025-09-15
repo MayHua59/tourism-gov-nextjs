@@ -29,7 +29,7 @@ export default async function InformationPage({ params }) {
     try {
         data = await fetchInformationPageDetail(slug);
     } catch (error) {
-        return <div className="container py-5 text-danger">Failed to load page.</div>;
+        return <div className="container py-5 text-danger"></div>;
     }
 
     return (
@@ -48,7 +48,7 @@ export default async function InformationPage({ params }) {
             <div className={styles.container}>
                 <h1 className={styles.pageTitle}>{data.name}</h1>
                 <div
-                    className="mb-4"
+                    className={`mb-4 ${styles.descHeaders} ${styles.description}`}
                     dangerouslySetInnerHTML={{ __html: data.description }}
                 />
                 {data.gallery && data.gallery.length > 0 && (

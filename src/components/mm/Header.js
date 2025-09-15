@@ -11,12 +11,12 @@ const mainMenu = [
   {
     label: "အချက်အလက်",
     submenu: [
-      { label: "မြန်မာနိုင်ငံ အကြောင်း", href: "/mm/about-myanmar" },
+      { label: "မြန်မာနိုင်ငံ အကြောင်း", href: "/mm/information-pages/about-myanmar" },
       {
         label: "ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ",
         submenu: [
           { label: "အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း", href: "/mm/e-visa" },
-          { label: "ဗီဇာကင်းလွတ်ခွင့်", href: "/mm/visa-exemption" },
+          { label: "ဗီဇာကင်းလွတ်ခွင့်", href: "/mm/information-pages/visa-exemption" },
           { label: "ဆိုက်ရောက်ဗီဇာ", href: "/mm/visa-on-arrival" },
         ],
       },

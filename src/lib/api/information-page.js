@@ -5,6 +5,6 @@ const INFO_PAGE_API_URL = (slug) => `${API_ENDPOINT}/api/v1/information-pages/${
 export async function fetchInformationPageDetail(slug) {
   const url = INFO_PAGE_API_URL(slug);
   const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error("Failed to fetch information page detail");
+  if (!res.ok) throw new Error("  ");
   return await res.json();
 }
