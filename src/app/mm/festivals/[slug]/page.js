@@ -52,7 +52,7 @@ export default async function FestivalDetailPage({ params }) {
           </div>
           <div className={styles.festivalImageWrapper} style={{ marginBottom: 18 }}>
             <img
-              src={festival.cover_photo_url}
+              src={festival.cover_photo}
               alt={festival.name}
               className={styles.festivalImg}
             />

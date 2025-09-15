@@ -24,7 +24,7 @@
 }
 
 .pageTitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #1766b1;
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -36,15 +36,27 @@
   padding-left: 1.4em;
   list-style-type:disc
 }
+.description ol {
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  padding-left: 1.4em;
+}
 .description ul li {
-  margin-bottom: 0.6em;
+  margin-bottom: 1em;
   color: #232323;
-  font-size: 1.04rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
+.description ol li {
+  margin-bottom: 1em;
+  color: #232323;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 .descHeaders h1, .descHeaders h2, .descHeaders h3, .descHeaders h4, .descHeaders h5, .descHeaders h6{
   color: #1766b1;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .descHeaders p {
   font-size: 1rem;

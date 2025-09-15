@@ -29,7 +29,7 @@ export default async function InformationPage({ params }) {
     try {
         data = await fetchInformationPageDetail(slug);
     } catch (error) {
-        return <div className="container py-5 text-danger">Failed to load page.</div>;
+        return <div className="container py-5 text-danger"></div>;
     }
 
     return (
