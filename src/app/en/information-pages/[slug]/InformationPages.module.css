@@ -19,24 +19,42 @@
 .container {
     max-width: 1200px;
   margin: 0 auto;
-  padding: 32px 16px;
+  padding: 0 16px;
   background: #fff;
 }
 
 .pageTitle {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #1766b1;
   font-weight: bold;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
-  margin-top: 8px;
   text-align: center;
+}
+.description ul {
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  padding-left: 1.4em;
+  list-style-type:disc
+}
+.description ul li {
+  margin-bottom: 0.6em;
+  color: #232323;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+.descHeaders h1, .descHeaders h2, .descHeaders h3, .descHeaders h4, .descHeaders h5, .descHeaders h6{
+  color: #1766b1;
+  font-size: 1.8rem;
+}
+.descHeaders p {
+  font-size: 1rem;
 }
 .galleryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .galleryItem {
@@ -51,3 +69,5 @@
   object-fit: contain;
   display: block;
 }
+
+
