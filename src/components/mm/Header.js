@@ -78,7 +78,7 @@ const mainMenu = [
     label: "စိတ်ဝင်စားဖွယ်ရာများ",
     submenu: [
       { label: "ဆယ့်နှစ်လရာသီ ပွဲတော်များ", href: "/mm/festivals" },
-      { label: "သဘာဝအခြေခံခရီးသွားလုပ်ငန်း", href: "/mm/ecotourism" },
+      { label: "သဘာဝအခြေခံခရီးသွားလုပ်ငန်း", href: "/mm/tourism-categories/ecotourism" },
       { label: "ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း", href: "/mm/community-based-tourism" },
     ],
   },

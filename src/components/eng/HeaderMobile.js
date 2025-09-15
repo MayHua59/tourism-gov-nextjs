@@ -78,7 +78,7 @@ const menuData = [
     label: "Highlight",
     submenu: [
       { label: "Festivals", href: "/en/festivals" },
-      { label: "Ecotourism", href: "/en/ecotourism" },
+      { label: "Ecotourism", href: "/en/tourism-categories/ecotourism" },
       { label: "Community Based Tourism", href: "/en/community-based-tourism" },
     ],
   },
