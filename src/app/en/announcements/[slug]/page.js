@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
 import styles from "./AnnouncementDetail.module.css";
@@ -27,6 +27,7 @@ export default async function AnnouncementDetail({ params }) {
     announcement = await fetchAnnouncementDetail(params.slug);
   } catch (e) {
     error = "Sorry, we couldn't load this announcement item. Please try again later.";
+    redirect('/en/announcements');
   }
 
   if (!announcement && !error) return notFound();

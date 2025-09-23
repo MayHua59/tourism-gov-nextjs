@@ -101,7 +101,7 @@ export default function Announcements() {
       dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
     ></p>
     <div className={styles.readMoreWrapper}>
-      <span className={styles.readMoreBtn}>Read More</span>
+      <span className={styles.readMoreBtn}>ဆက်လက်ဖတ်ရှုရန်</span>
     </div>
   </div>
 </Link>
