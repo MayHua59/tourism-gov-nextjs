@@ -27,8 +27,8 @@ const LanguageSwitcher = ({
   };
 
   const languages = [
-    { code: 'en', name: 'English', flag: 'https://flagcdn.com/w40/gb.png', alt: 'UK Flag' },
-    { code: 'mm', name: 'Myanmar', flag: 'https://flagcdn.com/w40/mm.png', alt: 'Myanmar Flag' }
+    { code: 'en', name: 'English', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
+    { code: 'mm', name: 'Myanmar', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' }
   ];
 
   return (
