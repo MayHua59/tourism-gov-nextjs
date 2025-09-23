@@ -73,7 +73,7 @@ export default function News() {
         {loading && <Loading message="Fetching the latest news..." size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>} 
         {!loading && newsList.length === 0 && !error && (
-            <div className={styles.noNewsMessage}>No news found.</div>
+            <div className={styles.noNewsMessage}></div>
         )}
         <div className={styles.newsList}>
           {newsList.map((news) => (
