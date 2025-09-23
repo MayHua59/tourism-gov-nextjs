@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
 import styles from "./NewsDetail.module.css";
@@ -32,6 +32,7 @@ export default async function NewsDetail({ params }) {
     news = await fetchNewsDetail(params.slug);
   } catch (e) {
     error = "Sorry, we couldn't load this news item. Please try again later.";
+    redirect('/en/news');
   }
 
  if (!news && !error) return notFound();
