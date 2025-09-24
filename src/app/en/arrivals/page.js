@@ -26,9 +26,12 @@ const MONTHS = [
 function getYears(arrivals) {
   const years = new Set();
   arrivals.forEach(item => {
-    if (item.year) years.add(item.year);
-    // If your data uses a date field:
-    // if (item.date) years.add(item.date.split("-")[0]);
+    // Use month_and_year if available
+    if (item.month_and_year) {
+      years.add(item.month_and_year.split("-")[0]);
+    } else if (item.year) {
+      years.add(item.year);
+    }
   });
   return Array.from(years).sort((a, b) => b - a);
 }
@@ -44,8 +47,9 @@ export default function ArrivalsPage() {
   useEffect(() => {
     fetchArrivals()
       .then(res => {
-        setArrivals(res?.data || []);
-        setYears(getYears(res?.data || []));
+        const dataArr = Array.isArray(res?.data) ? res.data : [];
+        setArrivals(dataArr);
+        setYears(getYears(dataArr));
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -54,13 +58,20 @@ export default function ArrivalsPage() {
   useEffect(() => {
     let result = arrivals;
     if (selectedYear) {
-      result = result.filter(item => String(item.year) === selectedYear);
+      result = result.filter(item => {
+        const year = item.month_and_year
+          ? item.month_and_year.split("-")[0]
+          : item.year;
+        return String(year) === selectedYear;
+      });
     }
     if (selectedMonth) {
-      // If your data has a "month" property:
-      result = result.filter(item => String(item.month).padStart(2, "0") === selectedMonth);
-      // If your data uses "date" property in "YYYY-MM-DD" format, use:
-      // result = result.filter(item => item.date.split("-")[1] === selectedMonth);
+      result = result.filter(item => {
+        const month = item.month_and_year
+          ? item.month_and_year.split("-")[1]
+          : String(item.month).padStart(2, "0");
+        return month === selectedMonth;
+      });
     }
     setFiltered(result);
   }, [arrivals, selectedYear, selectedMonth]);
@@ -111,7 +122,7 @@ export default function ArrivalsPage() {
             <div>Loading...</div>
           ) : (
             <div style={{ overflowX: "auto" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse" }}>
+              <table className={styles.arrivalsTable} style={{ width: "100%", borderCollapse: "collapse" }}>
                 <thead>
                   <tr style={{ background: "#f7f7f7" }}>
                     <th style={{ border: "1px solid #ddd", padding: "0.5rem" }}>#</th>
@@ -119,7 +130,6 @@ export default function ArrivalsPage() {
                     <th style={{ border: "1px solid #ddd", padding: "0.5rem" }}>Year</th>
                     <th style={{ border: "1px solid #ddd", padding: "0.5rem" }}>Month</th>
                     <th style={{ border: "1px solid #ddd", padding: "0.5rem" }}>Description</th>
-                    {/* Add more columns as needed */}
                   </tr>
                 </thead>
                 <tbody>
@@ -128,20 +138,27 @@ export default function ArrivalsPage() {
                       <td colSpan={5} style={{ textAlign: "center", padding: "1rem" }}>No data found</td>
                     </tr>
                   )}
-                  {filtered.map((item, idx) => (
-                    <tr key={item.id}>
-                      <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{idx + 1}</td>
-                      <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{item.name}</td>
-                      <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{item.year}</td>
-                      <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>
-                        {MONTHS.find(m => m.value === String(item.month).padStart(2, "0"))?.label || item.month}
-                      </td>
-                      <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>
-                        <span dangerouslySetInnerHTML={{ __html: item.description }} />
-                      </td>
-                      
-                    </tr>
-                  ))}
+                  {filtered.map((item, idx) => {
+                    const year = item.month_and_year
+                      ? item.month_and_year.split("-")[0]
+                      : item.year;
+                    const month = item.month_and_year
+                      ? item.month_and_year.split("-")[1]
+                      : String(item.month).padStart(2, "0");
+                    return (
+                      <tr key={item.id}>
+                        <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{idx + 1}</td>
+                        <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{item.name}</td>
+                        <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>{year}</td>
+                        <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>
+                          {MONTHS.find(m => m.value === month)?.label || month}
+                        </td>
+                        <td style={{ border: "1px solid #ddd", padding: "0.5rem" }}>
+                          <span dangerouslySetInnerHTML={{ __html: item.description }} />
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

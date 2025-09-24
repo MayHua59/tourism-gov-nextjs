@@ -102,6 +102,11 @@
     font-style: italic;
     font-size: 0.9rem;
 }
+.arrivalsTable th,
+.arrivalsTable td {
+  text-align: left;
+  vertical-align: top;
+}
 
 /* For better mobile responsiveness */
 @media (max-width: 768px) {
