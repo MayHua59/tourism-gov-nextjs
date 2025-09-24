@@ -8,6 +8,7 @@ import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-s
 import Image from "next/image";
 import { fetchRegion } from '../../../../lib/api/mm-site/region';
 import { notFound } from 'next/navigation';
+import AttachmentTable from '@/components/AttachmentTable';
 
 async function getRegionData(slug) {
     try {
@@ -164,6 +165,9 @@ export default async function RegionDetailPage({ params }) {
                             </div>
                         </section>
                     )}
+                      {region.attachments && region.attachments.length > 0 && (
+                                                            <AttachmentTable attachments={region.attachments} />
+                                                          )}
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import styles from "./NewsDetail.module.css";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchNewsDetail } from "../../../../lib/api/mm-site/news";
+import AttachmentTable from "@/components/AttachmentTable";
 
 
 export async function generateMetadata({ params }) {
@@ -87,6 +88,10 @@ dangerouslySetInnerHTML={{ __html: news.description }}
 
         </div>
       )}
+
+       {news.attachments && news.attachments.length > 0 && (
+                              <AttachmentTable attachments={news.attachments} />
+                            )}
       </div>
     </div>
   );
