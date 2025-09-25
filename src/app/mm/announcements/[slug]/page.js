@@ -1,10 +1,11 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
 import styles from "./AnnouncementDetail.module.css";
 import { faHome, faBullhorn, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchAnnouncementDetail } from "../../../../lib/api/mm-site/announcement";
+import AttachmentTable from "@/components/AttachmentTable";
 
 export async function generateMetadata({ params }) {
   try {
@@ -27,6 +28,7 @@ export default async function AnnouncementDetail({ params }) {
     announcement = await fetchAnnouncementDetail(params.slug);
   } catch (e) {
     error = "Sorry, we couldn't load this announcement item. Please try again later.";
+    redirect('/mm/announcements');
   }
 
   if (!announcement && !error) return notFound();
@@ -81,6 +83,9 @@ export default async function AnnouncementDetail({ params }) {
             ></div>
           </div>
         )}
+         {announcement.attachments && announcement.attachments.length > 0 && (
+                          <AttachmentTable attachments={announcement.attachments} />
+                        )}
       </div>
     </div>
   );

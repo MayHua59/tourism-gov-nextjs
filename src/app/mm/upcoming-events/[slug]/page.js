@@ -5,6 +5,7 @@ import styles from "./UpcomingEventDetail.module.css";
 import { faHome, faCalendarAlt, faCalendarCheck, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchUpcomingEventDetail } from "../../../../lib/api/mm-site/upcoming-event";
+import AttachmentTable from "@/components/AttachmentTable";
 
 export async function generateMetadata({ params }) {
   params = await params;
@@ -87,6 +88,10 @@ dangerouslySetInnerHTML={{ __html: event.description }}
             </div>
           </div>
         )}
+
+        {event.attachments && event.attachments.length > 0 && (
+                                      <AttachmentTable attachments={event.attachments} />
+                                    )}
       </div>
     </div>
   );

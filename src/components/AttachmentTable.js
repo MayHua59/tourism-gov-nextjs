@@ -23,7 +23,7 @@ export default function AttachmentTable({ attachments }) {
               <tr key={att.id ?? idx}>
                 <td>{idx + 1}</td>
                 <td className={styles.fileName}>{att.file_name}</td>
-                <td>{(att.file_type || "").toUpperCase()}</td>
+                <td>{(att.file_type || "-").toUpperCase()}</td>
                 <td>
                   {typeof att.file_size === "number" ? `${att.file_size} MB` : "-"}
                 </td>

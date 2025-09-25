@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { useRouter, usePathname } from 'next/navigation';
 import styles from "./Header.module.css";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 
 const mainMenu = [
@@ -245,20 +246,7 @@ export default function Header() {
     };
   }, []);
 
-   const handleLanguageChange = (e) => {
-    const newLang = e.target.value;
-     let newPath;
-    
-    
-     if (pathname === '/') {
-        newPath = `/${newLang}`;
-    } else {
-       
-        newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
-    }
-
-    router.push(newPath);
-  };
+  
 
   return (
     <header className={styles.header}>
@@ -271,16 +259,12 @@ export default function Header() {
           />
         </a>
         <div className={styles.headerLangContainer}>
-          <select
-            className={styles.headerLang}
-            id="language-selector"
-            value={currentLang}
-            onChange={handleLanguageChange}
-          >
-            <option value="en">English</option>
-            <option value="mm">Myanmar</option>
-          </select>
-        </div>
+        <LanguageSwitcher 
+            size="medium" 
+            variant="flags" 
+            className={styles.headerLanguageSwitcher}
+          />
+</div>
       </div>
       <nav
         className={`${styles.headerNav} ${styles.headerBottom} border-bottom ${

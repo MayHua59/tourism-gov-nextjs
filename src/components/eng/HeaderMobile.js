@@ -6,6 +6,7 @@ import styles from "./HeaderMobile.module.css";
 import { useRouter, usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const menuData = [
   {
@@ -242,16 +243,9 @@ export default function HeaderMobile() {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 
- const handleLanguageChange = (e) => {
-    const newLang = e.target.value;
-    const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
-    router.push(newPath);
-  };
+ 
 
-  function changeLanguage(e) {
-    const lang = e.target.value;
-    
-  }
+  
 
   return (
     <>
@@ -267,16 +261,12 @@ export default function HeaderMobile() {
           </Link>
         </div>
         <div className={styles.rightGroup}>
-          {/* 8. Update the select element to be a controlled component */}
-          <select
-            className={styles.languageSelector}
-            id="language-selector-mobile"
-            value={currentLang}
-            onChange={handleLanguageChange}
-          >
-            <option value="en">English</option>
-            <option value="mm">Myanmar</option>
-          </select>
+          
+        <LanguageSwitcher 
+            size="small" 
+            variant="flags" 
+            className={styles.mobileLanguageSwitcher}
+          />
           <button
             className={`navbar-toggler ml-auto ${styles.toggler}`}
             type="button"
