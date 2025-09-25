@@ -1,6 +1,6 @@
-import { API_ENDPOINT } from "@/data/api_endpoint";
+import { API_ENDPOINT_MM } from "@/data/api_endpoint";
 
-const ARRIVALS_API_URL = `${API_ENDPOINT}/api/v1/travel-statics`;
+const ARRIVALS_API_URL = `${API_ENDPOINT_MM}/api/v1/travel-statics`;
 
 
 export async function fetchArrivals(page = 1, per_page = 20) {
