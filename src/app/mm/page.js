@@ -31,14 +31,14 @@ const Page = () => {
 
 (ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)
     </Marquee>
-     <Countdown
+     {/* <Countdown
       end="2025-09-27T09:30:00"
       message="၂၀၂၅ ခုနှစ် ကမ္ဘာ့ခရီးသွားလုပ်ငန်းနေ့"
 slogan="(ခရီးသွားကဏ္ဍရေရှည်ဖွံ့ဖြိုးဖို့၊ စဉ်ဆက်မပြတ်ဖော်ဆောင်စို့)"
 dateText="၂၇-၉-၂၀၂၅"
       logo="/assets/images/logo-images/world-tourism-day.png"
       finishedMessage="The event has started!"
-    />
+    /> */}
       <AboutSection />
       <WeatherWidget />
       <DigitalServiceSection />

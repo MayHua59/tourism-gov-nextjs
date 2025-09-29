@@ -86,14 +86,14 @@ export default function UpcomingEvents() {
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
 (Tourism And Sustainable Transformation)
     </Marquee>
-    <Countdown
+    {/* <Countdown
       end="2025-09-27T09:30:00"
       message="WORLD TOURISM DAY 2025"
 slogan="(TOURISM AND SUSTAINABLE TRANSFORMATION)"
 dateText="27-9-2025"
       logo="/assets/images/logo-images/world-tourism-day.png"
       finishedMessage="The event has started!"
-    />
+    /> */}
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Upcoming Events</h1>
         {loading && <Loading  size="large" />}
