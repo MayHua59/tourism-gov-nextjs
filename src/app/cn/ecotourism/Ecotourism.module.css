@@ -1,0 +1,106 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.missionsRegion {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  color: #1766b1;
+  font-weight: bold;
+}
+
+.missionCard {
+  border: 1px solid #e0e9f2;
+  /* border-radius: 7px; */
+  /* background: #fafcff; */
+  padding: 1.3em 1.5em 1.1em 1.5em;
+  margin-bottom: 1.6em;
+  /* box-shadow: 0 1px 5px 0 rgba(23, 102, 177, 0.05); */
+  transition: box-shadow 0.15s;
+}
+
+.missionCard h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #1766b1;
+  font-size: 1.12em;
+  font-weight: 600;
+}
+
+.missionCard p {
+  margin-bottom: 0.35em;
+  color: #222;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+.missionCard a {
+  color: #007bff;
+  word-break: break-all;
+}
+
+.missionCard a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .missionsRegion {
+    font-size: 1.08rem;
+  }
+  .missionCard {
+    padding: 1em 0.8em 1em 0.9em;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .missionsRegion {
+    font-size: 1.07rem;
+  }
+  .missionCard {
+    border-radius: 4px;
+    font-size: 0.97em;
+    padding: 0.7em 0.3em 0.7em 0.5em;
+  }
+}

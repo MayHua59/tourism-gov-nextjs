@@ -1,0 +1,108 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 24px 0 20px 0;
+}
+
+.guideTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.97rem;
+  min-width: 740px;
+}
+
+.guideTable th,
+.guideTable td {
+  border: 1px solid #ddd;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.guideTable th {
+  background: #f2f2f2;
+  color: #1766b1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.guideTable tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.guideTable tr:hover td {
+  background: #eaf2fb;
+}
+
+.guideTable a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.guideTable a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .guideTable {
+    font-size: 0.93rem;
+    min-width: 600px;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .guideTable {
+    font-size: 0.88rem;
+    min-width: 400px;
+  }
+  .pageTitle {
+    font-size: 1.1rem;
+  }
+}

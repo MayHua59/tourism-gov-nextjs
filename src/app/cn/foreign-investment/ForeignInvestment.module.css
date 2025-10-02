@@ -1,0 +1,125 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.mt5 {
+  margin-top: 2.2em;
+}
+
+.investSection {
+  border-radius: 7px;
+  padding: 1.35em 1.5em 1.1em 1.5em;
+  margin-bottom: 1.6em;
+  transition: box-shadow 0.15s;
+}
+
+.investSection h2 {
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  color: #1766b1;
+  font-size: 1.17em;
+  font-weight: 600;
+}
+
+.investSection p {
+  margin-bottom: 0.42em;
+  color: #232323;
+  font-size: 1.06em;
+  line-height: 1.6;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.1em 0 1.5em 0;
+}
+
+.investTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.97rem;
+  min-width: 650px;
+}
+
+.investTable th,
+.investTable td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.7em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.investTable th {
+  background-color: #f2f2f2;
+  color: #1766b1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.investTable tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .investSection {
+    padding: 1em 0.8em 1em 0.9em;
+  }
+  .investTable {
+    font-size: 0.93rem;
+    min-width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .pageTitle {
+    font-size: 1.15rem;
+  }
+  .investSection {
+    border-radius: 4px;
+    font-size: 0.97em;
+    padding: 0.7em 0.3em 0.7em 0.5em;
+  }
+  .investTable {
+    font-size: 0.88rem;
+    min-width: 350px;
+  }
+}
