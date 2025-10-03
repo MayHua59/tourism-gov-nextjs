@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { fetchRegion } from '../../../../lib/api/region';
+import { fetchRegion } from '../../../../lib/api/china-site/region';
 import AttachmentTable from '@/components/AttachmentTable';
 
 async function getRegionData(slug) {
@@ -37,7 +37,7 @@ export default async function RegionDetailPage({ params }) {
                     ]}
                 />
                 <div className="errorMessage">
-                    Sorry, we couldn&apos;t load this region. Please try again later.
+                很抱歉，我们无法加载此区域。请稍后再试。
                 </div>
             </div>
         );
@@ -76,23 +76,23 @@ export default async function RegionDetailPage({ params }) {
                         <section className={styles.gallerySection}>
                             <h2 className={styles.galleryTitle}>Gallery</h2>
                             <div className={styles.galleryGrid}>
-  {region.carousel.map((carousel, index) => (
-    <div key={index} className={styles.galleryCard}>
-      <div className={styles.cardHeader}>
-        <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
-      </div>
-      <div className={styles.cardBody}>
-        <div className={styles.carouselWrapper}>
-          <ImageCarousel images={carousel.images} />
-        </div>
-        <div
-          className={styles.galleryDescription}
-          dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
-        />
-      </div>
-    </div>
-  ))}
-</div>
+                                {region.carousel.map((carousel, index) => (
+                                    <div key={index} className={styles.galleryCard}>
+                                        <div className={styles.cardHeader}>
+                                            <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
+                                        </div>
+                                        <div className={styles.cardBody}>
+                                            <div className={styles.carouselWrapper}>
+                                                <ImageCarousel images={carousel.images} />
+                                            </div>
+                                            <div
+                                                className={styles.galleryDescription}
+                                                dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
                     )}
 
@@ -165,10 +165,10 @@ export default async function RegionDetailPage({ params }) {
                         </section>
                     )}
                     {region.attachments && region.attachments.length > 0 && (
-                                        <AttachmentTable attachments={region.attachments} />
-                                      )}
+                        <AttachmentTable attachments={region.attachments} />
+                    )}
                 </div>
-                 
+
             </div>
         </div>
     );

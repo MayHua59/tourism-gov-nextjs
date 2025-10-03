@@ -79,8 +79,8 @@ const menuData = [
     label: "特色推荐",
     submenu: [
       { label: "节庆活动", href: "/cn/festivals" },
-      { label: "生态旅游", href: "/cn/ecotourism" },
-      { label: "社区旅游", href: "/cn/community-based-tourism" },
+      { label: "生态旅游", href: "/cn/tourism-categories/ecotourism" },
+      { label: "社区旅游", href: "/cn/tourism-categories/community-based-tourism" },
     ],
   },
   {
