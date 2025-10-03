@@ -13,7 +13,7 @@ export default function ComingSoon() {
     <div className={styles.pageContainer}>
       <BreadCrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Coming Soon", active: true }
         ]}
       />

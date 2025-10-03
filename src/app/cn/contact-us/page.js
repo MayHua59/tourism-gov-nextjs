@@ -17,7 +17,7 @@ export default function ContactUs() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "联系我们", active: true }
         ]}
       />

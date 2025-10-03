@@ -17,7 +17,7 @@ export default function DutiesAndResponsibilities() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Duties and Responsibilites", active: true }
         ]}
       />

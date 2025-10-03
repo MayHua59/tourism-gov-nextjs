@@ -16,7 +16,7 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="inbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Inbound Tour Companies", active: true }
         ]}
       />

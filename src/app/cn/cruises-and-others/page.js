@@ -102,7 +102,7 @@ export default function CruisesPage() {
       <BannerSection imageUrl="/assets/images/cover-images/65.jpg" altText="cruises cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Cruises & Others ", active: true }
         ]}
       />

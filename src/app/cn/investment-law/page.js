@@ -17,7 +17,7 @@ export default function MyanmarInvestmentLaw() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Myanmar Investment Law", active: true }
         ]}
       />

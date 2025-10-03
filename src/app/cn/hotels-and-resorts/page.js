@@ -16,7 +16,7 @@ export default function HotelsAndResortsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/18.jpg" altText="Hotels and Resorts cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Hotels and Resorts", active: true }
         ]}
       />

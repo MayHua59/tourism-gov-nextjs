@@ -18,7 +18,7 @@ export default function BrochuresAndPamphlets() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Brochures and Pamphlets", active: true }
         ]}
       />

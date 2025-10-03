@@ -51,7 +51,7 @@ export default async function UpcomingEventDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Upcoming Events", href: "/cn/upcoming-events", icon: faCalendarCheck },
           { label: event && event.name, active: true }
         ]}
@@ -89,7 +89,7 @@ dangerouslySetInnerHTML={{ __html: event.description }}
           </div>
         )}
 
-        {event.attachments && announcement.event.length > 0 && (
+        {event && event.attachments && event.attachments.length > 0 && (
                           <AttachmentTable attachments={event.attachments} />
                         )}
       </div>

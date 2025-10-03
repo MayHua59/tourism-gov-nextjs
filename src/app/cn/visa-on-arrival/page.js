@@ -14,7 +14,7 @@ export default function VisaOnArrival() {
       <BannerSection imageUrl="/assets/images/cover-images/70.jpg" altText="visa on arrival cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Visa on Arrival", active: true }
         ]}
       />

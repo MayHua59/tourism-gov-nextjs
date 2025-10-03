@@ -14,7 +14,7 @@ export default function TourismPoliceOffices() {
       <BannerSection imageUrl="/assets/images/cover-images/58.jpg" altText="tourism police offices cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "旅游警察办事处", active: true }
         ]}
       />

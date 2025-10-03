@@ -17,7 +17,7 @@ export default function WhyInvestInMyanmar() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Why Invest in Myanmar", active: true }
         ]}
       />

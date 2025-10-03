@@ -8,8 +8,6 @@ import { faHome, faCalendar,faMapMarkerAlt } from "@fortawesome/free-solid-svg-i
 import { fetchUpcomingEventsList } from "../../../lib/api/upcoming-event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loading from "../../../components/Loading";
-import Marquee from '@/components/eng/Marquee';
-import Countdown from '@/components/eng/Countdown';
 
 // export const metadata = {
 //   title: "Upcoming Events",
@@ -76,16 +74,11 @@ export default function UpcomingEvents() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Upcoming Events", active: true }
         ]}
       />
-       <Marquee speed={10} direction="left">
-      World Tourism Day 2025
-(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
-(Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
-(Tourism And Sustainable Transformation)
-    </Marquee>
+      
     {/* <Countdown
       end="2025-09-27T09:30:00"
       message="WORLD TOURISM DAY 2025"
@@ -95,11 +88,11 @@ dateText="27-9-2025"
       finishedMessage="The event has started!"
     /> */}
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Upcoming Events</h1>
+        <h1 className={styles.pageTitle}>即将到来的活动</h1>
         {loading && <Loading  size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
-          <div className={styles.noEventsMessage}>No upcoming events found.</div>
+          <div className={styles.noEventsMessage}>找不到即将到来的活动。</div>
         )}
         <div className={styles.eventsList}>
           {eventsList.map((event) => (
@@ -130,7 +123,7 @@ dateText="27-9-2025"
   dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
 ></p>
                   <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>Read More</span>
+                    <span className={styles.readMoreBtn}>阅读更多</span>
                   </div>
                 </div>
               </Link>
@@ -144,7 +137,7 @@ dateText="27-9-2025"
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  Prev
+  Prev上一页
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -163,7 +156,7 @@ dateText="27-9-2025"
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              Next
+              Next下一页
             </button>
           </div>
         )}

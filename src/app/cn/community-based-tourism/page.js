@@ -183,7 +183,7 @@ export default function CommityBasedTourismPage() {
       <BannerSection imageUrl="/assets/images/cover-images/55.jpg" altText="community based tourism cover" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Community-Based Tourism", active: true }
         ]}
       />

@@ -36,13 +36,13 @@ export default function FestivalsPage() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Festivals", href: "/cn/festivals", active: true }
         ]}
       />
       <div className={styles.container}>
         <div className={styles.headerRow}>
-          <h1 className={styles.festivalTitle}>Festivals in Myanmar</h1>
+          <h1 className={styles.festivalTitle}>缅甸节日</h1>
           <div className={styles.monthSelectorWrapper}>
             <select
               value={selectedMonth}
@@ -50,7 +50,7 @@ export default function FestivalsPage() {
               className={styles.monthSelector}
             >
               <option value="" disabled>
-    Choose Month&nbsp;&#128899;
+    &#128899;选择月份
   </option>
               {MONTHS.map(month => (
                 <option key={month} value={month}>{month}</option>
@@ -62,7 +62,7 @@ export default function FestivalsPage() {
           <Loading message="Loading Festivals..."/>
         ) : festivals.length === 0 ? (
           <div className="errorMessage">
-            Sorry, we couldn&apos;t load festival data. Please try again later.
+            抱歉，我们无法加载节日数据。请稍后再试。
           </div>
         ) : (
           <div className={styles.festivalList}>
@@ -88,7 +88,7 @@ export default function FestivalsPage() {
                   <div className={styles.festivalMeta}>
                     <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
                     <span>
-                      <strong>Month:</strong> {festival.month || "N/A"}
+                      <strong>月份:</strong> {festival.month || "N/A"}
                       {festival.start_date && festival.end_date
                         ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                         : ""}

@@ -18,7 +18,7 @@ export default function Maps() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Maps", active: true }
         ]}
       />

@@ -18,7 +18,7 @@ export default function SixPoliciesOfMoHT() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Six Policies of Ministry of Hotels and Tourism", active: true }
         ]}
       />

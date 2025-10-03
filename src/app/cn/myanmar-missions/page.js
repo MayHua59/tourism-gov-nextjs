@@ -14,7 +14,7 @@ export default function MyanmarMissions() {
       <BannerSection imageUrl="/assets/images/cover-images/52.jpg" altText="myanmar missions cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Myanmar Missions", active: true }
         ]}
       />

@@ -14,7 +14,7 @@ export default function MyanmarMinistries() {
       <BannerSection imageUrl="/assets/images/cover-images/51.jpg" altText="myanmar ministries cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Myanmar Ministries", active: true }
         ]}
       />

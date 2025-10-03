@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { fetchRegion } from '../../../../lib/api/region';
-import { notFound } from 'next/navigation';
 import AttachmentTable from '@/components/AttachmentTable';
 
 async function getRegionData(slug) {
@@ -33,7 +32,7 @@ export default async function RegionDetailPage({ params }) {
                 />
                 <Breadcrumb
                     items={[
-                        { label: "မူလစာမျက်နှာ", href: "/cn/", icon: faHome },
+                        { label: "首页", href: "/cn/", icon: faHome },
                         { label: slug, active: true }
                     ]}
                 />
@@ -59,7 +58,7 @@ export default async function RegionDetailPage({ params }) {
             />
             <Breadcrumb
                 items={[
-                    { label: "Home", href: "/cn/", icon: faHome },
+                    { label: "首页", href: "/cn/", icon: faHome },
                     { label: region.slug, active: true }
                 ]}
             />

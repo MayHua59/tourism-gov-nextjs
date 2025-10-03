@@ -14,7 +14,7 @@ export default function VisaExemption() {
       <BannerSection imageUrl="/assets/images/cover-images/43.jpg" altText="visa exemption cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Visa Exemption", active: true }
         ]}
       />

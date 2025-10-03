@@ -17,7 +17,7 @@ export default function ForeignInvestmentHotels() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Foreign Investment in Hotels and Commercial Complexes", active: true }
         ]}
       />

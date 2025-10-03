@@ -39,7 +39,7 @@ export default function HotAirBalloonsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/59.jpg" altText="hot air balloons cover" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Hot-Air Balloons", active: true }
         ]}
       />

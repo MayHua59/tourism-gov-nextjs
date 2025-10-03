@@ -41,7 +41,7 @@ export default async function AnnouncementDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Announcements", href: "/cn/announcements", icon: faBullhorn },
           { label: "...", active: true }
         ]}
@@ -55,7 +55,7 @@ export default async function AnnouncementDetail({ params }) {
             <div className={styles.govtMeta}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
               <span>
-                <strong>Published on:</strong>{" "}
+                <strong>发布于:</strong>{" "}
                 {new Date(announcement.published_at).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
@@ -64,7 +64,7 @@ export default async function AnnouncementDetail({ params }) {
               </span>
               {announcement.category?.name && (
                 <span className={styles.govtCategory}>
-                  {" | "}Category: {announcement.category.name}
+                  {" | "}分类: {announcement.category.name}
                 </span>
               )}
             </div>

@@ -17,7 +17,7 @@ export default function DoingBusinessInMyanmar() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Doing Business in Myanmar", active: true }
         ]}
       />

@@ -18,7 +18,7 @@ export default function AseanTourismStandards() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "ASEAN Tourism Standards", active: true }
         ]}
       />

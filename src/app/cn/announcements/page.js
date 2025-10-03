@@ -59,7 +59,7 @@ export default function Announcements() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Announcements", active: true }
         ]}
       />
@@ -102,7 +102,7 @@ export default function Announcements() {
       dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
     ></p>
     <div className={styles.readMoreWrapper}>
-      <span className={styles.readMoreBtn}>Read More</span>
+      <span className={styles.readMoreBtn}>阅读更多</span>
     </div>
   </div>
 </Link>
@@ -116,7 +116,7 @@ export default function Announcements() {
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  Prev
+  Prev上一页
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -135,7 +135,7 @@ export default function Announcements() {
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              Next
+              Next下一页
             </button>
           </div>
         )}

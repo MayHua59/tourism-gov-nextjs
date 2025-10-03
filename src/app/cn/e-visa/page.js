@@ -14,7 +14,7 @@ export default function EVisa() {
       <BannerSection imageUrl="/assets/images/cover-images/54.jpg" altText="electronic visa cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Electronic Visa", active: true }
         ]}
       />

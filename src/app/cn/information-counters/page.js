@@ -14,7 +14,7 @@ export default function InformationCounters() {
       <BannerSection imageUrl="/assets/images/cover-images/68.jpg" altText="information counters cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Information Counters", active: true }
         ]}
       />

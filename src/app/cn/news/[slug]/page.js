@@ -46,7 +46,7 @@ export default async function NewsDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "News", href: "/cn/news" },
           { label: "...", active: true }
         ]}
@@ -60,7 +60,7 @@ export default async function NewsDetail({ params }) {
           <div className={styles.govtMeta}>
             <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
             <span>
-              <strong>Published on:</strong>{" "}
+              <strong>发布于:</strong>{" "}
                {new Date(news.published_at).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -69,7 +69,7 @@ export default async function NewsDetail({ params }) {
             </span>
             {news.category?.name && (
                 <span className={styles.govtCategory}>
-                  {" | "}Category: {news.category.name}
+                  {" | "}分类: {news.category.name}
                 </span>
               )}
           </div>

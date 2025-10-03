@@ -89,7 +89,7 @@ dangerouslySetInnerHTML={{ __html: event.description }}
           </div>
         )}
 
-        {event.attachments && announcement.event.length > 0 && (
+{event && event.attachments && event.attachments.length > 0 && (
                           <AttachmentTable attachments={event.attachments} />
                         )}
       </div>

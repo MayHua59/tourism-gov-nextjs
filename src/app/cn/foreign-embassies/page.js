@@ -14,7 +14,7 @@ export default function ForeignEmbassiesInMyanmar() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="foreign embassies in Myanmar cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Foreign Embassies in Myanmar", active: true }
         ]}
       />

@@ -64,7 +64,7 @@ export default function News() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "News", active: true }
         ]}
       />

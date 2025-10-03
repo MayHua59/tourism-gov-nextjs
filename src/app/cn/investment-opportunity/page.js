@@ -17,7 +17,7 @@ export default function TourismInvestmentOpportunity() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/cn/", icon: faHome },
+          { label: "首页", href: "/cn/", icon: faHome },
           { label: "Tourism Investment Opportunities", active: true }
         ]}
       />
