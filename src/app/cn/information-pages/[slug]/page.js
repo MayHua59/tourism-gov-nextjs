@@ -1,4 +1,4 @@
-import { fetchInformationPageDetail } from "@/lib/api/information-page";
+import { fetchInformationPageDetail } from "@/lib/api/china-site/information-page";
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";

@@ -18,7 +18,7 @@ const mainMenu = [
         submenu: [
           { label: "Electronic Visa", href: "/en/e-visa" },
           { label: "Visa Exemption", href: "/en/information-pages/visa-exemption" },
-          { label: "Visa on Arrival", href: "/en/visa-on-arrival" },
+          { label: "Visa on Arrival", href: "/en/information-pages/visa-on-arrival" },
         ],
       },
       { label: "Guidelines For Tour Companies", href: "/en/guidelines-for-tour-companies" },
@@ -146,7 +146,7 @@ const mainMenu = [
     label: "Our Role",
     submenu: [
       { label: "Duties & Responsibilities", href: "/en/duties" },
-      { label: "Objectives", href: "/en/objectives" },
+      { label: "Objectives", href: "/en/information-pages/objectives" },
       { label: "Six Policies of Ministry of Hotels and Tourism", href: "/en/six-policies" },
       // { label: "International Cooperation", href: "/en/coming-soon" },
       // {

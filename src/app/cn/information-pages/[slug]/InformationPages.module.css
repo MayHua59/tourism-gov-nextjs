@@ -54,7 +54,7 @@
   line-height: 1.7;
 }
 
-.descHeaders h1, .descHeaders h2, .descHeaders h3, .descHeaders h4, .descHeaders h5, .descHeaders h6{
+.descHeaders h1, .descHeaders h2, .descHeaders h3, .descHeaders h4, .descHeaders h5, .descHeaders h6, .descHeaders strong{
   color: #1766b1;
   font-size: 1.2rem;
 }

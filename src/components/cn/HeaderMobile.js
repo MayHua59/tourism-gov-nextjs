@@ -18,7 +18,7 @@ const menuData = [
         submenu: [
           { label: "电子签证", href: "/cn/e-visa" },
           { label: "免签政策", href: "/cn/information-pages/visa-exemption" },
-          { label: "落地签证", href: "/cn/visa-on-arrival" },
+          { label: "落地签证", href: "/cn/information-pages/visa-on-arrival" },
         ],
       },
       { label: "旅行社指南", href: "/cn/guidelines-for-tour-companies" },
@@ -145,8 +145,8 @@ const menuData = [
   {
     label: "我们的职责",
     submenu: [
-      { label: "职能与责任", href: "/cn/duties" },
-      { label: "发展目标", href: "/cn/objectives" },
+      { label: "职能与责任", href: "/cn/information-pages/duties-and-responsibilites" },
+      { label: "发展目标", href: "/cn/information-pages/objectives" },
       { label: "酒店与旅游部六大政策", href: "/cn/six-policies" },
       // { label: "国际合作", href: "/cn/coming-soon" },
       // {

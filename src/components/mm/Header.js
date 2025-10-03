@@ -18,7 +18,7 @@ const mainMenu = [
         submenu: [
           { label: "အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း", href: "/mm/e-visa" },
           { label: "ဗီဇာကင်းလွတ်ခွင့်", href: "/mm/information-pages/visa-exemption" },
-          { label: "ဆိုက်ရောက်ဗီဇာ", href: "/mm/visa-on-arrival" },
+          { label: "ဆိုက်ရောက်ဗီဇာ", href: "/mm/information-pages/visa-on-arrival" },
         ],
       },
       { label: "ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ", href: "/mm/guidelines-for-tour-companies" },
@@ -145,8 +145,8 @@ const mainMenu = [
   {
     label: "လုပ်ငန်းတာဝန်",
     submenu: [
-      { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/duties" },
-      { label: "ရည်ရွယ်ချက်များ", href: "/mm/objectives" },
+      { label: "တာဝန်နှင့် ဝတ္တရားများ", href: "/mm/information-pages/duties-and-responsibilites" },
+      { label: "ရည်ရွယ်ချက်များ", href: "/mm/information-pages/objectives" },
       { label: "ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်", href: "/mm/six-policies" },
       // { label: "နိုင်ငံတကာအဖွဲ့အစည်း", href: "/mm/coming-soon" },
       // {
