@@ -2,9 +2,9 @@ import "../globals.css";
 
 
 
-import Header from "../../components/eng/Header";
-import HeaderMobile from "../../components/eng/HeaderMobile";
-import Footer from "../../components/eng/Footer";
+import Header from "../../components/cn/Header";
+import HeaderMobile from "../../components/cn/HeaderMobile";
+import Footer from "../../components/cn/Footer";
 import ScrollToTop from "../../components/ScrollToTopButton";
 
 

@@ -1,31 +1,31 @@
 import React from "react";
-import Header from "../../components/eng/Header";
+import Header from "../../components/cn/Header";
 import HeroSection from "../../components/HeroSection";
-import AboutSection from "../../components/eng/home/AboutSection";
-import WeatherWidget from "../../components/eng/home/WeatherWidget";
-import DigitalServiceSection from "../../components/eng/home/DigitalServiceSection";
-import ExploreSection from "../../components/eng/home/ExploreSection";
-import WhyVisitMyanmarSection from "../../components/eng/home/WhyVisitMyanmarSection";
-import TourismDevelopmentSection from "../../components/eng/home/TourismDevelopmentSection";
-import MyanmarInPicturesSection from "../../components/eng/home/MyanmarInPicturesSection";
-import CallActionSection from "../../components/eng/home/CallActionSection";
-import TravelerInformationSection from "../../components/eng/home/TravelerInformationSection";
-import TourismNewsSection from "../../components/eng/home/TourismNewsSection";
-import LatestNewsSection from "../../components/eng/home/LatestNewsSection";
-import LatestAnnouncementsSection from "@/components/eng/home/LatestAnnouncementsSection";
-import Marquee from '@/components/eng/Marquee';
-import Countdown from '@/components/eng/Countdown';
+import AboutSection from "../../components/cn/home/AboutSection";
+import WeatherWidget from "../../components/cn/home/WeatherWidget";
+import DigitalServiceSection from "../../components/cn/home/DigitalServiceSection";
+import ExploreSection from "../../components/cn/home/ExploreSection";
+import WhyVisitMyanmarSection from "../../components/cn/home/WhyVisitMyanmarSection";
+import TourismDevelopmentSection from "../../components/cn/home/TourismDevelopmentSection";
+import MyanmarInPicturesSection from "../../components/cn/home/MyanmarInPicturesSection";
+import CallActionSection from "../../components/cn/home/CallActionSection";
+import TravelerInformationSection from "../../components/cn/home/TravelerInformationSection";
+import TourismNewsSection from "../../components/cn/home/TourismNewsSection";
+import LatestNewsSection from "../../components/cn/home/LatestNewsSection";
+import LatestAnnouncementsSection from "@/components/cn/home/LatestAnnouncementsSection";
+import Marquee from '@/components/cn/Marquee';
+import Countdown from '@/components/cn/Countdown';
 
 const Page = () => {
   return (
     <>
      <HeroSection/>
-      <Marquee speed={10} direction="left">
+      {/* <Marquee speed={10} direction="left">
       World Tourism Day 2025
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
 (Tourism And Sustainable Transformation)
-    </Marquee>
+    </Marquee> */}
     {/* <Countdown
       end="2025-09-27T09:30:00"
       message="WORLD TOURISM DAY 2025"

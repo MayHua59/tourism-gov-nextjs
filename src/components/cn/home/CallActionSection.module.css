@@ -1,0 +1,105 @@
+.callActionSection {
+  padding: 50px 0;
+  background-color: var(--main-color, #1766b1);
+}
+
+.callActionContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.callActionRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.callActionColLeft {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+}
+
+.callActionColRight {
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.callActionTitle {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.callActionSubtitle {
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.callActionForm {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.formGroup {
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  color: var(--main-color, #1766b1);
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.subscribeBtn:hover {
+  background: #fff;
+  color: var(--main-color, #1766b1);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .callActionColLeft,
+  .callActionColRight {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .callActionColRight {
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+  .callActionForm {
+    max-width: 100%;
+  }
+}

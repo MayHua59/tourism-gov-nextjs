@@ -4,8 +4,8 @@ import styles from "./TourismPoliceOffices.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Tourism Police Offices",
-  description: "Contact information for Tourism Police Units and Hotlines across Myanmar."
+  title: "旅游警察办事处",
+  description: "缅甸各地旅游警察部门的联系信息。"
 };
 
 export default function TourismPoliceOffices() {
@@ -15,142 +15,142 @@ export default function TourismPoliceOffices() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/cn/", icon: faHome },
-          { label: "Tourism Police Offices", active: true }
+          { label: "旅游警察办事处", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Police Offices</h1>
-        <p>Contact information for Tourism Police Units across Myanmar.</p>
+        <h1 className={styles.pageTitle}>旅游警察办事处</h1>
+        <p>缅甸各地旅游警察部门的联系信息。</p>
 
         <section id="police-units">
           <div className={styles.tableResponsive}>
             <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>Tourism Police Office Unit</th>
-                  <th>Address</th>
-                  <th>Phone Number</th>
+                  <th>旅游警察办事处</th>
+                  <th>地址</th>
+                  <th>电话号码</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Head Quarter</td>
-                  <td>Naypyitaw, Zabuthiri Township, Hotel Zone-1, at No.2 Police Station and Operating Functions.</td>
+                  <td>总部</td>
+                  <td>内比都 Zabuthiri 镇酒店1区 第2警察局内及办公点</td>
                   <td>067-414303, 067-414364</td>
                 </tr>
                 <tr>
-                  <td>Naypyitaw Unit</td>
-                  <td>Inside the Head Quarter building.</td>
+                  <td>内比都分部</td>
+                  <td>总部大楼内</td>
                   <td>067-414226, 09-448539518</td>
                 </tr>
                 <tr>
-                  <td>Yangon Unit</td>
-                  <td>No.110, Pansodan Road (middle block), Kyauktada Tsp.</td>
+                  <td>仰光分部</td>
+                  <td>皎达大镇班索丹路110号(中段)</td>
                   <td>01-379991, 09-448539519</td>
                 </tr>
                 <tr>
-                  <td>Mandalay Unit</td>
-                  <td>Aung Myay Tharzan Tsp, Min- Te- Ei- Kin Quarter, 19th Street (between 90th and Tar- Pat St) at Kyauk- Tha- Beik Police Quarter.</td>
+                  <td>曼德勒分部</td>
+                  <td>昂密亚达散镇民德埃金区90街与达帕街之间 警察宿舍区</td>
                   <td>02-67382, 09-791107831</td>
                 </tr>
                 <tr>
-                  <td>Pyin Oo Lwin Sub- unit</td>
-                  <td>Inside Pyin Oo Lwin Tsp Local Police Station.</td>
+                  <td>彬乌伦分队</td>
+                  <td>彬乌伦镇地方警察局內</td>
                   <td>09-422527811</td>
                 </tr>
                 <tr>
-                  <td>Bagan Unit</td>
-                  <td>New Bagan, at Bagan Local Police Station.</td>
+                  <td>蒲甘分部</td>
+                  <td>新蒲甘 蒲甘地方警察局内</td>
                   <td>061-65474, 09-448539508</td>
                 </tr>
                 <tr>
-                  <td>Popa Sub-unit</td>
-                  <td>Located at Summit of Popa Padestal hill, Ruby Stairway, Board of Trustee building.</td>
+                  <td>波巴山分队</td>
+                  <td>波巴山山顶红宝石阶梯理事会大楼内</td>
                   <td>09-256261413</td>
                 </tr>
                 <tr>
-                  <td>Shan Unit</td>
-                  <td>Inside Nyaung Shwe, (In Le) Tsp, Local Police Station.</td>
+                  <td>掸邦分部</td>
+                  <td>良瑞(茵莱)镇地方警察局内</td>
                   <td>081-209911, 09-448539509</td>
                 </tr>
                 <tr>
-                  <td>Kalaw Sub-unit</td>
-                  <td>Inside Kalaw Tsp, Local Police Station.</td>
+                  <td>格劳分队</td>
+                  <td>格劳镇地方警察局內</td>
                   <td>09-428313074</td>
                 </tr>
                 <tr>
-                  <td>Pindaya Sub-unit</td>
-                  <td>Inside Pindaya Local Police Station.</td>
+                  <td>宾达亚分队</td>
+                  <td>宾达亚地方警察局內</td>
                   <td>09-49355319</td>
                 </tr>
                 <tr>
-                  <td>Ayarwaddy Unit</td>
-                  <td>Ayarwaddy Units (Ngwe Saung and Chaung Thar) are placed in respective Local Police Stations.</td>
+                  <td>伊洛瓦底分部</td>
+                  <td>伊洛瓦底分部(威桑和羌达)设于各自的地方警察局內</td>
                   <td>09-250236373, 09-250188328</td>
                 </tr>
                 <tr>
-                  <td>Srikhittayar Unit (Pyu Ancient City)</td>
-                  <td>Bago Regional Division (west), Pyay Tsp, North Chapel of Shwe San Daw Pagoda.</td>
+                  <td>室利差吧罗(骠国古城)分部</td>
+                  <td>勃固省卑谬镇瑞山陀塔北殿</td>
                   <td>09-250236373, 09-250188328</td>
                 </tr>
                 <tr>
-                  <td>Bago Sub-unit</td>
-                  <td>Bago Tsp, West Chapel of Shwemawdaw Pagoda, Power Supply building.</td>
+                  <td>勃固分队</td>
+                  <td>勃固镇瑞摩陀塔西殿供电局大楼内</td>
                   <td>09-250471372</td>
                 </tr>
                 <tr>
-                  <td>Beikthano Unit (Pyu Ancient City)</td>
-                  <td>Magway Regional Division, Taungdwingyi tsp, Local Police Station.</td>
+                  <td>毗湿奴(骠国古城)分部</td>
+                  <td>马圭省东敦枝镇地方警察局内</td>
                   <td>063-51148, 09-256016729</td>
                 </tr>
                 <tr>
-                  <td>Hanlin Unit (Pyu Ancient City)</td>
-                  <td>Sagaing Regional Division, Shwebo district, Wetlet Tsp, Local Police Station.</td>
+                  <td>汉林(骠国古城)分部</td>
+                  <td>实皆省瑞波地区韦莱镇地方警察局内</td>
                   <td>09-400536332</td>
                 </tr>
                 <tr>
-                  <td>Sagaing- Mingun Sub-unit</td>
-                  <td>Inside Mingun Police Station.</td>
+                  <td>实皆-敏贡分队</td>
+                  <td>敏贡警察局內</td>
                   <td>09-797399188</td>
                 </tr>
                 <tr>
-                  <td>Mawlamyaing Unit</td>
-                  <td>Mon State, Mawlamyaing Tsp, Maung Ngan Quarter, Maung Ngan Police Outpost.</td>
+                  <td>毛淡棉分部</td>
+                  <td>孟邦毛淡棉镇芒岸区芒岸警察哨所</td>
                   <td>09-977044493, 09-254299912</td>
                 </tr>
                 <tr>
-                  <td>Kyaikhtiyo Sub-unit</td>
-                  <td>Mon State, Kyaikhto Tsp, Kimonchaung Police Station.</td>
+                  <td>吉谛瑜分队</td>
+                  <td>孟邦吉桃镇基孟羌警察局</td>
                   <td>09-428206641</td>
                 </tr>
                 <tr>
-                  <td>Myawaddy Unit</td>
-                  <td>Kayin State, Myawaddy Tsp, Local Police Station.</td>
+                  <td>妙瓦底分部</td>
+                  <td>克伦邦妙瓦底镇地方警察局内</td>
                   <td>09-43200250</td>
                 </tr>
                 <tr>
-                  <td>Tachileik Unit</td>
-                  <td>Shan State, Tachileik Tsp, Pasak Quarter, No.218, Bogyoke Aung San Road.</td>
+                  <td>大其力分部</td>
+                  <td>掸邦大其力镇巴萨区昂山将军路218号</td>
                   <td>09-428003877</td>
                 </tr>
                 <tr>
-                  <td>Ngapali Unit</td>
-                  <td>Rakhine State, Thandwe Tsp, Jeiktaw Police Station.</td>
+                  <td>额布里分部</td>
+                  <td>若开邦丹兑镇杰道警察局</td>
                   <td>09-403714839</td>
                 </tr>
                 <tr>
-                  <td>Mrauk-U Sub-unit</td>
-                  <td>Rakhine State, Mrauk-U Tsp, nearby Shitthaung Pagoda, Archaeology building.</td>
+                  <td>谬乌分队</td>
+                  <td>若开邦谬乌镇欣特康佛塔附近考古局大楼</td>
                   <td>09-787191051, 09-253448499</td>
                 </tr>
                 <tr>
-                  <td>Kanpatlat Sub-unit</td>
-                  <td>Chin State, Kanpatlat Tsp Police Station.</td>
+                  <td>甘帕莱分队</td>
+                  <td>钦邦甘帕莱镇警察局</td>
                   <td>09-73056986</td>
                 </tr>
                 <tr>
-                  <td>Dawei Sub-unit</td>
-                  <td>Tanintharyi Regional Division, Dawei Tsp, Pa-lae Police Avenue Compound.</td>
+                  <td>土瓦分队</td>
+                  <td>德林达依省土瓦镇巴莱警察大院</td>
                   <td>09-250477105, 09-47053133</td>
                 </tr>
               </tbody>
@@ -159,145 +159,145 @@ export default function TourismPoliceOffices() {
         </section>
 
         <section id="police-hotlines">
-          <h3>Tourism Police Hotlines and Locations</h3>
+          <h3>旅游警察热线及地点</h3>
           <div className={styles.tableResponsive}>
             <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>No.</th>
-                  <th>Location</th>
-                  <th>Phone Number</th>
+                  <th>编号</th>
+                  <th>地点</th>
+                  <th>电话号码</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>The Head Quarter</td>
+                  <td>总部</td>
                   <td>067-414303, 067-414364</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Naypyitaw</td>
+                  <td>内比都</td>
                   <td>067-414226</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Yangon</td>
+                  <td>仰光</td>
                   <td>01-379991</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Mandalay</td>
+                  <td>曼德勒</td>
                   <td>02-67382</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Pyin Oo Lwin</td>
+                  <td>彬乌伦</td>
                   <td>09-422527811</td>
                 </tr>
                 <tr>
                   <td>6</td>
-                  <td>Bagan</td>
+                  <td>蒲甘</td>
                   <td>061-65474</td>
                 </tr>
                 <tr>
                   <td>7</td>
-                  <td>Popa</td>
+                  <td>波巴山</td>
                   <td>09-256261413</td>
                 </tr>
                 <tr>
                   <td>8</td>
-                  <td>Shan</td>
+                  <td>掸邦</td>
                   <td>081-209911</td>
                 </tr>
                 <tr>
                   <td>9</td>
-                  <td>Pindaya</td>
+                  <td>宾达亚</td>
                   <td>09-49355319</td>
                 </tr>
                 <tr>
                   <td>10</td>
-                  <td>Kalaw</td>
+                  <td>格劳</td>
                   <td>09-428313074</td>
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td>Tachileik</td>
+                  <td>大其力</td>
                   <td>09-428003877</td>
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td>Ayarwaddy</td>
+                  <td>伊洛瓦底</td>
                   <td>09-250236373</td>
                 </tr>
                 <tr>
                   <td>13</td>
-                  <td>Srikhittaya</td>
+                  <td>室利差吗罗</td>
                   <td>09-250188328</td>
                 </tr>
                 <tr>
                   <td>14</td>
-                  <td>Bago</td>
+                  <td>勃固</td>
                   <td>09-250343438</td>
                 </tr>
                 <tr>
                   <td>15</td>
-                  <td>Beikthano</td>
+                  <td>毗湿奴</td>
                   <td>09-250471372</td>
                 </tr>
                 <tr>
                   <td>16</td>
-                  <td>Beikthano</td>
+                  <td>毗湿奴</td>
                   <td>063-51148</td>
                 </tr>
                 <tr>
                   <td>17</td>
-                  <td>Hanlin</td>
+                  <td>汉林</td>
                   <td>09-2560167729, 09-47061503</td>
                 </tr>
                 <tr>
                   <td>18</td>
-                  <td>Mingon</td>
+                  <td>敏贡</td>
                   <td>09-797399188</td>
                 </tr>
                 <tr>
                   <td>19</td>
-                  <td>Mawlamyaing</td>
+                  <td>毛淡棉</td>
                   <td>09-8548090</td>
                 </tr>
                 <tr>
                   <td>20</td>
-                  <td>Kyaikhtiyoe</td>
+                  <td>吉谛瑜</td>
                   <td>09-428206641</td>
                 </tr>
                 <tr>
                   <td>21</td>
-                  <td>Ngapali</td>
+                  <td>额布里</td>
                   <td>09-403714839, 043-42191</td>
                 </tr>
                 <tr>
                   <td>22</td>
-                  <td>Mrauk-U</td>
+                  <td>谬乌</td>
                   <td>09-253448499, 09-78719105</td>
                 </tr>
                 <tr>
                   <td>23</td>
-                  <td>Myawaddy</td>
+                  <td>妙瓦底</td>
                   <td>09-43200250</td>
                 </tr>
                 <tr>
                   <td>24</td>
-                  <td>Kanpatlat</td>
+                  <td>甘帕莱</td>
                   <td>09-73056986</td>
                 </tr>
                 <tr>
                   <td>25</td>
-                  <td>Dawei</td>
+                  <td>土瓦</td>
                   <td>09-250477105, 09-47053133</td>
                 </tr>
                 <tr>
                   <td>26</td>
-                  <td>Loikaw</td>
+                  <td>垒固</td>
                   <td>09-420153119</td>
                 </tr>
               </tbody>
