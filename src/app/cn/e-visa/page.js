@@ -165,7 +165,7 @@ export default function EVisa() {
                     <tr><td>19.</td><td>China</td><td>69.</td><td>Netherlands</td></tr>
                     <tr><td>20.</td><td>Colombia</td><td>70.</td><td>New Zeland</td></tr>
                     <tr><td>21.</td><td>Costa Rica</td><td>71.</td><td>Norway</td></tr>
-                    <tr><td>22.</td><td>Côte d'Ivoire</td><td>72.</td><td>Pakistan</td></tr>
+                    <tr><td>22.</td><td>Côte d&apos;Ivoire</td><td>72.</td><td>Pakistan</td></tr>
                     <tr><td>23.</td><td>Croatia</td><td>73.</td><td>Panama</td></tr>
                     <tr><td>24.</td><td>Cyprus</td><td>74.</td><td>Peru</td></tr>
                     <tr><td>25.</td><td>Czech Republic</td><td>75.</td><td>Philippines</td></tr>

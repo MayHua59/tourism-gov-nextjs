@@ -104,9 +104,9 @@ export default function DutiesAndResponsibilities() {
           <h2 className={styles.sectionTitle}>Executive Office</h2>
           <ul className={styles.dutiesList}>
             <li className={styles.dutiesListItem}>Manage the administrative affairs of the offices of the Minister and Permanent Secretary.</li>
-            <li className={styles.dutiesListItem}>Manage staff and general administration of the Ministry's office.</li>
+            <li className={styles.dutiesListItem}>Manage staff and general administration of the Ministry&apos;s office.</li>
             <li className={styles.dutiesListItem}>Coordinate the selecting of participants to attend training in Myanmar</li>
-            <li className={styles.dutiesListItem}>Supervising the activities of the Ministry's delegates attending conferences, exhibitions and seminars held in Myanmar and abroad.</li>
+            <li className={styles.dutiesListItem}>Supervising the activities of the Ministry&apos;s delegates attending conferences, exhibitions and seminars held in Myanmar and abroad.</li>
             <li className={styles.dutiesListItem}>Coordinating the administration of business registration, licensing and tax as managed by the Ministry.</li>
           </ul>
         </section>
@@ -136,8 +136,8 @@ export default function DutiesAndResponsibilities() {
             <li className={styles.dutiesListItem}>Issuing and supervising tour guide business licences.</li>
             <li className={styles.dutiesListItem}>Reviewing and supervising hotels and tourism law, rules, orders and directives.</li>
             <li className={styles.dutiesListItem}>Inspecting and supervising Business Licenses that have been issued by the Ministry of Hotels &amp; Tourism.</li>
-            <li className={styles.dutiesListItem}>Collecting hotel and tourism's statistical data.</li>
-            <li className={styles.dutiesListItem}>Managing and supervising the duties and responsibilities of the Directorate of Hotels &amp; Tourism's branch offices which issue all four business licences.</li>
+            <li className={styles.dutiesListItem}>Collecting hotel and tourism&apos;s statistical data.</li>
+            <li className={styles.dutiesListItem}>Managing and supervising the duties and responsibilities of the Directorate of Hotels &amp; Tourism&apos;s branch offices which issue all four business licences.</li>
             <li className={styles.dutiesListItem}>Supporting and cooperating with the Human Resources Department in the development of training programmes for the Hotels &amp; Tourism industry and promoting the Hotels &amp; Tourism sector.</li>
           </ul>
         </section>

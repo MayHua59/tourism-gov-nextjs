@@ -54,7 +54,7 @@ export default function WhyVisitMyanmarSection() {
                 {/* <li>Over 4.3 million international arrivals in 2019</li> */}
                 <li>自2011年以来酒店客房数量增长50%</li>
                 <li>15处景点列入联合国教科文组织预备名录</li>
-                <li>"魅力缅甸"旅游品牌持续推广</li>
+                <li>&quot;魅力缅甸&quot;旅游品牌持续推广</li>
               </ul>
             </div>
           </div>

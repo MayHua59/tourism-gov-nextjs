@@ -32,7 +32,7 @@ export default function ForeignEmbassiesInMyanmar() {
           </div>
 
           <div className={styles.missionCard}>
-            <h4>People's Republic of Bangladesh, Dhaka</h4>
+            <h4>People&apos;s Republic of Bangladesh, Dhaka</h4>
             <p>11(B), Than Lwin Road, Bahan Tsp, Yangon.</p>
             <p><strong>Ph:</strong> 951-515275, 526144</p>
             <p><strong>Fax:</strong> 951-515273</p>
@@ -57,7 +57,7 @@ export default function ForeignEmbassiesInMyanmar() {
           </div>
 
           <div className={styles.missionCard}>
-            <h4>People's Republic of China</h4>
+            <h4>People&apos;s Republic of China</h4>
             <p>1, Pyidaungsu Yeiktha Road, Dagon Tsp, Yangon.</p>
             <p><strong>Ph:</strong> 951-221280, 221281, 224025, 224097, 221926</p>
             <p><strong>Fax:</strong> 951-227019, 228319</p>
@@ -121,7 +121,7 @@ export default function ForeignEmbassiesInMyanmar() {
             <p><strong>Fax:</strong> 951-549643</p>
           </div>
           <div className={styles.missionCard}>
-            <h4>Democratic People's Republic of Korea (North)</h4>
+            <h4>Democratic People&apos;s Republic of Korea (North)</h4>
             <p>4/D U Kyaw Hla Street ,Mayangon Tsp, Yangon.</p>
             <p><strong>Ph:</strong> 951-651917</p>
             <p><strong>Fax:</strong> 951-651918</p>
@@ -141,7 +141,7 @@ export default function ForeignEmbassiesInMyanmar() {
             <p><strong>Email:</strong> <a href="mailto:Myanmar@mofa.gov.kr">Myanmar@mofa.gov.kr</a></p>
           </div>
           <div className={styles.missionCard}>
-            <h4>Lao People's Democratic Republic</h4>
+            <h4>Lao People&apos;s Democratic Republic</h4>
             <p>A-1, Diplomatic Quarters, Taw Win Street, Dagon Tsp, Yangon.</p>
             <p><strong>Ph:</strong> 951-222482</p>
             <p><strong>Fax:</strong> 951-227446</p>

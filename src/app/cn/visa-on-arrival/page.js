@@ -24,7 +24,7 @@ export default function VisaOnArrival() {
           <div className={styles.visaInfoSection}>
             <h2 className={styles.sectionTitle}>Visa on Arrival for Japan, Republic of Korea, Macau (SAR of China) Nationals (Effective 21-10-2024)</h2>
             <p className={styles.paragraph}>
-              Tourist Visa on Arrival are granted to Japan, Republic of Korea, Macau (Special Administrative Region of the People's Republic of China) Nationals starting from 21-10-2024 for a test period of 1 year.
+              Tourist Visa on Arrival are granted to Japan, Republic of Korea, Macau (Special Administrative Region of the People&apos;s Republic of China) Nationals starting from 21-10-2024 for a test period of 1 year.
             </p>
             <ol className={styles.infoList}>
               <li>
@@ -41,9 +41,9 @@ export default function VisaOnArrival() {
               <li>
                 Citizens entering with Tourist Visa on Arrival must comply with the following rules:
                 <ul className={styles.subList}>
-                  <li>(A) Respect and comply with Myanmar's existing Laws and Procedures.</li>
+                  <li>(A) Respect and comply with Myanmar&apos;s existing Laws and Procedures.</li>
                   <li>(B) Freely travel to places which allow access to foreigners, except restricted areas.</li>
-                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department's Blacklist, entry will be denied and the passenger will be deported.</li>
+                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department&apos;s Blacklist, entry will be denied and the passenger will be deported.</li>
                   <li>(D) May exit at any international airport.</li>
                 </ul>
               </li>
@@ -56,7 +56,7 @@ export default function VisaOnArrival() {
           <div className={styles.visaInfoSection}>
             <h2 className={styles.sectionTitle}>Visa on Arrival for Hong Kong (SAR of China) Nationals (Effective 11-3-2024)</h2>
             <p className={styles.paragraph}>
-              Tourist Visa on Arrival are granted to Hong Kong (Special Administrative Region of the People's Republic of China) Nationals starting from 11-3-2024 for a test period of 1 year in accordance with the Standards for COVID-19 Prevent, Control & Treatment published by the Ministry of Health.
+              Tourist Visa on Arrival are granted to Hong Kong (Special Administrative Region of the People&apos;s Republic of China) Nationals starting from 11-3-2024 for a test period of 1 year in accordance with the Standards for COVID-19 Prevent, Control & Treatment published by the Ministry of Health.
             </p>
             <ol className={styles.infoList}>
               <li>
@@ -73,9 +73,9 @@ export default function VisaOnArrival() {
               <li>
                 Citizens entering with Tourist Visa on Arrival must comply with the following rules:
                 <ul className={styles.subList}>
-                  <li>(A) Respect and comply with Myanmar's existing Laws and Procedures.</li>
+                  <li>(A) Respect and comply with Myanmar&apos;s existing Laws and Procedures.</li>
                   <li>(B) Freely travel to places which allow access to foreigners, except restricted areas.</li>
-                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department's Blacklist, entry will be denied and the passenger will be deported.</li>
+                  <li>(C) If entry is not permitted by Security Forces/Authorities, or if included in the Immigration Department&apos;s Blacklist, entry will be denied and the passenger will be deported.</li>
                   <li>(D) May exit at any international airport.</li>
                 </ul>
               </li>
@@ -105,9 +105,9 @@ export default function VisaOnArrival() {
               <li>
                 China citizen &amp; India citizen tourists granted Tourist Visa on Arrival must comply with the following rules during their stay:
                 <ul className={styles.subList}>
-                  <li>Must respect &amp; comply with Myanmar's existing Laws and Procedures.</li>
+                  <li>Must respect &amp; comply with Myanmar&apos;s existing Laws and Procedures.</li>
                   <li>Apart from the areas within Myanmar that are restricted due to security reasons, the tourists may freely travel to places which allows access to foreigners.</li>
-                  <li>If the passenger arriving with Tourist Visa on Arrival is not permitted entry by relevant Security forces/authorities or is included in the Immigration Department's Blacklist, entry will be denied, and they will be deported via their arriving airline.</li>
+                  <li>If the passenger arriving with Tourist Visa on Arrival is not permitted entry by relevant Security forces/authorities or is included in the Immigration Department&apos;s Blacklist, entry will be denied, and they will be deported via their arriving airline.</li>
                   <li>Those entering the country with Tourist Visa on Arrival may enter/exit the International Airports via the International entry/exit gates.</li>
                 </ul>
               </li>
