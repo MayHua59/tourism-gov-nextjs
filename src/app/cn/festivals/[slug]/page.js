@@ -3,7 +3,7 @@ import BannerSection from "@/components/BannerSection";
 import styles from "./FestivalDetail.module.css";
 import { faHome, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalDetail } from "@/lib/api/festival";
+import { fetchFestivalDetail } from "@/lib/api/china-site/festival";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -35,7 +35,7 @@ export default async function FestivalDetailPage({ params }) {
       <Breadcrumb
         items={[
           { label: "首页", href: "/cn", icon: faHome },
-          { label: "Festivals", href: "/cn/festivals" },
+          { label: "節慶", href: "/cn/festivals" },
           { label: festival.name, active: true },
         ]}
       />

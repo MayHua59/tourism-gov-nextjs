@@ -6,7 +6,7 @@ import styles from "./Festivals.module.css";
 import Link from "next/link";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalsList } from "@/lib/api/festival";
+import { fetchFestivalsList } from "@/lib/api/china-site/festival";
 import Loading from "@/components/Loading";
 
 const MONTHS = [
