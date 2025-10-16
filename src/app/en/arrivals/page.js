@@ -58,12 +58,7 @@ const getCurrentDate = () => {
 
 const defaultDate = getCurrentDate();
 
-// Debug logging
-console.log('Current date logic:', {
-  currentDate: new Date(),
-  defaultYear: defaultDate.year,
-  defaultMonth: defaultDate.month
-});
+
 
 export default function Page() {
   const [arrivalsData, setArrivalsData] = useState([]);
@@ -72,6 +67,8 @@ export default function Page() {
   const [loading, setLoading] = useState(false);
   const [selectedYear, setSelectedYear] = useState(defaultDate.year);
   const [selectedMonth, setSelectedMonth] = useState(defaultDate.month);
+  const [searchYear, setSearchYear] = useState(defaultDate.year);
+  const [searchMonth, setSearchMonth] = useState(defaultDate.month);
   const [error, setError] = useState(null);
 
   // Fetch data from API
@@ -118,6 +115,8 @@ export default function Page() {
 
   // Handle search button click
   const handleSearch = () => {
+    setSearchYear(selectedYear);
+    setSearchMonth(selectedMonth);
     fetchData(selectedYear, selectedMonth);
   };
 
@@ -173,7 +172,7 @@ export default function Page() {
         <h1 className={styles.pageTitle}>Arrivals Statistics</h1>
         <p className={styles.lead}>Tourist arrivals statistics by transport method and visa type</p>
         
-        {/* Filter Controls */}
+        {/* Filter */}
         <div className={styles.filterControls}>
           <div className={styles.filterGroup}>
             <label htmlFor="year-select" className={styles.filterLabel}>Choose Year:</label>
@@ -224,7 +223,7 @@ export default function Page() {
             <div className={styles.noDataIcon}>📊</div>
             <h3 className={styles.noDataTitle}>No Data Available</h3>
             <p className={styles.noDataMessage}>
-              No arrival data found for <strong>{MONTHS.find(m => m.value === selectedMonth)?.label} {selectedYear}</strong>.
+              No arrival data found for <strong>{MONTHS.find(m => m.value === searchMonth)?.label} {searchYear}</strong> .
               <br />
               Please try selecting a different year or month.
             </p>
@@ -240,7 +239,8 @@ export default function Page() {
                     <tr>
                       <th rowSpan="2">No</th>
                       <th rowSpan="2">Country</th>
-                      <th colSpan={transportTypes.length + 1}>Arrivals - {MONTHS.find(m => m.value === selectedMonth)?.label} {selectedYear}</th>
+                      <th colSpan={transportTypes.length + 1}>Arrivals&nbsp; - &nbsp;
+                        {searchYear}&nbsp;{MONTHS.find(m => m.value === searchMonth)?.label} </th>
                     </tr>
                     <tr>
                       {transportTypes.map((transport, index) => (
@@ -276,9 +276,9 @@ export default function Page() {
                     <tr>
                       <th rowSpan="2">No</th>
                       <th rowSpan="2">Country</th>
-                      <th colSpan={visaTypes.length + 1}>Arrivals - 
-                        {selectedYear} - 
-                        {MONTHS.find(m => m.value === selectedMonth)?.label}</th>
+                      <th colSpan={visaTypes.length + 1}>Arrivals&nbsp; - &nbsp;
+                        {searchYear} &nbsp; 
+                        {MONTHS.find(m => m.value === searchMonth)?.label}</th>
                     </tr>
                     <tr>
                       {visaTypes.map((visa, index) => (
