@@ -34,7 +34,9 @@ export default function MyanmarMinistries() {
                 <tr>
                   <td>၁</td>
                   <td>နိုင်ငံတော်ဝန်ကြီးချုပ်ရုံးနှင့် အမျိုးသားစီမံကိန်းဝန်ကြီးဌာန</td>
-                  <td></td>
+                  <td><a href="https://monp.gov.mm/
+" target="_blank" rel="noopener">https://monp.gov.mm
+                  </a></td>
                 </tr>
                 <tr>
                   <td>၂</td>
@@ -178,19 +180,28 @@ export default function MyanmarMinistries() {
                 </tr>
                 <tr>
                   <td>၁၁</td>
-                  <td>နယ်စပ်ရေးရာဝန်ကြီးဌာနနှင့် တိုင်းရင်းသားလူမျိုးများရေးရာဝန်ကြီးဌာန
+                  <td>နယ်စပ်ရေးရာဝန်ကြီးဌာန 
                   </td>
                   <td>
                     <a href="https://www.moba.gov.mm
 " target="_blank" rel="noopener">https://www.moba.gov.mm
-                    </a><br />
+                    </a>
+                 
+                  </td>
+                </tr>
+                   <tr>
+                  <td>၁၂</td>
+                  <td>တိုင်းရင်းသားလူမျိုးများရေးရာဝန်ကြီးဌာန
+                  </td>
+                  <td>
+                    
                     <a href="https://portal.moea.gov.mm
 " target="_blank" rel="noopener">https://portal.moea.gov.mm
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၂</td>
+                  <td>၁၃</td>
                   <td>ရင်းနှီးမြှုပ်နှံမှုနှင့်နိုင်ငံခြားစီးပွားဆက်သွယ်ရေးဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.mifer.gov.mm
@@ -206,7 +217,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၃</td>
+                  <td>၁၄</td>
                   <td>ဥပဒေရေးရာဝန်ကြီးဌာန
                   </td>
                   <td>
@@ -217,7 +228,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၄</td>
+                  <td>၁၅</td>
                   <td>ပြန်ကြားရေးဝန်ကြီးဌာန
                   </td>
                   <td>
@@ -248,7 +259,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၅</td>
+                  <td>၁၆</td>
                   <td>သာသနာရေးနှင့်ယဉ်ကျေးမှုဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.mora.gov.mm
@@ -273,7 +284,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၆</td>
+                  <td>၁၇</td>
                   <td>စိုက်ပျိုးရေး၊ မွေးမြူရေးနှင့်ဆည်မြောင်းဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.moali.gov.mm
@@ -281,7 +292,7 @@ export default function MyanmarMinistries() {
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၁၇</td>
+                  <td>၁၈</td>
                   <td>သမဝါယမနှင့်ကျေးလက်ဖွံ့ဖြိုးရေးဝန်ကြီးဌာန
                   </td>
                   <td>
@@ -292,7 +303,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၈</td>
+                  <td>၁၉</td>
                   <td>သယံဇာတနှင့်သဘာဝပတ်ဝန်းကျင်ထိန်းသိမ်းရေးဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.monrec.gov.mm
@@ -320,7 +331,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၁၉</td>
+                  <td>၂၀</td>
                   <td>လျှပ်စစ်စွမ်းအားဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.moep.gov.mm
@@ -330,7 +341,7 @@ export default function MyanmarMinistries() {
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၂၀</td>
+                  <td>၂၁</td>
                   <td>စွမ်းအင်ဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.energy.gov.mm
@@ -340,7 +351,7 @@ export default function MyanmarMinistries() {
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၂၁</td>
+                  <td>၂၂</td>
                   <td>စက်မှုဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://industry.gov.mm
@@ -350,7 +361,7 @@ export default function MyanmarMinistries() {
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၂၂</td>
+                  <td>၂၃</td>
                   <td>လူဝင်မှုကြီးကြပ်ရေးနှင့် ပြည်သူ့အင်အားဝန်ကြီးဌာန
                   </td>
                   <td>
@@ -363,7 +374,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၂၃</td>
+                  <td>၂၄</td>
                   <td>အလုပ်သမားဝန်ကြီးဌာန
                   </td>
                   <td>
@@ -379,7 +390,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၂၄</td>
+                  <td>၂၅</td>
                   <td>စီးပွားရေးနှင့်ကူးသန်းရောင်းဝယ်ရေးဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.commerce.gov.mm
@@ -398,25 +409,32 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၂၅</td>
+                  <td>၂၆</td>
                   <td>သိပ္ပံနှင့်နည်းပညာဝန်ကြီးဌာန</td>
                   <td><a href="https://www.most.gov.mm
 " target="_blank" rel="noopener">https://www.most.gov.mm</a></td>
                 </tr>
                 <tr>
-                  <td>၂၆</td>
+                  <td>၂၇</td>
                   <td>ကျန်းမာရေးဝန်ကြီးဌာန</td>
                   <td><a href="https://www.mohs.gov.mm
 " target="_blank" rel="noopener">https://www.mohs.gov.mm
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၂၇</td>
-                  <td>အားကစားနှင့်လူငယ်ရေးရာဝန်ကြီးဌာနနှင့် ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာန
+                  <td>၂၈</td>
+                  <td>အားကစားနှင့်လူငယ်ရေးရာဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://mosya.gov.mm
 " target="_blank" rel="noopener">https://mosya.gov.mm
-                  </a><br></br>
+                  </a>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>၂၉</td>
+                  <td>ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာန
+                  </td>
+                  <td>
                     <a href="https://www.tourism.gov.mm
 
 " target="_blank" rel="noopener">https://www.tourism.gov.mm
