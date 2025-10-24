@@ -465,12 +465,7 @@ export default function MyanmarMinistries() {
                   </td>
                   <td><a href="https://mosya.gov.mm
 " target="_blank" rel="noopener">https://mosya.gov.mm
-                  </a><br></br>
-                    <a href="https://www.tourism.gov.mm
-
-" target="_blank" rel="noopener">https://www.tourism.gov.mm
-
-                    </a>
+                  </a>
                   </td>
                 </tr>
                  <tr>

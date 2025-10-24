@@ -443,7 +443,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၂၈</td>
+                  <td>၃၀</td>
                   <td>ဆောက်လုပ်ရေးဝန်ကြီးဌာန</td>
                   <td><a href="https://www.construction.gov.mm
 
@@ -452,7 +452,7 @@ export default function MyanmarMinistries() {
                   </a></td>
                 </tr>
                 <tr>
-                  <td>၂၉</td>
+                  <td>၃၁</td>
                   <td>လူမှုဝန်ထမ်းကယ်ဆယ်ရေးနှင့်ပြန်လည်နေရာချထားရေးဝန်ကြီးဌာန</td>
                   <td>
                     <a href="https://www.moswrr.gov.mm
@@ -468,7 +468,7 @@ export default function MyanmarMinistries() {
                   </td>
                 </tr>
                 <tr>
-                  <td>၃၀</td>
+                  <td>၃၂</td>
                   <td>ပညာရေးဝန်ကြီးဌာန
                   </td>
                   <td><a href="https://www.moe.gov.mm
