@@ -20,12 +20,12 @@ const Page = () => {
   return (
     <>
      <HeroSection/>
-      <Marquee speed={10} direction="left">
+      {/* <Marquee speed={10} direction="left">
       World Tourism Day 2025
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025
 (Tourism And Sustainable Transformation)
-    </Marquee>
+    </Marquee> */}
     {/* <Countdown
       end="2025-09-27T09:30:00"
       message="WORLD TOURISM DAY 2025"
