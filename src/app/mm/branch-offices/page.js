@@ -37,7 +37,7 @@ export default function BranchOffices() {
                         <td>၁</td>
                         <td>နေပြည်တော်ရုံး</td>
                         <td>၀၉၂၅၁၀၀၈၆၂၄</td>
-                        <td><a href="mailto:naypyidawy@tourism.gov.mm">naypyidawy@tourism.gov.mm</a></td>
+                        <td><a href="mailto:naypyidaw@tourism.gov.mm">naypyidaw@tourism.gov.mm</a></td>
                     </tr>
                     <tr>
                         <td>၂</td>

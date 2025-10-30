@@ -38,7 +38,7 @@ export default function BranchOffices() {
                 <td>Naypyidaw</td>
                 <td>State government office</td>
                 <td>9251008624</td>
-                <td><a href="mailto:naypyidawy@tourism.gov.mm">naypyidawy@tourism.gov.mm</a></td>
+                <td><a href="mailto:naypyidaw@tourism.gov.mm">naypyidaw@tourism.gov.mm</a></td>
               </tr>
               <tr>
                 <td>2</td>

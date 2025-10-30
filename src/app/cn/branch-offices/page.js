@@ -38,7 +38,7 @@ export default function BranchOffices() {
                 <td>内比都</td>
                 <td>邦政府办公楼</td>
                 <td></td>
-                <td><a href="mailto:naypyidawy@tourism.gov.mm">naypyidawy@tourism.gov.mm</a></td>
+                <td><a href="mailto:naypyidaw@tourism.gov.mm">naypyidaw@tourism.gov.mm</a></td>
               </tr>
               <tr>
                 <td>2</td>
