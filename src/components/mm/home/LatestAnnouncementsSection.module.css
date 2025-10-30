@@ -19,39 +19,38 @@
 }
 
 .carouselWrapper {
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  width: 100%;
-  /* Add position and z-index to ensure buttons are above track */
-  position: relative;
-  z-index: 1;
+  display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+margin-bottom: 2rem;
+width: 100%;
+/* Add position and z-index to ensure buttons are above track */
+position: relative;
+z-index: 1;
 }
 
 .carouselBtn {
-   background: #fff;
-  border: 1px solid #0d6efd;
-  color: #0d6efd;
-  padding-bottom: 6px;
+ background: #fff;
+border: 1px solid #0d6efd;
+color: #0d6efd;
+padding: 0;
 
-  font-size: 2rem;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  line-height: 48px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 12px;
-  z-index: 2;
+font-size: 2rem;
+border-radius: 50%;
+width: 48px;
+height: 48px;
+line-height: 1;
+cursor: pointer;
+transition: background 0.2s, color 0.2s;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2;
 }
 .carouselBtn:hover {
-  background: #0d6efd;
-  color: #fff;
+background: #0d6efd;
+color: #fff;
 }
 /* .carouselBtn:disabled {
   background: #e0e7ef;

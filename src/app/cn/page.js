@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/cn/Header";
-import HeroSection from "../../components/HeroSection";
+import HeroSectionCN from "../../components/HeroSectionCN";
 import AboutSection from "../../components/cn/home/AboutSection";
 import WeatherWidget from "../../components/cn/home/WeatherWidget";
 import DigitalServiceSection from "../../components/cn/home/DigitalServiceSection";
@@ -19,7 +19,7 @@ import Countdown from '@/components/cn/Countdown';
 const Page = () => {
   return (
     <>
-     <HeroSection/>
+     <HeroSectionCN/>
       {/* <Marquee speed={10} direction="left">
       World Tourism Day 2025
 (Tourism And Sustainable Transformation)&nbsp;&nbsp;&nbsp;&nbsp;World Tourism Day 2025

@@ -80,6 +80,7 @@ const truncateDescription = (description, maxLength) => {
 };
 
   return (
+    
     <section className={styles.latestNewsSection}>
       <div className="container py-5">
         <h2 className="text-center mb-5" style={{ fontSize: "2rem" }}>最新资讯</h2>
