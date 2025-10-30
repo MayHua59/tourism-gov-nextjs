@@ -1,0 +1,265 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.newsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3em 2.3em;
+  justify-content: flex-start;
+  margin-top: 1.5em;
+}
+
+.newsCard {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+}
+
+.newsLink {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.coverWrapper {
+  width: 100%;
+  /* Remove fixed height for dynamic image height, or set a max-height for balance */
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.newsCover {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: #f6fafe;
+}
+
+.newsContent {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.newsTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.35em;
+  line-height: 1.5;
+}
+
+.newsMeta {
+  font-size: 0.97em;
+  color: #888;
+  margin-bottom: 0.4em;
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+
+.newsTimestamp {
+  font-weight: 500;
+}
+
+.newsDesc {
+  color: #222;
+  font-size: 1.01rem;
+  margin-top: 0.3em;
+  line-height: 1.6;
+}
+
+.readMoreWrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.readMoreBtn {
+  display: inline-block;
+  background: #1766b1;
+  color: #fff;
+  font-size: 0.99em;
+  font-weight: 600;
+  padding: 0.42em 1.14em;
+  /* border-radius: 4px; */
+  text-decoration: none;
+  box-shadow: 0 1px 4px 0 rgba(23, 102, 177, 0.07);
+  transition: background 0.13s;
+  cursor: pointer;
+}
+
+.newsCard:hover .readMoreBtn,
+.readMoreBtn:hover {
+  background: #0d3970;
+  color: #fff;
+}
+
+.newsPublished {
+  color: #1766b1;
+  font-size: 0.98rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-weight: 500;
+}
+
+.calendarIcon {
+  color: #1766b1;
+  font-size: 1em;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 0 0;
+}
+
+.pagination button {
+  background: #fff;
+  border: 1px solid #1766b1;
+  color: #1766b1;
+  padding: 6px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #1766b1;
+  color: #fff;
+  border-color: #1766b1;
+}
+
+.pagination button.activePage {
+  background: #1766b1 !important;
+  color: #fff;
+  border-color: #1766b1;
+  cursor: default;
+  font-weight: bold;
+}
+
+.prevNextBtn {
+  font-weight: bold;
+}
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6; 
+  pointer-events: none; 
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px 4vw;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+  .newsList {
+    gap: 1.2em;
+    justify-content: center;
+  }
+  .newsCard {
+    width: 98vw;
+    max-width: 420px;
+  }
+  .coverWrapper {
+    min-height: 90px;
+    padding: 40px 0;
+  }
+  .newsContent {
+    padding: 0.8em 0.7em 0.9em 0.7em;
+  }
+  .pagination button {
+    font-size: 0.8rem; 
+    padding: 4px 12px; 
+  }
+
+  .pagination {
+    gap: 4px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .pageTitle {
+    font-size: 1.15rem;
+  }
+  .newsList {
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .newsCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .coverWrapper {
+    min-height: 60px;
+  }
+  .newsContent {
+    padding: 0.7em 0.5em 0.8em 0.5em;
+  }
+  .pagination button {
+    font-size: 0.8rem; 
+    padding: 3px 8px; 
+  }
+}
+
+
+

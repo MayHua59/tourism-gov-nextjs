@@ -29,7 +29,8 @@ const LanguageSwitcher = ({
   const languages = [
     { code: 'en', name: '英語', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
     { code: 'mm', name: '緬甸語', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' },
-    { code: 'cn', name: '中文', flag: '/assets/images/flags/cn.png', alt: 'China Flag' }
+    { code: 'cn', name: '中文', flag: '/assets/images/flags/cn.png', alt: 'China Flag' },
+    { code: 'ru', name: '俄文', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' }
   ];
 
   return (

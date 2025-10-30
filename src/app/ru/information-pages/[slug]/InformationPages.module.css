@@ -1,0 +1,85 @@
+.pageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .pageContainer {
+    padding-top: 60px; 
+  }
+    
+}
+@media screen and (max-width: 448px) {
+  .pageContainer {
+    padding-top: 100px; 
+  }
+    
+}
+
+.container {
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background: #fff;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  color: #1766b1;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.description ul {
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  padding-left: 1.4em;
+  list-style-type:disc
+}
+.description ol {
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  padding-left: 1.4em;
+}
+.description ul li {
+  margin-bottom: 1em;
+  color: #232323;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.description ol li {
+  margin-bottom: 1em;
+  color: #232323;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.descHeaders h1, .descHeaders h2, .descHeaders h3, .descHeaders h4, .descHeaders h5, .descHeaders h6, .descHeaders p > strong{
+  color: #1766b1;
+  font-size: 1.2rem;
+}
+.descHeaders p {
+  font-size: 1rem;
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.galleryItem {
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
