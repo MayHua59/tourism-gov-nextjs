@@ -30,17 +30,49 @@ const MONTHS = [
 export default function FestivalsPage() {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [festivals, setFestivals] = useState([]);
+  const [meta, setMeta] = useState({ current_page: 1, per_page: 20, total: 0 });
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const fetchPage = async (page) => {
     setLoading(true);
-    // For "အားလုံး" (All), do not add month param
-    const monthParam = selectedMonth === "" || selectedMonth === "Все Месяцы" ? "" : selectedMonth;
-    fetchFestivalsList(1, 20, monthParam)
-      .then(({ data }) => setFestivals(data || []))
-      .catch(() => setFestivals([]))
-      .finally(() => setLoading(false));
+    try {
+      // For "All Months", do not add month param
+      const monthParam = selectedMonth === "" || selectedMonth === "Все Месяцы" ? "" : selectedMonth;
+      const result = await fetchFestivalsList(page, meta.per_page, monthParam);
+      setFestivals(result.data || []);
+      
+      setMeta(prevMeta => ({
+        ...prevMeta,
+        ...result.meta,
+        current_page: page
+      }));
+    } catch (err) {
+      console.error("Error fetching festivals:", err);
+      setFestivals([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    // Reset to page 1 when month changes
+    fetchPage(1);
   }, [selectedMonth]);
+
+  // Reset meta when month changes to avoid using stale per_page
+  useEffect(() => {
+    if (selectedMonth !== "") {
+      setMeta({ current_page: 1, per_page: 20, total: 0 });
+    }
+  }, [selectedMonth]);
+
+  const handlePageChange = (page) => {
+    if (page !== meta.current_page && page >= 1) {
+      fetchPage(page);
+    }
+  };
+
+  const totalPages = Math.ceil(meta.total / meta.per_page);
 
   return (
     <div className={styles.pageContainer}>
@@ -79,35 +111,64 @@ export default function FestivalsPage() {
             Извините, мы не смогли загрузить данные о фестивале. Пожалуйста, попробуйте позже.
           </div>
         ) : (
-          <div className={styles.festivalList}>
-            {festivals.map(festival => (
-              <Link
-                key={festival.slug || festival.id}
-                href={`/ru/festivals/${festival.slug || festival.id}`}
-                className={styles.festivalCard}
-              >
-                <div className={styles.festivalImageWrapper}>
-                  <img
-                    src={festival.cover_photo}
-                    alt={festival.name}
-                    className={styles.festivalImg}
-                  />
-                </div>
-                <div className={styles.festivalInfo}>
-                  <h2 className={styles.festivalSubtitle}>{festival.name}</h2>
-                  <div className={styles.festivalMeta}>
-                    <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
-                    <span>
-                      <strong>Месяц:</strong> {festival.month || "N/A"}
-                      {festival.start_date && festival.end_date
-                        ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
-                        : ""}
-                    </span>
+          <>
+            <div className={styles.festivalList}>
+              {festivals.map(festival => (
+                <Link
+                  key={festival.slug || festival.id}
+                  href={`/ru/festivals/${festival.slug || festival.id}`}
+                  className={styles.festivalCard}
+                >
+                  <div className={styles.festivalImageWrapper}>
+                    <img
+                      src={festival.cover_photo}
+                      alt={festival.name}
+                      className={styles.festivalImg}
+                    />
                   </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+                  <div className={styles.festivalInfo}>
+                    <h2 className={styles.festivalSubtitle}>{festival.name}</h2>
+                    <div className={styles.festivalMeta}>
+                      <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
+                      <span>
+                        <strong>Месяц:</strong> {festival.month || "N/A"}
+                        {festival.start_date && festival.end_date
+                          ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
+                          : ""}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            {totalPages > 1 && (
+              <div className={styles.pagination}>
+                <button
+                  onClick={() => handlePageChange(meta.current_page - 1)}
+                  disabled={meta.current_page === 1}
+                  className={styles.prevNextBtn}
+                >
+                  Назад
+                </button>
+                {Array.from({ length: totalPages }, (_, i) => (
+                  <button
+                    key={i + 1}
+                    className={meta.current_page === i + 1 ? styles.activePage : ""}
+                    onClick={() => handlePageChange(i + 1)}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+                <button
+                  onClick={() => handlePageChange(meta.current_page + 1)}
+                  disabled={meta.current_page === totalPages}
+                  className={styles.prevNextBtn}
+                >
+                  Вперед
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>
