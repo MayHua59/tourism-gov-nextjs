@@ -1,12 +1,12 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./Brochures.module.css";
+import styles from "@/app/en/brochures-and-pamphlets/Brochures.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Brochures and Pamphlets",
-  description: "Downloadable brochures and pamphlets for Myanmar tourism."
+  title: "Брошюры и брошюры",
+  description: "Скачиваемые брошюры и брошюры для туризма в Мьянме."
 };
 
 export default function BrochuresAndPamphlets() {
@@ -18,12 +18,12 @@ export default function BrochuresAndPamphlets() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Brochures and Pamphlets", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Брошюры и брошюры", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Brochures</h1>
+        <h1 className={styles.pageTitle}>Брошюры</h1>
         <section id="tourism-brochures-content" className={styles.mt5}>
           <div className={styles.gridRow}>
                <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                    Скачать PDF
                 </a>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function BrochuresAndPamphlets() {
             
           </div>
         </section>
-        <h1 className={styles.pageTitle}>Pamphlets</h1>
+        <h1 className={styles.pageTitle}>брошюры</h1>
         <section id="tourism-pamphlets-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -410,7 +410,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -453,7 +453,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -474,7 +474,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -495,7 +495,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -516,7 +516,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -540,7 +540,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

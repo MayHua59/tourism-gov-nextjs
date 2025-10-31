@@ -4,8 +4,8 @@ import styles from "./TourismPoliceOffices.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Tourism Police Offices",
-  description: "Contact information for Tourism Police Units and Hotlines across Myanmar."
+  title: "Офисы Полиции по Туризму",
+  description: "Контактная информация для подразделений Полиции по Туризму и горячих линий в Мьянме."
 };
 
 export default function TourismPoliceOffices() {
@@ -14,143 +14,171 @@ export default function TourismPoliceOffices() {
       <BannerSection imageUrl="/assets/images/cover-images/58.jpg" altText="tourism police offices cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Police Offices", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Офисы Полиции по Туризму", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Police Offices</h1>
-        <p>Contact information for Tourism Police Units across Myanmar.</p>
+        <h1 className={styles.pageTitle}>Офисы Полиции по Туризму (Tourism Police Offices)</h1>
+        <p>Контактная информация подразделений Полиции по туризму по всей Мьянме.</p>
 
         <section id="police-units">
           <div className={styles.tableResponsive}>
             <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>Tourism Police Office Unit</th>
-                  <th>Address</th>
-                  <th>Phone Number</th>
+                  <th>№</th>
+                  <th>Туристическая Полиция
+                  </th>
+                  <th>Адрес
+                  </th>
+                  <th>Номер Телефона
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Head Quarter</td>
-                  <td>Naypyitaw, Zabuthiri Township, Hotel Zone-1, at No.2 Police Station and Operating Functions.</td>
+                  <td>1</td>
+                  <td>Штаб-квартира</td>
+                  <td>Нейпьидо, Тауншип Забутхири, Зона Отелей-1, на 2-м Участке Полиции и Функциях Эксплуатации.</td>
                   <td>067-414303, 067-414364</td>
                 </tr>
                 <tr>
-                  <td>Naypyitaw Unit</td>
-                  <td>Inside the Head Quarter building.</td>
+                  <td>2</td>
+                  <td>Подразделение Нейпьидо</td>
+                  <td>Внутри здания Штаб-квартиры.</td>
                   <td>067-414226, 09-448539518</td>
                 </tr>
                 <tr>
-                  <td>Yangon Unit</td>
-                  <td>No.110, Pansodan Road (middle block), Kyauktada Tsp.</td>
+                  <td>3</td>
+                  <td>Подразделение Янгона</td>
+                  <td>№110, Улица Пансодан (средний квартал), Тсп Кьяуктада.</td>
                   <td>01-379991, 09-448539519</td>
                 </tr>
                 <tr>
-                  <td>Mandalay Unit</td>
-                  <td>Aung Myay Tharzan Tsp, Min- Te- Ei- Kin Quarter, 19th Street (between 90th and Tar- Pat St) at Kyauk- Tha- Beik Police Quarter.</td>
+                  <td>4</td>
+                  <td>Подразделение Мандалая</td>
+                  <td>Тауншип Аунг Мьяй Тхарзан, Квартал Мин-Тэ-Эй-Кин, 19-я Улица (между 90-й и Тар-Пат Стрит) на Участке Полиции Кьяук-Тха-Бейк.</td>
                   <td>02-67382, 09-791107831</td>
                 </tr>
                 <tr>
-                  <td>Pyin Oo Lwin Sub- unit</td>
-                  <td>Inside Pyin Oo Lwin Tsp Local Police Station.</td>
+                  <td>5</td>
+                  <td>Подраздел Пьин-У-Лвин</td>
+                  <td>Внутри Местного Участка Полиции Тауншипа Пьин-У-Лвин.</td>
                   <td>09-422527811</td>
                 </tr>
                 <tr>
-                  <td>Bagan Unit</td>
-                  <td>New Bagan, at Bagan Local Police Station.</td>
+                  <td>6</td>
+                  <td>Подразделение Багана</td>
+                  <td>Новый Баган, на Местном Участке Полиции Багана.</td>
                   <td>061-65474, 09-448539508</td>
                 </tr>
                 <tr>
-                  <td>Popa Sub-unit</td>
-                  <td>Located at Summit of Popa Padestal hill, Ruby Stairway, Board of Trustee building.</td>
+                  <td>7</td>
+                  <td>Подотдел Попы</td>
+                  <td>Расположен на Вершине холма Попа, Рубиновая Лестница, Здание Попечителей.</td>
                   <td>09-256261413</td>
                 </tr>
                 <tr>
-                  <td>Shan Unit</td>
-                  <td>Inside Nyaung Shwe, (In Le) Tsp, Local Police Station.</td>
+                  <td>8</td>
+                  <td>Подразделение Шан</td>
+                  <td>Внутри Ньяунг-Шве, Тауншип (Ин Ле), Местный Участок Полиции.</td>
                   <td>081-209911, 09-448539509</td>
                 </tr>
                 <tr>
-                  <td>Kalaw Sub-unit</td>
-                  <td>Inside Kalaw Tsp, Local Police Station.</td>
+                  <td>9</td>
+                  <td>Подотдел Кало</td>
+                  <td>Внутри Местного Участка Полиции Тауншипа Кало.</td>
                   <td>09-428313074</td>
                 </tr>
                 <tr>
-                  <td>Pindaya Sub-unit</td>
-                  <td>Inside Pindaya Local Police Station.</td>
+                  <td>10</td>
+                  <td>Подотдел Пиндида</td>
+                  <td>Внутри Местного Участка Полиции Пиндида.</td>
                   <td>09-49355319</td>
                 </tr>
                 <tr>
-                  <td>Ayarwaddy Unit</td>
-                  <td>Ayarwaddy Units (Ngwe Saung and Chaung Thar) are placed in respective Local Police Stations.</td>
+                  <td>11</td>
+                  <td>Подразделение Аявади</td>
+                  <td>Подразделения Аявади (Нгве Саунг и Чаунг Тхар) расположены в соответствующих Местных Участках Полиции.</td>
                   <td>09-250236373, 09-250188328</td>
                 </tr>
                 <tr>
-                  <td>Srikhittayar Unit (Pyu Ancient City)</td>
-                  <td>Bago Regional Division (west), Pyay Tsp, North Chapel of Shwe San Daw Pagoda.</td>
+                  <td>12</td>
+                  <td>Подразделение Шри Кхиттая (Древний Город Пью)</td>
+                  <td>Региональный Отдел Баго (Запад), Тауншип Пьяй, Северная Часовня Пагоды Шве Сан До.</td>
                   <td>09-250236373, 09-250188328</td>
                 </tr>
                 <tr>
-                  <td>Bago Sub-unit</td>
-                  <td>Bago Tsp, West Chapel of Shwemawdaw Pagoda, Power Supply building.</td>
+                  <td>13</td>
+                  <td>Подотдел Баго</td>
+                  <td>Тауншип Баго, Западная Часовня Пагоды Швемадо, Здание Электропитания.</td>
                   <td>09-250471372</td>
                 </tr>
                 <tr>
-                  <td>Beikthano Unit (Pyu Ancient City)</td>
-                  <td>Magway Regional Division, Taungdwingyi tsp, Local Police Station.</td>
+                  <td>14</td>
+                  <td>Подразделение Бейктхано (Древний Город Пью)</td>
+                  <td>Региональный Отдел Магуай, Тауншип Таунг-Двин-Джи, Местный Участок Полиции.</td>
                   <td>063-51148, 09-256016729</td>
                 </tr>
                 <tr>
-                  <td>Hanlin Unit (Pyu Ancient City)</td>
-                  <td>Sagaing Regional Division, Shwebo district, Wetlet Tsp, Local Police Station.</td>
+                  <td>15</td>
+                  <td>Подразделение Ханлин (Древний Город Пью)</td>
+                  <td>Региональный Отдел Сагаинг, Округ Швебо, Тауншип Ветлет, Местный Участок Полиции.</td>
                   <td>09-400536332</td>
                 </tr>
                 <tr>
-                  <td>Sagaing- Mingun Sub-unit</td>
-                  <td>Inside Mingun Police Station.</td>
+                  <td>16</td>
+                  <td>Подотдел Сагаинг - Мингун</td>
+                  <td>Внутри Участка Полиции Мингун.</td>
                   <td>09-797399188</td>
                 </tr>
                 <tr>
-                  <td>Mawlamyaing Unit</td>
-                  <td>Mon State, Mawlamyaing Tsp, Maung Ngan Quarter, Maung Ngan Police Outpost.</td>
+                  <td>17</td>
+                  <td>Подразделение Моламьяйн</td>
+                  <td>Штат Мон, Тауншип Моламьяйн, Квартал Маунг Нган, Патрульный Пункт Полиции Маунг Нган.</td>
                   <td>09-977044493, 09-254299912</td>
                 </tr>
                 <tr>
-                  <td>Kyaikhtiyo Sub-unit</td>
-                  <td>Mon State, Kyaikhto Tsp, Kimonchaung Police Station.</td>
+                  <td>18</td>
+                  <td>Подотдел Кьяиктийо</td>
+                  <td>Штат Мон, Тауншип Кьяикто, Полицейский Участок Кимончаунг.</td>
                   <td>09-428206641</td>
                 </tr>
                 <tr>
-                  <td>Myawaddy Unit</td>
-                  <td>Kayin State, Myawaddy Tsp, Local Police Station.</td>
+                  <td>19</td>
+                  <td>Подразделение Мьявади</td>
+                  <td>Штат Кайин, Тауншип Мьявади, Местный Участок Полиции.</td>
                   <td>09-43200250</td>
                 </tr>
                 <tr>
-                  <td>Tachileik Unit</td>
-                  <td>Shan State, Tachileik Tsp, Pasak Quarter, No.218, Bogyoke Aung San Road.</td>
+                  <td>20</td>
+                  <td>Подразделение Тачилеик</td>
+                  <td>Штат Шан, Тауншип Тачилеик, Квартал Пасак, Улица Боджек Аунг Сан, №218.</td>
                   <td>09-428003877</td>
                 </tr>
                 <tr>
-                  <td>Ngapali Unit</td>
-                  <td>Rakhine State, Thandwe Tsp, Jeiktaw Police Station.</td>
+                  <td>21</td>
+                  <td>Подразделение Нгапали</td>
+                  <td>Штат Ракхайн, Тауншип Тхандвэй, Полицейский Участок Джэиктав.</td>
                   <td>09-403714839</td>
                 </tr>
                 <tr>
-                  <td>Mrauk-U Sub-unit</td>
-                  <td>Rakhine State, Mrauk-U Tsp, nearby Shitthaung Pagoda, Archaeology building.</td>
+                  <td>22</td>
+                  <td>Подотдел Мраук-У</td>
+                  <td>Штат Ракхайн, Тауншип Мраук-У, Рядом с Пагодой Шиттхаунг, Здание Археологии.</td>
                   <td>09-787191051, 09-253448499</td>
                 </tr>
                 <tr>
-                  <td>Kanpatlat Sub-unit</td>
-                  <td>Chin State, Kanpatlat Tsp Police Station.</td>
+                  <td>23</td>
+                  <td>Подотдел Канпатлат</td>
+                  <td>Штат Чин, Участок Полиции Тауншипа Канпатлат.</td>
                   <td>09-73056986</td>
                 </tr>
                 <tr>
-                  <td>Dawei Sub-unit</td>
-                  <td>Tanintharyi Regional Division, Dawei Tsp, Pa-lae Police Avenue Compound.</td>
+                  <td>24</td>
+                  <td>Подотдел Давей</td>
+                  <td>Региональный Отдел Танинтари, Тауншип Давей, Комплекс Полицейского Авеню Па-Лэ.</td>
                   <td>09-250477105, 09-47053133</td>
                 </tr>
               </tbody>
@@ -159,145 +187,145 @@ export default function TourismPoliceOffices() {
         </section>
 
         <section id="police-hotlines">
-          <h3>Tourism Police Hotlines and Locations</h3>
+          <h3>Горячие Линии и Местоположения Туристической Полиции (Перевод)</h3>
           <div className={styles.tableResponsive}>
             <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>No.</th>
-                  <th>Location</th>
-                  <th>Phone Number</th>
+                  <th>№</th>
+                  <th>Место расположения</th>
+                  <th>Номер Телефона</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>The Head Quarter</td>
+                  <td>Штаб-квартира</td>
                   <td>067-414303, 067-414364</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Naypyitaw</td>
+                  <td>Нейпьидо</td>
                   <td>067-414226</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Yangon</td>
+                  <td>Янгон</td>
                   <td>01-379991</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Mandalay</td>
+                  <td>Мандалай</td>
                   <td>02-67382</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Pyin Oo Lwin</td>
+                  <td>Пьин-У-Лвин</td>
                   <td>09-422527811</td>
                 </tr>
                 <tr>
                   <td>6</td>
-                  <td>Bagan</td>
+                  <td>Баган</td>
                   <td>061-65474</td>
                 </tr>
                 <tr>
                   <td>7</td>
-                  <td>Popa</td>
+                  <td>Попа</td>
                   <td>09-256261413</td>
                 </tr>
                 <tr>
                   <td>8</td>
-                  <td>Shan</td>
+                  <td>Шан</td>
                   <td>081-209911</td>
                 </tr>
                 <tr>
                   <td>9</td>
-                  <td>Pindaya</td>
+                  <td>Пиндида</td>
                   <td>09-49355319</td>
                 </tr>
                 <tr>
                   <td>10</td>
-                  <td>Kalaw</td>
+                  <td>Кало</td>
                   <td>09-428313074</td>
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td>Tachileik</td>
+                  <td>Тачилеик</td>
                   <td>09-428003877</td>
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td>Ayarwaddy</td>
+                  <td>Аявади</td>
                   <td>09-250236373</td>
                 </tr>
                 <tr>
                   <td>13</td>
-                  <td>Srikhittaya</td>
+                  <td>Шри Кхиттая</td>
                   <td>09-250188328</td>
                 </tr>
                 <tr>
                   <td>14</td>
-                  <td>Bago</td>
+                  <td>Баго</td>
                   <td>09-250343438</td>
                 </tr>
                 <tr>
                   <td>15</td>
-                  <td>Beikthano</td>
+                  <td>Бейктхано</td>
                   <td>09-250471372</td>
                 </tr>
                 <tr>
                   <td>16</td>
-                  <td>Beikthano</td>
+                  <td>Бейктхано</td>
                   <td>063-51148</td>
                 </tr>
                 <tr>
                   <td>17</td>
-                  <td>Hanlin</td>
-                  <td>09-2560167729, 09-47061503</td>
+                  <td>Ханлин</td>
+                  <td>09-2560167729, 09-4706150318</td>
                 </tr>
                 <tr>
                   <td>18</td>
-                  <td>Mingon</td>
+                  <td>Мингун</td>
                   <td>09-797399188</td>
                 </tr>
                 <tr>
                   <td>19</td>
-                  <td>Mawlamyaing</td>
-                  <td>09-8548090</td>
+                  <td>Моулмяйн</td>
+                  <td>09-85480902</td>
                 </tr>
                 <tr>
                   <td>20</td>
-                  <td>Kyaikhtiyoe</td>
+                  <td>Кьяиктийо</td>
                   <td>09-428206641</td>
                 </tr>
                 <tr>
                   <td>21</td>
-                  <td>Ngapali</td>
-                  <td>09-403714839, 043-42191</td>
+                  <td>Нгапали</td>
+                  <td>09-403714839, 043-4219122</td>
                 </tr>
                 <tr>
                   <td>22</td>
-                  <td>Mrauk-U</td>
-                  <td>09-253448499, 09-78719105</td>
+                  <td>Мраук-У</td>
+                  <td>09-253448499, 09-787191051</td>
                 </tr>
                 <tr>
                   <td>23</td>
-                  <td>Myawaddy</td>
+                  <td>Мьявади</td>
                   <td>09-43200250</td>
                 </tr>
                 <tr>
                   <td>24</td>
-                  <td>Kanpatlat</td>
+                  <td>Канпатлат</td>
                   <td>09-73056986</td>
                 </tr>
                 <tr>
                   <td>25</td>
-                  <td>Dawei</td>
+                  <td>Давей</td>
                   <td>09-250477105, 09-47053133</td>
                 </tr>
                 <tr>
                   <td>26</td>
-                  <td>Loikaw</td>
+                  <td>Лойкау</td>
                   <td>09-420153119</td>
                 </tr>
               </tbody>

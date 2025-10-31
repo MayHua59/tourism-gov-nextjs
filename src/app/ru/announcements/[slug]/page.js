@@ -27,8 +27,8 @@ export default async function AnnouncementDetail({ params }) {
   try {
     announcement = await fetchAnnouncementDetail(params.slug);
   } catch (e) {
-    error = "Sorry, we couldn't load this announcement item. Please try again later.";
-    redirect('/en/announcements');
+    error = "Извините, мы не смогли загрузить это объявление. Пожалуйста, попробуйте снова позже.";
+    redirect('/ru/announcements');
   }
 
   if (!announcement && !error) return notFound();
@@ -41,8 +41,8 @@ export default async function AnnouncementDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Announcements", href: "/en/announcements", icon: faBullhorn },
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Объявления", href: "/ru/announcements", icon: faBullhorn },
           { label: "...", active: true }
         ]}
       />
@@ -55,7 +55,7 @@ export default async function AnnouncementDetail({ params }) {
             <div className={styles.govtMeta}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
               <span>
-                <strong>Published on:</strong>{" "}
+                <strong>Опубликовано:</strong>{" "}
                 {new Date(announcement.published_at).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
@@ -64,7 +64,7 @@ export default async function AnnouncementDetail({ params }) {
               </span>
               {announcement.category?.name && (
                 <span className={styles.govtCategory}>
-                  {" | "}Category: {announcement.category.name}
+                  {" | "}Категория: {announcement.category.name}
                 </span>
               )}
             </div>

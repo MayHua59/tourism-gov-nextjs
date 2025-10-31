@@ -29,8 +29,8 @@ const HotAirBalloonCompanies = [
 
 
 export const metadata = {
-  title: "Hot-Air Balloon Operators",
-  description: "Licensed hot-air balloon operators and contact details in Myanmar."
+  title: "Операторы воздушных шаров",
+  description: "Лицензированные операторы воздушных шаров и контактные данные в Мьянме."
 };
 
 export default function HotAirBalloonsPage() {
@@ -39,23 +39,23 @@ export default function HotAirBalloonsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/59.jpg" altText="hot air balloons cover" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Hot-Air Balloons", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Операторы воздушных шаров", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Hot-Air Balloon Companies</h1>
+        <h1 className={styles.pageTitle}>Операторы воздушных шаров</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Company</th>
-                <th>Brand</th>
-                <th>Address</th>
-                <th>License No. / Issue Date</th>
-                <th>Rooms</th>
-                <th>Phone / Fax No.</th>
+                <th>№</th>
+                <th>Название компании</th>
+                <th>Бренд</th>
+                <th>Адрес</th>
+                <th>Номер лицензии / Дата выдачи</th>
+                <th>Комнаты</th>
+                <th>Контактный телефон</th>
               </tr>
             </thead>
             <tbody>

@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Maps",
-  description: "Download regional and thematic maps of Myanmar for tourism."
+  title: "Карты",
+  description: "Скачиваемые региональные и тематические карты для туризма в Мьянме."
 };
 
 export default function Maps() {
@@ -18,12 +18,12 @@ export default function Maps() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Maps", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Карты", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Maps</h1>
+        <h1 className={styles.pageTitle}>Карты</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -235,7 +235,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

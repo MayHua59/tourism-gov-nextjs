@@ -1,12 +1,12 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./TourismLegislation.module.css";
+import styles from "@/app/en/tourism-legislation/TourismLegislation.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Tourism Legislation",
-  description: "Key legislation and rules for Myanmar tourism sector."
+  title: "Законодательство о туризме",
+  description: "Основные законы и правила для туризма в Мьянме."
 };
 
 export default function TourismLegislation() {
@@ -18,12 +18,12 @@ export default function TourismLegislation() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Legislation", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Законодательство о туризме", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Legislation</h1>
+        <h1 className={styles.pageTitle}>Законодательство о туризме</h1>
 
         <section id="tourism-legislation-content" className={styles.mt5}>
           <div className={styles.gridRow}>
@@ -44,7 +44,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

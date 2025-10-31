@@ -4,8 +4,8 @@ import styles from "./MyanmarMinistries.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Myanmar Ministries",
-  description: "List of Myanmar government ministries and their official websites."
+  title: "Министерства Мьянмы",
+  description: "Список министерств Мьянмы и их официальных сайтов."
 };
 
 export default function MyanmarMinistries() {
@@ -14,12 +14,12 @@ export default function MyanmarMinistries() {
       <BannerSection imageUrl="/assets/images/cover-images/51.jpg" altText="myanmar ministries cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Myanmar Ministries", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Министерства Мьянмы", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Myanmar Ministries</h1>
+        <h1 className={styles.pageTitle}>Министерства Мьянмы (Myanmar Ministries)</h1>
         <section id="ministries-table" className={styles.mt5}>
           <div className={styles.tableResponsive}>
             <table className={styles.ministriesTable}>

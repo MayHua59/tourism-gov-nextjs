@@ -32,8 +32,8 @@ export default async function NewsDetail({ params }) {
     try {
     news = await fetchNewsDetail(params.slug);
   } catch (e) {
-    error = "Sorry, we couldn't load this news item. Please try again later.";
-    redirect('/en/news');
+    error = "Извините, мы не смогли загрузить эту новость. Пожалуйста, попробуйте снова позже.";
+    redirect('/ru/news');
   }
 
  if (!news && !error) return notFound();
@@ -46,8 +46,8 @@ export default async function NewsDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "News", href: "/en/news" },
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Новости", href: "/ru/news" },
           { label: "...", active: true }
         ]}
       />
@@ -60,7 +60,7 @@ export default async function NewsDetail({ params }) {
           <div className={styles.govtMeta}>
             <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
             <span>
-              <strong>Published on:</strong>{" "}
+              <strong>Опубликовано:</strong>{" "}
                {new Date(news.published_at).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -69,7 +69,7 @@ export default async function NewsDetail({ params }) {
             </span>
             {news.category?.name && (
                 <span className={styles.govtCategory}>
-                  {" | "}Category: {news.category.name}
+                  {" | "}Категория: {news.category.name}
                 </span>
               )}
           </div>

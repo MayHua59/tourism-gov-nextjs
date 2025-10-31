@@ -4,8 +4,8 @@ import styles from "./Community.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Community-Based Tourism",
-  description: "Community-Based Tourism (CBT) programmes across Myanmar."
+  title: "Коммунальный туризм (CBT)",
+  description: "Коммунальный туризм (CBT) программы в Мьянме."
 };
 const CBT_DATA = [
   {
@@ -183,12 +183,12 @@ export default function CommityBasedTourismPage() {
       <BannerSection imageUrl="/assets/images/cover-images/55.jpg" altText="community based tourism cover" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Community-Based Tourism", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Коммунальный туризм", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Community-Based Tourism (CBT)</h1>
+        <h1 className={styles.pageTitle}>Коммунальный туризм (CBT)</h1>
 
         <div className={styles.intro}>
           <p>

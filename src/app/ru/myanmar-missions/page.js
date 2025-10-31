@@ -1,11 +1,12 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./MyanmarMissions.module.css";
+// import styles from "./MyanmarMissions.module.css";
+import styles from "@/app/en/myanmar-missions/MyanmarMissions.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Myanmar Missions",
-  description: "Contact information for Myanmar diplomatic missions worldwide."
+  title: "Миссии Мьянмы",
+  description: "Контактная информация дипломатических миссий Мьянмы по всему миру."
 };
 
 export default function MyanmarMissions() {
@@ -14,12 +15,12 @@ export default function MyanmarMissions() {
       <BannerSection imageUrl="/assets/images/cover-images/52.jpg" altText="myanmar missions cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Myanmar Missions", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Миссии Мьянмы", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Myanmar Missions</h1>
+        <h1 className={styles.pageTitle}>Миссии Мьянмы (Myanmar Missions)</h1>
 
         <section id="myanmar-missions" className={styles.mt5}>
   <h3 className={styles.missionsRegion}>Myanmar Missions (Asia &amp; Pacific)</h3>

@@ -5,8 +5,8 @@ import { faHome, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata = {
-  title: "Six Policies of Ministry of Hotels and Tourism",
-  description: "Six core policies of the Ministry of Hotels and Tourism, Myanmar."
+  title: "Шесть политик Министерства гостиниц и туризма",
+  description: "Шесть основных политик Министерства гостиниц и туризма, Мьянма."
 };
 
 export default function SixPoliciesOfMoHT() {
@@ -18,12 +18,12 @@ export default function SixPoliciesOfMoHT() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Six Policies of Ministry of Hotels and Tourism", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Шесть политик Министерства гостиниц и туризма", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Six Policies of Ministry of Hotels and Tourism</h1>
+        <h1 className={styles.pageTitle}>Шесть политик Министерства гостиниц и туризма</h1>
         <section id="policies">
           <ol className={styles.policiesList}>
             <li className={styles.policiesListItem}>

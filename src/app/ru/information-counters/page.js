@@ -1,7 +1,7 @@
-import Breadcrumb from "../../../components/Breadcrumb";
-import BannerSection from "../../../components/BannerSection";
 import styles from "@/app/en/information-counters/InformationCounters.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumb from "../../../components/Breadcrumb";
+import BannerSection from "../../../components/BannerSection";
 
 export const metadata = {
   title: "Информационные счетчики",

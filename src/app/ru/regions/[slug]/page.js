@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { fetchRegion } from '../../../../lib/api/region';
+import { fetchRegion } from '../../../../lib/api/ru-site/region';
 import { notFound } from 'next/navigation';
 import AttachmentTable from '@/components/AttachmentTable';
 
@@ -33,21 +33,18 @@ export default async function RegionDetailPage({ params }) {
                 />
                 <Breadcrumb
                     items={[
-                        { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+                        { label: "Главная", href: "/ru", icon: faHome },
                         { label: slug, active: true }
                     ]}
                 />
                 <div className="errorMessage">
-                    Sorry, we couldn&apos;t load this region. Please try again later.
+                    Извините, мы не смогли загрузить эту область. Пожалуйста, попробуйте позже.
                 </div>
             </div>
         );
     }
 
-    // if (!region.data) {
-    //     console.error("Region data is missing or invalid:", region);
-    //     return <div>Error: Invalid region data</div>;
-    // }
+ 
 
 
 
@@ -59,8 +56,8 @@ export default async function RegionDetailPage({ params }) {
             />
             <Breadcrumb
                 items={[
-                    { label: "Home", href: "/", icon: faHome },
-                    { label: region.slug, active: true }
+                    { label: "Главная", href: "/ru", icon: faHome },
+                    { label: region.name, active: true }
                 ]}
             />
             <div className={styles.container}>

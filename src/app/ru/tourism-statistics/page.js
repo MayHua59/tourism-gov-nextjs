@@ -1,12 +1,13 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./TourismStatistics.module.css";
+// import styles from "./TourismStatistics.module.css";
+import styles from "@/app/en/tourism-statistics/TourismStatistics.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Tourism Statistics",
-  description: "Annual tourism statistics publications for Myanmar."
+  title: "Статистика туризма",
+  description: "Ежегодные публикации статистики туризма в Мьянме."
 };
 
 export default function TourismStatistics() {
@@ -18,12 +19,12 @@ export default function TourismStatistics() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Statistics", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Статистика туризма", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Statistics</h1>
+        <h1 className={styles.pageTitle}>Статистика туризма</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -44,7 +45,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -66,7 +67,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -88,7 +89,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -110,7 +111,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

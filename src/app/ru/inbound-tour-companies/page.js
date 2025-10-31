@@ -6,7 +6,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import {inboundCompanies} from "@/data/inboundCompanies"
 
 export const metadata = {
-  title: "Inbound Tour Companies",
+  title: "Входящие туристские компании",
   description: "List of inbound tour companies licensed by the Ministry of Hotels and Tourism, Myanmar."
 };
 
@@ -16,12 +16,12 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="inbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Inbound Tour Companies", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Входящие туристские компании", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Inbound Tour Companies in Yangon</h1>
+        <h1 className={styles.pageTitle}>Входящие туристские компании</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>

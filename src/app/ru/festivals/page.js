@@ -2,27 +2,41 @@
 import React, { useState, useEffect } from "react";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
+import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Festivals.module.css";
 import Link from "next/link";
-import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalsList } from "@/lib/api/festival";
-import Loading from "@/components/Loading";
+import { fetchFestivalsList } from "@/lib/api/ru-site/festival";
+import Loading from "@/components/Loading"; 
 
 const MONTHS = [
-  "All Months","January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+  { value: "All Months", name: "Все Месяцы" },
+  { value: "January", name: "Январь" },
+  { value: "February", name: "Февраль" },
+  { value: "March", name: "Март" },
+  { value: "April", name: "Апрель" },
+  { value: "May", name: "Май" },
+  { value: "June", name: "Июнь" },
+  { value: "July", name: "Июль" },
+  { value: "August", name: "Август" },
+  { value: "September", name: "Сентябрь" },
+  { value: "October", name: "Октябрь" },
+  { value: "November", name: "Ноябрь" },
+  { value: "December", name: "Декабрь" }
 ];
+
+
 
 export default function FestivalsPage() {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [festivals, setFestivals] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch festivals when page loads or selectedMonth changes
   useEffect(() => {
     setLoading(true);
-    fetchFestivalsList(1, 20, selectedMonth === "All Months" ? "" : selectedMonth)
+    // For "အားလုံး" (All), do not add month param
+    const monthParam = selectedMonth === "" || selectedMonth === "Все Месяцы" ? "" : selectedMonth;
+    fetchFestivalsList(1, 20, monthParam)
       .then(({ data }) => setFestivals(data || []))
       .catch(() => setFestivals([]))
       .finally(() => setLoading(false));
@@ -36,13 +50,13 @@ export default function FestivalsPage() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Festivals", href: "/en/festivals", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Фестивали", href: "/ru/festivals", active: true }
         ]}
       />
       <div className={styles.container}>
         <div className={styles.headerRow}>
-          <h1 className={styles.festivalTitle}>Festivals in Myanmar</h1>
+          <h1 className={styles.festivalTitle}>Фестивали в Мьянме (Festivals in Myanmar)</h1>
           <div className={styles.monthSelectorWrapper}>
             <select
               value={selectedMonth}
@@ -50,35 +64,31 @@ export default function FestivalsPage() {
               className={styles.monthSelector}
             >
               <option value="" disabled>
-    Choose Month&nbsp;&#128899;
-  </option>
+                Выберите Месяц&nbsp;&#128899;
+              </option>
               {MONTHS.map(month => (
-                <option key={month} value={month}>{month}</option>
+                <option key={month.value} value={month.value}>{month.name}</option>
               ))}
             </select>
           </div>
         </div>
         {loading ? (
-          <Loading message="Loading Festivals..."/>
+          <Loading message="Фестивали загружаются..."/>
         ) : festivals.length === 0 ? (
-          <div className="errorMessage">
-            Sorry, we couldn&apos;t load festival data. Please try again later.
+          <div className={styles.errorMessage}>
+            Извините, мы не смогли загрузить данные о фестивале. Пожалуйста, попробуйте позже.
           </div>
         ) : (
           <div className={styles.festivalList}>
             {festivals.map(festival => (
               <Link
                 key={festival.slug || festival.id}
-                href={`/en/festivals/${festival.slug || festival.id}`}
+                href={`/ru/festivals/${festival.slug || festival.id}`}
                 className={styles.festivalCard}
               >
                 <div className={styles.festivalImageWrapper}>
                   <img
-
                     src={festival.cover_photo}
-
-                    
-
                     alt={festival.name}
                     className={styles.festivalImg}
                   />
@@ -88,7 +98,7 @@ export default function FestivalsPage() {
                   <div className={styles.festivalMeta}>
                     <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
                     <span>
-                      <strong>Month:</strong> {festival.month || "N/A"}
+                      <strong>Месяц:</strong> {festival.month || "N/A"}
                       {festival.start_date && festival.end_date
                         ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                         : ""}

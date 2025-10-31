@@ -3,7 +3,7 @@ import BannerSection from "@/components/BannerSection";
 import ImageCarousel from "@/components/ImageCarousel"; 
 import styles from "./TourismCategory.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { fetchTourismDetail } from "@/lib/api/tourism";
+import { fetchTourismDetail } from "@/lib/api/ru-site/tourism";
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
@@ -39,7 +39,7 @@ export default async function TourismCategoryPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
+          { label: "Главная", href: "/ru", icon: faHome },
           { label: data.name, active: true }
         ]}
       />

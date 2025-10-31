@@ -3,7 +3,7 @@ import BannerSection from "@/components/BannerSection";
 import styles from "./FestivalDetail.module.css";
 import { faHome, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalDetail } from "@/lib/api/festival";
+import { fetchFestivalDetail } from "@/lib/api/ru-site/festival";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -34,8 +34,8 @@ export default async function FestivalDetailPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Festivals", href: "/en/festivals" },
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Фестивали", href: "/ru/festivals" },
           { label: festival.name, active: true },
         ]}
       />
@@ -45,7 +45,7 @@ export default async function FestivalDetailPage({ params }) {
           <div className={styles.festivalMeta}>
             <span className={styles.festivalDate}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
-              <strong>Month:</strong> {festival.month || "N/A"}
+              <strong>Месяц:</strong> {festival.month || "N/A"}
               {festival.start_date && festival.end_date
                 ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                 : ""}

@@ -1808,8 +1808,8 @@ const tourGuides = [
 ];
 
 export const metadata = {
-  title: "National Tour Guides",
-  description: "National tour guides licensed by the Ministry of Hotels and Tourism, Myanmar."
+  title: "Национальные гиды",
+  description: "Национальные гиды, лицензированные Министерством туризма и отелей, Мьянма."
 };
 
 export default function NationalTourGuide() {
@@ -1818,23 +1818,23 @@ export default function NationalTourGuide() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="national tour guide cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "National Tour Guides", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Национальные гиды", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>National Tour Guides</h1>
+        <h1 className={styles.pageTitle}>Национальные гиды</h1>
         {/* <p className={styles.paragraph}>နိုင်ငံတော်ခရီးသွားလမ်းပြများ၏ အချက်အလက်များကို ရှာဖွေနိုင်ပါသည်။</p> */}
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>License No.</th>
-                <th>Language</th>
-                <th>Address</th>
-                <th>Ph No.</th>
+                <th>№</th>
+                <th>Название</th>
+                <th>Номер лицензии</th>
+                <th>Язык</th>
+                <th>Адрес</th>
+                <th>номер телефона</th>
               </tr>
             </thead>
             <tbody>

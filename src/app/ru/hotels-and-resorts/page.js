@@ -6,8 +6,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { HotelsNPW, HotelsPMA, HotelsLW, HotelsTK } from "@/data/hotels";
 
 export const metadata = {
-  title: "Hotels and Resorts",
-  description: "List of hotels and resorts licensed by the Ministry of Hotels and Tourism, Myanmar."
+  title: "Отели и курорты",
+  description: "Список отелей и курортов, лицензированных Министерством туризма и отелей, Мьянма."
 };
 
 export default function HotelsAndResortsPage() {
@@ -16,12 +16,12 @@ export default function HotelsAndResortsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/18.jpg" altText="Hotels and Resorts cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Hotels and Resorts", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Отели и курорты", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Hotels and Resorts</h1>
+        <h1 className={styles.pageTitle}>Отели и курорты</h1>
         <section>
             <h2>Nay Pyi Taw</h2>
         <div className={styles.tableResponsive}>
@@ -29,11 +29,11 @@ export default function HotelsAndResortsPage() {
             <thead>
               <tr>
                 <th>No</th>
-                <th>Hotel Name</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
+                <th>Название отеля</th>
+                <th>Адрес</th>
+                <th>Контактный телефон</th>
                 <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>Веб-сайт (или) Социальные сети</th>
               </tr>
             </thead>
             <tbody>
@@ -69,12 +69,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Hotel Name</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
+                <th>№</th>
+                <th>Название отеля</th>
+                <th>Адрес</th>
+                <th>Контактный телефон</th>
                 <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>Веб-сайт (или) Социальные сети</th>
               </tr>
             </thead>
             <tbody>
@@ -110,12 +110,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Hotel Name</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
+                <th>№</th>
+                <th>Название отеля</th>
+                <th>Адрес</th>
+                <th>Контактный телефон</th>
                 <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>Веб-сайт (или) Социальные сети</th>
               </tr>
             </thead>
             <tbody>
@@ -151,12 +151,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Hotel Name</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
+                <th>№</th>
+                <th>Название отеля</th>
+                <th>Адрес</th>
+                <th>Контактный телефон</th>
                 <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>Веб-сайт (или) Социальные сети</th>
               </tr>
             </thead>
             <tbody>

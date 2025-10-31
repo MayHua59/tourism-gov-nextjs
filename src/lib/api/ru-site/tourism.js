@@ -1,7 +1,7 @@
-import { API_ENDPOINT_MM } from "@/data/api_endpoint";
+import { API_ENDPOINT } from "@/data/api_endpoint";
 
-const TOURISM_CATEGORIES_API_URL = `${API_ENDPOINT_MM}/api/v1/tourism-categories`;
-const TOURISM_DETAIL_API_URL = (slug) => `${API_ENDPOINT_MM}/api/v1/tourism-categories/${slug}`;
+const TOURISM_CATEGORIES_API_URL = `${API_ENDPOINT}/api/v1/tourism-categories`;
+const TOURISM_DETAIL_API_URL = (slug) => `${API_ENDPOINT}/api/v1/tourism-categories/${slug}`;
 
 export async function fetchTourismCategoriesList(page = 1, per_page = 20) {
   const url = `${TOURISM_CATEGORIES_API_URL}?page=${page}&per_page=${per_page}`;

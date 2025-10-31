@@ -1,12 +1,13 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./TourismPublication.module.css";
+// import styles from "./TourismPublication.module.css";
+import styles from "@/app/en/tourism-publication/TourismPublication.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Tourism Publications",
-  description: "Official tourism research publications and surveys for Myanmar."
+  title: "Публикации туризма",
+  description: "Официальные публикации туризма и опросы для Мьянмы."
 };
 
 export default function TourismPublication() {
@@ -18,12 +19,12 @@ export default function TourismPublication() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Tourism Publications", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Публикации туризма", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Publications</h1>
+        <h1 className={styles.pageTitle}>Публикации туризма</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +44,7 @@ export default function TourismPublication() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -64,7 +65,7 @@ export default function TourismPublication() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

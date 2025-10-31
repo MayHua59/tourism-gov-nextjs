@@ -1,12 +1,13 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./Cruises.module.css";
+// import styles from "./Cruises.module.css";
+import styles from "@/app/en/cruises-and-others/Cruises.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 
 export const metadata = {
-  title: "Cruises & Others",
-  description: "Licensed cruise and riverboat operators licensed by the Ministry of Hotels and Tourism, Myanmar."
+  title: "Круизы и прочее",
+  description: "Лицензированные туристические корабли и другие, лицензированные Министерством туризма и отелей, Мьянма."
 };
 
 const CruiseCompanies = [
@@ -102,12 +103,12 @@ export default function CruisesPage() {
       <BannerSection imageUrl="/assets/images/cover-images/65.jpg" altText="cruises cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Cruises & Others ", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Круизы и прочее", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Cruises & Others</h1>
+        <h1 className={styles.pageTitle}>Круизы и прочее</h1>
         {/* <p className={styles.lead}>
           Licensed cruise and riverboat operators. Contact details and basic operator information are listed below.
         </p> */}
@@ -116,13 +117,13 @@ export default function CruisesPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Name of Company</th>
+                <th>№</th>
+                <th>Название компании</th>
                 
-                <th>Address</th>
-                <th>License No. / Issue Date</th>
-                <th>Rooms</th>
-                <th>Phone / Fax</th>
+                <th>Адрес</th>
+                <th>Номер лицензии / Дата выдачи</th>
+                <th>Комнаты</th>
+                <th>номер телефона</th>
               </tr>
             </thead>
             <tbody>

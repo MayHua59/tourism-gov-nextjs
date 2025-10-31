@@ -4,7 +4,7 @@ import styles from "./Duties.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Duties and Responsibilites",
+  title: "Обязанности и ответственность",
   description: "Duties and responsibilities of departments and offices under the Ministry of Hotels and Tourism."
 };
 
@@ -17,12 +17,12 @@ export default function DutiesAndResponsibilities() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Duties and Responsibilites", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Обязанности и ответственность", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Duties and Responsibilites</h1>
+        <h1 className={styles.pageTitle}>Обязанности и ответственность</h1>
 
         <h2 className={styles.sectionTitle}>Union Minister&apos;s Office</h2>
 

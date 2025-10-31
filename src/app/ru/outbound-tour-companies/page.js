@@ -6,8 +6,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import {OutboundCompanies} from "@/data/outboundCompanies"
 
 export const metadata = {
-  title: "Outbound Tour Companies",
-  description: "List of inbound tour companies licensed by the Ministry of Hotels and Tourism, Myanmar."
+  title: "Выходящие туристские компании",
+  description: "Список входящих туристских компаний, лицензированных Министерством туризма и отелей, Мьянма."
 };
 
 export default function InboundTourCompanies() {
@@ -16,22 +16,22 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="outbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Outbound Tour Companies ", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Выходящие туристские компании", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Outbound Tour Companies in Yangon</h1>
+        <h1 className={styles.pageTitle}>Выходящие туристские компании</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Phone No</th>
-                <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>№</th>
+                <th>Название</th>
+                <th>Адрес</th>
+                <th>номер телефона</th>
+                <th>Email (электронная почта)</th>
+                <th>Веб-сайт (или) Социальные сети</th>
               </tr>
             </thead>
             <tbody>
@@ -52,7 +52,7 @@ export default function InboundTourCompanies() {
                       </div>
                     ))}
                   </td>
-                  <td>{company.website}</td>
+                  <td>{company.website} {company.socialMedia}</td>
                 </tr>
               ))}
             </tbody>

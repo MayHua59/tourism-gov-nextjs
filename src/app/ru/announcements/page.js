@@ -59,18 +59,18 @@ export default function Announcements() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Announcements", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Объявления", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Announcements</h1>
+        <h1 className={styles.pageTitle}>Объявления</h1>
         {loading && <Loading  size="large" />}
         {error && <div className="errorMessage">{error}</div>}
         <div className={styles.announcementsList}>
           {announcements.map((a) => (
             <div className={styles.announcementCard} key={a.id}>
-              <Link href={`/en/announcements/${a.slug}`} className={styles.announcementLink}>
+              <Link href={`/ru/announcements/${a.slug}`} className={styles.announcementLink}>
   {a.cover_photo ? (
     <div className={styles.coverWrapper}>
       <img
@@ -102,7 +102,7 @@ export default function Announcements() {
       dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
     ></p>
     <div className={styles.readMoreWrapper}>
-      <span className={styles.readMoreBtn}>Read More</span>
+      <span className={styles.readMoreBtn}>Подробнее</span>
     </div>
   </div>
 </Link>
@@ -116,7 +116,7 @@ export default function Announcements() {
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  Prev
+  Предыдущая
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -135,7 +135,7 @@ export default function Announcements() {
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              Next
+              Следующая
             </button>
           </div>
         )}

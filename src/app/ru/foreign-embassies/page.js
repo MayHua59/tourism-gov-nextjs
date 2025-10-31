@@ -4,8 +4,8 @@ import styles from "./ForeignEmbassies.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Foreign Embassies in Myanmar",
-  description: "Contact details of foreign embassies in Myanmar."
+  title: "Иностранные посольства в Мьянме",
+  description: "Контактная информация иностранных посольств в Мьянме."
 };
 
 export default function ForeignEmbassiesInMyanmar() {
@@ -14,12 +14,12 @@ export default function ForeignEmbassiesInMyanmar() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="foreign embassies in Myanmar cover photo" />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "Foreign Embassies in Myanmar", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Иностранные посольства в Мьянме", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Foreign Embassies in Myanmar</h1>
+        <h1 className={styles.pageTitle}>Иностранные посольства в Мьянме (Foreign Embassies in Myanmar)</h1>
 
         <section id="foreign-embassies-asia-pacific" className={styles.mt5}>
           <h3 className={styles.missionsRegion}>Asia &amp; Pacific</h3>

@@ -51,8 +51,8 @@ export default async function UpcomingEventDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/en/", icon: faHome },
-          { label: "Upcoming Events", href: "/en/upcoming-events", icon: faCalendarCheck },
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Предстоящие события", href: "/ru/upcoming-events", icon: faCalendarCheck },
           { label: event && event.name, active: true }
         ]}
       />

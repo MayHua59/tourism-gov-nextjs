@@ -1,12 +1,12 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./ASEANTourismStandards.module.css";
+import styles from "@/app/en/asean-tourism-standards/ASEANTourismStandards.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "ASEAN Tourism Standards",
-  description: "ASEAN Tourism Standards documents and publications."
+  title: "Стандарты туризма АСЕАН",
+  description: "Документы и публикации стандартов туризма АСЕАН."
 };
 
 export default function AseanTourismStandards() {
@@ -18,12 +18,12 @@ export default function AseanTourismStandards() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/", icon: faHome },
-          { label: "ASEAN Tourism Standards", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Стандарты туризма АСЕАН", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>ASEAN Tourism Standards</h1>
+        <h1 className={styles.pageTitle}>Стандарты туризма АСЕАН</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -253,7 +253,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>
@@ -295,7 +295,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Скачать PDF
                 </a>
               </div>
             </div>

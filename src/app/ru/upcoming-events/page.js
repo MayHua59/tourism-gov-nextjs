@@ -76,8 +76,8 @@ export default function UpcomingEvents() {
       />
       <Breadcrumb
         items={[
-          { label: "Home", href: "/en/", icon: faHome },
-          { label: "Upcoming Events", active: true }
+          { label: "Главная", href: "/ru", icon: faHome },
+          { label: "Предстоящие события", active: true }
         ]}
       />
        {/* <Marquee speed={10} direction="left">
@@ -95,16 +95,16 @@ dateText="27-9-2025"
       finishedMessage="The event has started!"
     /> */}
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Upcoming Events</h1>
-        {loading && <Loading  size="large" />}
+        <h1 className={styles.pageTitle}>Предстоящие события</h1>
+        {loading && <Loading  size="large" message="Загрузка предстоящих событий..."/>}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
-          <div className={styles.noEventsMessage}>No upcoming events found.</div>
+          <div className={styles.noEventsMessage}></div>
         )}
         <div className={styles.eventsList}>
           {eventsList.map((event) => (
             <div className={styles.eventCard} key={event.slug}>
-              <Link href={`/en/upcoming-events/${event.slug}`} className={styles.eventLink}>
+              <Link href={`/ru/upcoming-events/${event.slug}`} className={styles.eventLink}>
                 <div className={styles.coverWrapper}>
                   <img
                     src={event.cover_photo}
@@ -130,7 +130,7 @@ dateText="27-9-2025"
   dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
 ></p>
                   <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>Read More</span>
+                    <span className={styles.readMoreBtn}>Подробнее</span>
                   </div>
                 </div>
               </Link>
@@ -144,7 +144,7 @@ dateText="27-9-2025"
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  Prev
+  Предыдущая
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -163,7 +163,7 @@ dateText="27-9-2025"
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              Next
+              Следующая
             </button>
           </div>
         )}
