@@ -109,7 +109,7 @@ export default function FestivalsPage() {
           <Loading message="Loading Festivals..."/>
         ) : festivals.length === 0 ? (
           <div className={styles.errorMessage}>
-            Sorry, we couldn't load festival data. Please try again later.
+            Sorry, we couldn&apos;t load festival data. Please try again later.
           </div>
         ) : (
           <>

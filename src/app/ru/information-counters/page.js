@@ -243,7 +243,7 @@ export default function InformationCounters() {
                 <tr>
                   <td>24</td>
                   <td>Чаунгтха</td>
-                  <td>В Отеле "Azura"</td>
+                  <td>В Отеле Azura</td>
                   <td>042-42360</td>
                   <td>chaungthar@tourism.gov.mm</td>
                   <td><a href="https://www.google.com/maps/place/Azura+Beach+Resort+%26+Spa+@chaung+thar/@16.9594509,94.4385654,17z/data=!4m5!3m4!1s0x30bfb3806dca8bc7:0xaaea79e9d896475b!8m2!3d16.9594509!4d94.4407541?shorturl=1" target="_blank" className="view-on-map">Посмотреть на карте
