@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
-import styles from "./Festivals.module.css";
+import { faHome, faCalendarAlt, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import styles from "@/app/en/festivals/Festivals.module.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchFestivalsList } from "@/lib/api/ru-site/festival";
@@ -37,7 +37,7 @@ export default function FestivalsPage() {
     setLoading(true);
     try {
       // For "All Months", do not add month param
-      const monthParam = selectedMonth === "" || selectedMonth === "Все Месяцы" ? "" : selectedMonth;
+      const monthParam = selectedMonth === "" || selectedMonth === "All Months" ? "" : selectedMonth;
       const result = await fetchFestivalsList(page, meta.per_page, monthParam);
       setFestivals(result.data || []);
       
@@ -82,33 +82,36 @@ export default function FestivalsPage() {
       />
       <Breadcrumb
         items={[
-          { label: "Главная", href: "/ru", icon: faHome },
-          { label: "Фестивали", href: "/ru/festivals", active: true }
+          { label: "Главная", href: "/ru/", icon: faHome },
+          { label: "Праздники", href: "/ru/festivals", active: true }
         ]}
       />
       <div className={styles.container}>
         <div className={styles.headerRow}>
-          <h1 className={styles.festivalTitle}>Фестивали в Мьянме (Festivals in Myanmar)</h1>
+          <h1 className={styles.festivalTitle}>Праздники </h1>
           <div className={styles.monthSelectorWrapper}>
-            <select
-              value={selectedMonth}
-              onChange={e => setSelectedMonth(e.target.value)}
-              className={styles.monthSelector}
-            >
-              <option value="" disabled>
-                Выберите Месяц&nbsp;&#128899;
-              </option>
-              {MONTHS.map(month => (
-                <option key={month.value} value={month.value}>{month.name}</option>
-              ))}
-            </select>
+            <div className={styles.selectContainer}>
+              <select
+                value={selectedMonth}
+                onChange={e => setSelectedMonth(e.target.value)}
+                className={styles.monthSelector}
+              >
+                <option value="" disabled>
+                  Выберите месяц
+                </option>
+                {MONTHS.map(month => (
+                  <option key={month.value} value={month.value}>{month.name}</option>
+                ))}
+              </select>
+              <FontAwesomeIcon icon={faChevronDown} className={styles.selectArrow} />
+            </div>
           </div>
         </div>
         {loading ? (
-          <Loading message="Фестивали загружаются..."/>
+          <Loading message="Loading Festivals..."/>
         ) : festivals.length === 0 ? (
           <div className={styles.errorMessage}>
-            Извините, мы не смогли загрузить данные о фестивале. Пожалуйста, попробуйте позже.
+            Sorry, we couldn't load festival data. Please try again later.
           </div>
         ) : (
           <>
@@ -148,7 +151,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === 1}
                   className={styles.prevNextBtn}
                 >
-                  Назад
+                  Предыдущая
                 </button>
                 {Array.from({ length: totalPages }, (_, i) => (
                   <button
@@ -164,7 +167,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === totalPages}
                   className={styles.prevNextBtn}
                 >
-                  Вперед
+                  Следующая
                 </button>
               </div>
             )}
