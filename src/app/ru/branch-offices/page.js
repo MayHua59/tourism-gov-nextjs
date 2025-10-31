@@ -1,10 +1,10 @@
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./BranchOffices.module.css";
+import styles from "@/app/en/branch-offices/BranchOffices.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "Branch Offices",
+  title: "Филиалы",
   description: "Contact information for branch offices of the Ministry of Hotels and Tourism, Myanmar."
 };
 
@@ -19,7 +19,7 @@ export default function BranchOffices() {
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Филиалы</h1>
+        <h1 className={styles.pageTitle}>Филиалы (branch Office)</h1>
         <p className={styles.paragraph}>Найдите контактную информацию для наших филиалов по всей Мьянме.</p>
         <div className={styles.tableResponsive}>
           <table className={styles.branchTable}>

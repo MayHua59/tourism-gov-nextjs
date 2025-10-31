@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
-import styles from "./Announcements.module.css";
+import styles from "@/app/en/announcements/Announcements.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { fetchAnnouncementList } from "../../../lib/api/announcement";
 import Loading from "../../../components/Loading";
