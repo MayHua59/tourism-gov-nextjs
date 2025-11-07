@@ -1,0 +1,96 @@
+.travelerInfoSection { padding: 120px; }
+
+/* Flexbox container for two columns */
+.flexContainer {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+}
+
+/* Left column */
+.flexLeft {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right column */
+.flexRight {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FAQ styles... (same as before) */
+.faqContent { margin-top: -10px; }
+.faqTitle { margin-bottom: 45px; font-size: 2.5rem; font-weight: bold; }
+.faqWrapper { margin: -15px 0; }
+.faqItem {
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 14px 0px rgba(9, 107, 216, 0.07);
+  overflow: hidden;
+}
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 14px 20px;
+  background: transparent;
+  transition: background 0.2s;
+}
+.faqItem.open .faqQuestion { background: #4285f4; color: #fff; }
+.faqItem.open .faqQuestionText { color: #fff; }
+.faqItem.open .faqIcon { color: #fff; }
+.faqQuestionText { flex: 1; font-size: 18px; font-weight: 700; }
+.faqIcon { font-size: 28px; min-width: 32px; text-align: right; transition: color 0.2s; }
+.iconPlus { font-size: 28px; line-height: 1; }
+.iconMinus { font-size: 38px; line-height: 1; }
+.faqAnswerWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: max-height;
+}
+.expanded {
+  max-height: 500px;
+}
+.faqAnswer { padding: 0 20px 18px 20px; font-size: 17px; color: #555; background: #fff; }
+
+/* Video always fills column height */
+.videoWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  min-height: 250px;
+}
+
+@media (max-width: 991px) {
+.travelerInfoSection { padding: 20px; }
+.travelerInfoSection h2{ 
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+  .flexContainer { flex-direction: column; }
+  .videoWrapper { min-height: 200px; }
+}
+.faqAnswerWrapper {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+}
+.faqAnswerWrapper.expanded {
+  max-height: 800px;
+  opacity: 1;
+}
+

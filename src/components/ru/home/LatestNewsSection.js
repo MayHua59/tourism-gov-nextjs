@@ -128,7 +128,7 @@ const truncateDescription = (description, maxLength) => {
     className={styles.newsSummary}
     dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
   ></p>
-                    <Link href={`/en/news/${news.slug}`} className={readMore}>
+                    <Link href={`/ru/news/${news.slug}`} className={readMore}>
                       Подробнее
                     </Link>
                   </div>
@@ -146,7 +146,7 @@ const truncateDescription = (description, maxLength) => {
           </div>
         )}
         <div className="text-center mt-4">
-          <Link href="/en/news" className="btn btn-outline-primary rounded-0">
+          <Link href="/ru/news" className="btn btn-outline-primary rounded-0">
             Посмотреть все новости
           </Link>
         </div>

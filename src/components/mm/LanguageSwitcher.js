@@ -30,7 +30,8 @@ const LanguageSwitcher = ({
     { code: 'en', name: 'အင်္ဂလိပ်ဘာသာ', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
     { code: 'mm', name: 'မြန်မာဘာသာ', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' },
     { code: 'cn', name: 'တရုတ်ဘာသာ', flag: '/assets/images/flags/cn.png', alt: 'China Flag' },
-    { code: 'ru', name: 'ရုရှားဘာသာ', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' }
+    { code: 'ru', name: 'ရုရှားဘာသာ', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' },
+    { code: 'kr', name: 'ကိုရီးယားဘာသာ', flag: '/assets/images/flags/kr.png', alt: 'Korean Flag' }
   ];
 
   return (

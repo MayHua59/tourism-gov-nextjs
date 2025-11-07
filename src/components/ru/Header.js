@@ -218,7 +218,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`${styles.headerTop} ${styles.flexRow} ${isSticky ? styles.headerTopHidden : ""}`}>
-        <a className="site-logo site-title" href="/en">
+        <a className="site-logo site-title" href="/ru">
           <img
             src="/assets/images/logo-with-text-cut.png"
             alt="Ministry of Hotels and Tourism"

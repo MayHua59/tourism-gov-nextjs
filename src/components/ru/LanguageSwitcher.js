@@ -30,7 +30,8 @@ const LanguageSwitcher = ({
     { code: 'en', name: 'Английский', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
     { code: 'mm', name: 'Мьянма', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' },
     { code: 'cn', name: 'Китайский', flag: '/assets/images/flags/cn.png', alt: 'China Flag' },
-    { code: 'ru', name: 'Русский', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' }
+    { code: 'ru', name: 'Русский', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' },
+    { code: 'kr', name: 'Корейский', flag: '/assets/images/flags/kr.png', alt: 'Korean Flag' }
   ];
 
   return (

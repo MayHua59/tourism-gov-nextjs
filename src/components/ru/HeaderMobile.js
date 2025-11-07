@@ -16,28 +16,28 @@ const menuData = [
       {
         label: "Визовые требования",
         submenu: [
-          { label: "Электронная виза", href: "/en/e-visa" },
-          { label: "Безвизовый режим", href: "/en/information-pages/visa-exemption" },
-          { label: "Виза по прибытии", href: "/en/information-pages/visa-on-arrival" },
+          { label: "Электронная виза", href: "/ru/e-visa" },
+          { label: "Безвизовый режим", href: "/ru/information-pages/visa-exemption" },
+          { label: "Виза по прибытии", href: "/ru/information-pages/visa-on-arrival" },
         ],
       },
-      { label: "Рекомендации для туроператоров", href: "/en/guidelines-for-tour-companies" },
+      { label: "Рекомендации для туроператоров", href: "/ru/information-pages/guidelines-for-tour-companies" },
       {
         label: "Служба поддержки",
         submenu: [
-          { label: "Филиалы", href: "/en/branch-offices" },
-          { label: "Информационные стойки", href: "/en/information-counters" },
-          { label: "Офисы туристической полиции", href: "/en/tourism-police-offices" },
+          { label: "Филиалы", href: "/ru/branch-offices" },
+          { label: "Информационные стойки", href: "/ru/information-counters" },
+          { label: "Офисы туристической полиции", href: "/ru/tourism-police-offices" },
         ],
       },
       {
         label: "Посольства и миссии",
         submenu: [
-          { label: "Миссии Мьянмы", href: "/en/myanmar-missions" },
-          { label: "Иностранные посольства в Мьянме", href: "/en/foreign-embassies" },
+          { label: "Миссии Мьянмы", href: "/ru/myanmar-missions" },
+          { label: "Иностранные посольства в Мьянме", href: "/ru/foreign-embassies" },
         ],
       },
-      { label: "Министерства Мьянмы", href: "/en/myanmar-ministries" },
+      { label: "Министерства Мьянмы", href: "/ru/myanmar-ministries" },
     ],
   },
   {
@@ -46,31 +46,31 @@ const menuData = [
       {
         label: "Северная Мьянма",
         submenu: [
-          { label: "Качин", href: "/en/regions/kachin" },
-          { label: "Сагайн", href: "/en/regions/sagaing" },
-          { label: "Чин", href: "/en/regions/chin" },
-          { label: "Шан", href: "/en/regions/shan" },
+            { label: "Качин", href: "/ru/regions/kachin" },
+          { label: "Сагайн", href: "/ru/regions/sagaing" },
+          { label: "Чин", href: "/ru/regions/chin" },
+          { label: "Шан", href: "/ru/regions/shan" },
         ],
       },
       {
         label: "Центральная Мьянма",
         submenu: [
-          { label: "Магуэ", href: "/en/regions/magway" },
-          { label: "Нейпьидо", href: "/en/regions/naypyitaw" },
-          { label: "Мандалай", href: "/en/regions/mandalay" },
-          { label: "Ракхайн", href: "/en/regions/rakhine" },
+          { label: "Магуэ", href: "/ru/regions/magway" },
+          { label: "Нейпьидо", href: "/ru/regions/naypyitaw" },
+          { label: "Мандалай", href: "/ru/regions/mandalay" },
+          { label: "Ракхайн", href: "/ru/regions/rakhine" },
         ],
       },
       {
         label: "Южная Мьянма",
         submenu: [
-          { label: "Айявади", href: "/en/regions/ayeyarwady" },
-          { label: "Кая", href: "/en/regions/kayah" },
-          { label: "Кайин", href: "/en/regions/kayin" },
-          { label: "Баго", href: "/en/regions/bago" },
-          { label: "Янгон", href: "/en/regions/yangon" },
-          { label: "Мон", href: "/en/regions/mon" },
-          { label: "Танинтайи", href: "/en/regions/tanintharyi" },
+          { label: "Айявади", href: "/ru/regions/ayeyarwady" },
+          { label: "Кая", href: "/ru/regions/kayah" },
+          { label: "Кайин", href: "/ru/regions/kayin" },
+          { label: "Баго", href: "/ru/regions/bago" },
+          { label: "Янгон", href: "/ru/regions/yangon" },
+          { label: "Мон", href: "/ru/regions/mon" },
+          { label: "Танинтайи", href: "/ru/regions/tanintharyi" },
         ],
       },
     ],
@@ -78,9 +78,9 @@ const menuData = [
   {
     label: "Основные моменты",
     submenu: [
-      { label: "Фестивали", href: "/en/festivals" },
-      { label: "Экотуризм", href: "/en/tourism-categories/ecotourism" },
-      { label: "Общественный туризм", href: "/en/community-based-tourism" },
+      { label: "Фестивали", href: "/ru/festivals" },
+      { label: "Экотуризм", href: "/ru/tourism-categories/ecotourism" },
+      { label: "Общественный туризм", href: "/ru/community-based-tourism" },
     ],
   },
   {
@@ -89,7 +89,7 @@ const menuData = [
       {
         label: "Размещение",
         submenu: [
-          { label: "Отели и курорты", href: "/en/hotels-and-resorts" },
+          { label: "Отели и курорты", href: "/ru/hotels-and-resorts" },
         ],
       },
       {
@@ -98,22 +98,22 @@ const menuData = [
           {
             label: "Туристические компании",
             submenu: [
-              { label: "Въездные туроператоры", href: "/en/inbound-tour-companies" },
-              { label: "Выездные туроператоры", href: "/en/outbound-tour-companies" },
+              { label: "Въездные туроператоры", href: "/ru/inbound-tour-companies" },
+              { label: "Выездные туроператоры", href: "/ru/outbound-tour-companies" },
             ],
           },
           {
             label: "Туристические гиды",
             submenu: [
-              { label: "Национальные гиды", href: "/en/tour-guides/national-tour-guides" },
-              { label: "Региональные гиды", href: "/en/tour-guides/regional-tour-guides" },
+              { label: "Национальные гиды", href: "/ru/tour-guides/national-tour-guides" },
+              { label: "Региональные гиды", href: "/ru/tour-guides/regional-tour-guides" },
             ],
           },
           {
             label: "Транспорт",
             submenu: [
-              { label: "Круизы и другое", href: "/en/cruises-and-others" },
-              { label: "Воздушные шары", href: "/en/hot-air-balloons" },
+              { label: "Круизы и другое", href: "/ru/cruises-and-others" },
+              { label: "Воздушные шары", href: "/ru/hot-air-balloons" },
             ],
           },
         ],
@@ -123,29 +123,29 @@ const menuData = [
   {
     label: "Руководства и ресурсы",
     submenu: [
-      { label: "Законодательство в сфере туризма", href: "/en/tourism-legislation" },
-      { label: "Статистика туризма", href: "/en/tourism-statistics" },
-      { label: "Публикации по туризму", href: "/en/tourism-publication" },
-      { label: "Туристические стандарты АСЕАН", href: "/en/asean-tourism-standards" },
-      { label: "Брошюры и буклеты", href: "/en/brochures-and-pamphlets" },
-      { label: "Карты", href: "/en/maps" }
+      { label: "Законодательство в сфере туризма", href: "/ru/tourism-legislation" },
+      { label: "Статистика туризма", href: "/ru/tourism-statistics" },
+      { label: "Публикации по туризму", href: "/ru/tourism-publication" },
+      { label: "Туристические стандарты АСЕАН", href: "/ru/asean-tourism-standards" },
+      { label: "Брошюры и буклеты", href: "/ru/brochures-and-pamphlets" },
+      { label: "Карты", href: "/ru/maps" }
     ],
   },
   {
     label: "Новости и объявления",
     submenu: [
-      { label: "Предстоящие события", href: "/en/upcoming-events" },
-      { label: "Новости", href: "/en/news" },
-      { label: "Объявления", href: "/en/announcements" },
+      { label: "Предстоящие события", href: "/ru/upcoming-events" },
+      { label: "Новости", href: "/ru/news" },
+      { label: "Объявления", href: "/ru/announcements" },
     ],
   },
   {
     label: "Наша роль",
     submenu: [
-      { label: "Обязанности", href: "/en/duties" },
-      { label: "Цели", href: "/en/information-pages/objectives" },
-      { label: "Шесть политик Министерства отелей и туризма", href: "/en/six-policies" },
-      { label: "Свяжитесь с нами", href: "/en/contact-us" },
+      { label: "Обязанности", href: "/ru/duties" },
+      { label: "Цели", href: "/ru/information-pages/objectives" },
+      { label: "Шесть политик Министерства отелей и туризма", href: "/ru/six-policies" },
+      { label: "Свяжитесь с нами", href: "/ru/contact-us" },
     ],
   },
 ];
@@ -201,7 +201,7 @@ export default function HeaderMobile() {
   const [isFloating, setIsFloating] = useState(false);
     const router = useRouter();
   const pathname = usePathname();
-  const currentLang = pathname.split('/')[1] || 'en';
+  const currentLang = pathname.split('/')[1] || 'ru';
   useEffect(() => {
   const handleScroll = () => {
     setIsFloating(window.scrollY > 100);
