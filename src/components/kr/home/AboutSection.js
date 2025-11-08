@@ -1,6 +1,7 @@
 
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
 
 import styles from "./AboutSection.module.css";
 import { FaCheck } from "react-icons/fa";
@@ -24,14 +25,14 @@ export default function AboutSection() {
   return (
      <section className={styles.aboutSection}>
        <div className={styles.aboutElementOne}>
-        <img src="/assets/images/shape.png" alt="element shape" />
+        <Image src="/assets/images/shape.png" alt="element shape" width={380} height={350} />
       </div>
        {/* The aeroplane - Parallax effect applied via inline style */}
       <div
         className={styles.aboutElementTwo}
         style={{ transform: `translateX(${offsetX}px)` }}
       >
-        <img src="/assets/images/shape-2.png" alt="element shape 2" />
+        <Image src="/assets/images/shape-2.png" alt="element shape 2" width={280} height={230} />
       </div>
       <div className={styles.container}>
         <div className={styles.row}>

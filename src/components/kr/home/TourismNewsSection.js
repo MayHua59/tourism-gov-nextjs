@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef, use } from "react";
+import Image from "next/image";
 import styles from "./TourismNewsSection.module.css";
 
 const newsData = [
@@ -109,7 +110,7 @@ const TourismNewsSection = () => {
             {newsData.map((item, idx) => (
               <div className={styles.slide} key={idx} style={{ width: `${100 / total}%` }}>
   <div className={styles.imageWrapper}>
-    <img src={item.image} alt={item.alt} className={styles.newsImage} />
+    <Image src={item.image} alt={item.alt} className={styles.newsImage} width={800} height={600} />
     <div className={styles.newsCard}>
       <h3 className={styles.cardTitle}>{item.title}</h3>
       <p className={styles.cardSummary}>{item.summary}</p>

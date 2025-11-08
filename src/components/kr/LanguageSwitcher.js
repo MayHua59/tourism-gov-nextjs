@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import styles from './LanguageSwitcher.module.css';
 
@@ -44,10 +45,12 @@ const LanguageSwitcher = ({
           title={lang.name}
         >
           {variant === 'flags' && (
-            <img 
+            <Image 
               src={lang.flag} 
               alt={lang.alt} 
               className={styles.flagImage}
+              width={24}
+              height={18}
             />
           )}
           {showLabels && (

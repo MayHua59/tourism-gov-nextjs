@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import styles from "./MyanmarInPicturesSection.module.css";
 
 const galleryItems = [
@@ -104,10 +105,12 @@ export default function MyanmarInPicturesSection() {
   {filteredItems.map((item, i) => (
     <div className={styles.picturesGridItem} key={i}>
       <div className={styles.picturesThumb}>
-        <img
+        <Image
           src={item.src}
           alt={item.alt}
           className={styles.picturesImg}
+          width={800}
+          height={500}
         />
         <div className={styles.picturesOverlayText}>
           <h3 className={styles.picturesOverlayTitle}>

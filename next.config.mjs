@@ -5,12 +5,14 @@ const nextConfig = {
   //   defaultLocale: "en", // Default is English
   // },
   images: {
-     remotePatterns: [
+    // Allow unoptimized images if optimization fails
+    unoptimized: false,
+    remotePatterns: [
       {
         protocol: 'https',
         hostname: 'www.go-myanmar.com',
         port: '',
-        pathname: '/images/**',
+        pathname: '/**', // Changed from '/images/**' to allow all paths
       },
       {
         protocol: 'https',
@@ -27,6 +29,24 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'admin-mm.tourism.gov.mm',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin-cn.tourism.gov.mm',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin-ru.tourism.gov.mm',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin-kr.tourism.gov.mm',
         port: '',
         pathname: '/**',
       },

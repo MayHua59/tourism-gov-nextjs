@@ -1,10 +1,11 @@
 import { notFound, redirect } from "next/navigation";
+import Image from "next/image";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
-import styles from "@/app/en/news/NewsDetail.module.css";
+import styles from "./NewsDetail.module.css";
 import { faHome, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchNewsDetail } from "../../../../lib/api/news";
+import { fetchNewsDetail } from "../../../../lib/api/kr-site/news";
 import AttachmentTable from "@/components/AttachmentTable";
 
 
@@ -74,10 +75,12 @@ export default async function NewsDetail({ params }) {
               )}
           </div>
           <div className={styles.govtImageWrapper}>
-            <img
+            <Image
               src={news.cover_photo}
               alt={news.name}
               className={styles.govtImage}
+              width={1200}
+              height={600}
             />
           </div>
           <div className={styles.govtDesc}>

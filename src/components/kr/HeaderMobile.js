@@ -2,6 +2,7 @@
 
 import React, { useState , useEffect} from "react";
 import Link from "next/link"; 
+import Image from "next/image";
 import styles from "./HeaderMobile.module.css";
 import { useRouter, usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,9 +26,9 @@ const menuData = [
       {
         label: "고객 센터",
         submenu: [
-          { label: "지사", href: "/kr/branch-offices" },
-          { label: "정보 카운터", href: "/kr/information-counters" },
-          { label: "관광 경찰 지서", href: "/kr/tourism-police-offices" },
+          { label: "관광부 지부", href: "/kr/branch-offices" },
+          { label: "관광 안내소", href: "/kr/information-counters" },
+          { label: "관광 경찰 사무소", href: "/kr/tourism-police-offices" },
         ],
       },
       {
@@ -56,7 +57,7 @@ const menuData = [
         label: "중앙 미얀마",
         submenu: [
           { label: "마그웨이", href: "/kr/regions/magway" },
-          { label: "나이 피 타우", href: "/kr/regions/naypyitaw" },
+          { label: "네피도", href: "/kr/regions/naypyitaw" },
           { label: "만다레이", href: "/kr/regions/mandalay" },
           { label: "라크인", href: "/kr/regions/rakhine" },
         ],
@@ -64,13 +65,13 @@ const menuData = [
       {
         label: "남미얀마",
         submenu: [
-            { label: "아이어와디", href: "/kr/regions/ayeyarwady" },
+            { label: "에야 와디", href: "/kr/regions/ayeyarwady" },
           { label: "카야", href: "/kr/regions/kayah" },
           { label: "카이인", href: "/kr/regions/kayin" },
           { label: "바고", href: "/kr/regions/bago" },
           { label: "양곤", href: "/kr/regions/yangon" },
           { label: "몬", href: "/kr/regions/mon" },
-          { label: "타인티나리", href: "/kr/regions/tanintharyi" },
+          { label: "따닌따이", href: "/kr/regions/tanintharyi" },
         ],
       },
     ],
@@ -253,10 +254,12 @@ export default function HeaderMobile() {
         <div className={styles.logoContainer}>
           {/* 7. Make the logo a dynamic link */}
           <Link href={`/${currentLang}`}>
-            <img
+            <Image
               src="/assets/images/logo-with-text-cut.png"
               alt="Mobile Logo"
               className={styles.logo}
+              width={230}
+              height={80}
             />
           </Link>
         </div>

@@ -1,6 +1,7 @@
 "use client"; // <-- ADD THIS LINE
 
 import React from "react";
+import Image from "next/image";
 import { FaNotesMedical, FaChartLine, FaHotel } from "react-icons/fa";
 import styles from "./DigitalServiceSection.module.css";
 import { sendGAEvent } from "@/lib/analytics"; // <-- 1. IMPORT YOUR HELPER (adjust path if needed)
@@ -88,7 +89,7 @@ export default function DigitalServiceSection() {
                   {service.icon ? (
                     service.icon
                   ) : (
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
                       height={50}

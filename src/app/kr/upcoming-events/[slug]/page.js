@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
 import styles from "./UpcomingEventDetail.module.css";
@@ -74,10 +75,12 @@ export default async function UpcomingEventDetail({ params }) {
   </span>
                   </div>
             <div className={styles.govtImageWrapper}>
-              <img
+              <Image
                 src={event.cover_photo}
                 alt={event.name}
                 className={styles.govtImage}
+                width={1200}
+                height={600}
               />
             </div>
             <div className={styles.govtDesc}>

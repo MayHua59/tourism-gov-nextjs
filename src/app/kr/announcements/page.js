@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "@/app/en/announcements/Announcements.module.css";
@@ -73,10 +74,12 @@ export default function Announcements() {
               <Link href={`/kr/announcements/${a.slug}`} className={styles.announcementLink}>
   {a.cover_photo ? (
     <div className={styles.coverWrapper}>
-      <img
+      <Image
         src={a.cover_photo}
         alt={a.name}
         className={styles.announcementCover}
+        width={800}
+        height={500}
       />
     </div>
   ) : null}

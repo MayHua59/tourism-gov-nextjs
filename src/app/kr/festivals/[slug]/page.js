@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
 import styles from "@/app/en/festivals/FestivalDetail.module.css";
 import { faHome, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalDetail } from "@/lib/api/festival";
+import { fetchFestivalDetail } from "@/lib/api/kr-site/festival";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -59,10 +60,12 @@ export default async function FestivalDetailPage({ params }) {
             )}
           </div>
           <div className={styles.festivalImageWrapper} style={{ marginBottom: 18 }}>
-            <img
+            <Image
               src={festival.cover_photo}
               alt={festival.name}
               className={styles.festivalImg}
+              width={1200}
+              height={600}
             />
           </div>
           <div className={styles.festivalDesc}>
@@ -71,11 +74,13 @@ export default async function FestivalDetailPage({ params }) {
           {festival.gallery && festival.gallery.length > 0 && (
             <div className={styles.festivalGallery} style={{ marginTop: 18 }}>
               {festival.gallery.map((imgUrl, idx) => (
-                <img
+                <Image
                   key={imgUrl}
                   src={imgUrl}
                   alt={`Gallery image ${idx + 1}`}
                   className={styles.festivalGalleryImg}
+                  width={800}
+                  height={600}
                 />
               ))}
             </div>

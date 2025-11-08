@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "@/app/en/upcoming-events/UpcomingEvents.module.css";
@@ -106,10 +107,12 @@ dateText="27-9-2025"
             <div className={styles.eventCard} key={event.slug}>
               <Link href={`/kr/upcoming-events/${event.slug}`} className={styles.eventLink}>
                 <div className={styles.coverWrapper}>
-                  <img
+                  <Image
                     src={event.cover_photo}
                     alt={event.name}
                     className={styles.eventCover}
+                    width={800}
+                    height={500}
                   />
                 </div>
                 <div className={styles.eventContent}>

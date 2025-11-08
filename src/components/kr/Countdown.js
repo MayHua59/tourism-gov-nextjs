@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import styles from "./Countdown.module.css";
 
 function getTimeParts(ms) {
@@ -62,7 +63,7 @@ const Countdown = ({
 
   return (
     <div className={styles.container}>
-      {logo && <img src={logo} alt="Logo" className={styles.logo} />}
+      {logo && <Image src={logo} alt="Logo" className={styles.logo} width={300} height={100} />}
       <div className={styles.message}>{message}</div>
      {slogan && <div className={styles.slogan}>{slogan}</div>}
       {dateText && <div className={styles.dateText}>{dateText}</div>}

@@ -2,6 +2,7 @@
 
 import React, { useState , useEffect} from "react";
 import Link from "next/link"; 
+import Image from "next/image";
 import styles from "./HeaderMobile.module.css";
 import { useRouter, usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -220,10 +221,12 @@ export default function HeaderMobile() {
         <div className={styles.logoContainer}>
           {/* 7. Make the logo a dynamic link */}
           <Link href={`/${currentLang}`}>
-            <img
+            <Image
               src="/assets/images/logo-with-text-cut.png"
               alt="Mobile Logo"
               className={styles.logo}
+              width={230}
+              height={80}
             />
           </Link>
         </div>

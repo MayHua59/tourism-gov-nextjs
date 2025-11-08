@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./ExploreSection.module.css";
 
 const places = [
@@ -66,10 +67,10 @@ export default function ExploreSection() {
             <div className="col-lg-4 col-md-6 col-sm-8 " key={place.title}>
               <div className={styles.exploreItem}>
                 <div className={styles.exploreThumb}>
-                  <img src={place.img} alt={place.alt} />
+                  <Image src={place.img} alt={place.alt} width={600} height={250} />
                   <div className={styles.exploreOverlay}>
                     <div className={styles.exploreOverlayThumb}>
-                      <img src={place.img} alt={place.alt} />
+                      <Image src={place.img} alt={place.alt} width={800} height={600} />
                     </div>
                   </div>
                 </div>
@@ -79,7 +80,7 @@ export default function ExploreSection() {
                 </div>
                 <div className={styles.exploreOverlay}>
                   <div className={styles.exploreOverlayThumb}>
-                    <img src={place.img} alt={place.alt} />
+                    <Image src={place.img} alt={place.alt} width={800} height={600} />
                   </div>
                 </div>
               </div>

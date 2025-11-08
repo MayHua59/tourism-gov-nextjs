@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../../components/HeroSection";
+import HeroSection from "../../components/HeroSectionKR";
 import AboutSection from "../../components/kr/home/AboutSection";
 import WeatherWidget from "../../components/kr/home/WeatherWidget";
 import DigitalServiceSection from "../../components/kr/home/DigitalServiceSection";

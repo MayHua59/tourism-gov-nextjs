@@ -1,12 +1,12 @@
 import React from 'react';
 import ImageCarousel from '../../../../components/ImageCarousel';
-import styles from "@/app/en/regions/RegionDetail.module.css"
+import styles from "./RegionDetail.module.css"
 import BannerSection from '../../../../components/BannerSection';
 import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { fetchRegion } from '../../../../lib/api/region';
+import { fetchRegion } from '../../../../lib/api/kr-site/region';
 import { notFound } from 'next/navigation';
 import AttachmentTable from '@/components/AttachmentTable';
 
@@ -33,7 +33,7 @@ export default async function RegionDetailPage({ params }) {
                 />
                 <Breadcrumb
                     items={[
-                        { label: "မူလစာမျက်နှာ", href: "/", icon: faHome },
+                        { label: "홈페이지", href: "/kr", icon: faHome },
                         { label: slug, active: true }
                     ]}
                 />
@@ -77,23 +77,23 @@ export default async function RegionDetailPage({ params }) {
                         <section className={styles.gallerySection}>
                             <h2 className={styles.galleryTitle}>갤러리</h2>
                             <div className={styles.galleryGrid}>
-  {region.carousel.map((carousel, index) => (
-    <div key={index} className={styles.galleryCard}>
-      <div className={styles.cardHeader}>
-        <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
-      </div>
-      <div className={styles.cardBody}>
-        <div className={styles.carouselWrapper}>
-          <ImageCarousel images={carousel.images} />
-        </div>
-        <div
-          className={styles.galleryDescription}
-          dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
-        />
-      </div>
-    </div>
-  ))}
-</div>
+                                {region.carousel.map((carousel, index) => (
+                                    <div key={index} className={styles.galleryCard}>
+                                        <div className={styles.cardHeader}>
+                                            <h3 className={styles.galleryItemTitle}>{carousel.name}</h3>
+                                        </div>
+                                        <div className={styles.cardBody}>
+                                            <div className={styles.carouselWrapper}>
+                                                <ImageCarousel images={carousel.images} />
+                                            </div>
+                                            <div
+                                                className={styles.galleryDescription}
+                                                dangerouslySetInnerHTML={{ __html: carousel.description || "" }}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
                     )}
 
@@ -166,10 +166,10 @@ export default async function RegionDetailPage({ params }) {
                         </section>
                     )}
                     {region.attachments && region.attachments.length > 0 && (
-                                        <AttachmentTable attachments={region.attachments} />
-                                      )}
+                        <AttachmentTable attachments={region.attachments} />
+                    )}
                 </div>
-                 
+
             </div>
         </div>
     );

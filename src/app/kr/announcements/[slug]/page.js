@@ -1,6 +1,8 @@
 import { notFound, redirect } from "next/navigation";
+import Image from "next/image";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import BannerSection from "../../../../components/BannerSection";
+import styles from "./AnnouncementDetail.module.css";
 import { faHome, faBullhorn, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchAnnouncementDetail } from "../../../../lib/api/announcement";
@@ -69,10 +71,12 @@ export default async function AnnouncementDetail({ params }) {
             </div>
             {announcement.cover_photo && (
   <div className={styles.govtImageWrapper}>
-    <img
+    <Image
       src={announcement.cover_photo}
       alt={announcement.name}
       className={styles.govtImage}
+      width={1200}
+      height={600}
     />
   </div>
 )}

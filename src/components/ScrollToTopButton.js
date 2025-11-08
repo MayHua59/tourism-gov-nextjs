@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import styles from "./ScrollToTopButton.module.css";
 
 export default function ScrollToTop() {
@@ -23,7 +24,7 @@ export default function ScrollToTop() {
       onClick={handleClick}
       aria-label="Scroll to top"
     >
-      <img src="/assets/images/plane-up-solid.svg" alt="Scroll to top" />
+      <Image src="/assets/images/plane-up-solid.svg" alt="Scroll to top" width={24} height={24} />
     </a>
   );
 }

@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
 import ImageCarousel from "@/components/ImageCarousel"; 
-import styles from "@/app/en/tourism-categories/TourismCategory.module.css";
+import styles from "./TourismCategory.module.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { fetchTourismDetail } from "@/lib/api/tourism";
 
@@ -55,7 +56,7 @@ export default async function TourismCategoryPage({ params }) {
                     <div className={styles.tourismCard} key={item.slug}>
                       <div className={styles.tourismCardHeader}>
                         {item.cover_photo && (
-                          <img
+                          <Image
                             src={item.cover_photo}
                             alt={item.name}
                             className={styles.tourismImg}

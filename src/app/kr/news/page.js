@@ -1,12 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "../../../components/Breadcrumb";
 import BannerSection from "../../../components/BannerSection";
 import styles from "@/app/en/news/News.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { fetchNewsList } from "../../../lib/api/news";
+import { fetchNewsList } from "../../../lib/api/kr-site/news";
 import Loading from "../../../components/Loading";
 
 export default function News() {
@@ -80,10 +81,12 @@ export default function News() {
             <div className={styles.newsCard} key={news.slug}>
               <Link href={`/kr/news/${news.slug}`} className={styles.newsLink}>
                 <div className={styles.coverWrapper}>
-                  <img
+                  <Image
                     src={news.cover_photo}
                     alt={news.name}
                     className={styles.newsCover}
+                    width={800}
+                    height={500}
                   />
                 </div>
                 <div className={styles.newsContent}>

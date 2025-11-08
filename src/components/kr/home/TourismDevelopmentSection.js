@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./TourismDevelopmentSection.module.css";
 import { FaCheck } from "react-icons/fa";
 
@@ -31,10 +32,12 @@ export default function TourismDevelopmentSection() {
         <div className={styles.row}>
           {/* Image column */}
           <div className={styles.colLeft}>
-            <img
+            <Image
               src="/assets/images/cover-images/bagan.jpg"
               alt="Tourism Myanmar"
               className={styles.tdImage}
+              width={800}
+              height={600}
             />
           </div>
           {/* Text column with moving airplane background */}
@@ -46,7 +49,7 @@ export default function TourismDevelopmentSection() {
               }}
               aria-hidden="true"
             >
-              <img src="/assets/images/overview-bg.png" alt="" />
+              <Image src="/assets/images/overview-bg.png" alt="" width={300} height={300} />
             </div>
             <div className={styles.tdContent}>
               <h2 className={styles.tdTitle}>미얀마의 관광 개발</h2>

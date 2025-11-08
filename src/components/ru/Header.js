@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link"; 
+import Image from "next/image";
 
 import { useRouter, usePathname } from 'next/navigation';
 import styles from "./Header.module.css";
@@ -219,10 +220,12 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`${styles.headerTop} ${styles.flexRow} ${isSticky ? styles.headerTopHidden : ""}`}>
         <a className="site-logo site-title" href="/ru">
-          <img
+          <Image
             src="/assets/images/logo-with-text-cut.png"
             alt="Ministry of Hotels and Tourism"
             className={styles.headerLogo}
+            width={200}
+            height={80}
           />
         </a>
         <div className={styles.headerLangContainer}>
