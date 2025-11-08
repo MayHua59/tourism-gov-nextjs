@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
-import styles from "@/app/en/festivals/FestivalDetail.module.css";
+import styles from "./FestivalDetail.module.css";
 import { faHome, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchFestivalDetail } from "@/lib/api/kr-site/festival";
