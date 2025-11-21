@@ -3,3 +3,4 @@ export const API_ENDPOINT_MM = "https://admin-mm.tourism.gov.mm";
 export const API_ENDPOINT_CN = "https://admin-cn.tourism.gov.mm";
 export const API_ENDPOINT_RU = "https://admin-ru.tourism.gov.mm";
 export const API_ENDPOINT_KR = "https://admin-kr.tourism.gov.mm";
+export const API_ENDPOINT_TH = "https://admin-th.tourism.gov.mm";

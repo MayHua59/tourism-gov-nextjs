@@ -1,0 +1,35 @@
+import "../globals.css";
+
+
+
+import Header from "@/components/th/Header";
+import HeaderMobile from "@/components/th/HeaderMobile";
+import Footer from "@/components/th/Footer";
+import ScrollToTop from "@/components/ScrollToTopButton";
+
+
+
+
+export const metadata = {
+  title: "กระทรวงโรงแรมและการท่องเที่ยว",
+  description: "กระทรวงโรงแรมและการท่องเที่ยว",
+};
+
+export default function THLayout({ children }) {
+  return (
+    
+        
+          <>
+               <div className="desktop-header"><Header /></div>
+                <div className="mobile-header"><HeaderMobile /></div>
+              <div>
+                
+                {children}
+              </div>
+              <Footer/>
+              <ScrollToTop/>
+          </>
+            
+    
+  );
+}
