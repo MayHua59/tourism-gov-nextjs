@@ -80,13 +80,13 @@ export default function FestivalsPage() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "페스티벌", href: "/kr/festivals", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กิจกรรม", href: "/th/festivals", active: true }
         ]}
       />
       <div className={styles.container}>
         <div className={styles.headerRow}>
-          <h1 className={styles.festivalTitle}>페스티벌 </h1>
+          <h1 className={styles.festivalTitle}>กิจกรรม </h1>
           <div className={styles.monthSelectorWrapper}>
             <div className={styles.selectContainer}>
               <select
@@ -95,7 +95,7 @@ export default function FestivalsPage() {
                 className={styles.monthSelector}
               >
                 <option value="" disabled>
-                  월 선택
+                  เดือน เลือก
                 </option>
                 {MONTHS.map(month => (
                   <option key={month.value} value={month.value}>{month.name}</option>
@@ -106,10 +106,10 @@ export default function FestivalsPage() {
           </div>
         </div>
         {loading ? (
-          <Loading message="페스티벌 로딩 중..."/>
+          <Loading message="กิจกรรม กำลังโหลด..."/>
         ) : festivals.length === 0 ? (
           <div className={styles.errorMessage}>
-            페스티벌 데이터를 로딩할 수 없습니다. 나중에 다시 시도하세요.
+            กิจกรรม ข้อมูลไม่สามารถโหลดได้ กรุณาลองใหม่ภายหลัง
           </div>
         ) : (
           <>
@@ -117,7 +117,7 @@ export default function FestivalsPage() {
               {festivals.map(festival => (
                 <Link
                   key={festival.slug || festival.id}
-                  href={`/kr/festivals/${festival.slug || festival.id}`}
+                  href={`/th/festivals/${festival.slug || festival.id}`}
                   className={styles.festivalCard}
                 >
                   <div className={styles.festivalImageWrapper}>
@@ -132,7 +132,7 @@ export default function FestivalsPage() {
                     <div className={styles.festivalMeta}>
                       <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
                       <span>
-                          <strong>Month 월:</strong> {festival.month || "N/A"}
+                          <strong>Month เดือน:</strong> {festival.month || "N/A"}
                         {festival.start_date && festival.end_date
                           ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                           : ""}
@@ -149,7 +149,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === 1}
                   className={styles.prevNextBtn}
                 >
-                  이전
+                  ก่อนหน้า
                 </button>
                 {Array.from({ length: totalPages }, (_, i) => (
                   <button
@@ -165,7 +165,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === totalPages}
                   className={styles.prevNextBtn}
                 >
-                  다음
+                  ถัดไป
                 </button>
               </div>
             )}

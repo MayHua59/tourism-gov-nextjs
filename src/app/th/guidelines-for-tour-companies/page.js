@@ -14,12 +14,12 @@ export default function GuidelinesForTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/69.jpg" altText="guidelines for tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "관광 회사 가이드라인", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "คำแนะนำสำหรับบริษัทการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>관광 회사 가이드라인</h1>
+        <h1 className={styles.pageTitle}>คำแนะนำสำหรับบริษัทการท่องเที่ยว</h1>
         <section id="guidelines-content" className={styles.mt5}>
           <div className={styles.businessSection}>
             <h2 className={styles.sectionTitle}>Tour companies are required to comply with the conditions below:</h2>

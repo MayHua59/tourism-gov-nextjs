@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "관광 출판물",
-  description: "미얀마 관광 부처의 관광 출판물 정보입니다."
+  title: "การท่องเที่ยวสำนักงานการท่องเที่ยว",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีการท่องเที่ยวสำนักงานการท่องเที่ยวที่ตั้งในเมียนมาร์"
 };
 
 export default function TourismPublication() {
@@ -18,12 +18,12 @@ export default function TourismPublication() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "관광 출판물", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "การท่องเที่ยวสำนักงานการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>관광 출판물</h1>
+        <h1 className={styles.pageTitle}>การท่องเที่ยวสำนักงานการท่องเที่ยว</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function TourismPublication() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function TourismPublication() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

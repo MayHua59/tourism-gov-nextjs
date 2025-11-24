@@ -5,8 +5,8 @@ import { faHome, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata = {
-  title: "미얀마 호텔 및 관광 부처의 6가지 정책",
-  description: "미얀마 호텔 및 관광 부처의 6가지 정책입니다."
+  title: "สำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาด",
+  description: "สำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาดจะมีการท่องเที่ยวสำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาด"
 };
 
 export default function SixPoliciesOfMoHT() {
@@ -18,12 +18,12 @@ export default function SixPoliciesOfMoHT() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "미얀마 호텔 및 관광 부처의 6가지 정책", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "สำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาด", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>미얀마 호텔 및 관광 부처의 6가지 정책</h1>
+        <h1 className={styles.pageTitle}>สำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาด</h1>
         <section id="policies">
           <ol className={styles.policiesList}>
             <li className={styles.policiesListItem}>

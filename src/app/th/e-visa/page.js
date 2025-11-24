@@ -14,71 +14,71 @@ export default function EVisa() {
       <BannerSection imageUrl="/assets/images/cover-images/54.jpg" altText="electronic visa cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "전자 비자", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "บัตรทะเบียนอิเล็กทรอนิกส์", active: true }
         ]}
       />
       <div className={styles.container}>
         <section id="evisa-info" className={styles.mb5}>
-          <h1 className={styles.pageTitle}>전자 비자 신청</h1>
-          <p className={styles.lead}>전자 비자 신청 안내</p>
+          <h1 className={styles.pageTitle}>บัตรทะเบียนอิเล็กทรอนิกส์</h1>
+          <p className={styles.lead}>บัตรทะเบียนอิเล็กทรอนิกส์ การสมัครสมาชิก</p>
           <ol className={styles.evisaList}>
             <li>
-              You will need the following before you apply:
+             คุณจะต้องมีสิ่งต่อไปนี้ก่อนที่จะสมัคร:
               <ul className={styles.evisaSublist}>
-                <li>a. Your passport validity must have at least (6) months.</li>
-                <li>b. You have to upload one color photo (4.6 cm X 3.8 cm) taking during last (3) months.</li>
-                <li>c. You have to upload your Passport Bio-Data Page.</li>
+                <li>a. วันหมดอายุของเอกสารทะเบียนบัตรต้องมีอย่างน้อย (6) เดือน.</li>
+                <li>b. คุณต้องอัปโหลดรูปภาพสี (4.6 ซม. X 3.8 ซม.) ที่ถ่ายในช่วงสุดท้าย (3) เดือน.</li>
+                <li>c. คุณต้องอัปโหลดหน้าข้อมูลทะเบียนบัตรของคุณ.</li>
                 <li>
-                  d. A proof of return ticket from Myanmar must be attached to the application. (Attach a trip plan if you will enter from the Kawthaung land border checkpoint.)
+                    d. หลักฐานการกลับมาในประเทศเมียนมาร์ตัวอย่างการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)
                 </li>
                 <li>
-                  e. A proof of hotel booking or on boat must be attached to the application. Tourists must stay in registered hotels, motels, inns, guest house, resort or on boat during your stay in Myanmar.
+                  e. หลักฐานการจองที่พักหรือบนเรือต้องอัปโหลดการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)
                 </li>
-                <li>f. Visa, Master, JCB credit cards for the Online Visa payment.</li>
+                <li>f. บัตรเครดิต Visa, Master, JCB สำหรับการชำระเงินอิเล็กทรอนิกส์บัตรทะเบียนอิเล็กทรอนิกส์</li>
               </ul>
             </li>
             <li>
-              Tourist Visa processing information :
+              ข้อมูลการประมวลผลบัตรทะเบียนอิเล็กทรอนิกส์ :
               <ul className={styles.evisaSublist}>
-                <li>a. The validity of eVisa approval letter is 90 days from the issued date. If it is expired, entry will be denied.</li>
-                <li>b. Length of stay is (28) days from the date of arrival in Myanmar.</li>
-                <li>c. eVisa service is non refundable.</li>
-                <li>d. You will receive an email acknowledgement within 1 hour after successful payment.</li>
+                <li>a. วันหมดอายุของบัตรทะเบียนอิเล็กทรอนิกส์ตัวอย่างการสมัครสมาชิกคือ 90 วันจากวันที่ออก</li>
+                <li>b. ระยะเวลาการพักอยู่คือ (28) วันจากวันที่มาถึงเมียนมาร์</li>
+                <li>c. บัตรทะเบียนอิเล็กทรอนิกส์บริการไม่สามารถคืนเงินได้</li>
+                <li>d. คุณจะได้รับอีเเมลการยืนยันภายใน 1 ชั่วโมงหลังจากการชำระเงินสำเร็จ</li>
                 <li>
-                  e. The processing time is minimum 3 working days (Myanmar time) for normal Tourist Visa. In all cases, processing time starts when the application acknowledgement e-mail is sent, after application is submitted and online payment is successful.
+                  e. ระยะเวลาการประมวลผลคืออย่างน้อย 3 วันทำงาน (เวลาเมียนมาร์) สำหรับบัตรทะเบียนอิเล็กทรอนิกส์ปกติ ในทุกกรณี ระยะเวลาการประมวลผลเริ่มต้นเมื่อส่งอีเเมลการยืนยันการสมัครสมาชิก หลังจากการส่งการสมัครสมาชิกและการชำระเงินอิเล็กทรอนิกส์สำเร็จ
                 </li>
               </ul>
             </li>
             <li>
-              If the applicant has child(ren) under (7) years old on the same passport, you have to put the name of that child, date of birth in the minor section of the application form.
+              หากผู้สมัครสมาชิกมีบุตร(บุตร)ภายใต้ (7) ปีอายุบนเอกสารทะเบียนบัตรเดียวกัน คุณต้องใส่ชื่อและวันเกิดของบุตรในส่วนของบุตรในฟอร์มการสมัครสมาชิก
             </li>
             <li>
-              If the decision is not allowed to entry, you may return by the same flight.
+              หากการตัดสินใจไม่ได้รับอนุญาตให้เข้า คุณสามารถกลับได้ด้วยการบินเดียวกัน
             </li>
             <li>
-              Only passports will be eligible for e-visa. Travel documents will not be accepted. If your e-visa was obtained with travel documents, you will be denied entry to Myanmar at the immigration check points.
+              เอกสารทะเบียนบัตรเท่านั้นที่สามารถใช้ได้กับบัตรทะเบียนอิเล็กทรอนิกส์ เอกสารทะเบียนบัตรไม่สามารถยอมรับได้ หากคุณได้รับบัตรทะเบียนอิเล็กทรอนิกส์ด้วยเอกสารทะเบียนบัตร คุณจะไม่สามารถเข้าเมียนมาร์ที่จุดตรวจสอบการป้องกันภัยประจำประเทศได้
             </li>
             <li>
-              There are Restricted Areas for Foreigners and Tourist travelling in the Country. For more information, please visit <a href="https://mip.gov.mm" target="_blank" rel="noopener">mip.gov.mm</a>. Information on restricted area, please go to <a href="https://mip.gov.mm/RestricetdArea" target="_blank" rel="noopener">mip.gov.mm/RestricetdArea</a> and <a href="https://tourism.gov.mm/mm/traveller-tips" target="_blank" rel="noopener">tourism.gov.mm/mm/traveller-tips</a>.
+              มีพื้นที่จำกัดสำหรับผู้นำกลุ่มต่างด้าวและนักท่องเที่ยวในประเทศ สำหรับข้อมูลเพิ่มเติม โปรดเข้าชม <a href="https://mip.gov.mm" target="_blank" rel="noopener">mip.gov.mm</a> ข้อมูลเกี่ยวกับพื้นที่จำกัด โปรดเข้าชม <a href="https://mip.gov.mm/RestricetdArea" target="_blank" rel="noopener">mip.gov.mm/RestricetdArea</a> และ <a href="https://tourism.gov.mm/mm/traveller-tips" target="_blank" rel="noopener">tourism.gov.mm/mm/traveller-tips</a>
             </li>
             <li>
-              eVisa is a only valid for a single entry. Re-entry will require a new visa.
+              บัตรทะเบียนอิเล็กทรอนิกส์เท่านั้นที่สามารถใช้ได้กับการเดินทางเดียว การเดินทางกลับจะต้องต้องการบัตรทะเบียนอิเล็กทรอนิกส์ใหม่
             </li>
             <li>
-              Currently, passengers with eVisa are only permitted to enter via following ports:
+              ปัจจุบัน ผู้เดินทางที่มีบัตรทะเบียนอิเล็กทรอนิกส์เท่านั้นที่สามารถเข้าได้ผ่านพอร์ตต่อไปนี้:
               <ul className={styles.evisaSublist}>
-                <li>a. Yangon International Airport</li>
-                <li>b. Mandalay International Airport</li>
-                <li>c. Nay Pyi Taw International Airport</li>
-                <li>d. Kawthaung International Land Border Checkpoint</li>
+                <li>a. สนามบินเอเชียมาร์ตัวอย่างการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)</li>
+                <li>b. สนามบินแม่คำพลอยตัวอย่างการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)</li>
+                <li>c. สนามบินนายพยียทวตัวอย่างการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)</li>
+                <li>d. จุดตรวจสอบการป้องกันภัยประจำประเทศกัวธังตัวอย่างการสมัครสมาชิก (ผู้เข้าพักในรถไฟหรือรถไฟรถไฟ)</li>
               </ul>
             </li>
             <li>
-              If you are visiting Myanmar via cruise, please contact your tour agent for Pre-arrangement Visa on Arrival. You will not be able to use eVisa to enter Myanmar via seaport.
+              หากคุณกำลังเดินทางเมียนมาร์ผ่านเรือ โปรดติดต่อตัวแทนการท่องเที่ยวของคุณสำหรับการจองบัตรทะเบียนอิเล็กทรอนิกส์ล่วงหน้า คุณจะไม่สามารถใช้บัตรทะเบียนอิเล็กทรอนิกส์เพื่อเข้าเมียนมาร์ผ่านที่สำหรับการจองบัตรทะเบียนอิเล็กทรอนิกส์ล่วงหน้า
             </li>
             <li>
-              Effective from 01 September 2022, ordinary passport holders from the following countries do not require a visa for tourist visits of up to Exemption Period if entering and departing from Yangon, Mandalay, or Naypyidaw International Airports. If you would like to stay in Myanmar over Exemption Period, please apply for the appropriate e-Visa.
+              สำหรับผู้นำกลุ่มต่างด้าวจากประเทศต่อไปนี้ ไม่ต้องการบัตรทะเบียนอิเล็กทรอนิกส์สำหรับการเดินทางท่องเที่ยวของผู้นำกลุ่มต่างด้าวหากเข้าและออกจากสนามบินเอเชียมาร์ หรือสนามบินแม่คำพลอย หรือสนามบินนายพยียทว หากคุณต้องการพักอยู่ในเมียนมาร์ภายใต้ระยะเวลาการพักอยู่ โปรดสมัครสมาชิกสำหรับบัตรทะเบียนอิเล็กทรอนิกส์ที่เหมาะสม
               <div className={styles.tableResponsive}>
                 <table className={styles.evisaTable}>
                   <thead>
@@ -129,10 +129,10 @@ export default function EVisa() {
               </div>
             </li>
             <li>
-              Effective from 01 September 2022, ordinary passport holders of Singapore citizens do not require a visa for tourist visits of up to 30 days and you can enter and depart from all International Checkpoints.
+              มีผลตั้งแต่วันที่ 1 กันยายน 2022 ผู้ถือหนังสือเดินทางธรรมดาของพลเมืองสิงคโปร์ไม่ต้องขอวีซ่าสำหรับการเดินทางท่องเที่ยวสูงสุด 30 วัน และสามารถเข้าออกได้ที่จุดตรวจสอบระหว่างประเทศทั้งหมด
             </li>
             <li>
-              Ordinary passport holders from the following countries including Taiwan Republic of China, Hong Kong Special Administrative Region of China and Macau Special Administrative Region of China are eligible to apply Tourist Visa.
+              ผู้ถือหนังสือเดินทางธรรมดาจากประเทศต่อไปนี้ รวมถึงประเทศประชาชนประเทศจีน ประเทศประชาชนประเทศจีน และประเทศประชาชนประเทศจีน สามารถสมัครสมาชิกสำหรับบัตรทะเบียนอิเล็กทรอนิกส์
               <div className={styles.tableResponsive}>
                 <table className={styles.evisaTable}>
                   <thead>

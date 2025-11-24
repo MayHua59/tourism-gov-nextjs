@@ -6,8 +6,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import {inboundCompanies} from "@/data/inboundCompanies"
 
 export const metadata = {
-  title: "수입 관광 회사",
-  description: "미얀마 관광부에서 인가한 수입 관광 회사 목록입니다."
+  title: "บริษัทการท่องเที่ยวนำเข้า",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีบริษัทการท่องเที่ยวนำเข้าที่ตั้งในเมียนมาร์"
 };
 
 export default function InboundTourCompanies() {
@@ -16,22 +16,22 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="inbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "수입 관광 회사", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "บริษัทการท่องเที่ยวนำเข้า", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>수입 관광 회사</h1>
+        <h1 className={styles.pageTitle}>บริษัทการท่องเที่ยวนำเข้า</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>이름</th>
-                <th>주소</th>
-                <th>연락처</th>
-                <th>이메일</th>
-                <th>웹사이트 (또는) 소셜 미디어</th>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
+                <th>Email</th>
+                <th>Website (or) Social Media</th>
               </tr>
             </thead>
             <tbody>

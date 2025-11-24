@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
   const { slug } = params;
   const data = await fetchTourismDetail(slug);
   return {
-    title: data.name || "관광 카테고리",
-    description: `${data.name || "관광 카테고리"} 상세 페이지`
+    title: data.name || "หมวดหมู่การท่องเที่ยว",
+    description: `${data.name || "หมวดหมู่การท่องเที่ยว"} ข้อมูลการท่องเที่ยว`
   };
 }
 
@@ -40,7 +40,7 @@ export default async function TourismCategoryPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
+          { label: "หน้าแรก", href: "/th", icon: faHome },
           { label: data.name, active: true }
         ]}
       />

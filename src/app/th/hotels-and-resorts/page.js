@@ -16,24 +16,24 @@ export default function HotelsAndResortsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/18.jpg" altText="Hotels and Resorts cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "호텔과 리조트", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "สำนักงานการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>호텔과 리조트</h1>
+        <h1 className={styles.pageTitle}>สำนักงานการท่องเที่ยว</h1>
         <section>
             <h2>Nay Pyi Taw</h2>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>호텔 이름</th>
-                <th>주소</th>
-                <th>연락처</th>
-                <th>이메일</th>
-                <th>웹사이트 (또는) 소셜 미디어</th>
+                <th>No.</th>
+                <th>Hotel Name</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
+                <th>Email</th>
+                <th>Website (or) Social Media</th>
               </tr>
             </thead>
             <tbody>
@@ -69,12 +69,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>호텔 이름</th>
-                <th>주소</th>
-                <th>연락처</th>
-                <th>이메일</th>
-                <th>웹사이트 (또는) 소셜 미디어</th>
+                <th>No.</th>
+                <th>Hotel Name</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
+                <th>Email</th>
+                <th>Website (or) Social Media</th>
               </tr>
             </thead>
             <tbody>
@@ -110,12 +110,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>호텔 이름</th>
-                <th>주소</th>
-                <th>연락처</th>
-                <th>이메일</th>
-                <th>웹사이트 (또는) 소셜 미디어</th>
+                <th>No.</th>
+                <th>Hotel Name</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
+                <th>Email</th>
+                <th>Website (or) Social Media</th>
               </tr>
             </thead>
             <tbody>
@@ -151,12 +151,12 @@ export default function HotelsAndResortsPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>호텔 이름</th>
-                <th>주소</th>
-                <th>연락처</th>
-                <th>이메일</th>
-                <th>웹사이트 (또는) 소셜 미디어</th>
+                <th>No.</th>
+                <th>Hotel Name</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
+                <th>Email</th>
+                <th>Website (or) Social Media</th>
               </tr>
             </thead>
             <tbody>

@@ -30,7 +30,7 @@ export default async function UpcomingEventDetail({ params }) {
   try {
     event = await fetchUpcomingEventDetail(params.slug);
   } catch (e) {
-    error = "죄송합니다, 이벤트를 불러올 수 없습니다. 나중에 다시 시도해주세요.";
+    error = "ขออภัย, ไม่สามารถโหลดกิจกรรมที่จะมีการจัดขึ้นได้ กรุณาลองใหม่ภายหลัง";
   }
 
   if (!event && !error) return notFound();
@@ -52,8 +52,8 @@ export default async function UpcomingEventDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "예정된 이벤트", href: "/kr/upcoming-events", icon: faCalendarCheck },
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กิจกรรมที่จะมีการจัดขึ้น", href: "/th/upcoming-events", icon: faCalendarCheck },
           { label: event && event.name, active: true }
         ]}
       />

@@ -65,12 +65,12 @@ export default function News() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "뉴스", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ข่าวสาร", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>뉴스</h1>
+        <h1 className={styles.pageTitle}>ข่าวสาร</h1>
         {loading && <Loading message="Fetching the latest news..." size="large" />}
         {error && <div className="errorMessage">{error}</div>} 
         {!loading && newsList.length === 0 && !error && (
@@ -79,7 +79,7 @@ export default function News() {
         <div className={styles.newsList}>
           {newsList.map((news) => (
             <div className={styles.newsCard} key={news.slug}>
-              <Link href={`/kr/news/${news.slug}`} className={styles.newsLink}>
+              <Link href={`/th/news/${news.slug}`} className={styles.newsLink}>
                 <div className={styles.coverWrapper}>
                   <Image
                     src={news.cover_photo}
@@ -106,7 +106,7 @@ export default function News() {
   dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }} 
 ></p>
                   <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>더 읽기</span>
+                    <span className={styles.readMoreBtn}>อ่านเพิ่มเติม</span>
                   </div>
                 </div>
               </Link>
@@ -120,7 +120,7 @@ export default function News() {
   disabled={meta.current_page === 1} 
   className={styles.prevNextBtn}
 >
-  이전
+  ก่อนหน้า
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -137,7 +137,7 @@ export default function News() {
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              다음
+              ถัดไป
             </button>
           </div>
         )}

@@ -29,7 +29,7 @@ export default async function AnnouncementDetail({ params }) {
     announcement = await fetchAnnouncementDetail(params.slug);
   } catch (e) {
     error = "Sorry, we couldn't load this announcement item. Please try again later.";
-    redirect('/en/announcements');
+    redirect('/th/announcements');
   }
 
   if (!announcement && !error) return notFound();
@@ -42,8 +42,8 @@ export default async function AnnouncementDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "공지사항", href: "/kr/announcements", icon: faBullhorn },
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ประกาศ", href: "/th/announcements", icon: faBullhorn },
           { label: "...", active: true }
         ]}
       />
@@ -56,7 +56,7 @@ export default async function AnnouncementDetail({ params }) {
             <div className={styles.govtMeta}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
               <span>
-                <strong>Published on:</strong>{" "}
+                <strong>อัพเดทเมื่อ:</strong>{" "}
                 {new Date(announcement.published_at).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
@@ -65,7 +65,7 @@ export default async function AnnouncementDetail({ params }) {
               </span>
               {announcement.category?.name && (
                 <span className={styles.govtCategory}>
-                  {" | "}Category: {announcement.category.name}
+                  {" | "}หมวดหมู่: {announcement.category.name}
                 </span>
               )}
             </div>

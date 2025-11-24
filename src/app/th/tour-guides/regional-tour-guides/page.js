@@ -836,8 +836,8 @@ const tourGuides = [
 
 
 export const metadata = {
-  title: "지역 관광 가이드",
-  description: "미얀마 호텔 및 관광 부처에서 인가한 지역 관광 가이드 목록입니다."
+  title: "ตำรวจการท่องเที่ยวชาวต่างประเทศ",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีตำรวจการท่องเที่ยวชาวต่างประเทศที่ตั้งในเมียนมาร์"
 };
 
 export default function RegionalTourGuide() {
@@ -846,23 +846,23 @@ export default function RegionalTourGuide() {
       <BannerSection imageUrl="/assets/images/cover-images/55.jpg" altText="national tour guide cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "지역 관광 가이드", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ตำรวจการท่องเที่ยวชาวต่างประเทศ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>지역 관광 가이드</h1>
+        <h1 className={styles.pageTitle}>ตำรวจการท่องเที่ยวชาวต่างประเทศ</h1>
         {/* <p className={styles.paragraph}>နိုင်ငံတော်ခရီးသွားလမ်းပြများ၏ အချက်အလက်များကို ရှာဖွေနိုင်ပါသည်။</p> */}
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>이름</th>
-                <th>라이선스 번호</th>
-                <th>언어</th>
-                <th>주소</th>
-                <th>전화번호</th>
+                <th>No.</th>
+                <th>Name</th>
+                <th>License No</th>
+                <th>Language</th>
+                <th>Address</th>
+                <th>Contact Phone</th>
               </tr>
             </thead>
             <tbody>

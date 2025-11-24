@@ -183,12 +183,12 @@ export default function CommityBasedTourismPage() {
       <BannerSection imageUrl="/assets/images/cover-images/55.jpg" altText="community based tourism cover" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "커뮤니티 기반 관광", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "การท่องเที่ยวระบบคันธรรมสิทธิ์", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>커뮤니티 기반 관광 (CBT)</h1>
+        <h1 className={styles.pageTitle}>การท่องเที่ยวระบบคันธรรมสิทธิ์ (CBT)</h1>
 
         <div className={styles.intro}>
           <p>

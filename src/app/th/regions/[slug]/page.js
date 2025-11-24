@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../components/Breadcrumb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faChevronRight, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { fetchRegion } from '../../../../lib/api/kr-site/region';
+import { fetchRegion } from '../../../../lib/api/th-site/region';
 import { notFound } from 'next/navigation';
 import AttachmentTable from '@/components/AttachmentTable';
 
@@ -33,7 +33,7 @@ export default async function RegionDetailPage({ params }) {
                 />
                 <Breadcrumb
                     items={[
-                        { label: "홈페이지", href: "/kr", icon: faHome },
+                        { label: "หน้าแรก", href: "/th", icon: faHome },
                         { label: slug, active: true }
                     ]}
                 />
@@ -59,7 +59,7 @@ export default async function RegionDetailPage({ params }) {
             />
             <Breadcrumb
                 items={[
-                    { label: "홈페이지", href: "/kr", icon: faHome },
+                    { label: "หน้าแรก", href: "/th", icon: faHome },
                     { label: region.slug, active: true }
                 ]}
             />
@@ -75,7 +75,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.carousel && region.carousel.length > 0 && (
                         <section className={styles.gallerySection}>
-                            <h2 className={styles.galleryTitle}>갤러리</h2>
+                            <h2 className={styles.galleryTitle}>รูปภาพ</h2>
                             <div className={styles.galleryGrid}>
                                 {region.carousel.map((carousel, index) => (
                                     <div key={index} className={styles.galleryCard}>
@@ -102,7 +102,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.destinations && region.destinations.length > 0 && (
                         <section className="mb-5">
-                            <h2 className="border-bottom pb-2 mb-4 text-dark">인기 관광 목적지</h2>
+                            <h2 className="border-bottom pb-2 mb-4 text-dark">สถานที่ท่องเที่ยวที่นิยม</h2>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                                 {region.destinations.map((destination, index) => {
                                     const imgSrc = "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg";
@@ -132,7 +132,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.events && region.events.length > 0 && (
                         <section className="mb-5">
-                            <h2 className="border-bottom pb-2 mb-4 text-dark">이벤트</h2>
+                            <h2 className="border-bottom pb-2 mb-4 text-dark">กิจกรรม</h2>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                                 {region.events.map((event, index) => {
                                     const imgSrc = "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg";

@@ -17,14 +17,14 @@ export default function DutiesAndResponsibilities() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "책임과 책임", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "หน่วยงานและหน่วยงานภายใต้สำนักงานการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>책임과 책임</h1>
+        <h1 className={styles.pageTitle}>หน่วยงานและหน่วยงานภายใต้สำนักงานการท่องเที่ยว</h1>
 
-        <h2 className={styles.sectionTitle}>연합 총리 사무실</h2>
+        <h2 className={styles.sectionTitle}>สำนักงานคณะรัฐมนตรี</h2>
 
         <section id="administration">
           <h2 className={styles.sectionTitle}>Administration and Human Resources Management Department</h2>

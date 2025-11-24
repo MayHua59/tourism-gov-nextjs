@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "관광 법령",
-  description: "미얀마 관광 부처의 관광 법령 및 규정입니다."
+  title: "กฎหมายการท่องเที่ยว",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีกฎหมายการท่องเที่ยวที่ตั้งในเมียนมาร์"
 };
 
 export default function TourismLegislation() {
@@ -18,12 +18,12 @@ export default function TourismLegislation() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "관광 법령", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กฎหมายการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>관광 법령</h1>
+        <h1 className={styles.pageTitle}>กฎหมายการท่องเที่ยว</h1>
 
         <section id="tourism-legislation-content" className={styles.mt5}>
           <div className={styles.gridRow}>
@@ -44,7 +44,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function TourismLegislation() {
                   target="_blank"
                   rel="noopener"
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

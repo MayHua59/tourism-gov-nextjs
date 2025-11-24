@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "관광 통계",
-  description: "미얀마 관광 부처의 관광 통계 정보입니다."
+  title: "สถิติการท่องเที่ยว",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีสถิติการท่องเที่ยวที่ตั้งในเมียนมาร์"
 };
 
 export default function TourismStatistics() {
@@ -18,12 +18,12 @@ export default function TourismStatistics() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "관광 통계", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "สถิติการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>관광 통계</h1>
+        <h1 className={styles.pageTitle}>สถิติการท่องเที่ยว</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -44,7 +44,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function TourismStatistics() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

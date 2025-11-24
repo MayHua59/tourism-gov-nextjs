@@ -47,8 +47,8 @@ export default async function NewsDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "뉴스", href: "/kr/news" },
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ข่าวสาร", href: "/th/news" },
           { label: "...", active: true }
         ]}
       />

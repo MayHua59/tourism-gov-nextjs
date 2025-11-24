@@ -102,12 +102,12 @@ export default function CruisesPage() {
       <BannerSection imageUrl="/assets/images/cover-images/65.jpg" altText="cruises cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "크루즈와 기타", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "การท่องเที่ยวระบบคันธรรมสิทธิ์", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>크루즈와 기타</h1>
+        <h1 className={styles.pageTitle}>การท่องเที่ยวระบบคันธรรมสิทธิ์</h1>
         {/* <p className={styles.lead}>
           Licensed cruise and riverboat operators. Contact details and basic operator information are listed below.
         </p> */}
@@ -116,13 +116,13 @@ export default function CruisesPage() {
           <table className={styles.guideTable}>
             <thead>
               <tr>
-                <th>번호</th>
-                <th>Company 회사</th>
+                <th>No.</th>
+                <th>Company Name</th>
                 
-                <th> 주소</th>
-                <th> 라이선스 번호 / 발행 날짜</th>
-                <th> 방</th>
-                <th> 전화 / 팩스</th>
+                <th> Address</th>
+                <th> License No. / Issue Date</th>
+                <th> Rooms</th>
+                <th> Contact Phone</th>
               </tr>
             </thead>
             <tbody>

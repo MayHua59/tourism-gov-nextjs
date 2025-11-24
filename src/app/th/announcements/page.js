@@ -60,18 +60,18 @@ export default function Announcements() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "공지사항", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ประกาศ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>공지사항</h1>
+        <h1 className={styles.pageTitle}>ประกาศ</h1>
         {loading && <Loading  size="large" />}
         {error && <div className="errorMessage">{error}</div>}
         <div className={styles.announcementsList}>
           {announcements.map((a) => (
             <div className={styles.announcementCard} key={a.id}>
-              <Link href={`/kr/announcements/${a.slug}`} className={styles.announcementLink}>
+              <Link href={`/th/announcements/${a.slug}`} className={styles.announcementLink}>
   {a.cover_photo ? (
     <div className={styles.coverWrapper}>
       <Image
@@ -105,7 +105,7 @@ export default function Announcements() {
       dangerouslySetInnerHTML={{ __html: truncateDescription(a.description, 150) }}
     ></p>
     <div className={styles.readMoreWrapper}>
-      <span className={styles.readMoreBtn}>더 보기</span>
+      <span className={styles.readMoreBtn}>อ่านเพิ่มเติม</span>
     </div>
   </div>
 </Link>
@@ -119,7 +119,7 @@ export default function Announcements() {
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  이전
+  ก่อนหน้า
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -138,7 +138,7 @@ export default function Announcements() {
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              다음
+              ถัดไป
             </button>
           </div>
         )}

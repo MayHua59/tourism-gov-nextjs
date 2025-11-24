@@ -4,7 +4,7 @@ import BannerSection from "@/components/BannerSection";
 import styles from "./FestivalDetail.module.css";
 import { faHome, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchFestivalDetail } from "@/lib/api/kr-site/festival";
+import { fetchFestivalDetail } from "@/lib/api/festival";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -35,18 +35,18 @@ export default async function FestivalDetailPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "페스티벌", href: "/kr/festivals" },
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กิจกรรม", href: "/th/festivals" },
           { label: festival.name, active: true },
         ]}
       />
       <div className={styles.container}>
         <div className={styles.festivalDetailCard}>
-          <h1 className={styles.festivalTitle}>{festival.name} 페스티벌</h1>
+          <h1 className={styles.festivalTitle}>{festival.name} กิจกรรม</h1>
           <div className={styles.festivalMeta}>
             <span className={styles.festivalDate}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
-              <strong>Month 월:</strong> {festival.month || "N/A"}
+              <strong>Month เดือน:</strong> {festival.month || "N/A"}
               {festival.start_date && festival.end_date
                 ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                 : ""}

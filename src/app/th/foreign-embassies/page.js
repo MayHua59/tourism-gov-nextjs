@@ -14,12 +14,12 @@ export default function ForeignEmbassiesInMyanmar() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="foreign embassies in Myanmar cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "미얀마 외교관", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "สำนักงานการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>미얀마 외교관</h1>
+        <h1 className={styles.pageTitle}>สำนักงานการท่องเที่ยว</h1>
 
         <section id="foreign-embassies-asia-pacific" className={styles.mt5}>
           <h3 className={styles.missionsRegion}>Asia &amp; Pacific</h3>

@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "지도",
-  description: "Download regional and thematic maps of Myanmar for tourism."
+  title: "แผนที่",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีการท่องเที่ยวสำนักงานการท่องเที่ยวที่ตั้งในเมียนมาร์"
 };
 
 export default function Maps() {
@@ -18,12 +18,12 @@ export default function Maps() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "지도", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "แผนที่", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>지도</h1>
+        <h1 className={styles.pageTitle}>แผนที่</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -235,7 +235,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function Maps() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드 PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

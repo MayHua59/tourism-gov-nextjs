@@ -13,8 +13,8 @@ import Marquee from '@/components/eng/Marquee';
 import Countdown from '@/components/eng/Countdown';
 
 // export const metadata = {
-//   title: "Upcoming Events",
-//   description: "Discover upcoming events and festivals in Myanmar."
+//   title: "กิจกรรมที่จะมีการจัดขึ้น",
+//   description: "ค้นหากิจกรรมที่จะมีการจัดขึ้นและงานประกวดในเมียนมาร์"
 // };
 
 export default function UpcomingEvents() {
@@ -77,8 +77,8 @@ export default function UpcomingEvents() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "예정된 이벤트", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กิจกรรมที่จะมีการจัดขึ้น", active: true }
         ]}
       />
        {/* <Marquee speed={10} direction="left">
@@ -96,16 +96,16 @@ dateText="27-9-2025"
       finishedMessage="The event has started!"
     /> */}
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>예정된 이벤트</h1>
+        <h1 className={styles.pageTitle}>กิจกรรมที่จะมีการจัดขึ้น</h1>
         {loading && <Loading  size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
-          <div className={styles.noEventsMessage}>예정된 이벤트를 찾을 수 없습니다.</div>
+          <div className={styles.noEventsMessage}>กิจกรรมที่จะมีการจัดขึ้นที่จะมีการจัดขึ้น</div>
         )}
         <div className={styles.eventsList}>
           {eventsList.map((event) => (
             <div className={styles.eventCard} key={event.slug}>
-              <Link href={`/kr/upcoming-events/${event.slug}`} className={styles.eventLink}>
+              <Link href={`/th/upcoming-events/${event.slug}`} className={styles.eventLink}>
                 <div className={styles.coverWrapper}>
                   <Image
                     src={event.cover_photo}
@@ -133,7 +133,7 @@ dateText="27-9-2025"
   dangerouslySetInnerHTML={{ __html: truncateDescription(event.description, 150) }}
 ></p>
                   <div className={styles.readMoreWrapper}>
-                    <span className={styles.readMoreBtn}>더 읽기</span>
+                    <span className={styles.readMoreBtn}>อ่านเพิ่มเติม</span>
                   </div>
                 </div>
               </Link>
@@ -147,7 +147,7 @@ dateText="27-9-2025"
   disabled={meta.current_page === 1} // This is the line that handles disabling
   className={styles.prevNextBtn}
 >
-  이전
+  ก่อนหน้า
 </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -166,7 +166,7 @@ dateText="27-9-2025"
               disabled={meta.current_page === totalPages}
               className={styles.prevNextBtn}
             >
-              다음
+              ถัดไป
             </button>
           </div>
         )}

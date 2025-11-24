@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./HeroSection.module.css";
 
 const images = [
-  "/assets/images/cover-images-th-site/3.jpg",
-  "/assets/images/cover-images-th-site/2.jpg",
-  "/assets/images/cover-images-th-site/4.jpg",
   "/assets/images/cover-images-th-site/1.jpg",
+  "/assets/images/cover-images-th-site/2.jpg",
+  "/assets/images/cover-images-th-site/3.jpg",
+  "/assets/images/cover-images-th-site/4.jpg",
     
   
 ];

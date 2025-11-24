@@ -18,12 +18,12 @@ export default function AseanTourismStandards() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "ASEAN 관광 표준", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "ASEAN การท่องเที่ยวมาตรฐาน", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>ASEAN 관광 표준</h1>
+        <h1 className={styles.pageTitle}>ASEAN การท่องเที่ยวมาตรฐาน</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                    다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -253,7 +253,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -295,7 +295,7 @@ export default function AseanTourismStandards() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

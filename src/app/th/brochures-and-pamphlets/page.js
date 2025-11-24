@@ -5,8 +5,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Brochures and Pamphlets",
-  description: "Downloadable brochures and pamphlets for Myanmar tourism."
+  title: "กระดาษปิดกล่องและกระดาษปิดกล่อง",
+  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีกระดาษปิดกล่องและกระดาษปิดกล่องที่ตั้งในเมียนมาร์"
 };
 
 export default function BrochuresAndPamphlets() {
@@ -18,12 +18,12 @@ export default function BrochuresAndPamphlets() {
       />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "브로셔와 팜플렛", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "กระดาษปิดกล่องและกระดาษปิดกล่อง", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>브로셔</h1>
+        <h1 className={styles.pageTitle}>กระดาษปิดกล่องและกระดาษปิดกล่อง</h1>
         <section id="tourism-brochures-content" className={styles.mt5}>
           <div className={styles.gridRow}>
                <div className={styles.gridCol}>
@@ -43,7 +43,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                    다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -453,7 +453,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -474,7 +474,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -495,7 +495,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -516,7 +516,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                    ดาวน์โหลด PDF
                 </a>
               </div>
             </div>
@@ -540,7 +540,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  다운로드
+                  ดาวน์โหลด PDF
                 </a>
               </div>
             </div>

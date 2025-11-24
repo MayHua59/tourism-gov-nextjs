@@ -16,12 +16,12 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/57.jpg" altText="outbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "외출 관광 회사", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "บริษัทการท่องเที่ยวนำออก", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>외출 관광 회사</h1>
+        <h1 className={styles.pageTitle}>บริษัทท่องเที่ยวต่างประเทศ</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>

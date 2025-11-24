@@ -14,12 +14,12 @@ export default function MyanmarMissions() {
       <BannerSection imageUrl="/assets/images/cover-images/52.jpg" altText="myanmar missions cover photo" />
       <Breadcrumb
         items={[
-          { label: "홈페이지", href: "/kr", icon: faHome },
-          { label: "미얀마 미코스", active: true }
+          { label: "หน้าแรก", href: "/th", icon: faHome },
+          { label: "สำนักงานการท่องเที่ยว", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>미얀마 미코스</h1>
+        <h1 className={styles.pageTitle}>สำนักงานการท่องเที่ยว</h1>
 
         <section id="myanmar-missions" className={styles.mt5}>
   <h3 className={styles.missionsRegion}>Myanmar Missions (Asia &amp; Pacific)</h3>
