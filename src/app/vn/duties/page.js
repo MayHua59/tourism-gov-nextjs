@@ -24,7 +24,7 @@ export default function DutiesAndResponsibilities() {
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>Duties and Responsibilites</h1>
 
-        <h2 className={styles.sectionTitle}>Union Minister's Office</h2>
+        <h2 className={styles.sectionTitle}>Union Minister&apos;s Office</h2>
 
         <section id="administration">
           <h2 className={styles.sectionTitle}>Administration and Human Resources Management Department</h2>
