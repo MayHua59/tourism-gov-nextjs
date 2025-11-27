@@ -1,0 +1,220 @@
+.picturesSection {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.picturesContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.picturesHeaderRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.picturesHeaderCol {
+  max-width: 680px;
+  width: 100%;
+  text-align: center;
+}
+
+.picturesSectionHeader {}
+
+.picturesSectionTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.picturesTitleBorder {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--main-color, #1766b1);
+  margin: 0 auto 18px auto;
+  /* border-radius: 3px; */
+}
+
+.picturesSectionHeader p {
+  color: #444;
+}
+
+.picturesFilterWrapper {}
+
+.picturesFilterGroup {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.picturesFilterBtn {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--main-color, #1766b1);
+  color: var(--main-color, #1766b1);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 7px 22px;
+  margin: 0 8px 8px 0;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.picturesFilterBtn:hover,
+.picturesFilterBtn.active,
+.picturesFilterBtn:focus {
+  background: var(--main-color, #1766b1);
+  color: #fff;
+}
+
+.picturesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.picturesGridItem {
+  width: 33.3333%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.picturesThumb {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 10px; */
+}
+
+.picturesImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+
+
+.picturesOverlayText {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(23,102,177,0.75) 65%, transparent 100%);
+  color: #fff;
+  text-align: center;
+  padding: 28px 8px 14px 8px;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.picturesOverlayTitle {
+  font-size: 1.1rem;
+  margin: 0 0 2px 0;
+  font-weight: 600;
+}
+
+.picturesOverlayTitle a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 991px) {
+  .picturesGridItem {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .picturesSection {
+    padding: 26px 0;
+  }
+  .picturesGridItem {
+    width: 100%;
+  }
+  .picturesImg {
+    height: 180px;
+  }
+}
+.picturesThumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.picturesImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s;
+}
+
+/* Overlay is invisible by default */
+.picturesOverlayText {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background: rgba(23,102,177,0.7);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Show overlay on hover with fade-in */
+.picturesThumb:hover .picturesOverlayText,
+.picturesThumb:focus-within .picturesOverlayText {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.picturesOverlayTitle {
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.picturesOverlayTitle a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.picturesOverlayText {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 70%;
+  background: rgba(23,102,177,0.7);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.picturesThumb:hover .picturesOverlayText,
+.picturesThumb:focus-within .picturesOverlayText {
+  opacity: 0.8;
+  pointer-events: auto;
+}
