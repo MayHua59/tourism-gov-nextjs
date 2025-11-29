@@ -126,7 +126,7 @@ if (!loading && !error && newsList.length === 0) {
     className={styles.newsSummary}
     dangerouslySetInnerHTML={{ __html: truncateDescription(news.description, 150) }}
   ></p>
-                    <Link href={`/jp/news/${news.slug}`} className={readMore}>
+                    <Link href={`/jp/news/${news.slug}`} className={styles.readMore}>
                       詳細を見る
                     </Link>
                   </div>

@@ -4,8 +4,8 @@ import styles from "@/app/en/information-counters/InformationCounters.module.css
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
-  title: "สำนักงานการท่องเที่ยว (Information Counters)",
-  description: "เมียนมาร์ สำนักงานการท่องเที่ยวจะมีสำนักงานการท่องเที่ยวที่ตั้งในเมียนมาร์"
+  title: "観光情報カウンター (Information Counters)",
+  description: "ミャンマーの観光情報カウンター"
 };
 
 export default function InformationCounters() {
@@ -14,24 +14,24 @@ export default function InformationCounters() {
       <BannerSection imageUrl="/assets/images/cover-images/68.jpg" altText="information counters cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Information Counters", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "観光情報カウンター", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Information Counters</h1>
-          <p className={styles.paragraph}>Myanmar Tourism Office has information counters in Myanmar</p>
+        <h1 className={styles.pageTitle}>観光情報カウンター</h1>
+          <p className={styles.paragraph}>ミャンマーの観光情報カウンター</p>
         <section id="information-counters">
           <div className={styles.tableResponsive}>
           <table className={styles.infoTable}>
               <thead>
                 <tr>
                   <th>No.</th>
-                  <th>Centre Name</th>
-                  <th>Address</th>
-                  <th>Phone Numbers</th>
-                  <th>Email Address</th>
-                  <th>View on Map</th>
+                  <th>センター名</th>
+                  <th>住所</th>
+                  <th>電話番号</th>
+                  <th>メールアドレス</th>
+                  <th>地図で見る</th>
                 </tr>
               </thead>
               <tbody>

@@ -5,7 +5,7 @@ import BannerSection from "../../../../components/BannerSection";
 import styles from "./UpcomingEventDetail.module.css";
 import { faHome, faCalendarAlt, faCalendarCheck,faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fetchUpcomingEventDetail } from "../../../../lib/api/upcoming-event";
+import { fetchUpcomingEventDetail } from "../../../../lib/api/jp-site/upcoming-event";
 import AttachmentTable from "@/components/AttachmentTable";
 
 export async function generateMetadata({ params }) {
@@ -52,8 +52,8 @@ export default async function UpcomingEventDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Upcoming Events", href: "/vn/upcoming-events", icon: faCalendarCheck },
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "予定イベント", href: "/jp/upcoming-events", icon: faCalendarCheck },
           { label: event && event.name, active: true }
         ]}
       />

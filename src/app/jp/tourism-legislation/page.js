@@ -18,12 +18,12 @@ export default function TourismLegislation() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Tourism Legislation", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "観光法令", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Legislation</h1>
+        <h1 className={styles.pageTitle}>観光法令</h1>
 
         <section id="tourism-legislation-content" className={styles.mt5}>
           <div className={styles.gridRow}>

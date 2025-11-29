@@ -2,20 +2,20 @@ import "../globals.css";
 
 
 
-import Header from "@/components/vn/Header";
-import HeaderMobile from "@/components/vn/HeaderMobile";
-import Footer from "@/components/vn/Footer";
+import Header from "@/components/jp/Header";
+import HeaderMobile from "@/components/jp/HeaderMobile";
+import Footer from "@/components/jp/Footer";
 import ScrollToTop from "@/components/ScrollToTopButton";
 
 
 
 
 export const metadata = {
-  title: "Bộ Khách sạn và Du lịch",
-  description: "Bộ Khách sạn và Du lịch",
+  title: "ミャンマーの観光情報",
+  description: "ミャンマーの観光情報",
 };
 
-export default function VNLayout({ children }) {
+export default function JPLayout({ children }) {
   return (
     
         

@@ -7,7 +7,7 @@ import BannerSection from "../../../components/BannerSection";
 import styles from "@/app/en/news/News.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { fetchNewsList } from "../../../lib/api/kr-site/news";
+import { fetchNewsList } from "../../../lib/api/jp-site/news";
 import Loading from "../../../components/Loading";
 
 export default function News() {
@@ -65,12 +65,12 @@ export default function News() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "News", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ニュース", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>News</h1>
+        <h1 className={styles.pageTitle}>ニュース</h1>
         {loading && <Loading message="Fetching the latest news..." size="large" />}
         {error && <div className="errorMessage">{error}</div>} 
         {!loading && newsList.length === 0 && !error && (
@@ -79,7 +79,7 @@ export default function News() {
         <div className={styles.newsList}>
           {newsList.map((news) => (
             <div className={styles.newsCard} key={news.slug}>
-              <Link href={`/vn/news/${news.slug}`} className={styles.newsLink}>
+              <Link href={`/jp/news/${news.slug}`} className={styles.newsLink}>
                 <div className={styles.coverWrapper}>
                   <Image
                     src={news.cover_photo}

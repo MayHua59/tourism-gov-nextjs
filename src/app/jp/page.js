@@ -1,16 +1,16 @@
 import React from "react";
-import HeroSection from "../../components/HeroSectionVN";
-import AboutSection from "@/components/vn/home/AboutSection";
-import WeatherWidget from "@/components/vn/home/WeatherWidget";
-import DigitalServiceSection from "@/components/vn/home/DigitalServiceSection";
-import ExploreSection from "@/components/vn/home/ExploreSection";
-import WhyVisitMyanmarSection from "@/components/vn/home/WhyVisitMyanmarSection";
-import TourismDevelopmentSection from "@/components/vn/home/TourismDevelopmentSection";
-import MyanmarInPicturesSection from "@/components/vn/home/MyanmarInPicturesSection";
-import TravelerInformationSection from "@/components/vn/home/TravelerInformationSection";
-import TourismNewsSection from "@/components/vn/home/TourismNewsSection";
-import LatestNewsSection from "@/components/vn/home/LatestNewsSection";
-import LatestAnnouncementsSection from "@/components/vn/home/LatestAnnouncementsSection";
+import HeroSection from "../../components/HeroSectionJP";
+import AboutSection from "@/components/jp/home/AboutSection";
+import WeatherWidget from "@/components/jp/home/WeatherWidget";
+import DigitalServiceSection from "@/components/jp/home/DigitalServiceSection";
+import ExploreSection from "@/components/jp/home/ExploreSection";
+import WhyVisitMyanmarSection from "@/components/jp/home/WhyVisitMyanmarSection";
+import TourismDevelopmentSection from "@/components/jp/home/TourismDevelopmentSection";
+import MyanmarInPicturesSection from "@/components/jp/home/MyanmarInPicturesSection";
+import TravelerInformationSection from "@/components/jp/home/TravelerInformationSection";
+import TourismNewsSection from "@/components/jp/home/TourismNewsSection";
+import LatestNewsSection from "@/components/jp/home/LatestNewsSection";
+import LatestAnnouncementsSection from "@/components/jp/home/LatestAnnouncementsSection";
 
 const Page = () => {
   return (

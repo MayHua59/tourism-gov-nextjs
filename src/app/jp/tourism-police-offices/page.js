@@ -14,22 +14,22 @@ export default function TourismPoliceOffices() {
       <BannerSection imageUrl="/assets/images/cover-images/58.jpg" altText="tourism police offices cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Tourism Police Offices", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "観光警察署", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Police Offices</h1>
-        <p>Myanmar Tourism Office has tourism police offices in Myanmar</p>
+        <h1 className={styles.pageTitle}>観光警察署</h1>
+        <p>ミャンマーの観光警察署</p>
 
         <section id="police-units">
           <div className={styles.tableResponsive}>
           <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>Tourism Police Office Unit</th>
-                  <th>Address</th>
-                  <th>Phone Number</th>
+                  <th>観光警察署の単位</th>
+                  <th>住所</th>
+                  <th>電話番号</th>
                 </tr>
               </thead>
               <tbody>

@@ -39,23 +39,23 @@ export default function HotAirBalloonsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/59.jpg" altText="hot air balloons cover" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Hot-Air Balloon Operators", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ホットエアボールンオペレーター", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Hot-Air Balloon Operators</h1>
+        <h1 className={styles.pageTitle}>ホットエアボールンオペレーター</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Company</th>
-                <th>Brand</th>
-                <th>Address</th>
-                <th>License No. / Issue Date</th>
-                <th>Rooms</th>
-                <th>Contact Phone</th>
+                <th>会社名</th>
+                <th>ブランド</th>
+                <th>住所</th>
+                <th>ライセンス番号 / 発行日</th>
+                <th>部屋数</th>
+                <th>連絡先電話</th>
               </tr>
             </thead>
             <tbody>

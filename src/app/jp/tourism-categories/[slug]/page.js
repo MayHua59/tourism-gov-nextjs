@@ -40,7 +40,7 @@ export default async function TourismCategoryPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
+          { label: "ホーム", href: "/jp", icon: faHome },
           { label: data.name, active: true }
         ]}
       />

@@ -29,7 +29,7 @@ export default async function AnnouncementDetail({ params }) {
     announcement = await fetchAnnouncementDetail(params.slug);
   } catch (e) {
     error = "Sorry, we couldn't load this announcement item. Please try again later.";
-    redirect('/th/announcements');
+    redirect('/jp/announcements');
   }
 
   if (!announcement && !error) return notFound();
@@ -42,8 +42,8 @@ export default async function AnnouncementDetail({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Announcements", href: "/vn/announcements", icon: faBullhorn },
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "お知らせ", href: "/jp/announcements", icon: faBullhorn },
           { label: "...", active: true }
         ]}
       />

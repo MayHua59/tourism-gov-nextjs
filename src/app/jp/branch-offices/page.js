@@ -14,22 +14,22 @@ export default function BranchOffices() {
       <BannerSection imageUrl="/assets/images/cover-images/16.jpg" altText="branch offices cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Thông tin về các văn phòng", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ブランチオフィスの情報", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Thông tin về các văn phòng (Branch Offices Contact Information)</h1>
-        <p className={styles.paragraph}>Thông tin về các văn phòng trong Myanmar</p>
+        <h1 className={styles.pageTitle}>ブランチオフィスの情報 (Branch Offices Contact Information)</h1>
+        <p className={styles.paragraph}>ミャンマーのブランチオフィスの情報</p>
         <div className={styles.tableResponsive}>
         <table className={styles.branchTable}>
         <thead>
               <tr>
                 <th>No.</th>
-                <th>Office</th>
-                <th>Address</th>
-                <th>Contact No.</th>
-                <th>Email Address</th>
+                <th>オフィス</th>
+                <th>住所</th>
+                <th>連絡先番号</th>
+                <th>メールアドレス</th>
               </tr>
             </thead>
             <tbody>

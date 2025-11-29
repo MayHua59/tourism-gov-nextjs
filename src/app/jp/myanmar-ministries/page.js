@@ -14,12 +14,12 @@ export default function MyanmarMinistries() {
       <BannerSection imageUrl="/assets/images/cover-images/51.jpg" altText="myanmar ministries cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Myanmar Ministries", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ミャンマーの政府機関", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Myanmar Ministries</h1>
+        <h1 className={styles.pageTitle}>ミャンマーの政府機関</h1>
         <section id="ministries-table" className={styles.mt5}>
           <div className={styles.tableResponsive}>
             <table className={styles.ministriesTable}>

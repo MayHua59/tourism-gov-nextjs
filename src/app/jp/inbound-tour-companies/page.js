@@ -16,22 +16,22 @@ export default function InboundTourCompanies() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="inbound tour companies cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Inbound Tour Companies", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "インバウンド観光会社", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Inbound Tour Companies</h1>
+        <h1 className={styles.pageTitle}>インバウンド観光会社</h1>
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
-                <th>Email</th>
-                <th>Website (or) Social Media</th>
+                <th>名前</th>
+                <th>住所</th>
+                <th>連絡先電話</th>
+                <th>メール</th>
+                <th>ウェブサイト (または) ソーシャルメディア</th>
               </tr>
             </thead>
             <tbody>

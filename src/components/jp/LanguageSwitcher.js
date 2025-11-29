@@ -6,7 +6,7 @@ import styles from './LanguageSwitcher.module.css';
 
 const LanguageSwitcher = ({ 
   className = '', 
-  size = 'medium', // 'small', 'medium', 'large'
+  size = 'small', // 'small', 'medium', 'large'
   showLabels = false,
   variant = 'flags' // 'flags' or 'text'
 }) => {
@@ -27,13 +27,14 @@ const LanguageSwitcher = ({
   };
 
   const languages = [
-    { code: 'en', name: 'English', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
-    { code: 'mm', name: 'Myanmar', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' },
-    { code: 'cn', name: 'China', flag: '/assets/images/flags/cn.png', alt: 'China Flag' },
-    { code: 'ru', name: 'Russian', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' },
-    { code: 'kr', name: 'Korean', flag: '/assets/images/flags/kr.png', alt: 'Korean Flag' },
-    { code: 'th', name: 'Thai', flag: '/assets/images/flags/th.png', alt: 'Thai Flag' },
-    { code: 'vn', name: 'Vietnamese', flag: '/assets/images/flags/vn.png', alt: 'Vietnamese Flag' },
+    { code: 'en', name: '英語', flag: '/assets/images/flags/gb.png', alt: 'UK Flag' },
+    { code: 'mm', name: 'ミャンマー語', flag: '/assets/images/flags/mm.png', alt: 'Myanmar Flag' },
+    { code: 'cn', name: '中国語', flag: '/assets/images/flags/cn.png', alt: 'China Flag' },
+    { code: 'ru', name: 'ロシア語', flag: '/assets/images/flags/russia.png', alt: 'Russian Flag' },
+    { code: 'kr', name: '韓国語', flag: '/assets/images/flags/kr.png', alt: 'Korean Flag' },
+    { code: 'th', name: 'タイ語', flag: '/assets/images/flags/th.png', alt: 'Thai Flag' },
+    { code: 'vn', name: 'ベトナム語', flag: '/assets/images/flags/vn.png', alt: 'Vietnamese Flag' },
+    { code: 'jp', name: '日本語', flag: '/assets/images/flags/jp-ccc.png', alt: 'Japanese Flag' },
   ];
 
   return (

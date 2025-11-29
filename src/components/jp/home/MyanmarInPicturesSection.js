@@ -73,31 +73,31 @@ export default function MyanmarInPicturesSection() {
     className={`${styles.picturesFilterBtn} ${filter === "all" ? styles.active : ""}`}
     onClick={() => setFilter("all")}
   >
-    Tất cả
+    すべて
   </button>
   <button
     className={`${styles.picturesFilterBtn} ${filter === "cultural" ? styles.active : ""}`}
     onClick={() => setFilter("cultural")}
   >
-    Văn hóa
+    文化
   </button>
   <button
     className={`${styles.picturesFilterBtn} ${filter === "nature" ? styles.active : ""}`}
     onClick={() => setFilter("nature")}
   >
-    Tự nhiên
+    自然
   </button>
   <button
     className={`${styles.picturesFilterBtn} ${filter === "beaches" ? styles.active : ""}`}
     onClick={() => setFilter("beaches")}
   >
-    Bãi biển
+    ビーチ
   </button>
   <button
     className={`${styles.picturesFilterBtn} ${filter === "festivals" ? styles.active : ""}`}
     onClick={() => setFilter("festivals")}
   >
-    Lễ hội
+    祭り
   </button>
           </div>
           <div className={styles.picturesGrid}>

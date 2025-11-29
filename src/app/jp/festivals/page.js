@@ -80,13 +80,13 @@ export default function FestivalsPage() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Festivals", href: "/vn/festivals", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "祭り", href: "/jp/festivals", active: true }
         ]}
       />
       <div className={styles.container}>
         <div className={styles.headerRow}>
-          <h1 className={styles.festivalTitle}>Festivals </h1>
+          <h1 className={styles.festivalTitle}>祭り </h1>
           <div className={styles.monthSelectorWrapper}>
             <div className={styles.selectContainer}>
               <select
@@ -95,7 +95,7 @@ export default function FestivalsPage() {
                 className={styles.monthSelector}
               >
                 <option value="" disabled>
-                  Select Month
+                  月を選択
                 </option>
                 {MONTHS.map(month => (
                   <option key={month.value} value={month.value}>{month.name}</option>
@@ -109,7 +109,7 @@ export default function FestivalsPage() {
           <Loading message="Festivals are loading..."/>
         ) : festivals.length === 0 ? (
           <div className={styles.errorMessage}>
-            Festivals data cannot be loaded. Please try again later.
+            祭りのデータを読み込めません。再度お試しください。
           </div>
         ) : (
           <>
@@ -117,7 +117,7 @@ export default function FestivalsPage() {
               {festivals.map(festival => (
                 <Link
                   key={festival.slug || festival.id}
-                  href={`/vn/festivals/${festival.slug || festival.id}`}
+                  href={`/jp/festivals/${festival.slug || festival.id}`}
                   className={styles.festivalCard}
                 >
                   <div className={styles.festivalImageWrapper}>
@@ -132,7 +132,7 @@ export default function FestivalsPage() {
                     <div className={styles.festivalMeta}>
                       <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
                       <span>
-                          <strong>Month:</strong> {festival.month || "N/A"}
+                          <strong>月:</strong> {festival.month || "N/A"}
                         {festival.start_date && festival.end_date
                           ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                           : ""}
@@ -149,7 +149,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === 1}
                   className={styles.prevNextBtn}
                 >
-                  Previous
+                  前へ
                 </button>
                 {Array.from({ length: totalPages }, (_, i) => (
                   <button
@@ -165,7 +165,7 @@ export default function FestivalsPage() {
                   disabled={meta.current_page === totalPages}
                   className={styles.prevNextBtn}
                 >
-                  Next
+                  次へ
                 </button>
               </div>
             )}

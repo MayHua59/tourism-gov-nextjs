@@ -18,12 +18,12 @@ export default function AseanTourismStandards() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "ASEAN Standards for Tourism", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ASEAN 観光基準", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>ASEAN Standards for Tourism</h1>
+        <h1 className={styles.pageTitle}>ASEAN 観光基準</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>

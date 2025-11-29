@@ -60,18 +60,18 @@ export default function Announcements() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Thông báo", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "お知らせ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Thông báo</h1>
+        <h1 className={styles.pageTitle}>お知らせ</h1>
         {loading && <Loading  size="large" />}
         {error && <div className="errorMessage">{error}</div>}
         <div className={styles.announcementsList}>
           {announcements.map((a) => (
             <div className={styles.announcementCard} key={a.id}>
-              <Link href={`/vn/announcements/${a.slug}`} className={styles.announcementLink}>
+              <Link href={`/jp/announcements/${a.slug}`} className={styles.announcementLink}>
   {a.cover_photo ? (
     <div className={styles.coverWrapper}>
       <Image

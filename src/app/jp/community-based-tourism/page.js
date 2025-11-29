@@ -183,12 +183,12 @@ export default function CommityBasedTourismPage() {
       <BannerSection imageUrl="/assets/images/cover-images/55.jpg" altText="community based tourism cover" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Community-Based Tourism", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "コミュニティベースの観光", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Community-Based Tourism (CBT)</h1>
+        <h1 className={styles.pageTitle}>コミュニティベースの観光 (CBT)</h1>
 
         <div className={styles.intro}>
           <p>

@@ -33,7 +33,7 @@ export default async function RegionDetailPage({ params }) {
                 />
                 <Breadcrumb
                     items={[
-                        { label: "Trang chủ", href: "/vn", icon: faHome },
+                        { label: "ホーム", href: "/jp", icon: faHome },
                         { label: slug, active: true }
                     ]}
                 />
@@ -59,7 +59,7 @@ export default async function RegionDetailPage({ params }) {
             />
             <Breadcrumb
                 items={[
-                    { label: "Trang chủ", href: "/vn", icon: faHome },
+                    { label: "ホーム", href: "/jp", icon: faHome },
                     { label: region.slug, active: true }
                 ]}
             />
@@ -75,7 +75,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.carousel && region.carousel.length > 0 && (
                         <section className={styles.gallerySection}>
-                            <h2 className={styles.galleryTitle}>Images</h2>
+                            <h2 className={styles.galleryTitle}>写真</h2>
                             <div className={styles.galleryGrid}>
                                 {region.carousel.map((carousel, index) => (
                                     <div key={index} className={styles.galleryCard}>
@@ -102,7 +102,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.destinations && region.destinations.length > 0 && (
                         <section className="mb-5">
-                            <h2 className="border-bottom pb-2 mb-4 text-dark">Popular Destinations</h2>
+                            <h2 className="border-bottom pb-2 mb-4 text-dark">人気の観光地</h2>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                                 {region.destinations.map((destination, index) => {
                                     const imgSrc = "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg";
@@ -132,7 +132,7 @@ export default async function RegionDetailPage({ params }) {
 
                     {region.events && region.events.length > 0 && (
                         <section className="mb-5">
-                            <h2 className="border-bottom pb-2 mb-4 text-dark">Events</h2>
+                            <h2 className="border-bottom pb-2 mb-4 text-dark">イベント</h2>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                                 {region.events.map((event, index) => {
                                     const imgSrc = "https://www.go-myanmar.com/files/destination-photo/2_hindu_temple_on_myitkyina_riverfront.jpg";

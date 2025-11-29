@@ -1818,23 +1818,23 @@ export default function NationalTourGuide() {
       <BannerSection imageUrl="/assets/images/cover-images/56.jpg" altText="national tour guide cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "National Tour Guides", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "国の観光ガイド", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>National Tour Guides</h1>
+        <h1 className={styles.pageTitle}>国の観光ガイド</h1>
         {/* <p className={styles.paragraph}>နိုင်ငံတော်ခရီးသွားလမ်းပြများ၏ အချက်အလက်များကို ရှာဖွေနိုင်ပါသည်။</p> */}
         <div className={styles.tableResponsive}>
           <table className={styles.guideTable}>
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Name</th>
-                <th>License No</th>
-                <th>Language</th>
-                <th>Address</th>
-                <th>Contact Phone</th>
+                <th>名前</th>
+                <th>ライセンス番号</th>
+                <th>言語</th>
+                <th>住所</th>
+                <th>連絡先電話</th>
               </tr>
             </thead>
             <tbody>

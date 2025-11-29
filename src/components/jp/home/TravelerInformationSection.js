@@ -45,7 +45,7 @@ const TravelerInformationSection = () => {
                   <div
                     key={item.question}
                     className={`${styles.faqItem} ${openIndex === idx ? styles.open : ""}`}
-                  >
+                  > 
                     <h3
                       className={styles.faqQuestion}
                       onClick={() => handleToggle(idx)}

@@ -77,8 +77,8 @@ export default function UpcomingEvents() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Upcoming Events", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "予定イベント", active: true }
         ]}
       />
        {/* <Marquee speed={10} direction="left">
@@ -96,16 +96,16 @@ dateText="27-9-2025"
       finishedMessage="The event has started!"
     /> */}
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Upcoming Events</h1>
+        <h1 className={styles.pageTitle}>予定イベント</h1>
         {loading && <Loading  size="large" />}
         {error && <div className={styles.errorMessage}>{error}</div>}
         {!loading && eventsList.length === 0 && !error && (
-          <div className={styles.noEventsMessage}>Upcoming Events</div>
+          <div className={styles.noEventsMessage}>予定イベント</div>
         )}
         <div className={styles.eventsList}>
           {eventsList.map((event) => (
             <div className={styles.eventCard} key={event.slug}>
-              <Link href={`/vn/upcoming-events/${event.slug}`} className={styles.eventLink}>
+              <Link href={`/jp/upcoming-events/${event.slug}`} className={styles.eventLink}>
                 <div className={styles.coverWrapper}>
                   <Image
                     src={event.cover_photo}

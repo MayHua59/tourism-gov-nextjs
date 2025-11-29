@@ -16,12 +16,12 @@ export default function HotelsAndResortsPage() {
       <BannerSection imageUrl="/assets/images/cover-images/18.jpg" altText="Hotels and Resorts cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Hotels and Resorts", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ホテルとリゾート", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Hotels and Resorts</h1>
+        <h1 className={styles.pageTitle}>ホテルとリゾート</h1>
         <section>
             <h2>Nay Pyi Taw</h2>
         <div className={styles.tableResponsive}>

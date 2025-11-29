@@ -17,24 +17,24 @@ export default function ContactUs() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Contact Us", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "お問い合わせ", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Contact Us</h1>
+        <h1 className={styles.pageTitle}>お問い合わせ</h1>
 
         <section id="contact-info">
           <p>
-            Contact information for departments and branch offices of the Ministry of Hotels and Tourism.
+            観光省の部門と支店の連絡先情報。
           </p>
           <div className={styles.tableResponsive}>
           <table className={styles.contactTable}>
               <thead>
                 <tr>
                   <th>No.</th>
-                  <th>User/Department</th>
-                  <th>Email Address</th>
+                  <th>ユーザー/部門</th>
+                  <th>メールアドレス</th>
                 </tr>
               </thead>
               <tbody>
@@ -66,15 +66,15 @@ export default function ContactUs() {
         </section>
 
         <section id="branch-offices">
-          <h2>สำนักงานการท่องเที่ยวของรัฐมนตรีคงคลาด (Branch Offices Email)</h2>
+          <h2>内閣府観光局 (Branch Offices Email)</h2>
           <div className={styles.tableResponsive}>
           <table className={styles.contactTable}>
               <thead>
                 <tr>
                   <th>No.</th>
-                  <th>Office</th>
-                  <th>City</th>
-                  <th>Email</th>
+                  <th>事務所</th>
+                  <th>都市</th>
+                  <th>メールアドレス</th>
                 </tr>
               </thead>
               <tbody>

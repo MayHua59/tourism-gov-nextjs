@@ -18,12 +18,12 @@ export default function BrochuresAndPamphlets() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Brochures and Pamphlets", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "ポスターと小冊子", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Brochures and Pamphlets</h1>
+        <h1 className={styles.pageTitle}>ポスターと小冊子</h1>
         <section id="tourism-brochures-content" className={styles.mt5}>
           <div className={styles.gridRow}>
                <div className={styles.gridCol}>

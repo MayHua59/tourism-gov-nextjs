@@ -18,12 +18,12 @@ export default function TourismPublication() {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Tourism Publications", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "観光出版物", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Tourism Publications</h1>
+        <h1 className={styles.pageTitle}>観光出版物</h1>
         <section id="tourism-publications-content" className={styles.mt5}>
           <div className={styles.gridRow}>
             <div className={styles.gridCol}>

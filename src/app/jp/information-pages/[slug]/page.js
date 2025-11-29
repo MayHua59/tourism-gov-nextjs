@@ -1,4 +1,4 @@
-import { fetchInformationPageDetail } from "@/lib/api/th-site/information-page";
+import { fetchInformationPageDetail } from "@/lib/api/jp-site/information-page";
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import BannerSection from "@/components/BannerSection";
@@ -41,7 +41,7 @@ export default async function InformationPage({ params }) {
             />}
             <Breadcrumb
                 items={[
-                    { label: "Trang chủ", href: "/vn", icon: faHome },
+                    { label: "ホーム", href: "/jp", icon: faHome },
                     { label: data.name, active: true }
                 ]}
             />

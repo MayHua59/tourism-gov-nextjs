@@ -35,18 +35,18 @@ export default async function FestivalDetailPage({ params }) {
       />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Festivals", href: "/vn/festivals" },
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "祭り", href: "/jp/festivals" },
           { label: festival.name, active: true },
         ]}
       />
       <div className={styles.container}>
         <div className={styles.festivalDetailCard}>
-          <h1 className={styles.festivalTitle}>{festival.name} Festivals</h1>
+          <h1 className={styles.festivalTitle}>{festival.name} 祭り</h1>
           <div className={styles.festivalMeta}>
             <span className={styles.festivalDate}>
               <FontAwesomeIcon icon={faCalendarAlt} className={styles.calendarIcon} />
-              <strong>Month:</strong> {festival.month || "N/A"}
+              <strong>月:</strong> {festival.month || "N/A"}
               {festival.start_date && festival.end_date
                 ? ` | ${new Date(festival.start_date).toLocaleDateString()} - ${new Date(festival.end_date).toLocaleDateString()}`
                 : ""}

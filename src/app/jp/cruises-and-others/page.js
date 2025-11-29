@@ -102,12 +102,12 @@ export default function CruisesPage() {
       <BannerSection imageUrl="/assets/images/cover-images/65.jpg" altText="cruises cover photo" />
       <Breadcrumb
         items={[
-          { label: "Trang chủ", href: "/vn", icon: faHome },
-          { label: "Cruises & Others", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "クルーズとその他", active: true }
         ]}
       />
       <div className={styles.container}>
-        <h1 className={styles.pageTitle}>Cruises & Others</h1>
+        <h1 className={styles.pageTitle}>クルーズとその他</h1>
         {/* <p className={styles.lead}>
           Licensed cruise and riverboat operators. Contact details and basic operator information are listed below.
         </p> */}
@@ -117,12 +117,12 @@ export default function CruisesPage() {
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Company Name</th>
+                <th>会社名</th>
                 
-                <th> Address</th>
-                <th> License No. / Issue Date</th>
-                <th> Rooms</th>
-                <th> Contact Phone</th>
+                <th> 住所</th>
+                <th> ライセンス番号 / 発行日</th>
+                <th> 部屋数</th>
+                <th> 連絡先電話</th>
               </tr>
             </thead>
             <tbody>
