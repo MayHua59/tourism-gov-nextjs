@@ -49,7 +49,7 @@ export default function WhyVisitMyanmarSection() {
               <h2 className={styles.title}>Unsere Tourismus-Erfolge</h2>
               <p>
                   Das Ministerium für Hotels und Tourismus hat in der Entwicklung nachhaltiger Tourismus
-                  Infrastruktur während der Erhaltung von Myanmar's kulturelles Erbe und natürliche Umwelt für zukünftige Generationen.
+                  Infrastruktur während der Erhaltung von Myanmar&apos;s kulturelles Erbe und natürliche Umwelt für zukünftige Generationen.
               </p>
               <ul className={styles.chooseItemStyle}>
                 {/* <li>Over 4.3 million international arrivals in 2019</li> */}

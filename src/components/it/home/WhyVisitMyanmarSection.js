@@ -29,7 +29,7 @@ export default function WhyVisitMyanmarSection() {
                 <div className="col-lg-6 col-md-6 mb-30">
                   <div className={styles.chooseItem}>
                     <h3 className={styles.itemTitle}>Bellezza Naturale</h3>
-                    <p>Dalle vette dell'Himalaya alle isole tropicali, i paesaggi del Myanmar sono impressionanti.</p>
+                    <p>Dalle vette dell&apos;Himalaya alle isole tropicali, i paesaggi del Myanmar sono impressionanti.</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 mb-30">
@@ -48,12 +48,12 @@ export default function WhyVisitMyanmarSection() {
             <div className={`${styles.chooseContent} ${styles.chooseContentStyle} ${styles.responsivePadding}`}>
               <h2 className={styles.title}>I Nostri Successi nel Turismo</h2>
               <p>
-                  Il Ministero degli Hotel e del Turismo ha lavorato nello sviluppo di infrastrutture turistiche sostenibili preservando il patrimonio culturale e l'ambiente naturale del Myanmar per le generazioni future.
+                  Il Ministero degli Hotel e del Turismo ha lavorato nello sviluppo di infrastrutture turistiche sostenibili preservando il patrimonio culturale e l&apos;ambiente naturale del Myanmar per le generazioni future.
               </p>
               <ul className={styles.chooseItemStyle}>
                 {/* <li>Over 4.3 million international arrivals in 2019</li> */}
-                <li>50% di aumento delle camere d'hotel dal 2011</li>
-                <li>15 siti nella Lista Provvisoria dell'UNESCO</li>
+                <li>50% di aumento delle camere d&apos;hotel dal 2011</li>
+                <li>15 siti nella Lista Provvisoria dell&apos;UNESCO</li>
               </ul>
             </div>
           </div>

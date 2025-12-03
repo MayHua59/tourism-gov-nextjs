@@ -39,7 +39,7 @@ export default function AboutSection() {
             <div className={styles.aboutLeftContent}>
               <h2 className={styles.title}>Benvenuti nel Turismo del Myanmar</h2>
               <p>
-                Il Myanmar, la Terra d'Oro, è benedetto da culture diverse,
+                Il Myanmar, la Terra d&apos;Oro, è benedetto da culture diverse,
                 patrimonio antico e bellezza naturale che rimane in gran parte
                 sconosciuta.
               </p>

@@ -51,7 +51,7 @@ export default function TourismDevelopmentSection() {
             <div className={styles.tdContent}>
               <h2 className={styles.tdTitle}>Sviluppo del Turismo in Myanmar</h2>
               <p>
-                Il Ministero degli Hotel e del Turismo implementa piani strategici per lo sviluppo dell'infrastruttura turistica, il miglioramento degli standard di servizio e la promozione di iniziative di turismo comunitario in Myanmar. Il nostro focus è sulla crescita sostenibile che avvantaggia le comunità locali preservando il nostro patrimonio culturale e l'ambiente naturale.
+                Il Ministero degli Hotel e del Turismo implementa piani strategici per lo sviluppo dell&apos;infrastruttura turistica, il miglioramento degli standard di servizio e la promozione di iniziative di turismo comunitario in Myanmar. Il nostro focus è sulla crescita sostenibile che avvantaggia le comunità locali preservando il nostro patrimonio culturale e l&apos;ambiente naturale.
               </p>
               <div className={styles.row}>
                 <div className={styles.colMd6}>
