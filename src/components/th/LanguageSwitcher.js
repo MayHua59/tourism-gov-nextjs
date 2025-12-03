@@ -38,6 +38,7 @@ const LanguageSwitcher = ({
     {code: 'jp', name: 'ภาษาญี่ปุ่น', flag: '/assets/images/flags/jp-ccc.png', alt: 'Japanese Flag' },
     {code: 'de', name: 'ภาษาเยอรมัน', flag: '/assets/images/flags/de.png', alt: 'German Flag' },
     {code: 'es', name: 'ภาษาสเปน', flag: '/assets/images/flags/es.png', alt: 'Spanish Flag' },
+    {code: 'it', name: 'ภาษาอิตาลี', flag: '/assets/images/flags/it.png', alt: 'Italian Flag' },
   ];
 
   return (
