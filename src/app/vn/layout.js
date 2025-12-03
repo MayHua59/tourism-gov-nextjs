@@ -11,8 +11,8 @@ import ScrollToTop from "@/components/ScrollToTopButton";
 
 
 export const metadata = {
-  title: "Bộ Khách sạn và Du lịch",
-  description: "Bộ Khách sạn và Du lịch",
+  title: "Ministry of Hotels and Tourism",
+  description: "The official tourism website for Myanmar.",
 };
 
 export default function VNLayout({ children }) {

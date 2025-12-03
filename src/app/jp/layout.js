@@ -11,8 +11,8 @@ import ScrollToTop from "@/components/ScrollToTopButton";
 
 
 export const metadata = {
-  title: "ミャンマーの観光情報",
-  description: "ミャンマーの観光情報",
+  title: "Ministry of Hotels and Tourism",
+  description: "The official tourism website for Myanmar.",
 };
 
 export default function JPLayout({ children }) {

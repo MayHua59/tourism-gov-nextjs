@@ -11,8 +11,8 @@ import ScrollToTop from "@/components/ScrollToTopButton";
 
 
 export const metadata = {
-  title: "กระทรวงโรงแรมและการท่องเที่ยว",
-  description: "กระทรวงโรงแรมและการท่องเที่ยว",
+  title: "Ministry of Hotels and Tourism",
+  description: "The official tourism website for Myanmar.",
 };
 
 export default function THLayout({ children }) {

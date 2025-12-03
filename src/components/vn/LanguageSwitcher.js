@@ -35,6 +35,7 @@ const LanguageSwitcher = ({
     { code: 'th', name: 'Thai', flag: '/assets/images/flags/th.png', alt: 'Thai Flag' },
     { code: 'vn', name: 'Vietnamese', flag: '/assets/images/flags/vn.png', alt: 'Vietnamese Flag' },
     { code: 'jp', name: 'Japanese', flag: '/assets/images/flags/jp-ccc.png', alt: 'Japanese Flag' },
+    { code: 'de', name: 'German', flag: '/assets/images/flags/de.png', alt: 'German Flag' },
   ];
 
   return (

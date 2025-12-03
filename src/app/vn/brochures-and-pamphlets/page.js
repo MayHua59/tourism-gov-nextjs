@@ -170,7 +170,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  ดาวน์โหลด PDF
+                  Tải xuống PDF
                 </a>
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  ดาวน์โหลด PDF
+                  Tải xuống PDF
                 </a>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                    ดาวน์โหลด PDF
+                    Tải xuống PDF
                 </a>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  ดาวน์โหลด PDF
+                  Tải xuống PDF
                 </a>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  ดาวน์โหลด PDF
+                  Tải xuống PDF
                 </a>
               </div>
             </div>
@@ -410,7 +410,7 @@ export default function BrochuresAndPamphlets() {
                   rel="noopener"
                   className={styles.downloadLink}
                 >
-                  Download PDF
+                  Tải xuống PDF
                 </a>
               </div>
             </div>

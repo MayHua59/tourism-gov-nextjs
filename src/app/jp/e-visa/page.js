@@ -14,13 +14,13 @@ export default function EVisa() {
       <BannerSection imageUrl="/assets/images/cover-images/54.jpg" altText="electronic visa cover photo" />
       <Breadcrumb
         items={[
-          { label: "", href: "/vn", icon: faHome },
-          { label: "Electronic Visa", active: true }
+          { label: "ホーム", href: "/jp", icon: faHome },
+          { label: "電子ビザ", active: true }
         ]}
       />
        <div className={styles.container}>
         <section id="evisa-info" className={styles.mb5}>
-          <h1 className={styles.pageTitle}>eVisa Application</h1>
+          <h1 className={styles.pageTitle}>電子ビザ申請</h1>
           <p className={styles.lead}>Notice To Tourist For Applying eVisa</p>
           <ol className={styles.evisaList}>
             <li>

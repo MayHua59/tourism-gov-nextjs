@@ -161,143 +161,143 @@ export default function TourismPoliceOffices() {
         <section id="police-hotlines">
           <h3>Tourism Police Hotlines and Locations </h3>
           <div className={styles.tableResponsive}>
-            <table className={styles.infoTable}>
+          <table className={styles.infoTable}>
               <thead>
                 <tr>
-                  <th>번호</th>
-                  <th>위치</th>
-                  <th>연락처 (전화번호)</th>
+                  <th>No.</th>
+                  <th>Location</th>
+                  <th>Contact (Phone Number)</th>
                 </tr>
               </thead>
               <tbody>
   <tr>
     <td>1</td>
-    <td>본부</td>
+    <td>Head Quarter</td>
     <td>067-414303, 067-414364</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>네피도</td>
+    <td>Naypyitaw</td>
     <td>067-414226</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>양곤</td>
+    <td>Yangon</td>
     <td>01-379991</td>
   </tr>
   <tr>
     <td>4</td>
-    <td>만달레이</td>
+    <td>Mandalay</td>
     <td>02-67382</td>
   </tr>
   <tr>
     <td>5</td>
-    <td>삔우르윈</td>
+    <td>Pyin Oo Lwin</td>
     <td>09-422527811</td>
   </tr>
   <tr>
     <td>6</td>
-    <td>바간</td>
+    <td>Bagan</td>
     <td>061-65474</td>
   </tr>
   <tr>
     <td>7</td>
-    <td>포파</td>
+    <td>Popa</td>
     <td>09-256261413</td>
   </tr>
   <tr>
     <td>8</td>
-    <td>샨</td>
+    <td>Shan</td>
     <td>081-209911</td>
   </tr>
   <tr>
     <td>9</td>
-    <td>삔따야</td>
+    <td>Pindaya</td>
     <td>09-49355319</td>
   </tr>
   <tr>
     <td>10</td>
-    <td>깔로</td>
+    <td>Kalaw</td>
     <td>09-428313074</td>
   </tr>
   <tr>
     <td>11</td>
-    <td>따칠렉</td>
+    <td>Tachileik</td>
     <td>09-428003877</td>
   </tr>
   <tr>
     <td>12</td>
-    <td>에야와디</td>
+    <td>Ayarwaddy</td>
     <td>09-250236373</td>
   </tr>
   <tr>
     <td>13</td>
-    <td>스리 키따야</td>
+    <td>Srikhittayar</td>
     <td>09-250188328</td>
   </tr>
   <tr>
     <td>14</td>
-    <td>바고</td>
+    <td>Bago</td>
     <td>09-250343438</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>베익따노</td>
+    <td>Beikthano</td>
     <td>09-250471372</td>
   </tr>
   <tr>
     <td>16</td>
-    <td>베익따노</td>
+    <td>Beikthano</td>
     <td>063-51148</td>
   </tr>
   <tr>
     <td>17</td>
-    <td>한린</td>
+    <td>Hanlin</td>
     <td>09-2560167729, 09-47061503</td>
   </tr>
   <tr>
     <td>18</td>
-    <td>밍군</td>
+    <td>Mingon</td>
     <td>09-797399188</td>
   </tr>
   <tr>
     <td>19</td>
-    <td>모울메인</td>
+    <td>Mawlamyaing</td>
     <td>09-8548090</td>
   </tr>
   <tr>
     <td>20</td>
-    <td>쨔익띠요</td>
+    <td>Kyaikhtiyoe</td>
     <td>09-428206641</td>
   </tr>
   <tr>
     <td>21</td>
-    <td>응아빨리</td>
+    <td>Ngapali</td>
     <td>09-403714839, 043-42191</td>
   </tr>
   <tr>
     <td>22</td>
-    <td>므라우-우</td>
+    <td>Mrauk-U</td>
     <td>09-253448499, 09-78719105</td>
   </tr>
   <tr>
     <td>23</td>
-    <td>먀와디</td>
+    <td>Myawaddy</td>
     <td>09-43200250</td>
   </tr>
   <tr>
     <td>24</td>
-    <td>깐빳랏</td>
+    <td>Kanpatlat</td>
     <td>09-73056986</td>
   </tr>
   <tr>
     <td>25</td>
-    <td>다웨이</td>
+    <td>Dawei</td>
     <td>09-250477105, 09-47053133</td>
   </tr>
   <tr>
     <td>26</td>
-    <td>로이꺼</td>
+    <td>Loikaw</td>
     <td>09-420153119</td>
   </tr>
 </tbody>
