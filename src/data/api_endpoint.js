@@ -6,4 +6,5 @@ export const API_ENDPOINT_KR = "https://admin-kr.tourism.gov.mm";
 export const API_ENDPOINT_TH = "https://admin-th.tourism.gov.mm";
 export const API_ENDPOINT_JP = "https://admin-jp.tourism.gov.mm";
 export const API_ENDPOINT_GERMAN = "https://admin-de.tourism.gov.mm";
+export const API_ENDPOINT_ES = "https://admin-es.tourism.gov.mm";
 

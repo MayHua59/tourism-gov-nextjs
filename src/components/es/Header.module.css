@@ -1,0 +1,211 @@
+/* === General Header Layout === */
+.header {
+  position: relative;
+  background: #fff;
+  
+}
+
+.headerTop {
+  padding: 0.5rem 0;
+  border-bottom: 0.5px solid #ddd;
+  
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.flexRow {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px; /* Optional: for centering content on large screens */
+  margin: 0 auto;
+}
+
+.headerLogo {
+  display: block;
+  max-height: 80px;
+}
+
+.headerLangContainer {
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Main Navigation Bar === */
+.headerNav {
+  padding: 0;
+  background: #fff;
+  z-index: 1000;
+  transition: transform 0.4s ease-in-out;
+}
+
+.headerMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem {
+  position: relative;
+}
+
+.menuItem > a,
+.menuItem > .dropdownToggle {
+  text-decoration: none;
+  color: #222;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.menuItem > a:hover,
+.menuItem > .dropdownToggle:hover {
+  color: #1766b1;
+}
+
+/* === Dropdown Submenus === */
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  min-width: 260px;
+  list-style: none;
+  z-index: 2000;
+  padding: 0.5rem 0;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  box-shadow: 0 8px 24px rgba(34, 34, 34, 0.15);
+}
+
+/* Nested submenus fly out to the right */
+.dropdown .dropdown {
+  left: 100%;
+  top: -1px; /* Adjust for border */
+}
+
+/* Show submenu on hover */
+.menuItem:hover > .dropdown,
+.menuItem:focus-within > .dropdown {
+  display: block;
+}
+
+/* Style for individual submenu items */
+.dropdown li > a,
+.dropdown li > .dropdownToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #222;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: normal; /* Allows long text to wrap */
+  word-break: break-word;
+}
+
+.dropdown li > a:hover,
+.dropdown li > .dropdownToggle:hover {
+  background: #f4f8fa;
+  color: #1766b1;
+}
+
+/* Dropdown arrow/chevron */
+.dropdownArrow {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 6px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  transform: rotate(45deg);
+}
+
+/* Rotate arrow for submenus that fly out */
+.dropdown .dropdownArrow {
+  transform: rotate(-45deg);
+}
+
+/* === Sticky/Floating Navigation Styles === */
+.headerTopHidden {
+  display: none;
+}
+
+.floatingNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Mobile Responsive Styles === */
+.mobileMenuButton {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 991px) {
+  .headerMenuContainer {
+    display: none; /* Hide desktop menu on mobile */
+  }
+  .mobileMenuButton {
+    display: block; /* Show hamburger button on mobile */
+  }
+}
+/* Handle dropdown for the last menu item */
+.headerMenu > .menuItem:last-child > .dropdown {
+  left: auto;
+  right: 0;
+}
+/* Make nested dropdowns of the last item open to the left */
+.headerMenu > .menuItem:last-child .dropdown .dropdown {
+  left: auto;
+  right: 100%;
+}

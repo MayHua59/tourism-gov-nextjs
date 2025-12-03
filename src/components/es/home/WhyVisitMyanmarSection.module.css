@@ -1,0 +1,151 @@
+.chooseUsSection {
+  background-color: #fafafa;
+}
+
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.noPaddingLeft {
+  padding-left: 0 !important;
+}
+.noPaddingRight {
+  padding-right: 0 !important;
+}
+
+.chooseUsThumb, .chooseUsThumbStyle {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  display: flex;
+}
+
+.chooseUsThumb {
+  background-image: url("/assets/images/cover-images/inle-zayy.jpg");
+}
+.chooseUsThumbStyle {
+  background-image: url("/assets/images/cover-images/kuthodaw.jpg");
+}
+
+.chooseContent {
+  max-width: 610px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.chooseContentStyle {
+  max-width: 487px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.responsivePadding {
+  padding: 60px 48px;
+}
+
+
+.title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.title::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--main-color, #1766b1);
+}
+
+.chooseItem {
+  margin-bottom: 30px;
+}
+
+.itemTitle {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding-bottom: 0;
+}
+
+.itemTitle::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color, #1766b1);
+}
+
+.chooseItem p {
+  padding-left: 20px;
+}
+
+.chooseItemStyle {
+  margin-bottom: -40px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.chooseItemStyle li {
+  position: relative;
+  padding: 4px 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.chooseItemStyle li::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--main-color, #1766b1);
+}
+
+.chooseContentStyle p {
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  
+  .chooseContentStyle {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .chooseContent {
+    max-width: 100%;
+  }
+  
+  
+  
+}
+
+@media (max-width: 600px) {
+  .chooseUsThumb, .chooseUsThumbStyle {
+    min-height: 180px;
+  }
+  .flexRow {
+    flex-direction: column;
+  }
+  .chooseContent{
+    padding: 30px;
+  }
+}

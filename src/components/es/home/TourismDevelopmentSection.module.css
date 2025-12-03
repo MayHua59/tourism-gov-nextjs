@@ -1,0 +1,144 @@
+.tdSection {
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colLeft, .colRight {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-height: 320px;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.tdImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Text column styles */
+.colRight {
+  background: none;
+  overflow: hidden;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+/* Parallax airplane image */
+.tdPlaneBg {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  opacity: 0.7;
+  pointer-events: none;
+  transition: transform 0.12s linear;
+  will-change: transform;
+   margin: 0;
+  padding: 0;
+}
+.tdPlaneBg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tdContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: clamp(16px, 4vw, 48px);
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.tdTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 22px;
+}
+
+.tdContent p {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.colMd6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.tdList {
+  list-style: none;
+  margin: 0 0 6px 0;
+  padding: 0;
+}
+.tdList li {
+  padding: 2.5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.checkIcon {
+  color: var(--main-color, #1766b1);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .colLeft,
+  .colRight,
+  .colMd6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .colLeft {
+    display: none;
+  }
+  .tdImage {
+    min-height: 180px;
+  }
+  .tdPlaneBg {
+    display: none;
+  }
+  
+   .tdContent {
+    padding: 18px 6px;
+    text-align: center;
+  }
+  .tdList {
+    display: flex;
+    gap: 12em;
+  }
+}
+
+@media (max-width: 600px) {
+  .tdSection {
+    padding: 14px 0;
+  }
+  .tdPlaneBg {
+    display: none;
+  }
+  .colLeft {
+    display: none;
+  }
+}

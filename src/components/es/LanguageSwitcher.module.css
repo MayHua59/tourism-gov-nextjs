@@ -1,0 +1,122 @@
+/* Language Switcher Base Styles */
+.languageSwitcher {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .languageButton {
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .languageButton:hover {
+    border-color: #1766b1;
+    transform: scale(1.05);
+  }
+  
+  .languageButton.active {
+    border-color: #1766b1;
+    background-color: rgba(23, 102, 177, 0.1);
+  }
+  
+  .flagImage {
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  
+  .languageLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .languageCode {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Size Variants */
+  .small .flagImage {
+    width: 20px;
+    height: 15px;
+  }
+  
+  .small .languageButton {
+    padding: 2px;
+  }
+  
+  .small .languageLabel {
+    font-size: 0.75rem;
+  }
+  
+  .small .languageCode {
+    font-size: 0.625rem;
+  }
+  
+  .medium .flagImage {
+    width: 24px;
+    height: 18px;
+  }
+  
+  .medium .languageButton {
+    padding: 4px;
+  }
+  
+  .large .flagImage {
+    width: 32px;
+    height: 24px;
+  }
+  
+  .large .languageButton {
+    padding: 6px;
+  }
+  
+  .large .languageLabel {
+    font-size: 1rem;
+  }
+  
+  .large .languageCode {
+    font-size: 0.875rem;
+  }
+  
+  /* Text-only variant */
+  .languageSwitcher.textOnly .languageButton {
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+  
+  .languageSwitcher.textOnly .languageButton:hover {
+    background-color: rgba(23, 102, 177, 0.05);
+  }
+  
+  .languageSwitcher.textOnly .languageButton.active {
+    background-color: rgba(23, 102, 177, 0.15);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .languageSwitcher {
+      gap: 6px;
+    }
+    
+    .medium .flagImage {
+      width: 20px;
+      height: 15px;
+    }
+    
+    .large .flagImage {
+      width: 24px;
+      height: 18px;
+    }
+  }
